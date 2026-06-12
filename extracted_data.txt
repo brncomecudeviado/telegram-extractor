@@ -15646,3 +15646,11 @@ FAIXA DE RISCO: BAIXISSIMO RISCO
 RENDA PRESUMIDA: 3178,47
 ==================================================
 
+==================================================
+NOME: RITA ELISA PADLUBENY
+CPF: 08985174860
+SCORE: 903
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 2158,30
+==================================================
+

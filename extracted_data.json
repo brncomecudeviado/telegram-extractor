@@ -59221,5 +59221,57 @@
       "• USUÁRIO: [Pl ](tg://user?id=6650784405)"
     ],
     "timestamp": "2026-06-11 22:29:25"
+  },
+  {
+    "cpf": "08985174860",
+    "pis": "SEM INFORMAÇÃO",
+    "titulo_eleitoral": "083313180141",
+    "rg": "SEM INFORMAÇÃO",
+    "data_de_expedicao": "SEM INFORMAÇÃO",
+    "orgao_expedidor": "SEM INFORMAÇÃO",
+    "uf_rg": "SEM INFORMAÇÃO",
+    "nome": "RITA ELISA PADLUBENY",
+    "nascimento": "30/09/1960",
+    "idade": "65",
+    "signo": "LIBRA",
+    "mae": "BENEDICTA T PADLUBENY",
+    "pai": "SEM INFORMAÇÃO",
+    "nacionalidade": "BRASILEIRA",
+    "escolaridade": "SEM INFORMAÇÃO",
+    "estado_civil": "SEM INFORMAÇÃO",
+    "profissao": "SEM INFORMAÇÃO",
+    "renda_presumida": "2158,30",
+    "status_receita_federal": "REGULAR",
+    "score": 903,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "emails": [
+      "rita.eliza@ig.com.br",
+      "ritaeliza@ig.com.br",
+      "rits.eliza@ig.com.br"
+    ],
+    "enderecos": [
+      "PC AUGUSTO TORTORELO DE ARAUJO, 321 -  - STO AMARO, SAO PAULO-SP 04709150",
+      "PRQ DOMINGOS LUIS, 612 -  - JD S PAULO ZONA NORTE, SAO PAULO-SP 02043080",
+      "R AUGUSTO TORTORELO ARAUJO, 321 -  - JD S PAULO ZONA NORTE, SAO PAULO-SP 02040010"
+    ],
+    "telefones_proprietario": [
+      "1129770956 - DESCONHECIDA",
+      "1123065645 - DESCONHECIDA",
+      "1129777095 - DESCONHECIDA",
+      "11967205185 - DESCONHECIDA"
+    ],
+    "telefones_comerciais": [],
+    "telefones_referenciais": [],
+    "possiveis_parentes": [
+      "NOME: BENEDICTA T PADLUBENY",
+      "CPF: SEM INFORMAÇÃO",
+      "PARENTESCO: MAE"
+    ],
+    "possiveis_vizinhos": [],
+    "participacao_societaria": [],
+    "vinculos_empregaticios": [
+      "• USUÁRIO: [Filho Do Dono](tg://user?id=8280315671)"
+    ],
+    "timestamp": "2026-06-11 22:30:29"
   }
 ]
