@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telegram CPF Extractor Dashboard</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --panel-bg: rgba(22, 27, 34, 0.7);
+            --panel-border: rgba(48, 54, 61, 0.6);
+            --accent-primary: #58a6ff;
+            --accent-gradient: linear-gradient(135deg, #1f6feb, #8e2de2);
+            --text-primary: #c9d1d9;
+            --text-secondary: #8b949e;
+            --success: #2ea043;
+            --card-hover: rgba(56, 139, 253, 0.15);
+            --card-active: rgba(56, 139, 253, 0.25);
+            --shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            min-height: 100vh;
+            padding: 2rem;
+            background-image: radial-gradient(circle at 10% 20%, rgba(90, 40, 190, 0.05) 0%, transparent 40%),
+                              radial-gradient(circle at 90% 80%, rgba(31, 111, 235, 0.05) 0%, transparent 40%);
+            background-attachment: fixed;
+        }
+
+        header {
+            max-width: 1200px;
+            margin: 0 auto 2rem auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+
+        h1 {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 700;
+            font-size: 2.2rem;
+            background: linear-gradient(90deg, #58a6ff, #bc85ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .status-badge {
+            background-color: rgba(46, 160, 67, 0.15);
+            border: 1px solid rgba(46, 160, 67, 0.3);
+            color: #56d364;
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            box-shadow: 0 0 15px rgba(46, 160, 67, 0.1);
+        }
+
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            background-color: #56d364;
+            border-radius: 50%;
+            display: inline-block;
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(86, 211, 100, 0.7); }
+            70% { transform: scale(1); box-shadow: 0 0 0 6px rgba(86, 211, 100, 0); }
+            100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(86, 211, 100, 0); }
+        }
+
+        /* Stats Grid */
+        .stats-grid {
+            max-width: 1200px;
+            margin: 0 auto 2rem auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .stat-card {
+            background: var(--panel-bg);
+            border: 1px solid var(--panel-border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1.25rem;
+            backdrop-filter: blur(10px);
+            box-shadow: var(--shadow);
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-2px);
+            border-color: rgba(88, 166, 255, 0.4);
+        }
+
+        .stat-icon {
+            font-size: 2rem;
+            background: var(--accent-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .stat-info h3 {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.25rem;
+        }
+
+        .stat-info p {
+            font-size: 1.75rem;
+            font-weight: 700;
+            font-family: 'Outfit', sans-serif;
+        }
+
+        /* Controls Section */
+        .controls {
+            max-width: 1200px;
+            margin: 0 auto 2rem auto;
+            background: var(--panel-bg);
+            border: 1px solid var(--panel-border);
+            border-radius: 12px;
+            padding: 1.25rem;
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            flex-wrap: wrap;
+            backdrop-filter: blur(10px);
+            box-shadow: var(--shadow);
+        }
+
+        .search-box {
+            position: relative;
+            flex: 1;
+            min-width: 280px;
+        }
+
+        .search-box i {
+            position: absolute;
+            left: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-secondary);
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 0.75rem 1rem 0.75rem 2.75rem;
+            background-color: rgba(13, 17, 23, 0.8);
+            border: 1px solid var(--panel-border);
+            border-radius: 8px;
+            color: var(--text-primary);
+            font-size: 0.95rem;
+            outline: none;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+
+        .search-box input:focus {
+            border-color: var(--accent-primary);
+            box-shadow: 0 0 0 3px rgba(88, 166, 255, 0.15);
+        }
+
+        .select-filter {
+            padding: 0.75rem 1rem;
+            background-color: rgba(13, 17, 23, 0.8);
+            border: 1px solid var(--panel-border);
+            border-radius: 8px;
+            color: var(--text-primary);
+            font-size: 0.95rem;
+            outline: none;
+            cursor: pointer;
+            min-width: 200px;
+            transition: border-color 0.2s;
+        }
+
+        .select-filter:focus {
+            border-color: var(--accent-primary);
+        }
+
+        .btn-refresh {
+            padding: 0.75rem 1.25rem;
+            background: var(--accent-gradient);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: opacity 0.2s, transform 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-refresh:hover {
+            opacity: 0.9;
+            transform: translateY(-1px);
+        }
+
+        .btn-refresh:active {
+            transform: translateY(1px);
+        }
+
+        /* Data Container */
+        .data-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .no-data {
+            text-align: center;
+            padding: 4rem 2rem;
+            background: var(--panel-bg);
+            border: 1px solid var(--panel-border);
+            border-radius: 12px;
+            color: var(--text-secondary);
+        }
+
+        .no-data i {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: rgba(240, 246, 252, 0.1);
+        }
+
+        .grid-view {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .data-card {
+            background: var(--panel-bg);
+            border: 1px solid var(--panel-border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            backdrop-filter: blur(10px);
+            box-shadow: var(--shadow);
+            transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+        }
+
+        .data-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: var(--accent-gradient);
+        }
+
+        .data-card:hover {
+            transform: translateY(-3px);
+            border-color: rgba(88, 166, 255, 0.5);
+            box-shadow: 0 8px 24px rgba(56, 139, 253, 0.1);
+        }
+
+        .card-header {
+            margin-bottom: 1rem;
+        }
+
+        .card-name {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: #f0f6fc;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin-bottom: 0.25rem;
+        }
+
+        .card-cpf {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            font-family: monospace;
+        }
+
+        .card-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        .card-label {
+            color: var(--text-secondary);
+        }
+
+        .card-value {
+            font-weight: 500;
+        }
+
+        .score-badge {
+            background-color: rgba(88, 166, 255, 0.1);
+            color: var(--accent-primary);
+            padding: 0.15rem 0.5rem;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 0.85rem;
+        }
+
+        /* Modal styling */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(13, 17, 23, 0.85);
+            backdrop-filter: blur(8px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .modal-overlay.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .modal {
+            background-color: #161b22;
+            border: 1px solid var(--panel-border);
+            border-radius: 16px;
+            width: 90%;
+            max-width: 500px;
+            box-shadow: 0 16px 48px rgba(0, 0, 0, 0.5);
+            transform: scale(0.9);
+            transition: transform 0.3s ease;
+            overflow: hidden;
+        }
+
+        .modal-overlay.active .modal {
+            transform: scale(1);
+        }
+
+        .modal-header {
+            padding: 1.5rem;
+            border-bottom: 1px solid var(--panel-border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(135deg, rgba(31, 111, 235, 0.05), rgba(142, 45, 226, 0.05));
+        }
+
+        .modal-title {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 600;
+            font-size: 1.25rem;
+            color: #f0f6fc;
+        }
+
+        .btn-close {
+            background: transparent;
+            border: none;
+            color: var(--text-secondary);
+            font-size: 1.25rem;
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+
+        .btn-close:hover {
+            color: #f0f6fc;
+        }
+
+        .modal-body {
+            padding: 1.5rem;
+        }
+
+        .detail-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.85rem 0;
+            border-bottom: 1px solid rgba(48, 54, 61, 0.4);
+        }
+
+        .detail-item:last-child {
+            border-bottom: none;
+        }
+
+        .detail-label {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .detail-val-container {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .detail-value {
+            font-weight: 600;
+            color: #f0f6fc;
+            font-size: 0.95rem;
+        }
+
+        .detail-value.monospace {
+            font-family: monospace;
+            letter-spacing: 0.05em;
+        }
+
+        .btn-copy-field {
+            background: transparent;
+            border: none;
+            color: var(--text-secondary);
+            cursor: pointer;
+            font-size: 0.85rem;
+            padding: 0.25rem;
+            border-radius: 4px;
+            transition: color 0.15s, background-color 0.15s;
+        }
+
+        .btn-copy-field:hover {
+            color: var(--accent-primary);
+            background-color: rgba(88, 166, 255, 0.1);
+        }
+
+        .modal-footer {
+            padding: 1.25rem 1.5rem;
+            border-top: 1px solid var(--panel-border);
+            display: flex;
+            justify-content: flex-end;
+            gap: 1rem;
+            background-color: rgba(22, 27, 34, 0.5);
+        }
+
+        .btn-action {
+            padding: 0.6rem 1.2rem;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: opacity 0.2s;
+        }
+
+        .btn-action.secondary {
+            background-color: #21262d;
+            border: 1px solid var(--panel-border);
+            color: var(--text-primary);
+        }
+
+        .btn-action.secondary:hover {
+            background-color: #30363d;
+        }
+
+        .btn-action.primary {
+            background: var(--accent-gradient);
+            border: none;
+            color: white;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-action.primary:hover {
+            opacity: 0.9;
+        }
+
+        /* Toast notification */
+        .toast {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background-color: #2ea043;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            font-weight: 600;
+            font-size: 0.9rem;
+            transform: translateY(100px);
+            opacity: 0;
+            transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.3s;
+            z-index: 2000;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .toast.show {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1><i class="fa-brands fa-telegram"></i> Extrator Telegram</h1>
+        <div class="status-badge">
+            <span class="status-dot"></span>
+            Monitorando em tempo real
+        </div>
+    </header>
+
+    <!-- Statistics Panel -->
+    <div class="stats-grid">
+        <div class="stat-card">
+            <div class="stat-icon"><i class="fa-solid fa-address-card"></i></div>
+            <div class="stat-info">
+                <h3>Total Capturado</h3>
+                <p id="stat-total">0</p>
+            </div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-icon"><i class="fa-solid fa-chart-line"></i></div>
+            <div class="stat-info">
+                <h3>Média de Score</h3>
+                <p id="stat-avg">0</p>
+            </div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-icon"><i class="fa-solid fa-trophy"></i></div>
+            <div class="stat-info">
+                <h3>Maior Score</h3>
+                <p id="stat-max">0</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Filtering & Controls -->
+    <div class="controls">
+        <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" id="search-input" placeholder="Buscar por Nome ou CPF...">
+        </div>
+        <select class="select-filter" id="sort-select">
+            <option value="newest">Mais Recentes</option>
+            <option value="oldest">Mais Antigos</option>
+            <option value="score-desc">Score: Maior -> Menor</option>
+            <option value="score-asc">Score: Menor -> Maior</option>
+            <option value="name-asc">Nome: A - Z</option>
+        </select>
+        <button class="btn-refresh" id="btn-refresh">
+            <i class="fa-solid fa-rotate"></i> Atualizar
+        </button>
+    </div>
+
+    <!-- Data cards list -->
+    <div class="data-container">
+        <div class="no-data" id="no-data-msg">
+            <i class="fa-solid fa-inbox"></i>
+            <p>Nenhum dado capturado ainda.</p>
+        </div>
+        <div class="grid-view" id="grid-view">
+            <!-- Dynamically populated -->
+        </div>
+    </div>
+
+    <!-- Detailed Modal -->
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal" id="modal">
+            <div class="modal-header">
+                <span class="modal-title">Detalhes da Consulta</span>
+                <button class="btn-close" id="btn-close-modal"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="modal-body">
+                <div class="detail-item">
+                    <span class="detail-label"><i class="fa-solid fa-user"></i> NOME:</span>
+                    <div class="detail-val-container">
+                        <span class="detail-value" id="det-nome">-</span>
+                        <button class="btn-copy-field" onclick="copyText('det-nome')"><i class="fa-solid fa-copy"></i></button>
+                    </div>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label"><i class="fa-solid fa-id-card"></i> CPF:</span>
+                    <div class="detail-val-container">
+                        <span class="detail-value monospace" id="det-cpf">-</span>
+                        <button class="btn-copy-field" onclick="copyText('det-cpf')"><i class="fa-solid fa-copy"></i></button>
+                    </div>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label"><i class="fa-solid fa-gauge-high"></i> SCORE:</span>
+                    <div class="detail-val-container">
+                        <span class="detail-value" id="det-score">-</span>
+                        <button class="btn-copy-field" onclick="copyText('det-score')"><i class="fa-solid fa-copy"></i></button>
+                    </div>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label"><i class="fa-solid fa-triangle-exclamation"></i> FAIXA DE RISCO:</span>
+                    <div class="detail-val-container">
+                        <span class="detail-value" id="det-faixa">-</span>
+                        <button class="btn-copy-field" onclick="copyText('det-faixa')"><i class="fa-solid fa-copy"></i></button>
+                    </div>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label"><i class="fa-solid fa-sack-dollar"></i> RENDA PRESUMIDA:</span>
+                    <div class="detail-val-container">
+                        <span class="detail-value" id="det-renda">-</span>
+                        <button class="btn-copy-field" onclick="copyText('det-renda')"><i class="fa-solid fa-copy"></i></button>
+                    </div>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label"><i class="fa-solid fa-clock"></i> DATA CAPTURA:</span>
+                    <div class="detail-val-container">
+                        <span class="detail-value" id="det-data">-</span>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-action secondary" id="btn-close-footer">Fechar</button>
+                <button class="btn-action primary" id="btn-copy-all">
+                    <i class="fa-solid fa-copy"></i> Copiar Tudo
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast message -->
+    <div class="toast" id="toast">
+        <i class="fa-solid fa-circle-check"></i> Copiado com sucesso!
+    </div>
+
+    <script>
+        let fullData = [];
+        let filteredData = [];
+        let selectedRecord = null;
+
+        // Fetch data from API
+        async function loadData() {
+            try {
+                const res = await fetch('extracted_data.json');
+                if (!res.ok) throw new Error('Erro ao carregar dados');
+                fullData = await res.json();
+                
+                // Add default timestamp if missing
+                fullData = fullData.map((item, idx) => ({
+                    ...item,
+                    timestamp: item.timestamp || new Date(Date.now() - idx * 60000).toLocaleString('pt-BR')
+                }));
+
+                updateStats();
+                applyFilters();
+            } catch (err) {
+                console.error(err);
+            }
+        }
+
+        // Calculate and update dashboard stats
+        function updateStats() {
+            document.getElementById('stat-total').innerText = fullData.length;
+            
+            if (fullData.length === 0) {
+                document.getElementById('stat-avg').innerText = '0';
+                document.getElementById('stat-max').innerText = '0';
+                return;
+            }
+
+            const scores = fullData.map(d => Number(d.score)).filter(s => !isNaN(s));
+            const avg = Math.round(scores.reduce((a, b) => a + b, 0) / scores.length);
+            const max = Math.max(...scores);
+
+            document.getElementById('stat-avg').innerText = isNaN(avg) ? '0' : avg;
+            document.getElementById('stat-max').innerText = max === -Infinity ? '0' : max;
+        }
+
+        // Apply filters (search and sort)
+        function applyFilters() {
+            const query = document.getElementById('search-input').value.toLowerCase().trim();
+            const sortBy = document.getElementById('sort-select').value;
+
+            // Filter
+            filteredData = fullData.filter(item => {
+                const nome = (item.nome || '').toLowerCase();
+                const cpf = (item.cpf || '').toLowerCase();
+                return nome.includes(query) || cpf.includes(query);
+            });
+
+            // Sort
+            if (sortBy === 'newest') {
+                // Assuming newer entries are at the end, or sort by timestamp if available
+                filteredData.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
+            } else if (sortBy === 'oldest') {
+                filteredData.sort((a, b) => new Date(a.timestamp) - new Date(b.timestamp));
+            } else if (sortBy === 'score-desc') {
+                filteredData.sort((a, b) => b.score - a.score);
+            } else if (sortBy === 'score-asc') {
+                filteredData.sort((a, b) => a.score - b.score);
+            } else if (sortBy === 'name-asc') {
+                filteredData.sort((a, b) => (a.nome || '').localeCompare(b.nome || ''));
+            }
+
+            renderGrid();
+        }
+
+        // Render cards grid
+        function renderGrid() {
+            const grid = document.getElementById('grid-view');
+            const noData = document.getElementById('no-data-msg');
+
+            grid.innerHTML = '';
+
+            if (filteredData.length === 0) {
+                noData.style.display = 'block';
+                return;
+            }
+
+            noData.style.display = 'none';
+
+            filteredData.forEach(item => {
+                const card = document.createElement('div');
+                card.className = 'data-card';
+                card.onclick = () => openModal(item);
+
+                card.innerHTML = `
+                    <div class="card-header">
+                        <div class="card-name" title="${item.nome}">${item.nome}</div>
+                        <div class="card-cpf">${item.cpf}</div>
+                    </div>
+                    <div class="card-row">
+                        <span class="card-label">Score:</span>
+                        <span class="card-value"><span class="score-badge">${item.score}</span></span>
+                    </div>
+                    <div class="card-row">
+                        <span class="card-label">Renda:</span>
+                        <span class="card-value">${item.renda_presumida}</span>
+                    </div>
+                `;
+
+                grid.appendChild(card);
+            });
+        }
+
+        // Modal controllers
+        const modalOverlay = document.getElementById('modal-overlay');
+        
+        function openModal(item) {
+            selectedRecord = item;
+            document.getElementById('det-nome').innerText = item.nome;
+            document.getElementById('det-cpf').innerText = item.cpf;
+            document.getElementById('det-score').innerText = item.score;
+            document.getElementById('det-faixa').innerText = item.faixa_de_risco;
+            document.getElementById('det-renda').innerText = item.renda_presumida;
+            document.getElementById('det-data').innerText = item.timestamp;
+
+            modalOverlay.classList.add('active');
+        }
+
+        function closeModal() {
+            modalOverlay.classList.remove('active');
+        }
+
+        // Event listeners for close modal
+        document.getElementById('btn-close-modal').onclick = closeModal;
+        document.getElementById('btn-close-footer').onclick = closeModal;
+        modalOverlay.onclick = (e) => {
+            if (e.target === modalOverlay) closeModal();
+        };
+
+        // Copy functions
+        function showToast() {
+            const toast = document.getElementById('toast');
+            toast.classList.add('show');
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 2000);
+        }
+
+        function copyText(elementId) {
+            const text = document.getElementById(elementId).innerText;
+            navigator.clipboard.writeText(text).then(showToast);
+        }
+
+        document.getElementById('btn-copy-all').onclick = () => {
+            if (!selectedRecord) return;
+            const textToCopy = `NOME: ${selectedRecord.nome}\nCPF: ${selectedRecord.cpf}\nSCORE: ${selectedRecord.score}\nFAIXA DE RISCO: ${selectedRecord.faixa_de_risco}\nRENDA PRESUMIDA: ${selectedRecord.renda_presumida}`;
+            navigator.clipboard.writeText(textToCopy).then(() => {
+                showToast();
+                closeModal();
+            });
+        };
+
+        // Search inputs
+        document.getElementById('search-input').oninput = applyFilters;
+        document.getElementById('sort-select').onchange = applyFilters;
+        document.getElementById('btn-refresh').onclick = loadData;
+
+        // Auto reload every 10 seconds
+        setInterval(loadData, 10000);
+
+        // Initial load
+        window.onload = loadData;
+    </script>
+</body>
+</html>

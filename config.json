@@ -1,0 +1,10 @@
+{
+  "api_id": 23103576,
+  "api_hash": "e4419494ce740d3d034374b7773e3b69",
+  "phone": "+5521999282769",
+  "groups": [
+    "sevenbuscas"
+  ],
+  "output_file": "extracted_data.txt",
+  "auto_git_push": true
+}

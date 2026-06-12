@@ -1,0 +1,6562 @@
+[
+  {
+    "nome": "MARIA CECILIA SCHATZ DA SILVA",
+    "cpf": "60200316915",
+    "score": 969,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "3322,19",
+    "timestamp": "2026-06-10 21:50:51"
+  },
+  {
+    "nome": "ROSINEI XAVIER PASSINI",
+    "cpf": "34541855801",
+    "score": 931,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1023,46",
+    "timestamp": "2026-06-10 21:50:53"
+  },
+  {
+    "nome": "ADEJENIR CARMES SEEMANN",
+    "cpf": "35165731987",
+    "score": 995,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "SEM INFORMAÇÃO",
+    "timestamp": "2026-06-10 21:50:55"
+  },
+  {
+    "nome": "NIVALDO RIBEIRO DO VAL",
+    "cpf": "33274207187",
+    "score": 987,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1625,44",
+    "timestamp": "2026-06-10 21:50:57"
+  },
+  {
+    "nome": "THIAGO PRECARO SIQUEIRA",
+    "cpf": "34499982855",
+    "score": 933,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "3283,78",
+    "timestamp": "2026-06-10 21:50:59"
+  },
+  {
+    "nome": "PETRUCIA MARIA ANTERO PINHEIRO",
+    "cpf": "44317271320",
+    "score": 984,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "7471,12",
+    "timestamp": "2026-06-10 21:51:01"
+  },
+  {
+    "nome": "FATIMA ROSANA DA SILVA",
+    "cpf": "54902312972",
+    "score": 919,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1327,45",
+    "timestamp": "2026-06-10 21:51:03"
+  },
+  {
+    "nome": "NATALIA RAGUSA ROCHA CORTEZ",
+    "cpf": "04728944980",
+    "score": 976,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "6939,03",
+    "timestamp": "2026-06-10 21:51:05"
+  },
+  {
+    "nome": "GERALDO ALVES VASCONCELOS FILHO",
+    "cpf": "16650573434",
+    "score": 989,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "7601,52",
+    "timestamp": "2026-06-10 21:51:07"
+  },
+  {
+    "nome": "MARIA ANGELICA MILAGRES DE OLIVEIRA",
+    "cpf": "63073404791",
+    "score": 962,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2440,04",
+    "timestamp": "2026-06-10 21:51:09"
+  },
+  {
+    "nome": "CLAUDIA WINCK MAURER",
+    "cpf": "43746802091",
+    "score": 929,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2059,90",
+    "timestamp": "2026-06-10 21:51:11"
+  },
+  {
+    "nome": "CINTIA ZAGO SANT ANNA",
+    "cpf": "22598856830",
+    "score": 953,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "4195,20",
+    "timestamp": "2026-06-10 21:51:13"
+  },
+  {
+    "nome": "FABIO LUIS GUEDES GULLO",
+    "cpf": "02812881780",
+    "score": 963,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "5328,48",
+    "timestamp": "2026-06-10 21:51:15"
+  },
+  {
+    "nome": "RODRIGO RODRIGUES PEREIRA",
+    "cpf": "83939318604",
+    "score": 968,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "5223,12",
+    "timestamp": "2026-06-10 21:51:17"
+  },
+  {
+    "nome": "ANDRE LUIZ GUILHERME",
+    "cpf": "29826337870",
+    "score": 917,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2168,31",
+    "timestamp": "2026-06-10 21:51:19"
+  },
+  {
+    "nome": "AUGUSTO IPOLITO CARDOSO DOS SANTOS",
+    "cpf": "75572222100",
+    "score": 923,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "919,57",
+    "timestamp": "2026-06-10 21:51:21"
+  },
+  {
+    "nome": "AUREA SERAFIM JANSEN",
+    "cpf": "35764163900",
+    "score": 942,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2445,95",
+    "timestamp": "2026-06-10 21:51:23"
+  },
+  {
+    "nome": "CLEIVAN DOS SANTOS BRAUNER",
+    "cpf": "01374099074",
+    "score": 937,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1862,54",
+    "timestamp": "2026-06-10 21:51:25"
+  },
+  {
+    "nome": "FLAVIA NOGUEIRA DE SA",
+    "cpf": "02585467783",
+    "score": 935,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "21210,47",
+    "timestamp": "2026-06-10 21:51:27"
+  },
+  {
+    "nome": "ROBERTO NOVAIS DOS SANTOS",
+    "cpf": "82341087191",
+    "score": 928,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1648,13",
+    "timestamp": "2026-06-10 21:51:29"
+  },
+  {
+    "nome": "ROGERIO MENDES COLLA",
+    "cpf": "36709310078",
+    "score": 926,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "30063,10",
+    "timestamp": "2026-06-10 21:51:31"
+  },
+  {
+    "nome": "MARCELO BENJAMIM PARRACHO DE ALBUQUERQUE",
+    "cpf": "87741695568",
+    "score": 909,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2026,07",
+    "timestamp": "2026-06-10 21:51:33"
+  },
+  {
+    "nome": "EDER ALEIXO DE OLIVEIRA",
+    "cpf": "11284613828",
+    "score": 957,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1941,57",
+    "timestamp": "2026-06-10 21:51:35"
+  },
+  {
+    "nome": "ROSE LAINE TODESCATTO DEITOS",
+    "cpf": "94889813004",
+    "score": 953,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1156,33",
+    "timestamp": "2026-06-10 21:51:37"
+  },
+  {
+    "nome": "JOAO ALVES SOBRINHO",
+    "cpf": "47864141234",
+    "score": 912,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1549,55",
+    "timestamp": "2026-06-10 21:51:39"
+  },
+  {
+    "nome": "FABIANA MEDEIROS PARRO ROCHA",
+    "cpf": "25908287806",
+    "score": 962,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "5170,59",
+    "timestamp": "2026-06-10 21:51:41"
+  },
+  {
+    "nome": "SIDNEI GOMES",
+    "cpf": "03912556814",
+    "score": 953,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "SEM INFORMAÇÃO",
+    "timestamp": "2026-06-10 21:51:43"
+  },
+  {
+    "nome": "WELLINGTON RICARDO DE BRITO",
+    "cpf": "32414053895",
+    "score": 955,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "3667,11",
+    "timestamp": "2026-06-10 21:51:45"
+  },
+  {
+    "nome": "EDGARD SIMOES PESSOA",
+    "cpf": "24362034820",
+    "score": 929,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "5766,03",
+    "timestamp": "2026-06-10 21:51:47"
+  },
+  {
+    "nome": "THYAGO NASSER TUMMLER",
+    "cpf": "06876701956",
+    "score": 965,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "3203,52",
+    "timestamp": "2026-06-10 21:51:49"
+  },
+  {
+    "nome": "LILIANE WANDERLEY DE ARAUJO",
+    "cpf": "01379672503",
+    "score": 961,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "17491,46",
+    "timestamp": "2026-06-10 21:51:51"
+  },
+  {
+    "nome": "GEDEON CORREA",
+    "cpf": "13401584774",
+    "score": 919,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1070,98",
+    "timestamp": "2026-06-10 21:51:53"
+  },
+  {
+    "nome": "GUSTAVO DE OLIVEIRA ROCHA",
+    "cpf": "20452940800",
+    "score": 990,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "5127,88",
+    "timestamp": "2026-06-10 21:51:55"
+  },
+  {
+    "nome": "NILSON DO CARMO ZAVARIZE",
+    "cpf": "21014523087",
+    "score": 1000,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "21127,99",
+    "timestamp": "2026-06-10 21:51:57"
+  },
+  {
+    "nome": "CELIA REGINA VAZ MARINHO",
+    "cpf": "29634951880",
+    "score": 922,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2787,21",
+    "timestamp": "2026-06-10 21:51:59"
+  },
+  {
+    "nome": "CLEITON GONCALVES DE OLIVEIRA",
+    "cpf": "78307295149",
+    "score": 980,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "4722,26",
+    "timestamp": "2026-06-10 21:52:01"
+  },
+  {
+    "nome": "ANA AMALIA CAMPELLO KELLEMANN",
+    "cpf": "62022679091",
+    "score": 955,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2668,68",
+    "timestamp": "2026-06-10 21:52:03"
+  },
+  {
+    "nome": "ADRIANE BORGES DAS NEVES",
+    "cpf": "52835936068",
+    "score": 925,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "4339,50",
+    "timestamp": "2026-06-10 21:52:05"
+  },
+  {
+    "nome": "WILLIAN THOMAZ MARTINS",
+    "cpf": "35118927838",
+    "score": 958,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1613,06",
+    "timestamp": "2026-06-10 21:52:07"
+  },
+  {
+    "nome": "LEOBERTO LUIZ DAL PIZZOL FILHO",
+    "cpf": "06092922932",
+    "score": 952,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1156,31",
+    "timestamp": "2026-06-10 21:52:09"
+  },
+  {
+    "nome": "ISABELA ANDRADE PIVA",
+    "cpf": "34945938504",
+    "score": 989,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "23967,11",
+    "timestamp": "2026-06-10 21:52:11"
+  },
+  {
+    "nome": "ALINE BALDIN FERRARI JEREZ",
+    "cpf": "29054394838",
+    "score": 972,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "15215,97",
+    "timestamp": "2026-06-10 21:52:13"
+  },
+  {
+    "nome": "SUELY DE FATIMA DE SOUZA RODRIGUES",
+    "cpf": "90875001734",
+    "score": 924,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1653,74",
+    "timestamp": "2026-06-10 21:52:15"
+  },
+  {
+    "nome": "KENIA MARIA DA SILVA MENEZES",
+    "cpf": "69785538672",
+    "score": 961,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "SEM INFORMAÇÃO",
+    "timestamp": "2026-06-10 21:52:17"
+  },
+  {
+    "nome": "SERGIO RIBEIRO DE OLIVEIRA",
+    "cpf": "07166406437",
+    "score": 916,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "SEM INFORMAÇÃO",
+    "timestamp": "2026-06-10 21:52:19"
+  },
+  {
+    "nome": "ADEMILSON PEDRO RODRIGUES",
+    "cpf": "08853742666",
+    "score": 973,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "6689,07",
+    "timestamp": "2026-06-10 21:52:21"
+  },
+  {
+    "nome": "JOHNNY DO CARMO RIBEIRO",
+    "cpf": "11688072632",
+    "score": 926,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1553,01",
+    "timestamp": "2026-06-10 21:52:23"
+  },
+  {
+    "nome": "MONIQUE DE BRITO LOBO",
+    "cpf": "36810430865",
+    "score": 962,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2272,55",
+    "timestamp": "2026-06-10 21:52:25"
+  },
+  {
+    "nome": "JOSE EDUARDO BALDO",
+    "cpf": "05380836895",
+    "score": 908,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "10261,56",
+    "timestamp": "2026-06-10 21:52:27"
+  },
+  {
+    "nome": "DANIELA DE PAULA",
+    "cpf": "07585099606",
+    "score": 924,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1935,54",
+    "timestamp": "2026-06-10 21:52:29"
+  },
+  {
+    "nome": "JULIANO ALVARENGA BARROS",
+    "cpf": "11333194676",
+    "score": 905,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "3332,21",
+    "timestamp": "2026-06-10 21:52:31"
+  },
+  {
+    "nome": "ANA CAROLINE AROUCHE GOMES DE SOUZA",
+    "cpf": "08842677760",
+    "score": 966,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "4969,74",
+    "timestamp": "2026-06-10 21:52:33"
+  },
+  {
+    "nome": "GLAUCIO HENRIQUE DE ARRUDA NOGUEIRA",
+    "cpf": "45678979191",
+    "score": 962,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "6434,79",
+    "timestamp": "2026-06-10 21:52:35"
+  },
+  {
+    "nome": "LEANDRO PEREIRA",
+    "cpf": "01326690647",
+    "score": 929,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "14669,61",
+    "timestamp": "2026-06-10 21:52:37"
+  },
+  {
+    "nome": "WILIAN SOUZA PEREIRA",
+    "cpf": "34238928890",
+    "score": 992,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "6493,08",
+    "timestamp": "2026-06-10 21:52:39"
+  },
+  {
+    "nome": "JOSE MUZETTI JUNIOR",
+    "cpf": "06264726877",
+    "score": 984,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2818,88",
+    "timestamp": "2026-06-10 21:52:41"
+  },
+  {
+    "nome": "LUCIENE GONCALVES BRAGA",
+    "cpf": "30103228870",
+    "score": 951,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "718,47",
+    "timestamp": "2026-06-10 21:52:43"
+  },
+  {
+    "nome": "CLEIDE APARECIDA BARATELI COQUEIRO",
+    "cpf": "07378555843",
+    "score": 972,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "6286,33",
+    "timestamp": "2026-06-10 21:52:45"
+  },
+  {
+    "nome": "EDMILSON DE ANDRADE GUILHERME",
+    "cpf": "55556604991",
+    "score": 939,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "3892,48",
+    "timestamp": "2026-06-10 21:52:47"
+  },
+  {
+    "nome": "CLEIDE MARIA MUNARI DINIZ",
+    "cpf": "14789471870",
+    "score": 955,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2850,35",
+    "timestamp": "2026-06-10 21:52:49"
+  },
+  {
+    "nome": "LETICIA NASCIMENTO MOREIRA RALA",
+    "cpf": "45730256850",
+    "score": 945,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "SEM INFORMAÇÃO",
+    "timestamp": "2026-06-10 21:52:51"
+  },
+  {
+    "nome": "SONIA DA SILVA REZENDE PEREIRA",
+    "cpf": "27773086672",
+    "score": 978,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2224,77",
+    "timestamp": "2026-06-10 21:52:53"
+  },
+  {
+    "nome": "ADRIANA APARECIDA COSTA GOULART",
+    "cpf": "01263776698",
+    "score": 969,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "SEM INFORMAÇÃO",
+    "timestamp": "2026-06-10 21:52:55"
+  },
+  {
+    "nome": "MARIANA DE FRANCA VERALDO",
+    "cpf": "31010359886",
+    "score": 965,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "14053,17",
+    "timestamp": "2026-06-10 21:52:57"
+  },
+  {
+    "nome": "CARLOS RIBEIRO DOS SANTOS",
+    "cpf": "02485060215",
+    "score": 973,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "5775,54",
+    "timestamp": "2026-06-10 21:52:59"
+  },
+  {
+    "nome": "JOANA DARC ROCHA DE OLIVEIRA",
+    "cpf": "09943991895",
+    "score": 931,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1341,47",
+    "timestamp": "2026-06-10 21:53:01"
+  },
+  {
+    "nome": "VANDERLEI RAMOS",
+    "cpf": "06626021885",
+    "score": 905,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1384,75",
+    "timestamp": "2026-06-10 21:53:03"
+  },
+  {
+    "nome": "MARLENE DOS SANTOS GOMES",
+    "cpf": "95009213591",
+    "score": 921,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1167,13",
+    "timestamp": "2026-06-10 21:53:05"
+  },
+  {
+    "nome": "NICOLLE DE FATIMA COSTA BARROSO GIFONI",
+    "cpf": "00168034344",
+    "score": 907,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "933,80",
+    "timestamp": "2026-06-10 21:53:07"
+  },
+  {
+    "nome": "CLAUDIO LUIZ PEREIRA",
+    "cpf": "05890243888",
+    "score": 1000,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "10706,97",
+    "timestamp": "2026-06-10 21:53:09"
+  },
+  {
+    "nome": "FABRIZIO BASTOS GALLAS CARVALHO",
+    "cpf": "11399553739",
+    "score": 922,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "3226,72",
+    "timestamp": "2026-06-10 21:53:11"
+  },
+  {
+    "nome": "JOSE CARLOS MENDONCA",
+    "cpf": "17548510888",
+    "score": 951,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1669,39",
+    "timestamp": "2026-06-10 21:53:13"
+  },
+  {
+    "nome": "VANESSA SILVA PALHARES",
+    "cpf": "09377261686",
+    "score": 915,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "947,87",
+    "timestamp": "2026-06-10 21:53:15"
+  },
+  {
+    "nome": "PAULO COSTA FUCHS",
+    "cpf": "00646921088",
+    "score": 978,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "3542,46",
+    "timestamp": "2026-06-10 21:53:17"
+  },
+  {
+    "nome": "FELIPE DE OLIVEIRA BAETA NEVES",
+    "cpf": "07127512620",
+    "score": 958,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2573,98",
+    "timestamp": "2026-06-10 21:53:19"
+  },
+  {
+    "nome": "SANDRO BOTELHO BARBOSA",
+    "cpf": "60336129149",
+    "score": 996,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1453,63",
+    "timestamp": "2026-06-10 21:53:21"
+  },
+  {
+    "nome": "ANTONIO CANDIDO FILHO",
+    "cpf": "11837624615",
+    "score": 943,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2475,86",
+    "timestamp": "2026-06-10 21:53:23"
+  },
+  {
+    "nome": "ACACIO BISMARCK LOPES MOTA",
+    "cpf": "09462588643",
+    "score": 957,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "SEM INFORMAÇÃO",
+    "timestamp": "2026-06-10 21:53:25"
+  },
+  {
+    "nome": "ALINE MADEIRA GIBSON SOARES",
+    "cpf": "08708041709",
+    "score": 913,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2035,27",
+    "timestamp": "2026-06-10 21:53:27"
+  },
+  {
+    "nome": "MARIA OLIVIA DA CONCEICAO MACHADO",
+    "cpf": "05474731680",
+    "score": 952,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1699,48",
+    "timestamp": "2026-06-10 21:53:29"
+  },
+  {
+    "nome": "RAPHAEL DE FRANCA HORTA BARBOSA",
+    "cpf": "11840699728",
+    "score": 943,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2831,62",
+    "timestamp": "2026-06-10 21:53:31"
+  },
+  {
+    "nome": "ALESSANDRO LISBOA DE LIMA",
+    "cpf": "93083564600",
+    "score": 946,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "7002,32",
+    "timestamp": "2026-06-10 21:53:33"
+  },
+  {
+    "nome": "JAKELINE MARIA PEREIRA",
+    "cpf": "08567523630",
+    "score": 966,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2276,05",
+    "timestamp": "2026-06-10 21:53:35"
+  },
+  {
+    "nome": "ANGELA DAS GRACAS PEREIRA SANTOS",
+    "cpf": "40115909672",
+    "score": 938,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2072,19",
+    "timestamp": "2026-06-10 21:53:37"
+  },
+  {
+    "nome": "MARLENE BELINI REZENDE",
+    "cpf": "05643138824",
+    "score": 948,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2010,66",
+    "timestamp": "2026-06-10 21:53:39"
+  },
+  {
+    "nome": "VILCIVANE BISPO DE OLIVEIRA",
+    "cpf": "80130720615",
+    "score": 970,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2727,61",
+    "timestamp": "2026-06-10 21:53:41"
+  },
+  {
+    "nome": "VANESSA PAVONI GONCALVES",
+    "cpf": "92176747020",
+    "score": 963,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "14818,88",
+    "timestamp": "2026-06-10 21:53:43"
+  },
+  {
+    "nome": "PAULO HENRIQUE CASTRO LUZ",
+    "cpf": "05890153897",
+    "score": 975,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "3287,55",
+    "timestamp": "2026-06-10 21:53:45"
+  },
+  {
+    "nome": "MARIA DA CONCEICAO REIS MORAES",
+    "cpf": "55060030644",
+    "score": 963,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2511,85",
+    "timestamp": "2026-06-10 21:53:47"
+  },
+  {
+    "nome": "LEILA MARIA DE RUARA MARQUES",
+    "cpf": "73580228668",
+    "score": 944,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1871,21",
+    "timestamp": "2026-06-10 21:53:49"
+  },
+  {
+    "nome": "CARLOS FELIPE RIBEIRO GOMES",
+    "cpf": "02832041760",
+    "score": 969,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "27473,75",
+    "timestamp": "2026-06-10 21:53:51"
+  },
+  {
+    "nome": "DANILO HENRIQUE NUNES",
+    "cpf": "27514270817",
+    "score": 970,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "9770,09",
+    "timestamp": "2026-06-10 21:53:53"
+  },
+  {
+    "nome": "RAQUEL LILIAN IZIDORO DO CARMO",
+    "cpf": "03486143654",
+    "score": 926,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1055,00",
+    "timestamp": "2026-06-10 21:53:55"
+  },
+  {
+    "nome": "BENEDITA ADAIL DE ARRUDA FIALHO COMUNELLO",
+    "cpf": "24177725153",
+    "score": 991,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "SEM INFORMAÇÃO",
+    "timestamp": "2026-06-10 21:53:57"
+  },
+  {
+    "nome": "RICARDO WAGNER DE MIRANDA",
+    "cpf": "37447050644",
+    "score": 1000,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2901,76",
+    "timestamp": "2026-06-10 21:53:59"
+  },
+  {
+    "nome": "FERNANDA LOYOLA VASCONCELOS DE CARVALHO",
+    "cpf": "00824635574",
+    "score": 923,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "SEM INFORMAÇÃO",
+    "timestamp": "2026-06-10 21:54:01"
+  },
+  {
+    "nome": "MARIA BATISTA JEREMIAS",
+    "cpf": "80630421668",
+    "score": 972,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2192,20",
+    "timestamp": "2026-06-10 21:54:03"
+  },
+  {
+    "nome": "VANESSA CRISTINA DA SILVA PIRES",
+    "cpf": "68642377615",
+    "score": 945,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1082,24",
+    "timestamp": "2026-06-10 21:54:05"
+  },
+  {
+    "nome": "CLARICE ALVES DE MATTOS",
+    "cpf": "03486837826",
+    "score": 906,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1707,29",
+    "timestamp": "2026-06-10 21:54:07"
+  },
+  {
+    "nome": "NILSON HERMIDA MAESTRE",
+    "cpf": "74717111834",
+    "score": 995,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "SEM INFORMAÇÃO",
+    "timestamp": "2026-06-10 21:54:09"
+  },
+  {
+    "nome": "JOSE AUGUSTO COSTA",
+    "cpf": "04359546874",
+    "score": 915,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "SEM INFORMAÇÃO",
+    "timestamp": "2026-06-10 21:54:11"
+  },
+  {
+    "nome": "LEANDRO CINESIO ALVES",
+    "cpf": "62753630615",
+    "score": 971,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "4010,60",
+    "timestamp": "2026-06-10 21:54:13"
+  },
+  {
+    "nome": "CLAUDIO SULEIMAN",
+    "cpf": "05164917840",
+    "score": 933,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "SEM INFORMAÇÃO",
+    "timestamp": "2026-06-10 21:54:15"
+  },
+  {
+    "nome": "JOAO RICARDO DE ABREU MENEZES",
+    "cpf": "20049548840",
+    "score": 906,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2515,85",
+    "timestamp": "2026-06-10 21:54:17"
+  },
+  {
+    "nome": "CLOVIS ROSIN",
+    "cpf": "00076572854",
+    "score": 974,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2482,41",
+    "timestamp": "2026-06-10 21:54:19"
+  },
+  {
+    "nome": "LIVIA FALCAO CALDEIRA GONCALVES",
+    "cpf": "73089613115",
+    "score": 959,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "9965,40",
+    "timestamp": "2026-06-10 21:54:21"
+  },
+  {
+    "nome": "DANILO CAMPANARI DE LIMA MARIANO",
+    "cpf": "37721802806",
+    "score": 969,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2930,21",
+    "timestamp": "2026-06-10 21:54:23"
+  },
+  {
+    "nome": "CLEBERSON APARECIDO REIS",
+    "cpf": "27369553825",
+    "score": 922,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "5967,34",
+    "timestamp": "2026-06-10 21:54:25"
+  },
+  {
+    "nome": "DANILO TAMEGA MONTEIRO LATARO",
+    "cpf": "21640888837",
+    "score": 917,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "15572,63",
+    "timestamp": "2026-06-10 21:54:27"
+  },
+  {
+    "nome": "ANTHONY RICHARD ALVES RIBEIRO DA SILVA",
+    "cpf": "35321916870",
+    "score": 936,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "3209,84",
+    "timestamp": "2026-06-10 21:54:29"
+  },
+  {
+    "nome": "GILBERTO DE AZEVEDO LEMOS",
+    "cpf": "03710235995",
+    "score": 967,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2171,66",
+    "timestamp": "2026-06-10 21:54:31"
+  },
+  {
+    "nome": "RICARDO JOSE MARIA",
+    "cpf": "03334617629",
+    "score": 955,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "3480,15",
+    "timestamp": "2026-06-10 21:54:33"
+  },
+  {
+    "nome": "DANILLO GOMES DOS SANTOS",
+    "cpf": "02755923164",
+    "score": 929,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2463,65",
+    "timestamp": "2026-06-10 21:54:35"
+  },
+  {
+    "nome": "RODRIGO GIACOMINE GOBBI",
+    "cpf": "32135055875",
+    "score": 976,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "16592,98",
+    "timestamp": "2026-06-10 21:54:37"
+  },
+  {
+    "nome": "MARIO APARECIDO PELEGRIN",
+    "cpf": "97984060878",
+    "score": 989,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "5002,12",
+    "timestamp": "2026-06-10 21:54:39"
+  },
+  {
+    "nome": "JOSE ANTONIOLI",
+    "cpf": "06196861972",
+    "score": 955,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1886,53",
+    "timestamp": "2026-06-10 21:54:41"
+  },
+  {
+    "nome": "VERA LUCIA KORNALEWSKI",
+    "cpf": "38442787704",
+    "score": 922,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1754,08",
+    "timestamp": "2026-06-10 21:54:43"
+  },
+  {
+    "nome": "JOEL ANTONIO AYRES DA SILVA",
+    "cpf": "06767575100",
+    "score": 915,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "11805,06",
+    "timestamp": "2026-06-10 21:54:45"
+  },
+  {
+    "nome": "CLAUDIO ROBERTO ROSSETTO",
+    "cpf": "04954719844",
+    "score": 977,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1904,53",
+    "timestamp": "2026-06-10 21:54:47"
+  },
+  {
+    "nome": "SILVIO JUNIOR SCHNEIDER",
+    "cpf": "89092201049",
+    "score": 952,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "6290,14",
+    "timestamp": "2026-06-10 21:54:49"
+  },
+  {
+    "nome": "FATIMA TERESINHA ZUCCO BERGAMIN",
+    "cpf": "93594100049",
+    "score": 939,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1705,62",
+    "timestamp": "2026-06-10 21:54:51"
+  },
+  {
+    "nome": "VALDEMAR GUISSO",
+    "cpf": "52799891934",
+    "score": 957,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "SEM INFORMAÇÃO",
+    "timestamp": "2026-06-10 21:54:53"
+  },
+  {
+    "nome": "NIVALDO APARECIDO GERALDI",
+    "cpf": "11992583854",
+    "score": 965,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "5712,34",
+    "timestamp": "2026-06-10 21:54:55"
+  },
+  {
+    "nome": "ALEXANDRE MOREIRA VIEIRA",
+    "cpf": "05847126930",
+    "score": 929,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "3114,59",
+    "timestamp": "2026-06-10 21:54:57"
+  },
+  {
+    "nome": "CARLA ALETTO DELL ANTONIA",
+    "cpf": "24780813859",
+    "score": 972,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1619,21",
+    "timestamp": "2026-06-10 21:54:59"
+  },
+  {
+    "nome": "MAURICIO PEREIRA LOPES",
+    "cpf": "67444261687",
+    "score": 906,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "5312,23",
+    "timestamp": "2026-06-10 21:55:01"
+  },
+  {
+    "nome": "VILMAR JOSE CORADINI",
+    "cpf": "27092593034",
+    "score": 979,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "5758,79",
+    "timestamp": "2026-06-10 21:55:03"
+  },
+  {
+    "nome": "LURDES VIEIRA RITTER",
+    "cpf": "50186965915",
+    "score": 961,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "614,99",
+    "timestamp": "2026-06-10 21:55:05"
+  },
+  {
+    "nome": "BESIA DOS PASSOS CORREA DE MIRANDA",
+    "cpf": "37503379855",
+    "score": 912,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "776,94",
+    "timestamp": "2026-06-10 21:55:07"
+  },
+  {
+    "nome": "MAKELY SILVA MARTINS",
+    "cpf": "89111915668",
+    "score": 956,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "14034,95",
+    "timestamp": "2026-06-10 21:55:09"
+  },
+  {
+    "nome": "GALINA SHEETIKOFF",
+    "cpf": "06397102807",
+    "score": 965,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2513,88",
+    "timestamp": "2026-06-10 21:55:11"
+  },
+  {
+    "nome": "WESLEY DE ASSIS CARVALHO",
+    "cpf": "47989407809",
+    "score": 919,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "739,94",
+    "timestamp": "2026-06-10 21:55:13"
+  },
+  {
+    "nome": "TIAGO BAGATTINI DE AZEVEDO",
+    "cpf": "32598941870",
+    "score": 905,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "6103,74",
+    "timestamp": "2026-06-10 21:55:15"
+  },
+  {
+    "nome": "JOAQUIM JOSE MARIANO",
+    "cpf": "08493843890",
+    "score": 984,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "7125,47",
+    "timestamp": "2026-06-10 21:55:17"
+  },
+  {
+    "nome": "NEUSA APARECIDA VIEIRA FELET",
+    "cpf": "17170020807",
+    "score": 988,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "5131,54",
+    "timestamp": "2026-06-10 21:55:19"
+  },
+  {
+    "nome": "ARACELI MARTINS",
+    "cpf": "61084026872",
+    "score": 988,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "6244,88",
+    "timestamp": "2026-06-10 21:55:21"
+  },
+  {
+    "nome": "FERNANDES BENJAMIM PINHEIRO",
+    "cpf": "21465223304",
+    "score": 945,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1081,52",
+    "timestamp": "2026-06-10 21:55:23"
+  },
+  {
+    "nome": "ROSEMARY DE FATIMA SILVA",
+    "cpf": "11391470800",
+    "score": 966,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "13694,55",
+    "timestamp": "2026-06-10 21:55:25"
+  },
+  {
+    "nome": "HENRIQUE GOULART DE SOUSA WU",
+    "cpf": "07187160607",
+    "score": 957,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2623,74",
+    "timestamp": "2026-06-10 21:55:27"
+  },
+  {
+    "nome": "CINTIA SANTANA DE SOUZA",
+    "cpf": "01206924659",
+    "score": 919,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1921,67",
+    "timestamp": "2026-06-10 21:55:29"
+  },
+  {
+    "nome": "JOSENITA DA SILVA MOTA",
+    "cpf": "29188016587",
+    "score": 955,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "SEM INFORMAÇÃO",
+    "timestamp": "2026-06-10 21:55:31"
+  },
+  {
+    "nome": "DIOVANE NUNES SCHULZ",
+    "cpf": "57740380091",
+    "score": 926,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "5394,69",
+    "timestamp": "2026-06-10 21:55:33"
+  },
+  {
+    "nome": "GILVANEIDE MARIA DOS SANTOS",
+    "cpf": "42102073572",
+    "score": 962,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1753,77",
+    "timestamp": "2026-06-10 21:55:35"
+  },
+  {
+    "nome": "GABRIEL CARVALHO ANDRADE GADELHA",
+    "cpf": "70502767405",
+    "score": 964,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1188,12",
+    "timestamp": "2026-06-10 21:55:37"
+  },
+  {
+    "nome": "SABRINA RODRIGUES SOBOTA COSTA",
+    "cpf": "37069181884",
+    "score": 914,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2576,31",
+    "timestamp": "2026-06-10 21:55:39"
+  },
+  {
+    "nome": "SEBASTIAN MARCELO GADEA",
+    "cpf": "23417191807",
+    "score": 905,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2922,93",
+    "timestamp": "2026-06-10 21:55:41"
+  },
+  {
+    "nome": "CAROLINE MONTALVAO ARAUJO",
+    "cpf": "33469629897",
+    "score": 903,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2320,08",
+    "timestamp": "2026-06-10 21:55:43"
+  },
+  {
+    "nome": "IZILDO DONIZETE PEREIRA LEAL",
+    "cpf": "00274051842",
+    "score": 953,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2243,21",
+    "timestamp": "2026-06-10 21:55:45"
+  },
+  {
+    "nome": "BRUNO DE ALMEIDA CARDOSO",
+    "cpf": "35822896804",
+    "score": 960,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2724,71",
+    "timestamp": "2026-06-10 21:55:47"
+  },
+  {
+    "nome": "GUILHERME ERUSTES LAS CASAS BRITTO",
+    "cpf": "38593479855",
+    "score": 951,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "6529,09",
+    "timestamp": "2026-06-10 21:55:49"
+  },
+  {
+    "nome": "GEORGE ALVES DE ASSIS",
+    "cpf": "57694575549",
+    "score": 922,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2423,23",
+    "timestamp": "2026-06-10 21:55:51"
+  },
+  {
+    "nome": "ZILMA PAIVA DOS REIS",
+    "cpf": "03802165829",
+    "score": 910,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2312,01",
+    "timestamp": "2026-06-10 21:55:53"
+  },
+  {
+    "nome": "CIBELE ROSA GARCIA",
+    "cpf": "37918888898",
+    "score": 954,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "4309,21",
+    "timestamp": "2026-06-10 21:55:55"
+  },
+  {
+    "nome": "MANUEL VIEIRA RIBEIRO",
+    "cpf": "33515654704",
+    "score": 979,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "5225,22",
+    "timestamp": "2026-06-10 21:55:57"
+  },
+  {
+    "nome": "FELIPE CID PAZ",
+    "cpf": "32975698836",
+    "score": 934,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "SEM INFORMAÇÃO",
+    "timestamp": "2026-06-10 21:55:59"
+  },
+  {
+    "nome": "ELENICE NADVORNY NASCIMENTO",
+    "cpf": "63016796953",
+    "score": 1000,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "3388,18",
+    "timestamp": "2026-06-10 21:56:01"
+  },
+  {
+    "nome": "ARNALDO NEUMAN SANT ANNA",
+    "cpf": "15752500044",
+    "score": 931,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "10603,75",
+    "timestamp": "2026-06-10 21:56:03"
+  },
+  {
+    "nome": "JOAO PAULO MARTINS OLINTO",
+    "cpf": "03765728411",
+    "score": 955,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "4322,50",
+    "timestamp": "2026-06-10 21:56:05"
+  },
+  {
+    "nome": "CAROLINE FIORAVANTTI RODRIGUES",
+    "cpf": "86134833134",
+    "score": 964,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2835,74",
+    "timestamp": "2026-06-10 21:56:07"
+  },
+  {
+    "nome": "MICHELE IONAK NASCIMENTO",
+    "cpf": "06355256903",
+    "score": 939,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "3134,82",
+    "timestamp": "2026-06-10 21:56:09"
+  },
+  {
+    "nome": "HAMILTON FRANCA",
+    "cpf": "01146017634",
+    "score": 976,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "SEM INFORMAÇÃO",
+    "timestamp": "2026-06-10 21:56:11"
+  },
+  {
+    "nome": "TERESA CHRISTINA CARNEIRO CORREIA",
+    "cpf": "02292971291",
+    "score": 908,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "11990,84",
+    "timestamp": "2026-06-10 21:56:13"
+  },
+  {
+    "nome": "AIRTON JOSE FORMIGHIERI",
+    "cpf": "59209151968",
+    "score": 942,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2005,78",
+    "timestamp": "2026-06-10 21:56:15"
+  },
+  {
+    "nome": "ALBERTO HENRIQUES ALVES",
+    "cpf": "11641519754",
+    "score": 950,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "SEM INFORMAÇÃO",
+    "timestamp": "2026-06-10 21:56:17"
+  },
+  {
+    "nome": "MATHEUS ROMEIRO",
+    "cpf": "10093498721",
+    "score": 973,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "19649,35",
+    "timestamp": "2026-06-10 21:56:19"
+  },
+  {
+    "nome": "FERNANDO ZANON DA SILVA",
+    "cpf": "83564250000",
+    "score": 960,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "SEM INFORMAÇÃO",
+    "timestamp": "2026-06-10 21:56:21"
+  },
+  {
+    "nome": "GUILHERME SILVEIRA PEREIRA",
+    "cpf": "01188767089",
+    "score": 952,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "17005,43",
+    "timestamp": "2026-06-10 21:56:23"
+  },
+  {
+    "nome": "VIVIAN CRISTINA SILVA ROCHA",
+    "cpf": "30917596870",
+    "score": 955,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "4348,70",
+    "timestamp": "2026-06-10 21:56:25"
+  },
+  {
+    "nome": "NEIDYI BOLOGNESI SACCA",
+    "cpf": "02281902820",
+    "score": 981,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "6327,36",
+    "timestamp": "2026-06-10 21:56:27"
+  },
+  {
+    "nome": "LUCAS GOMES GONCALVES",
+    "cpf": "05550746921",
+    "score": 906,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "6505,10",
+    "timestamp": "2026-06-10 21:56:29"
+  },
+  {
+    "nome": "PAMELA ALVES BATISTA",
+    "cpf": "22159183814",
+    "score": 985,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "4086,07",
+    "timestamp": "2026-06-10 21:56:31"
+  },
+  {
+    "nome": "ROSELINE MARIA RATTACASO CAMPOS",
+    "cpf": "03920048440",
+    "score": 964,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "4789,18",
+    "timestamp": "2026-06-10 21:56:33"
+  },
+  {
+    "nome": "SAMARINA DE ARAUJO FRAGOSO",
+    "cpf": "63085917268",
+    "score": 904,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "5373,90",
+    "timestamp": "2026-06-10 21:56:35"
+  },
+  {
+    "nome": "RAFAEL PARLATORE MEDICI",
+    "cpf": "34367121836",
+    "score": 964,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "3763,67",
+    "timestamp": "2026-06-10 21:56:37"
+  },
+  {
+    "nome": "ANA CARLA BORGES MADRID",
+    "cpf": "99160374187",
+    "score": 955,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "5933,32",
+    "timestamp": "2026-06-10 21:56:39"
+  },
+  {
+    "nome": "OSCAR LARS RUNE JAERN",
+    "cpf": "23266301811",
+    "score": 993,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "3071,31",
+    "timestamp": "2026-06-10 21:56:41"
+  },
+  {
+    "nome": "IDELCINO XARAO RODRIGUES",
+    "cpf": "30685257053",
+    "score": 907,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "4730,10",
+    "timestamp": "2026-06-10 21:56:43"
+  },
+  {
+    "nome": "WALDIR ROBERTO RAMOS",
+    "cpf": "44219547991",
+    "score": 953,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "7816,90",
+    "timestamp": "2026-06-10 21:56:45"
+  },
+  {
+    "nome": "RUBENS ALVES DE MEDEIROS",
+    "cpf": "64959465972",
+    "score": 967,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "8192,03",
+    "timestamp": "2026-06-10 21:56:47"
+  },
+  {
+    "nome": "KARINA MARILYN BICHARA BOESCHENSTEIN FERREIRA",
+    "cpf": "03046829779",
+    "score": 960,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "4909,15",
+    "timestamp": "2026-06-10 21:56:49"
+  },
+  {
+    "nome": "LUCIANA DIAS MAY",
+    "cpf": "69228086904",
+    "score": 935,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "3057,65",
+    "timestamp": "2026-06-10 21:56:51"
+  },
+  {
+    "nome": "NEILA APARECIDA CAVASSA RAMOS",
+    "cpf": "06579524863",
+    "score": 983,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "5931,50",
+    "timestamp": "2026-06-10 21:56:53"
+  },
+  {
+    "nome": "EDSON FERREIRA COLLACO",
+    "cpf": "06320787821",
+    "score": 1000,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "9889,45",
+    "timestamp": "2026-06-10 21:56:55"
+  },
+  {
+    "nome": "PEDRINHO TRENTIN",
+    "cpf": "50330977920",
+    "score": 1000,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2029,86",
+    "timestamp": "2026-06-10 21:56:57"
+  },
+  {
+    "nome": "VANILO JOSE VITORASSI",
+    "cpf": "30282314920",
+    "score": 991,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "32024,01",
+    "timestamp": "2026-06-10 21:56:59"
+  },
+  {
+    "nome": "REGIANE CRISTINA BURJATO",
+    "cpf": "18331187822",
+    "score": 959,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "SEM INFORMAÇÃO",
+    "timestamp": "2026-06-10 21:57:01"
+  },
+  {
+    "nome": "ROBERTO KIST",
+    "cpf": "62544136049",
+    "score": 973,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2579,52",
+    "timestamp": "2026-06-10 21:57:03"
+  },
+  {
+    "nome": "CLESCIO CESAR GALVAO",
+    "cpf": "50332562620",
+    "score": 927,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "5965,39",
+    "timestamp": "2026-06-10 21:57:05"
+  },
+  {
+    "nome": "DAVILDO DO AMARAL NETO",
+    "cpf": "10367325845",
+    "score": 954,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "23027,25",
+    "timestamp": "2026-06-10 21:57:07"
+  },
+  {
+    "nome": "ELIANA ALMEIDA DO NASCIMENTO",
+    "cpf": "77817354715",
+    "score": 990,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "11018,69",
+    "timestamp": "2026-06-10 21:57:09"
+  },
+  {
+    "nome": "ANDRESSA DE MELLO PERONDI MULLER",
+    "cpf": "04887117973",
+    "score": 900,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "6539,12",
+    "timestamp": "2026-06-10 21:57:11"
+  },
+  {
+    "nome": "NIVALDO GOUVEA",
+    "cpf": "97069477872",
+    "score": 941,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "4682,21",
+    "timestamp": "2026-06-10 21:57:13"
+  },
+  {
+    "nome": "MARIA AUGUSTA TEIXEIRA",
+    "cpf": "19644922115",
+    "score": 932,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1449,87",
+    "timestamp": "2026-06-10 21:57:15"
+  },
+  {
+    "nome": "ELZA MARIA MESADRI",
+    "cpf": "66980550934",
+    "score": 918,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1989,78",
+    "timestamp": "2026-06-10 21:57:17"
+  },
+  {
+    "nome": "NUBIA REGINA FREITAS PINHEIRO",
+    "cpf": "21425213553",
+    "score": 924,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "32132,62",
+    "timestamp": "2026-06-10 21:57:19"
+  },
+  {
+    "nome": "ANA CARLA DIAS BANDEIRA DE MELO",
+    "cpf": "47718013472",
+    "score": 912,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "3245,56",
+    "timestamp": "2026-06-10 21:57:21"
+  },
+  {
+    "nome": "FERNANDO GUERRA DE FARIA",
+    "cpf": "05397913693",
+    "score": 964,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "4977,81",
+    "timestamp": "2026-06-10 21:57:23"
+  },
+  {
+    "nome": "LEDI KAUFFMANN PAPALEO",
+    "cpf": "53942841053",
+    "score": 925,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "10903,04",
+    "timestamp": "2026-06-10 21:57:25"
+  },
+  {
+    "nome": "THAIS VIEIRA PEREIRA",
+    "cpf": "41784059854",
+    "score": 936,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1364,37",
+    "timestamp": "2026-06-10 21:57:27"
+  },
+  {
+    "nome": "MICHEL CARLET DE LIMA",
+    "cpf": "04451373980",
+    "score": 968,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2911,54",
+    "timestamp": "2026-06-10 21:57:29"
+  },
+  {
+    "nome": "GLAUCO DE ALMEIDA FONSECA",
+    "cpf": "19749198468",
+    "score": 975,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1694,17",
+    "timestamp": "2026-06-10 21:57:31"
+  },
+  {
+    "nome": "ERLI APARECIDA RODRIGUES MORELLATO",
+    "cpf": "04393166850",
+    "score": 1000,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "7013,02",
+    "timestamp": "2026-06-10 21:57:33"
+  },
+  {
+    "nome": "CLEITON MIGUEL FURLAN",
+    "cpf": "21858331897",
+    "score": 912,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "4071,60",
+    "timestamp": "2026-06-10 21:57:35"
+  },
+  {
+    "nome": "LOURIVAL ANTONIO DA ROSA",
+    "cpf": "29409020972",
+    "score": 975,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "3092,20",
+    "timestamp": "2026-06-10 21:57:37"
+  },
+  {
+    "nome": "GILSON ANTONIO RECH",
+    "cpf": "59685638934",
+    "score": 935,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "7499,60",
+    "timestamp": "2026-06-10 21:57:39"
+  },
+  {
+    "nome": "JAMIL ABDELRAZZAK ABDALA ABO ABDO",
+    "cpf": "37365193034",
+    "score": 907,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "6875,58",
+    "timestamp": "2026-06-10 21:57:41"
+  },
+  {
+    "nome": "ANTONIO RICARDO MATANA SIQUEIRA",
+    "cpf": "04888504016",
+    "score": 910,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1140,36",
+    "timestamp": "2026-06-10 21:57:43"
+  },
+  {
+    "nome": "WARLEN SOARES BRANDAO",
+    "cpf": "98396307172",
+    "score": 954,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "7487,15",
+    "timestamp": "2026-06-10 21:57:45"
+  },
+  {
+    "nome": "LOURDES GREMASCHI SENA",
+    "cpf": "46830707900",
+    "score": 992,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "7229,63",
+    "timestamp": "2026-06-10 21:57:47"
+  },
+  {
+    "nome": "FELICIANO GABIM",
+    "cpf": "19146876049",
+    "score": 992,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "4903,78",
+    "timestamp": "2026-06-10 21:57:49"
+  },
+  {
+    "nome": "MARIA CRISTINA LIMA DE MELO",
+    "cpf": "21717687890",
+    "score": 975,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "7981,74",
+    "timestamp": "2026-06-10 21:57:51"
+  },
+  {
+    "nome": "LEANDRO AMORIM ALVES",
+    "cpf": "09007501704",
+    "score": 948,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "6128,93",
+    "timestamp": "2026-06-10 21:57:53"
+  },
+  {
+    "nome": "AGENOR PEREIRA DA SILVA",
+    "cpf": "70565660810",
+    "score": 989,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "6015,70",
+    "timestamp": "2026-06-10 21:57:55"
+  },
+  {
+    "nome": "LIGIA CRISTINA SABATINI",
+    "cpf": "03297587997",
+    "score": 950,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1645,27",
+    "timestamp": "2026-06-10 21:57:57"
+  },
+  {
+    "nome": "MARIA DA PAZ GONCALVES FERNANDES",
+    "cpf": "34642706704",
+    "score": 909,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2349,74",
+    "timestamp": "2026-06-10 21:57:59"
+  },
+  {
+    "nome": "JAIME ANTONIO BROCCO",
+    "cpf": "41368215068",
+    "score": 950,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "3242,30",
+    "timestamp": "2026-06-10 21:58:01"
+  },
+  {
+    "nome": "RICARDO ALEXANDRE MANSUR PIMENTEL",
+    "cpf": "06462441674",
+    "score": 976,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "SEM INFORMAÇÃO",
+    "timestamp": "2026-06-10 21:58:03"
+  },
+  {
+    "nome": "ALEXANDRE DOMARESKA",
+    "cpf": "58884645972",
+    "score": 949,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1723,49",
+    "timestamp": "2026-06-10 21:58:05"
+  },
+  {
+    "nome": "MANOELINA RAMOS DE ALBUQUERQUE ROCHA",
+    "cpf": "80355161400",
+    "score": 951,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "20224,02",
+    "timestamp": "2026-06-10 21:58:07"
+  },
+  {
+    "nome": "CAROLINA DANGELO CORREA CAMARGO",
+    "cpf": "28260318806",
+    "score": 967,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "3456,05",
+    "timestamp": "2026-06-10 21:58:09"
+  },
+  {
+    "nome": "JAMIL ABDO",
+    "cpf": "06688993872",
+    "score": 906,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "SEM INFORMAÇÃO",
+    "timestamp": "2026-06-10 21:58:11"
+  },
+  {
+    "nome": "ANTONIO BOURSCHEIDT",
+    "cpf": "35927615015",
+    "score": 916,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2004,13",
+    "timestamp": "2026-06-10 21:58:13"
+  },
+  {
+    "nome": "ANTONIO MENDES CASTILHO",
+    "cpf": "01557802807",
+    "score": 980,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "21435,95",
+    "timestamp": "2026-06-10 21:58:15"
+  },
+  {
+    "nome": "MARIA TODESCO",
+    "cpf": "13158282860",
+    "score": 932,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2370,37",
+    "timestamp": "2026-06-10 21:58:17"
+  },
+  {
+    "nome": "KATIUSCIA RAIKA BRANDT BIHRINGER",
+    "cpf": "00820090905",
+    "score": 945,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "5332,31",
+    "timestamp": "2026-06-10 21:58:19"
+  },
+  {
+    "nome": "LAURO DE ABREU NABO",
+    "cpf": "32276893915",
+    "score": 955,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "23038,08",
+    "timestamp": "2026-06-10 21:58:21"
+  },
+  {
+    "nome": "WELLINGTON ANTONIO BARBOSA",
+    "cpf": "04476567401",
+    "score": 931,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1485,43",
+    "timestamp": "2026-06-10 21:58:23"
+  },
+  {
+    "nome": "GUSTAVO SANTIAGO MARCONDES DE MENEZES SOARES",
+    "cpf": "29278558893",
+    "score": 970,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "3402,56",
+    "timestamp": "2026-06-10 21:58:25"
+  },
+  {
+    "nome": "DIEGO ALMIRO LIMBERGER",
+    "cpf": "05206674923",
+    "score": 915,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "3714,67",
+    "timestamp": "2026-06-10 21:58:27"
+  },
+  {
+    "nome": "ANTONIO ALVES SIQUEIRA",
+    "cpf": "42310784915",
+    "score": 948,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1518,60",
+    "timestamp": "2026-06-10 21:58:29"
+  },
+  {
+    "nome": "LEONEL CORREA RODRIGUES",
+    "cpf": "78680611700",
+    "score": 971,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1847,66",
+    "timestamp": "2026-06-10 21:58:31"
+  },
+  {
+    "nome": "DIONIZIO PRESTES",
+    "cpf": "09388893972",
+    "score": 961,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2451,58",
+    "timestamp": "2026-06-10 21:58:33"
+  },
+  {
+    "nome": "SAMILLE NOVAIS PADRAO ROMANO",
+    "cpf": "34281898840",
+    "score": 904,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2038,47",
+    "timestamp": "2026-06-10 21:58:35"
+  },
+  {
+    "nome": "JULIANA PONTES MILUZZI ARISMENDES",
+    "cpf": "26859453850",
+    "score": 943,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "3203,78",
+    "timestamp": "2026-06-10 21:58:37"
+  },
+  {
+    "nome": "CLAITON JOSE DE OLIVEIRA",
+    "cpf": "78684196953",
+    "score": 905,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "4622,33",
+    "timestamp": "2026-06-10 21:58:39"
+  },
+  {
+    "nome": "CARLOS CARBONARA",
+    "cpf": "68560834915",
+    "score": 959,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1825,15",
+    "timestamp": "2026-06-10 21:58:41"
+  },
+  {
+    "nome": "LIDIANE NUNES ESTELA",
+    "cpf": "81361866004",
+    "score": 910,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1691,31",
+    "timestamp": "2026-06-10 21:58:43"
+  },
+  {
+    "nome": "JOSE ALBERTO SACHETTI",
+    "cpf": "79601219900",
+    "score": 965,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "3799,69",
+    "timestamp": "2026-06-10 21:58:45"
+  },
+  {
+    "nome": "EDUARDO SILVEIRA NEIVA",
+    "cpf": "30707511801",
+    "score": 909,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "15029,42",
+    "timestamp": "2026-06-10 21:58:47"
+  },
+  {
+    "nome": "DINIZ ALVES DE OLIVEIRA",
+    "cpf": "55314988704",
+    "score": 962,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "22352,33",
+    "timestamp": "2026-06-10 21:58:49"
+  },
+  {
+    "nome": "JOAO DITADI",
+    "cpf": "27791076004",
+    "score": 956,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1858,57",
+    "timestamp": "2026-06-10 21:58:51"
+  },
+  {
+    "nome": "RENATO DE OLIVEIRA ABREU",
+    "cpf": "00032777558",
+    "score": 932,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "4754,90",
+    "timestamp": "2026-06-10 21:58:53"
+  },
+  {
+    "nome": "ADELINO LUIZ DA SILVA",
+    "cpf": "36009423015",
+    "score": 943,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "6719,49",
+    "timestamp": "2026-06-10 21:58:55"
+  },
+  {
+    "nome": "LUIZ FERRABOLI",
+    "cpf": "03247139915",
+    "score": 997,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2082,47",
+    "timestamp": "2026-06-10 21:58:57"
+  },
+  {
+    "nome": "RENATO ROSSI DE DEO",
+    "cpf": "17911127816",
+    "score": 915,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "41874,81",
+    "timestamp": "2026-06-10 21:58:59"
+  },
+  {
+    "nome": "ANNA CLAUDIA MOMBRINI SILVA BARBOSA",
+    "cpf": "05531168780",
+    "score": 965,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2322,55",
+    "timestamp": "2026-06-10 21:59:01"
+  },
+  {
+    "nome": "RENE TEIXEIRA SOARES",
+    "cpf": "10050973053",
+    "score": 924,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1959,30",
+    "timestamp": "2026-06-10 21:59:03"
+  },
+  {
+    "nome": "MARIA LUIZA RECK DA ROSA",
+    "cpf": "00028963032",
+    "score": 952,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "891,06",
+    "timestamp": "2026-06-10 21:59:05"
+  },
+  {
+    "nome": "DAVID MAGALHAES DE AZEVEDO",
+    "cpf": "78795893415",
+    "score": 945,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "22239,24",
+    "timestamp": "2026-06-10 21:59:07"
+  },
+  {
+    "nome": "MARIA CRISTINA MOSCATELLI PERUSSO",
+    "cpf": "04530133842",
+    "score": 985,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "5419,87",
+    "timestamp": "2026-06-10 21:59:09"
+  },
+  {
+    "nome": "RAIMUNDO PINTO DE SOUSA",
+    "cpf": "47861185834",
+    "score": 953,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "3115,93",
+    "timestamp": "2026-06-10 21:59:11"
+  },
+  {
+    "nome": "JOSE KLEIN JUDA",
+    "cpf": "19213379072",
+    "score": 954,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2987,36",
+    "timestamp": "2026-06-10 21:59:13"
+  },
+  {
+    "nome": "PEDRO MIGUEL MUZETI",
+    "cpf": "38836253881",
+    "score": 903,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "5294,15",
+    "timestamp": "2026-06-10 21:59:15"
+  },
+  {
+    "nome": "FERNANDA NERI SOUZA TORRIZELLA",
+    "cpf": "26121937823",
+    "score": 938,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "5866,03",
+    "timestamp": "2026-06-10 21:59:17"
+  },
+  {
+    "nome": "REINALDO BUENO DE OLIVEIRA",
+    "cpf": "01503061809",
+    "score": 946,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "SEM INFORMAÇÃO",
+    "timestamp": "2026-06-10 21:59:19"
+  },
+  {
+    "nome": "VILSON PECCIN",
+    "cpf": "16292782034",
+    "score": 907,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1730,36",
+    "timestamp": "2026-06-10 21:59:21"
+  },
+  {
+    "nome": "CAROLINA DE ANDRADE VALADARES",
+    "cpf": "35406498835",
+    "score": 968,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1647,19",
+    "timestamp": "2026-06-10 21:59:23"
+  },
+  {
+    "nome": "ANTONIO DE OLIVEIRA MENEZES JUNIOR",
+    "cpf": "38965291100",
+    "score": 936,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "22594,80",
+    "timestamp": "2026-06-10 21:59:25"
+  },
+  {
+    "nome": "AROLDO DE ARAUJO",
+    "cpf": "28745906904",
+    "score": 998,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "5549,46",
+    "timestamp": "2026-06-10 21:59:27"
+  },
+  {
+    "nome": "DANIELA JACKSON CARAPIA LADEIA SENA",
+    "cpf": "78430658572",
+    "score": 939,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "16510,15",
+    "timestamp": "2026-06-10 21:59:29"
+  },
+  {
+    "nome": "MURIEL BARBOSA OLIVEIRA",
+    "cpf": "02763772145",
+    "score": 961,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1390,08",
+    "timestamp": "2026-06-10 21:59:31"
+  },
+  {
+    "nome": "NELSON APARECIDO FORTES",
+    "cpf": "11072203863",
+    "score": 933,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "7922,12",
+    "timestamp": "2026-06-10 21:59:33"
+  },
+  {
+    "nome": "MOACIR DAL MAGRO",
+    "cpf": "47719265904",
+    "score": 960,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "6493,70",
+    "timestamp": "2026-06-10 21:59:35"
+  },
+  {
+    "nome": "TIAGO DE SOUZA NASCIMENTO",
+    "cpf": "09296088445",
+    "score": 960,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1601,09",
+    "timestamp": "2026-06-10 21:59:37"
+  },
+  {
+    "nome": "CAMILA CAVALCANTE DE OLIVEIRA",
+    "cpf": "00421051370",
+    "score": 902,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1758,52",
+    "timestamp": "2026-06-10 21:59:39"
+  },
+  {
+    "nome": "JOSE TRENTO",
+    "cpf": "54582016987",
+    "score": 927,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2353,30",
+    "timestamp": "2026-06-10 21:59:41"
+  },
+  {
+    "nome": "NERZI GONCALVES DA SILVA",
+    "cpf": "45264066000",
+    "score": 943,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2981,12",
+    "timestamp": "2026-06-10 21:59:43"
+  },
+  {
+    "nome": "ERIKA CAMARGO VEGNERS",
+    "cpf": "26962319827",
+    "score": 954,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2118,24",
+    "timestamp": "2026-06-10 21:59:45"
+  },
+  {
+    "nome": "KELIANE DIAS DA SILVA",
+    "cpf": "01735354023",
+    "score": 918,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1184,96",
+    "timestamp": "2026-06-10 21:59:47"
+  },
+  {
+    "nome": "JOAO HENRIQUE DE BITENCOURT MONTEIRO",
+    "cpf": "85042293000",
+    "score": 957,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "628,95",
+    "timestamp": "2026-06-10 21:59:49"
+  },
+  {
+    "nome": "MARINA DEPERON ISNARD",
+    "cpf": "43338868804",
+    "score": 956,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1387,86",
+    "timestamp": "2026-06-10 21:59:51"
+  },
+  {
+    "nome": "ERIKA CAMARGO ALCANTARA",
+    "cpf": "21577703804",
+    "score": 974,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "7841,70",
+    "timestamp": "2026-06-10 21:59:53"
+  },
+  {
+    "nome": "DJALMA COSTA",
+    "cpf": "16885976890",
+    "score": 977,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2778,91",
+    "timestamp": "2026-06-10 21:59:55"
+  },
+  {
+    "nome": "ANDRE ANTONIO DE CESARO",
+    "cpf": "72804300072",
+    "score": 951,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "16081,11",
+    "timestamp": "2026-06-10 21:59:57"
+  },
+  {
+    "nome": "JOAO MANJABOSCO",
+    "cpf": "05833515068",
+    "score": 994,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "SEM INFORMAÇÃO",
+    "timestamp": "2026-06-10 21:59:59"
+  },
+  {
+    "nome": "CLAUDIA VALENTIN SOLA",
+    "cpf": "11868156800",
+    "score": 915,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "6700,39",
+    "timestamp": "2026-06-10 22:00:01"
+  },
+  {
+    "nome": "DAYANE GUIMARAES",
+    "cpf": "03017503607",
+    "score": 956,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2706,15",
+    "timestamp": "2026-06-10 22:00:03"
+  },
+  {
+    "nome": "LI QINGMEI",
+    "cpf": "12754002723",
+    "score": 900,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "3194,53",
+    "timestamp": "2026-06-10 22:00:05"
+  },
+  {
+    "nome": "ANDRE GONCALVES GARCIA",
+    "cpf": "38670488434",
+    "score": 915,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "21161,80",
+    "timestamp": "2026-06-10 22:00:07"
+  },
+  {
+    "nome": "ANDERSON APARECIDO DE OLIVEIRA",
+    "cpf": "06485850694",
+    "score": 974,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "3331,95",
+    "timestamp": "2026-06-10 22:00:09"
+  },
+  {
+    "nome": "ELLERY MARQUES RODRIGUES JUNIOR",
+    "cpf": "00967850630",
+    "score": 965,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "5270,76",
+    "timestamp": "2026-06-10 22:00:11"
+  },
+  {
+    "nome": "LAISA APARECIDA RIBEIRO ANTONIO",
+    "cpf": "09174653695",
+    "score": 955,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1912,73",
+    "timestamp": "2026-06-10 22:00:13"
+  },
+  {
+    "nome": "ELENIR DA COSTA ROHDE",
+    "cpf": "58131337049",
+    "score": 918,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1916,63",
+    "timestamp": "2026-06-10 22:00:15"
+  },
+  {
+    "nome": "FABIANO DE OLIVEIRA LEMOS",
+    "cpf": "28803049894",
+    "score": 942,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1250,95",
+    "timestamp": "2026-06-10 22:00:17"
+  },
+  {
+    "nome": "LEONOR ARCILA CARDINALI REBOUCAS",
+    "cpf": "47128828753",
+    "score": 974,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2919,15",
+    "timestamp": "2026-06-10 22:00:19"
+  },
+  {
+    "nome": "JORGE LUIZ RODRIGUES",
+    "cpf": "71836063172",
+    "score": 953,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2997,44",
+    "timestamp": "2026-06-10 22:00:21"
+  },
+  {
+    "nome": "OSMAN LUCENA FELIX DE OLIVEIRA JUNIOR",
+    "cpf": "06053967440",
+    "score": 966,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "10859,12",
+    "timestamp": "2026-06-10 22:00:23"
+  },
+  {
+    "nome": "MARCIO APARECIDO MOY",
+    "cpf": "14116310808",
+    "score": 959,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "4561,92",
+    "timestamp": "2026-06-10 22:00:25"
+  },
+  {
+    "nome": "MARIZA FERNANDES CAVALLI",
+    "cpf": "40837050006",
+    "score": 979,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1717,10",
+    "timestamp": "2026-06-10 22:00:27"
+  },
+  {
+    "nome": "DIRCEU RIKER FRANCO",
+    "cpf": "57405590225",
+    "score": 958,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "6786,36",
+    "timestamp": "2026-06-10 22:00:29"
+  },
+  {
+    "nome": "NEDI LUIZA ROSSI BORGES",
+    "cpf": "43342736020",
+    "score": 962,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2294,86",
+    "timestamp": "2026-06-10 22:00:31"
+  },
+  {
+    "nome": "MAURICIO FERNANDES DE OLIVEIRA JUNIOR",
+    "cpf": "36786521827",
+    "score": 911,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2702,33",
+    "timestamp": "2026-06-10 22:00:33"
+  },
+  {
+    "nome": "DIONE BRITO PERESTRELO",
+    "cpf": "01008576123",
+    "score": 928,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "5917,44",
+    "timestamp": "2026-06-10 22:00:35"
+  },
+  {
+    "nome": "LOURDES BORGES DA SILVA",
+    "cpf": "55276202087",
+    "score": 912,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "SEM INFORMAÇÃO",
+    "timestamp": "2026-06-10 22:00:37"
+  },
+  {
+    "nome": "CANDIDA RAQUEL SCHERRER MONTERO",
+    "cpf": "92309640000",
+    "score": 929,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "16421,51",
+    "timestamp": "2026-06-10 22:00:39"
+  },
+  {
+    "nome": "CLOVIS RIAMBAU KROB",
+    "cpf": "24270806087",
+    "score": 949,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1861,78",
+    "timestamp": "2026-06-10 22:00:41"
+  },
+  {
+    "nome": "JOSE TORQUATO FERREIRA",
+    "cpf": "08535671153",
+    "score": 947,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "3652,80",
+    "timestamp": "2026-06-10 22:00:43"
+  },
+  {
+    "nome": "ANA PAULA GUIMARAES STEVENSON DE OLIVEIRA",
+    "cpf": "75875438720",
+    "score": 965,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2582,07",
+    "timestamp": "2026-06-10 22:00:45"
+  },
+  {
+    "nome": "UZILIA BRESSAN MOTERLE",
+    "cpf": "66788420068",
+    "score": 905,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1615,58",
+    "timestamp": "2026-06-10 22:00:47"
+  },
+  {
+    "nome": "MARIA HELENA OLIVEIRA RODRIGUES",
+    "cpf": "15287939191",
+    "score": 952,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "11663,62",
+    "timestamp": "2026-06-10 22:00:49"
+  },
+  {
+    "nome": "ERICK ROBERTO PADILHA DE MATOS",
+    "cpf": "31298396824",
+    "score": 901,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "3467,34",
+    "timestamp": "2026-06-10 22:00:51"
+  },
+  {
+    "nome": "JAMIR ANTONIO BECKER",
+    "cpf": "84866926953",
+    "score": 922,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2079,17",
+    "timestamp": "2026-06-10 22:00:53"
+  },
+  {
+    "nome": "TIDINHA DA SILVA",
+    "cpf": "10029656087",
+    "score": 922,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1719,49",
+    "timestamp": "2026-06-10 22:00:55"
+  },
+  {
+    "nome": "RODRIGO JERONIMO DOS SANTOS",
+    "cpf": "33729134850",
+    "score": 973,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "SEM INFORMAÇÃO",
+    "timestamp": "2026-06-10 22:00:57"
+  },
+  {
+    "nome": "GUARACIARA DAS GRACAS DAMASCENO CHAVES",
+    "cpf": "33771600006",
+    "score": 950,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "6893,38",
+    "timestamp": "2026-06-10 22:00:59"
+  },
+  {
+    "nome": "CARLOS NORBERTO JOAO DE CASTRO",
+    "cpf": "38439867034",
+    "score": 982,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "9642,38",
+    "timestamp": "2026-06-10 22:01:01"
+  },
+  {
+    "nome": "MARCUS VINICIUS DANTAS",
+    "cpf": "05832123441",
+    "score": 984,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "4627,05",
+    "timestamp": "2026-06-10 22:01:03"
+  },
+  {
+    "nome": "JOSE EDUARDO BELMONTE",
+    "cpf": "15861417830",
+    "score": 907,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "5248,80",
+    "timestamp": "2026-06-10 22:01:05"
+  },
+  {
+    "nome": "BEATRIZ BARREIROS DA FREIRIA",
+    "cpf": "33694973877",
+    "score": 905,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "3585,19",
+    "timestamp": "2026-06-10 22:01:07"
+  },
+  {
+    "nome": "JOSE CARLOS QUITO BASTOS",
+    "cpf": "42930359749",
+    "score": 992,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2963,33",
+    "timestamp": "2026-06-10 22:01:09"
+  },
+  {
+    "nome": "PATRICIA SARAIVA BARTELLE",
+    "cpf": "00696720086",
+    "score": 933,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "3429,28",
+    "timestamp": "2026-06-10 22:01:11"
+  },
+  {
+    "nome": "MARCELO SILVEIRA",
+    "cpf": "44540221000",
+    "score": 954,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "4382,51",
+    "timestamp": "2026-06-10 22:01:13"
+  },
+  {
+    "nome": "ALEXANDRE DE FREITAS BATISTA",
+    "cpf": "62917854553",
+    "score": 910,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "6777,10",
+    "timestamp": "2026-06-10 22:01:15"
+  },
+  {
+    "nome": "AMOZ FERREIRA LEITE",
+    "cpf": "05000896556",
+    "score": 912,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "953,92",
+    "timestamp": "2026-06-10 22:01:17"
+  },
+  {
+    "nome": "TAMYRIS MARTINS CARDOSO",
+    "cpf": "35567798890",
+    "score": 930,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "3951,28",
+    "timestamp": "2026-06-10 22:01:19"
+  },
+  {
+    "nome": "MARILENE RODRIGUES SALVADOR",
+    "cpf": "57950687991",
+    "score": 961,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1126,03",
+    "timestamp": "2026-06-10 22:01:21"
+  },
+  {
+    "nome": "GILMEI SERAFINI",
+    "cpf": "81644795949",
+    "score": 914,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2331,85",
+    "timestamp": "2026-06-10 22:01:23"
+  },
+  {
+    "nome": "MONICA ADRIANA BUZO",
+    "cpf": "03322535975",
+    "score": 924,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "SEM INFORMAÇÃO",
+    "timestamp": "2026-06-10 22:01:25"
+  },
+  {
+    "nome": "ELIZIANE APARECIDA DO ROSARIO DE CAMPOS",
+    "cpf": "06234915914",
+    "score": 964,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1004,78",
+    "timestamp": "2026-06-10 22:01:27"
+  },
+  {
+    "nome": "MARIANGELA CARDOSO DA SILVA",
+    "cpf": "11062791827",
+    "score": 970,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "6947,57",
+    "timestamp": "2026-06-10 22:01:29"
+  },
+  {
+    "nome": "RUTE HELENA ALVES",
+    "cpf": "21905352808",
+    "score": 924,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "SEM INFORMAÇÃO",
+    "timestamp": "2026-06-10 22:01:31"
+  },
+  {
+    "nome": "PAULO CESAR TOMIM",
+    "cpf": "26265393847",
+    "score": 990,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "14160,67",
+    "timestamp": "2026-06-10 22:01:33"
+  },
+  {
+    "nome": "ELUCIR GIR",
+    "cpf": "02162052806",
+    "score": 979,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "SEM INFORMAÇÃO",
+    "timestamp": "2026-06-10 22:01:35"
+  },
+  {
+    "nome": "WAI LIY CHAN",
+    "cpf": "86336371468",
+    "score": 990,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "4312,31",
+    "timestamp": "2026-06-10 22:01:37"
+  },
+  {
+    "nome": "ROSILDA PEREIRA RAMIREZ",
+    "cpf": "14919809824",
+    "score": 963,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "4577,67",
+    "timestamp": "2026-06-10 22:01:39"
+  },
+  {
+    "nome": "JOSE CARLOS MOSENA",
+    "cpf": "14891042915",
+    "score": 982,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2033,73",
+    "timestamp": "2026-06-10 22:01:41"
+  },
+  {
+    "nome": "LIZINA FORTINO",
+    "cpf": "29075710879",
+    "score": 927,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "6077,10",
+    "timestamp": "2026-06-10 22:01:43"
+  },
+  {
+    "nome": "JOSE RENATO VIEIRA DA SILVA",
+    "cpf": "00533388040",
+    "score": 924,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2508,07",
+    "timestamp": "2026-06-10 22:01:45"
+  },
+  {
+    "nome": "MARIA APARECIDA WERKA PEREIRA",
+    "cpf": "56777310991",
+    "score": 965,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "5996,66",
+    "timestamp": "2026-06-10 22:01:47"
+  },
+  {
+    "nome": "CAMILA DE OLIVEIRA",
+    "cpf": "23095568827",
+    "score": 974,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "8287,86",
+    "timestamp": "2026-06-10 22:01:49"
+  },
+  {
+    "nome": "SIMONE NODARI",
+    "cpf": "01419018027",
+    "score": 939,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1878,94",
+    "timestamp": "2026-06-10 22:01:51"
+  },
+  {
+    "nome": "BENEDITO GOMES FRANQUEIRA",
+    "cpf": "17624436604",
+    "score": 947,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "6489,78",
+    "timestamp": "2026-06-10 22:01:53"
+  },
+  {
+    "nome": "JOAO PINTO DA COSTA",
+    "cpf": "13357344149",
+    "score": 992,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2373,43",
+    "timestamp": "2026-06-10 22:01:55"
+  },
+  {
+    "nome": "GABRIELI MARIN",
+    "cpf": "42455114864",
+    "score": 929,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1185,58",
+    "timestamp": "2026-06-10 22:01:57"
+  },
+  {
+    "nome": "ANTUZIA PEREIRA CELESTINO ALVES",
+    "cpf": "14391066149",
+    "score": 971,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1652,22",
+    "timestamp": "2026-06-10 22:01:59"
+  },
+  {
+    "nome": "DIEGGO CARDELINO GHOBAD",
+    "cpf": "00145699145",
+    "score": 928,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "14499,84",
+    "timestamp": "2026-06-10 22:02:01"
+  },
+  {
+    "nome": "ALBERTO BATISTA PATATT",
+    "cpf": "04308603072",
+    "score": 1000,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1929,85",
+    "timestamp": "2026-06-10 22:02:03"
+  },
+  {
+    "nome": "UDENES MARIA DE FREITAS DIOGENES",
+    "cpf": "79120733968",
+    "score": 984,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "6437,80",
+    "timestamp": "2026-06-10 22:02:05"
+  },
+  {
+    "nome": "ALEXANDRE FIGUEIREDO BARNEWITZ",
+    "cpf": "43173551087",
+    "score": 995,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "18935,69",
+    "timestamp": "2026-06-10 22:02:07"
+  },
+  {
+    "nome": "CEZARIO NUNES BRISOLA",
+    "cpf": "00289390850",
+    "score": 921,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "3185,26",
+    "timestamp": "2026-06-10 22:02:09"
+  },
+  {
+    "nome": "JACKSON ALVARES VITORIA",
+    "cpf": "06523768511",
+    "score": 933,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "SEM INFORMAÇÃO",
+    "timestamp": "2026-06-10 22:02:11"
+  },
+  {
+    "nome": "CARLISE TATIELI BADE PRETTO",
+    "cpf": "02178022065",
+    "score": 959,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2017,07",
+    "timestamp": "2026-06-10 22:02:13"
+  },
+  {
+    "nome": "JOSE CARLOS RIBEIRO SOARES",
+    "cpf": "05287328460",
+    "score": 946,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2532,80",
+    "timestamp": "2026-06-10 22:02:15"
+  },
+  {
+    "nome": "NELCI CAROLINA ZIMMER",
+    "cpf": "04994977917",
+    "score": 952,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1775,09",
+    "timestamp": "2026-06-10 22:02:17"
+  },
+  {
+    "nome": "MARIA ISABEL MANTOVANI MARQUES",
+    "cpf": "12024332862",
+    "score": 974,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "3083,94",
+    "timestamp": "2026-06-10 22:02:19"
+  },
+  {
+    "nome": "MANOEL AGOSTINHO DE CASTRO MENEZES",
+    "cpf": "21723141372",
+    "score": 918,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "9236,82",
+    "timestamp": "2026-06-10 22:02:21"
+  },
+  {
+    "nome": "NATYELE RIPPEL SILVEIRA",
+    "cpf": "07345677907",
+    "score": 917,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "9134,73",
+    "timestamp": "2026-06-10 22:02:23"
+  },
+  {
+    "nome": "CHARLISE DAIANA WAYHS BACKES MENGARDA",
+    "cpf": "05203580901",
+    "score": 964,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1203,87",
+    "timestamp": "2026-06-10 22:02:25"
+  },
+  {
+    "nome": "DORIVAL GUSSATTO",
+    "cpf": "21281475068",
+    "score": 915,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "3222,79",
+    "timestamp": "2026-06-10 22:02:27"
+  },
+  {
+    "nome": "EDSON SEBASTIAO WEBER",
+    "cpf": "41375408020",
+    "score": 952,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2778,32",
+    "timestamp": "2026-06-10 22:02:29"
+  },
+  {
+    "nome": "VILMAR COSTA BOA SORTE",
+    "cpf": "40363783504",
+    "score": 940,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "5483,22",
+    "timestamp": "2026-06-10 22:02:31"
+  },
+  {
+    "nome": "JOSE BURTET",
+    "cpf": "00540170097",
+    "score": 978,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "5795,53",
+    "timestamp": "2026-06-10 22:02:33"
+  },
+  {
+    "nome": "IDALINA DE SOUZA MORAES",
+    "cpf": "92489150006",
+    "score": 950,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1601,90",
+    "timestamp": "2026-06-10 22:02:35"
+  },
+  {
+    "nome": "CARLA ANDREA CARDOSO TANURI CALDAS",
+    "cpf": "56012551487",
+    "score": 956,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "15505,01",
+    "timestamp": "2026-06-10 22:02:37"
+  },
+  {
+    "nome": "PAULO SERGIO LOPES",
+    "cpf": "55856411900",
+    "score": 908,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "3298,11",
+    "timestamp": "2026-06-10 22:02:39"
+  },
+  {
+    "nome": "FELIPE FRANCA DE SOUZA MACHADO",
+    "cpf": "34500252878",
+    "score": 942,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "3207,27",
+    "timestamp": "2026-06-10 22:02:41"
+  },
+  {
+    "nome": "SERGIO BARBOSA BARRETO",
+    "cpf": "76071138434",
+    "score": 941,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "8296,79",
+    "timestamp": "2026-06-10 22:02:43"
+  },
+  {
+    "nome": "LUCIO GOTZ",
+    "cpf": "23969741068",
+    "score": 985,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2894,22",
+    "timestamp": "2026-06-10 22:02:45"
+  },
+  {
+    "nome": "NILDO JETSCH",
+    "cpf": "38349787953",
+    "score": 911,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2298,19",
+    "timestamp": "2026-06-10 22:02:47"
+  },
+  {
+    "nome": "ENIO FERNANDO EISINGER",
+    "cpf": "48865532068",
+    "score": 985,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "4433,45",
+    "timestamp": "2026-06-10 22:02:49"
+  },
+  {
+    "nome": "INGO WALZ",
+    "cpf": "18626378904",
+    "score": 1000,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1920,26",
+    "timestamp": "2026-06-10 22:02:51"
+  },
+  {
+    "nome": "IVANI MARTINS TEIXEIRA",
+    "cpf": "26055970678",
+    "score": 977,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2556,05",
+    "timestamp": "2026-06-10 22:02:53"
+  },
+  {
+    "nome": "FABIANO DE MOURA",
+    "cpf": "07566693751",
+    "score": 945,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "19536,34",
+    "timestamp": "2026-06-10 22:02:55"
+  },
+  {
+    "nome": "NADIR APARECIDA GURGEL NASCIMENTO",
+    "cpf": "03275334395",
+    "score": 941,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2917,80",
+    "timestamp": "2026-06-10 22:02:57"
+  },
+  {
+    "nome": "FABIO BERNARDO LANGER",
+    "cpf": "26982817822",
+    "score": 972,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2400,60",
+    "timestamp": "2026-06-10 22:02:59"
+  },
+  {
+    "nome": "IVANETE PEREIRA PAULO ARAUJO",
+    "cpf": "02659404780",
+    "score": 968,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "22070,59",
+    "timestamp": "2026-06-10 22:03:01"
+  },
+  {
+    "nome": "GEMA GREGIO",
+    "cpf": "54817641053",
+    "score": 905,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1259,21",
+    "timestamp": "2026-06-10 22:03:03"
+  },
+  {
+    "nome": "ADELMO AUGUSTO DA SILVA",
+    "cpf": "01178925480",
+    "score": 967,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "3187,52",
+    "timestamp": "2026-06-10 22:03:05"
+  },
+  {
+    "nome": "ROSANA TERESINHA PINTON GREFF",
+    "cpf": "98224980049",
+    "score": 980,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "3227,76",
+    "timestamp": "2026-06-10 22:03:07"
+  },
+  {
+    "nome": "NORMA PEIXOTO BEZERRA",
+    "cpf": "22415343587",
+    "score": 970,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "SEM INFORMAÇÃO",
+    "timestamp": "2026-06-10 22:03:09"
+  },
+  {
+    "nome": "ROSELEY MOREIRA DA SILVA ARAUJO",
+    "cpf": "03289407985",
+    "score": 932,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1538,19",
+    "timestamp": "2026-06-10 22:03:11"
+  },
+  {
+    "nome": "CESAR JUNIOR CAETANO",
+    "cpf": "03474683659",
+    "score": 957,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "4997,46",
+    "timestamp": "2026-06-10 22:03:13"
+  },
+  {
+    "nome": "JOAO BENEDITO BENTO BARBOSA",
+    "cpf": "12499010819",
+    "score": 976,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "5084,05",
+    "timestamp": "2026-06-10 22:03:15"
+  },
+  {
+    "nome": "DECIO LUIS DO NASCIMENTO",
+    "cpf": "22279334968",
+    "score": 1000,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "5015,70",
+    "timestamp": "2026-06-10 22:03:17"
+  },
+  {
+    "nome": "FABIO PELLIZZARO",
+    "cpf": "75494736920",
+    "score": 907,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "4815,21",
+    "timestamp": "2026-06-10 22:03:19"
+  },
+  {
+    "nome": "MARIA DO CARMO LEITE DE SOUZA",
+    "cpf": "04361567689",
+    "score": 905,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "611,78",
+    "timestamp": "2026-06-10 22:03:21"
+  },
+  {
+    "nome": "MARCIO MESSIAS LOPES",
+    "cpf": "42135966649",
+    "score": 925,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "21107,81",
+    "timestamp": "2026-06-10 22:03:23"
+  },
+  {
+    "nome": "TATIANA DE PAULA FARIA",
+    "cpf": "07334323602",
+    "score": 910,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "4947,90",
+    "timestamp": "2026-06-10 22:03:25"
+  },
+  {
+    "nome": "NATALIA GALEGO GUIMARAES WERNECK",
+    "cpf": "04463126657",
+    "score": 903,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "14674,25",
+    "timestamp": "2026-06-10 22:03:27"
+  },
+  {
+    "nome": "NILZA BATU LINASSI",
+    "cpf": "62688391020",
+    "score": 903,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1538,58",
+    "timestamp": "2026-06-10 22:03:29"
+  },
+  {
+    "nome": "JEANE CHOJNIAK",
+    "cpf": "19229286826",
+    "score": 966,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "6317,34",
+    "timestamp": "2026-06-10 22:03:31"
+  },
+  {
+    "nome": "REVELINO DA CRUZ",
+    "cpf": "17164393885",
+    "score": 941,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "4528,94",
+    "timestamp": "2026-06-10 22:03:33"
+  },
+  {
+    "nome": "ELENIR TASSI CORDEIRO",
+    "cpf": "16207807049",
+    "score": 953,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "5841,70",
+    "timestamp": "2026-06-10 22:03:35"
+  },
+  {
+    "nome": "MATEUS DE OLIVEIRA PIRES",
+    "cpf": "86164311527",
+    "score": 962,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2134,31",
+    "timestamp": "2026-06-10 22:03:37"
+  },
+  {
+    "nome": "SANDRA DA SILVA CINTRA SANTOS",
+    "cpf": "20090766806",
+    "score": 924,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2038,46",
+    "timestamp": "2026-06-10 22:03:39"
+  },
+  {
+    "nome": "REGINALDO PEREIRA DOS SANTOS",
+    "cpf": "20104878851",
+    "score": 970,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "15268,12",
+    "timestamp": "2026-06-10 22:03:41"
+  },
+  {
+    "nome": "EMO OLIVEIRA DO NASCIMENTO",
+    "cpf": "33145890000",
+    "score": 951,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2093,56",
+    "timestamp": "2026-06-10 22:03:43"
+  },
+  {
+    "nome": "LUCEIA FERREIRA FROTA",
+    "cpf": "14895396894",
+    "score": 917,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "SEM INFORMAÇÃO",
+    "timestamp": "2026-06-10 22:03:45"
+  },
+  {
+    "nome": "JULIA FASOLO DE PARIS",
+    "cpf": "00268200050",
+    "score": 949,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "SEM INFORMAÇÃO",
+    "timestamp": "2026-06-10 22:03:47"
+  },
+  {
+    "nome": "TICIANA MENESES SILVEIRA SIMOES",
+    "cpf": "03933906326",
+    "score": 973,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "790,54",
+    "timestamp": "2026-06-10 22:03:49"
+  },
+  {
+    "nome": "ROSINEIDE BRAZ MOREIRA SILVA",
+    "cpf": "00877338469",
+    "score": 954,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1790,60",
+    "timestamp": "2026-06-10 22:03:51"
+  },
+  {
+    "nome": "ANDRE DA COSTA MACHADO",
+    "cpf": "32373139049",
+    "score": 957,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2888,24",
+    "timestamp": "2026-06-10 22:03:53"
+  },
+  {
+    "nome": "ROSANNA MARIA BRANCALEONE",
+    "cpf": "49331051972",
+    "score": 955,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "6628,41",
+    "timestamp": "2026-06-10 22:03:55"
+  },
+  {
+    "nome": "CAROLINE PHILIPSEN",
+    "cpf": "93887990030",
+    "score": 951,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "SEM INFORMAÇÃO",
+    "timestamp": "2026-06-10 22:03:57"
+  },
+  {
+    "nome": "EDER EMERSON FONSECA JUSTINO",
+    "cpf": "17058895813",
+    "score": 965,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "22689,80",
+    "timestamp": "2026-06-10 22:03:59"
+  },
+  {
+    "nome": "EVERALDO LUIZ ZUCCHI",
+    "cpf": "84842105968",
+    "score": 961,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "SEM INFORMAÇÃO",
+    "timestamp": "2026-06-10 22:04:01"
+  },
+  {
+    "nome": "MARIA ANITA NASCENTE DE ARAUJO VALLE",
+    "cpf": "61348740191",
+    "score": 929,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "5216,49",
+    "timestamp": "2026-06-10 22:04:03"
+  },
+  {
+    "nome": "VLADIMIR CONCEICAO DA SILVA",
+    "cpf": "39189015053",
+    "score": 953,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "13981,16",
+    "timestamp": "2026-06-10 22:04:05"
+  },
+  {
+    "nome": "ANA LUCIA DE PASSOS CURADO",
+    "cpf": "15320278187",
+    "score": 982,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "28757,74",
+    "timestamp": "2026-06-10 22:04:07"
+  },
+  {
+    "nome": "ELIZANDRO PAGANI",
+    "cpf": "05922265903",
+    "score": 984,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "7319,06",
+    "timestamp": "2026-06-10 22:04:09"
+  },
+  {
+    "nome": "RENATA BARBOSA TABATA E TEODORO",
+    "cpf": "29413128898",
+    "score": 905,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1655,22",
+    "timestamp": "2026-06-10 22:04:11"
+  },
+  {
+    "nome": "MARIA ENGRACIA FERNANDES DA SILVA",
+    "cpf": "12439941859",
+    "score": 923,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1550,91",
+    "timestamp": "2026-06-10 22:04:13"
+  },
+  {
+    "nome": "MARCO ANTONIO BORTOLOSSO",
+    "cpf": "05867859819",
+    "score": 929,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1630,54",
+    "timestamp": "2026-06-10 22:04:15"
+  },
+  {
+    "nome": "GEAN SANDES SILVA",
+    "cpf": "52454916487",
+    "score": 973,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "SEM INFORMAÇÃO",
+    "timestamp": "2026-06-10 22:04:17"
+  },
+  {
+    "nome": "JESSICA DOS REIS MENDES",
+    "cpf": "08997825666",
+    "score": 973,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1947,70",
+    "timestamp": "2026-06-10 22:04:19"
+  },
+  {
+    "nome": "EDSON GERALDO WINCKLER",
+    "cpf": "35553677068",
+    "score": 965,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2434,26",
+    "timestamp": "2026-06-10 22:04:21"
+  },
+  {
+    "nome": "ROSA MARIA MICHELON JACOBS FARIA",
+    "cpf": "00870781049",
+    "score": 968,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "6114,94",
+    "timestamp": "2026-06-10 22:04:23"
+  },
+  {
+    "nome": "DORILDE BONADIMAN DA FONSECA ROSA",
+    "cpf": "57567964953",
+    "score": 922,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "891,06",
+    "timestamp": "2026-06-10 22:04:25"
+  },
+  {
+    "nome": "MARIO LUCIO PEDROSA",
+    "cpf": "01777157668",
+    "score": 992,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1764,23",
+    "timestamp": "2026-06-10 22:04:27"
+  },
+  {
+    "nome": "MAICON MARCIO SOUSA DO ROSARIO",
+    "cpf": "03880313520",
+    "score": 955,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "856,71",
+    "timestamp": "2026-06-10 22:04:29"
+  },
+  {
+    "nome": "MARCIA ELENA GONCALVES DE FRANCA",
+    "cpf": "10096942860",
+    "score": 962,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "5537,70",
+    "timestamp": "2026-06-10 22:04:31"
+  },
+  {
+    "nome": "JOSE CARLOS DA ROSA",
+    "cpf": "43519504049",
+    "score": 982,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "5192,24",
+    "timestamp": "2026-06-10 22:04:33"
+  },
+  {
+    "nome": "LEOPOLDO DALLA COSTA DE GODOY LIMA",
+    "cpf": "22259122892",
+    "score": 981,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "5278,92",
+    "timestamp": "2026-06-10 22:04:35"
+  },
+  {
+    "nome": "BRUNO EDUARDO DOS SANTOS SILVA",
+    "cpf": "33474337858",
+    "score": 939,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "10997,97",
+    "timestamp": "2026-06-10 22:04:37"
+  },
+  {
+    "nome": "TEREZINHA MARIA DE PAIVA",
+    "cpf": "40214133672",
+    "score": 901,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2272,81",
+    "timestamp": "2026-06-10 22:04:39"
+  },
+  {
+    "nome": "VILSON LUCAS SITO",
+    "cpf": "43554571091",
+    "score": 957,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "3946,27",
+    "timestamp": "2026-06-10 22:04:41"
+  },
+  {
+    "nome": "JOSE ROBERTO DE RESENDE LEITE",
+    "cpf": "19378416772",
+    "score": 995,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "7645,94",
+    "timestamp": "2026-06-10 22:04:43"
+  },
+  {
+    "nome": "FAUSTO SUZUKI",
+    "cpf": "04351531886",
+    "score": 943,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2027,01",
+    "timestamp": "2026-06-10 22:04:45"
+  },
+  {
+    "nome": "ADRIANE ANGHEBEN EITELVEN",
+    "cpf": "43809669091",
+    "score": 965,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "6455,55",
+    "timestamp": "2026-06-10 22:04:47"
+  },
+  {
+    "nome": "FERNANDE MARQUES DEQUI",
+    "cpf": "17802610044",
+    "score": 977,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "SEM INFORMAÇÃO",
+    "timestamp": "2026-06-10 22:04:49"
+  },
+  {
+    "nome": "LEONARDO VASCONCELLOS LOUREIRO",
+    "cpf": "54432260530",
+    "score": 974,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "10010,18",
+    "timestamp": "2026-06-10 22:04:51"
+  },
+  {
+    "nome": "VALERIANO DA CRUZ",
+    "cpf": "31134247800",
+    "score": 962,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1673,77",
+    "timestamp": "2026-06-10 22:04:53"
+  },
+  {
+    "nome": "JONAS LUIS WIELENS",
+    "cpf": "00607160020",
+    "score": 976,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "5305,47",
+    "timestamp": "2026-06-10 22:04:55"
+  },
+  {
+    "nome": "AGENOR FRARE",
+    "cpf": "27745481015",
+    "score": 1000,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2283,03",
+    "timestamp": "2026-06-10 22:04:57"
+  },
+  {
+    "nome": "SIDNEI SCAPUCIN NEGRAO",
+    "cpf": "06654717856",
+    "score": 968,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2785,46",
+    "timestamp": "2026-06-10 22:04:59"
+  },
+  {
+    "nome": "ALESSANDRA DA SILVA OLIVEIRA LEANDRO",
+    "cpf": "64149943320",
+    "score": 964,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "6650,31",
+    "timestamp": "2026-06-10 22:05:01"
+  },
+  {
+    "nome": "LEANDRO GARCIA JURAITIS",
+    "cpf": "31496374819",
+    "score": 970,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "11496,09",
+    "timestamp": "2026-06-10 22:05:03"
+  },
+  {
+    "nome": "JUSCELINO BALLIN DE QUADROS",
+    "cpf": "27393682087",
+    "score": 984,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2404,09",
+    "timestamp": "2026-06-10 22:05:05"
+  },
+  {
+    "nome": "CAMILA ALVES PIRES",
+    "cpf": "84457171115",
+    "score": 979,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "3520,97",
+    "timestamp": "2026-06-10 22:05:07"
+  },
+  {
+    "nome": "MAICON PEYERL",
+    "cpf": "04148353952",
+    "score": 995,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2243,10",
+    "timestamp": "2026-06-10 22:05:09"
+  },
+  {
+    "nome": "HELIO VITALI",
+    "cpf": "31231411015",
+    "score": 987,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2637,49",
+    "timestamp": "2026-06-10 22:05:11"
+  },
+  {
+    "nome": "TONY HERBERT CARDOSO ABRANTES",
+    "cpf": "01359688528",
+    "score": 951,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "3429,42",
+    "timestamp": "2026-06-10 22:05:13"
+  },
+  {
+    "nome": "LUDMILLA MARQUEZ ARRUDA",
+    "cpf": "04154852159",
+    "score": 952,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1245,34",
+    "timestamp": "2026-06-10 22:05:15"
+  },
+  {
+    "nome": "DONE TEIXEIRA MACHADO",
+    "cpf": "05573335049",
+    "score": 907,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2032,81",
+    "timestamp": "2026-06-10 22:05:17"
+  },
+  {
+    "nome": "GABRIEL SOMMER",
+    "cpf": "02352471036",
+    "score": 961,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1462,20",
+    "timestamp": "2026-06-10 22:05:19"
+  },
+  {
+    "nome": "JOSE SEABRA JUNIOR",
+    "cpf": "20569688604",
+    "score": 975,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "15649,78",
+    "timestamp": "2026-06-10 22:05:21"
+  },
+  {
+    "nome": "KAROLINE RODRIGUES DE MELO",
+    "cpf": "02143126077",
+    "score": 960,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1734,43",
+    "timestamp": "2026-06-10 22:05:23"
+  },
+  {
+    "nome": "FERNANDO SARTURI KURTZ",
+    "cpf": "92270670000",
+    "score": 935,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "6462,19",
+    "timestamp": "2026-06-10 22:05:25"
+  },
+  {
+    "nome": "ISADORA CAMAZANO TOSTO",
+    "cpf": "39656155807",
+    "score": 917,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1877,88",
+    "timestamp": "2026-06-10 22:05:27"
+  },
+  {
+    "nome": "LEONARDO PIRES DE SOUZA",
+    "cpf": "02590482671",
+    "score": 905,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "7489,93",
+    "timestamp": "2026-06-10 22:05:29"
+  },
+  {
+    "nome": "ALMIR ROGERIO FRAGA TEIXEIRA",
+    "cpf": "99137984004",
+    "score": 959,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2396,44",
+    "timestamp": "2026-06-10 22:05:31"
+  },
+  {
+    "nome": "NORMELIO ALBERTO RANZI",
+    "cpf": "29621240972",
+    "score": 961,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "6469,04",
+    "timestamp": "2026-06-10 22:05:33"
+  },
+  {
+    "nome": "MARCELO RODRIGUES DA COSTA FIGUEIROA",
+    "cpf": "40206610572",
+    "score": 938,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1578,47",
+    "timestamp": "2026-06-10 22:05:35"
+  },
+  {
+    "nome": "MARCOS ELI CUSTODIO",
+    "cpf": "02540542930",
+    "score": 944,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "3502,28",
+    "timestamp": "2026-06-10 22:05:37"
+  },
+  {
+    "nome": "DIOGENES RONI LUMMERTZ EMERIM",
+    "cpf": "89828860953",
+    "score": 909,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2245,36",
+    "timestamp": "2026-06-10 22:05:39"
+  },
+  {
+    "nome": "ADIR DAL PAI",
+    "cpf": "53731883015",
+    "score": 960,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2148,33",
+    "timestamp": "2026-06-10 22:05:41"
+  },
+  {
+    "nome": "LUCIANA FONTANIVE",
+    "cpf": "88491650059",
+    "score": 967,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "4438,74",
+    "timestamp": "2026-06-10 22:05:43"
+  },
+  {
+    "nome": "ALINE EMILIANA DE BARROS CARVALHO SANTOS",
+    "cpf": "36433699804",
+    "score": 945,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1906,58",
+    "timestamp": "2026-06-10 22:05:45"
+  },
+  {
+    "nome": "MAGDA SOLANGE DA SILVEIRA",
+    "cpf": "16147316087",
+    "score": 960,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "4051,12",
+    "timestamp": "2026-06-10 22:05:47"
+  },
+  {
+    "nome": "HELIA CONSTANTINO STORK",
+    "cpf": "01542731984",
+    "score": 1000,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "6844,53",
+    "timestamp": "2026-06-10 22:05:49"
+  },
+  {
+    "nome": "DENIS LEANDRO CARDOSO",
+    "cpf": "03040158902",
+    "score": 976,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "6604,98",
+    "timestamp": "2026-06-10 22:05:51"
+  },
+  {
+    "nome": "ALEXANDRE FRANCO DA ROCHA",
+    "cpf": "19728445806",
+    "score": 966,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "3292,50",
+    "timestamp": "2026-06-10 22:05:53"
+  },
+  {
+    "nome": "MARTINHA GONCALVES MAIA",
+    "cpf": "00926474642",
+    "score": 926,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1969,13",
+    "timestamp": "2026-06-10 22:05:55"
+  },
+  {
+    "nome": "NAIR DE VARGAS ELY",
+    "cpf": "51837447004",
+    "score": 908,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1069,50",
+    "timestamp": "2026-06-10 22:05:57"
+  },
+  {
+    "nome": "NOELI ANTONIO DAL MAS",
+    "cpf": "69786445015",
+    "score": 998,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "4195,80",
+    "timestamp": "2026-06-10 22:05:59"
+  },
+  {
+    "nome": "PUBLIO EMILIO ROCHA II",
+    "cpf": "08154308681",
+    "score": 933,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1521,67",
+    "timestamp": "2026-06-10 22:06:01"
+  },
+  {
+    "nome": "JOSE DARCI MARINS BARBOZA",
+    "cpf": "25011057968",
+    "score": 940,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "5133,79",
+    "timestamp": "2026-06-10 22:06:03"
+  },
+  {
+    "nome": "NEI JAINIR DORNELLES",
+    "cpf": "61160628068",
+    "score": 903,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2600,07",
+    "timestamp": "2026-06-10 22:06:05"
+  },
+  {
+    "nome": "ELISANDRA DE OLIVEIRA",
+    "cpf": "83131469072",
+    "score": 946,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1752,23",
+    "timestamp": "2026-06-10 22:06:07"
+  },
+  {
+    "nome": "MARINO ENDLER",
+    "cpf": "22076930906",
+    "score": 979,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1765,61",
+    "timestamp": "2026-06-10 22:06:09"
+  },
+  {
+    "nome": "AFONSO RECH",
+    "cpf": "14817730978",
+    "score": 943,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1921,98",
+    "timestamp": "2026-06-10 22:06:11"
+  },
+  {
+    "nome": "BRUNO SILVA CUNHA",
+    "cpf": "00433238984",
+    "score": 922,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "11444,62",
+    "timestamp": "2026-06-10 22:06:13"
+  },
+  {
+    "nome": "GUIDO SPECHT",
+    "cpf": "13200887915",
+    "score": 1000,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2048,56",
+    "timestamp": "2026-06-10 22:06:15"
+  },
+  {
+    "nome": "RAFAEL BRIZOLA MARQUES",
+    "cpf": "00922031088",
+    "score": 947,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "SEM INFORMAÇÃO",
+    "timestamp": "2026-06-10 22:06:17"
+  },
+  {
+    "nome": "ELIZABETE COLONTONIO DE MELO",
+    "cpf": "28710548866",
+    "score": 907,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1782,36",
+    "timestamp": "2026-06-10 22:06:19"
+  },
+  {
+    "nome": "LAURO JOSE SCHLEICHER",
+    "cpf": "38500450991",
+    "score": 970,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1789,31",
+    "timestamp": "2026-06-10 22:06:21"
+  },
+  {
+    "nome": "MANOEL MESSIAS DE SANTANA",
+    "cpf": "38899787972",
+    "score": 906,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1832,13",
+    "timestamp": "2026-06-10 22:06:23"
+  },
+  {
+    "nome": "DALVA LUZ PALLES",
+    "cpf": "00371016762",
+    "score": 966,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2449,27",
+    "timestamp": "2026-06-10 22:06:25"
+  },
+  {
+    "nome": "GERSON RAASCH",
+    "cpf": "73652946049",
+    "score": 976,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1748,04",
+    "timestamp": "2026-06-10 22:06:27"
+  },
+  {
+    "nome": "OTTO ARLINDO KURTZ",
+    "cpf": "52975843020",
+    "score": 901,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1471,68",
+    "timestamp": "2026-06-10 22:06:29"
+  },
+  {
+    "nome": "HERMINIA FRANCISCA DE DEUS SILVA",
+    "cpf": "53773101953",
+    "score": 933,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "SEM INFORMAÇÃO",
+    "timestamp": "2026-06-10 22:06:31"
+  },
+  {
+    "nome": "RENATO MARTINS DA CRUZ",
+    "cpf": "09246484657",
+    "score": 913,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1031,95",
+    "timestamp": "2026-06-10 22:06:33"
+  },
+  {
+    "nome": "JOACIR VENDRUSCOLO",
+    "cpf": "20376375000",
+    "score": 915,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "23074,04",
+    "timestamp": "2026-06-10 22:06:35"
+  },
+  {
+    "nome": "ALCEU FRANCISCO MEYER",
+    "cpf": "33378649968",
+    "score": 917,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1187,52",
+    "timestamp": "2026-06-10 22:06:37"
+  },
+  {
+    "nome": "EDVANIA PACHECO DO NASCIMENTO",
+    "cpf": "27548445890",
+    "score": 958,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "4498,30",
+    "timestamp": "2026-06-10 22:06:39"
+  },
+  {
+    "nome": "TOMAZ DA SILVA CORREIA",
+    "cpf": "06575415679",
+    "score": 908,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2482,62",
+    "timestamp": "2026-06-10 22:06:41"
+  },
+  {
+    "nome": "LEONARDO FREDERICO MARTINS LEAO",
+    "cpf": "03387614110",
+    "score": 907,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "6501,93",
+    "timestamp": "2026-06-10 22:06:43"
+  },
+  {
+    "nome": "ROSA MARIA CAMPIONI DIAS",
+    "cpf": "29118620825",
+    "score": 980,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "8880,71",
+    "timestamp": "2026-06-10 22:06:45"
+  },
+  {
+    "nome": "RENATO MARIANO DOS SANTOS",
+    "cpf": "97148415004",
+    "score": 912,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "5300,65",
+    "timestamp": "2026-06-10 22:06:47"
+  },
+  {
+    "nome": "VANESSA ALVIM ZORZETO CUNHA",
+    "cpf": "17170636832",
+    "score": 971,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "15382,93",
+    "timestamp": "2026-06-10 22:06:49"
+  },
+  {
+    "nome": "CARLOS GILBERTO PFEIFER DOEBBER",
+    "cpf": "17395593049",
+    "score": 997,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "4963,29",
+    "timestamp": "2026-06-10 22:06:51"
+  },
+  {
+    "nome": "JULIA ABREU BRAGA",
+    "cpf": "30978443845",
+    "score": 955,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "11349,07",
+    "timestamp": "2026-06-10 22:06:53"
+  },
+  {
+    "nome": "ADOLFO ALCANTARA",
+    "cpf": "18076858020",
+    "score": 958,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2459,93",
+    "timestamp": "2026-06-10 22:06:55"
+  },
+  {
+    "nome": "HELIO MONTEIRO CHACON FILHO",
+    "cpf": "04903804410",
+    "score": 931,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1962,41",
+    "timestamp": "2026-06-10 22:06:57"
+  },
+  {
+    "nome": "MARIA ELIDE DE CONTI TRAVAIN",
+    "cpf": "01567565875",
+    "score": 943,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "7989,57",
+    "timestamp": "2026-06-10 22:06:59"
+  },
+  {
+    "nome": "JAIR COSTA VINENTE",
+    "cpf": "52553400225",
+    "score": 960,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1560,73",
+    "timestamp": "2026-06-10 22:07:01"
+  },
+  {
+    "nome": "LEANDRO STEFANELI CARDOSO",
+    "cpf": "32008644863",
+    "score": 968,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "9234,74",
+    "timestamp": "2026-06-10 22:07:03"
+  },
+  {
+    "nome": "RODRIGO LUIS STEFANI MONTEGGIA",
+    "cpf": "74819747053",
+    "score": 957,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "22209,91",
+    "timestamp": "2026-06-10 22:07:05"
+  },
+  {
+    "nome": "JOSE CARLOS TRAVAIN",
+    "cpf": "30097150991",
+    "score": 953,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "4910,32",
+    "timestamp": "2026-06-10 22:07:07"
+  },
+  {
+    "nome": "FRANCISCO ELIVALDO CUSTODIO",
+    "cpf": "53218060397",
+    "score": 917,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1024,14",
+    "timestamp": "2026-06-10 22:07:09"
+  },
+  {
+    "nome": "HUGO ALBERTO CASAROTTO",
+    "cpf": "83324429072",
+    "score": 964,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "SEM INFORMAÇÃO",
+    "timestamp": "2026-06-10 22:07:11"
+  },
+  {
+    "nome": "MARCIA MORAIS DA ROSA",
+    "cpf": "04724110988",
+    "score": 912,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "602,30",
+    "timestamp": "2026-06-10 22:07:13"
+  },
+  {
+    "nome": "ADILSON AMARO",
+    "cpf": "85571342820",
+    "score": 970,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "20937,38",
+    "timestamp": "2026-06-10 22:07:15"
+  },
+  {
+    "nome": "LOURDES MARIA TURANI",
+    "cpf": "28477502072",
+    "score": 968,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "3300,70",
+    "timestamp": "2026-06-10 22:07:17"
+  },
+  {
+    "nome": "ELIENE MARIA GANTOIS MACHADO NETO",
+    "cpf": "28750888587",
+    "score": 962,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "24136,91",
+    "timestamp": "2026-06-10 22:07:19"
+  },
+  {
+    "nome": "SILVIA CRISTINA ZILIO",
+    "cpf": "01969468831",
+    "score": 972,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "32844,52",
+    "timestamp": "2026-06-10 22:07:21"
+  },
+  {
+    "nome": "LINCOLN MACHADO DE ARAUJO",
+    "cpf": "05942422400",
+    "score": 977,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "8320,17",
+    "timestamp": "2026-06-10 22:07:23"
+  },
+  {
+    "nome": "FABIO KASSOUF SAD",
+    "cpf": "15497446825",
+    "score": 932,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "SEM INFORMAÇÃO",
+    "timestamp": "2026-06-10 22:07:25"
+  },
+  {
+    "nome": "MARTHA SCHERER GEHLING",
+    "cpf": "01185540008",
+    "score": 959,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "3402,12",
+    "timestamp": "2026-06-10 22:07:27"
+  },
+  {
+    "nome": "DIRCE MARIA WONGHON PICKERSGILL",
+    "cpf": "21461996015",
+    "score": 931,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2097,12",
+    "timestamp": "2026-06-10 22:07:29"
+  },
+  {
+    "nome": "PLINIO ARAUJO REIS",
+    "cpf": "21185824049",
+    "score": 970,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "3492,44",
+    "timestamp": "2026-06-10 22:07:31"
+  },
+  {
+    "nome": "GIZELI APARECIDA SOARES",
+    "cpf": "19157951845",
+    "score": 950,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1116,15",
+    "timestamp": "2026-06-10 22:07:33"
+  },
+  {
+    "nome": "ROBERTO REZENDE GREVE",
+    "cpf": "07355080709",
+    "score": 964,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2421,66",
+    "timestamp": "2026-06-10 22:07:35"
+  },
+  {
+    "nome": "ALVARO GERALDO BADAN PALHARES",
+    "cpf": "34123725872",
+    "score": 983,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "SEM INFORMAÇÃO",
+    "timestamp": "2026-06-10 22:07:37"
+  },
+  {
+    "nome": "IVAN SENTER",
+    "cpf": "01951045017",
+    "score": 951,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2053,17",
+    "timestamp": "2026-06-10 22:07:39"
+  },
+  {
+    "nome": "MANOEL ANTUNES DE OLIVEIRA",
+    "cpf": "32692463668",
+    "score": 959,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2056,27",
+    "timestamp": "2026-06-10 22:07:41"
+  },
+  {
+    "nome": "LUIZ CARLOS FERREIRA",
+    "cpf": "15042218858",
+    "score": 987,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "3140,36",
+    "timestamp": "2026-06-10 22:07:43"
+  },
+  {
+    "nome": "TULIO GONCALVES RODRIGUES",
+    "cpf": "07688614627",
+    "score": 958,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "6759,65",
+    "timestamp": "2026-06-10 22:07:45"
+  },
+  {
+    "nome": "EMELIN BRAGA WEBSTER METZDORF",
+    "cpf": "01660658039",
+    "score": 919,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1249,52",
+    "timestamp": "2026-06-10 22:07:47"
+  },
+  {
+    "nome": "FELIPE MATTIONI ROHDE",
+    "cpf": "01826367047",
+    "score": 960,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1978,11",
+    "timestamp": "2026-06-10 22:07:49"
+  },
+  {
+    "nome": "GILMAR BARRETO MACEDO",
+    "cpf": "16327101534",
+    "score": 919,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "27342,53",
+    "timestamp": "2026-06-10 22:07:51"
+  },
+  {
+    "nome": "LUIZ CARLOS TREMARIN",
+    "cpf": "01098616049",
+    "score": 985,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2543,24",
+    "timestamp": "2026-06-10 22:07:53"
+  },
+  {
+    "nome": "SONIA APARECIDA DE OLIVEIRA FAO",
+    "cpf": "06866887836",
+    "score": 982,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "6514,68",
+    "timestamp": "2026-06-10 22:07:55"
+  },
+  {
+    "nome": "ROGERIO BRANCO",
+    "cpf": "08773055875",
+    "score": 904,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "3751,77",
+    "timestamp": "2026-06-10 22:07:57"
+  },
+  {
+    "nome": "VALDELICE GERALDA DE ALMEIDA SENA MARTINS",
+    "cpf": "07475032655",
+    "score": 952,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "4850,75",
+    "timestamp": "2026-06-10 22:07:59"
+  },
+  {
+    "nome": "CLEONICE MARLI KREUTZ DECKER",
+    "cpf": "21109257015",
+    "score": 963,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2312,39",
+    "timestamp": "2026-06-10 22:08:01"
+  },
+  {
+    "nome": "EDWIN ROBERT WEIGLE LUCCI",
+    "cpf": "79879861949",
+    "score": 928,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "5170,51",
+    "timestamp": "2026-06-10 22:08:03"
+  },
+  {
+    "nome": "RODRIGO NORONHA TAVARES",
+    "cpf": "01397232692",
+    "score": 922,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "15612,45",
+    "timestamp": "2026-06-10 22:08:05"
+  },
+  {
+    "nome": "JOSEMARIO GONCALVES DE ANDRADE",
+    "cpf": "50710940459",
+    "score": 933,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "22704,43",
+    "timestamp": "2026-06-10 22:08:07"
+  },
+  {
+    "nome": "CINTIA CERIOTTI WEIRICH",
+    "cpf": "00093868073",
+    "score": 962,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "5361,23",
+    "timestamp": "2026-06-10 22:08:09"
+  },
+  {
+    "nome": "ADRIANE RESENDE CAMPOS ALAMY",
+    "cpf": "56079737604",
+    "score": 974,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1895,50",
+    "timestamp": "2026-06-10 22:08:11"
+  },
+  {
+    "nome": "JOAO SILVA",
+    "cpf": "09177299000",
+    "score": 962,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2227,62",
+    "timestamp": "2026-06-10 22:08:13"
+  },
+  {
+    "nome": "GRAZIELA KATLEN CHUCHENE",
+    "cpf": "49769782904",
+    "score": 955,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2435,17",
+    "timestamp": "2026-06-10 22:08:15"
+  },
+  {
+    "nome": "MARILDA MAGNA SIQUEIRA AZEVEDO",
+    "cpf": "53423623691",
+    "score": 909,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "8771,87",
+    "timestamp": "2026-06-10 22:08:17"
+  },
+  {
+    "nome": "VITOR YUZO KAWASE",
+    "cpf": "22641393824",
+    "score": 936,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "11715,19",
+    "timestamp": "2026-06-10 22:08:19"
+  },
+  {
+    "nome": "MARIA HELENA SPONCHIADO BALESTRIN",
+    "cpf": "33180350091",
+    "score": 903,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "5101,34",
+    "timestamp": "2026-06-10 22:08:21"
+  },
+  {
+    "nome": "MARLENE SCHWENGBER",
+    "cpf": "66400465049",
+    "score": 962,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1692,97",
+    "timestamp": "2026-06-10 22:08:23"
+  },
+  {
+    "nome": "TATIANE DARIVA GUASSU",
+    "cpf": "04490599951",
+    "score": 901,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "3522,00",
+    "timestamp": "2026-06-10 22:08:25"
+  },
+  {
+    "nome": "AMILTON DOS SANTOS PEREIRA",
+    "cpf": "13019538068",
+    "score": 971,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2243,47",
+    "timestamp": "2026-06-10 22:08:27"
+  },
+  {
+    "nome": "JOSIAS JOSE DA SILVA",
+    "cpf": "31873650787",
+    "score": 939,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1810,58",
+    "timestamp": "2026-06-10 22:08:29"
+  },
+  {
+    "nome": "MARINA SERENA PAZ",
+    "cpf": "04094116982",
+    "score": 966,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "6772,39",
+    "timestamp": "2026-06-10 22:08:31"
+  },
+  {
+    "nome": "ROZANA FERRAZ DE DEUS",
+    "cpf": "01505485916",
+    "score": 976,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "5939,71",
+    "timestamp": "2026-06-10 22:08:33"
+  },
+  {
+    "nome": "REGIANE FATIMA ROSSETO MENEGAZZO",
+    "cpf": "01985092948",
+    "score": 970,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2069,10",
+    "timestamp": "2026-06-10 22:08:35"
+  },
+  {
+    "nome": "MARCEL TEPERMAN",
+    "cpf": "36009514835",
+    "score": 953,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "4072,51",
+    "timestamp": "2026-06-10 22:08:37"
+  },
+  {
+    "nome": "OLAVO PASCOAL SCABORA",
+    "cpf": "11935442899",
+    "score": 908,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2775,99",
+    "timestamp": "2026-06-10 22:08:39"
+  },
+  {
+    "nome": "CELIO ROMAO",
+    "cpf": "46151621891",
+    "score": 940,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "5039,47",
+    "timestamp": "2026-06-10 22:08:41"
+  },
+  {
+    "nome": "ELOI DEGRAF NETO",
+    "cpf": "07338401675",
+    "score": 931,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "7448,78",
+    "timestamp": "2026-06-10 22:08:43"
+  },
+  {
+    "nome": "ANA CRISTINA DA SILVA SOUZA",
+    "cpf": "03010733763",
+    "score": 923,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2967,18",
+    "timestamp": "2026-06-10 22:08:45"
+  },
+  {
+    "nome": "FABIO EUSTAQUIO DE SENA",
+    "cpf": "48638315600",
+    "score": 975,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "19592,63",
+    "timestamp": "2026-06-10 22:08:47"
+  },
+  {
+    "nome": "ODAIR JOSE SEBBEN",
+    "cpf": "03020590914",
+    "score": 926,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "3047,19",
+    "timestamp": "2026-06-10 22:08:49"
+  },
+  {
+    "nome": "LIDIA LOBRIGLIO VILELA",
+    "cpf": "22855175801",
+    "score": 923,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1766,12",
+    "timestamp": "2026-06-10 22:08:51"
+  },
+  {
+    "nome": "MARTA CRISTINA VIDOTO DA SILVA",
+    "cpf": "03212049995",
+    "score": 929,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1427,58",
+    "timestamp": "2026-06-10 22:08:53"
+  },
+  {
+    "nome": "MARCOS DONIZETE MACARINI",
+    "cpf": "82569908991",
+    "score": 917,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2449,66",
+    "timestamp": "2026-06-10 22:08:55"
+  },
+  {
+    "nome": "SILVIA MARIA MACHADO",
+    "cpf": "15165478882",
+    "score": 905,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2179,54",
+    "timestamp": "2026-06-10 22:08:57"
+  },
+  {
+    "nome": "ALEXANDRE LEAO BENINCA",
+    "cpf": "59250194072",
+    "score": 953,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "15490,42",
+    "timestamp": "2026-06-10 22:08:59"
+  },
+  {
+    "nome": "VALDEMAR DONIZETI LUCAS",
+    "cpf": "02503888801",
+    "score": 977,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "4472,99",
+    "timestamp": "2026-06-10 22:09:01"
+  },
+  {
+    "nome": "CARMELITA LOPES DE SOUZA",
+    "cpf": "09319521824",
+    "score": 970,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1711,36",
+    "timestamp": "2026-06-10 22:09:03"
+  },
+  {
+    "nome": "MARIA APARECIDA CANDIDO MORAES",
+    "cpf": "16820521847",
+    "score": 938,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1574,70",
+    "timestamp": "2026-06-10 22:09:05"
+  },
+  {
+    "nome": "LEANDRO AUGUSTO BERNARDO",
+    "cpf": "94805300078",
+    "score": 956,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "4352,06",
+    "timestamp": "2026-06-10 22:09:07"
+  },
+  {
+    "nome": "MARIA ILMA MELO ALVES DE CASTRO",
+    "cpf": "08667446149",
+    "score": 958,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1980,72",
+    "timestamp": "2026-06-10 22:09:09"
+  },
+  {
+    "nome": "SANDRA GALARRETA LONDERO",
+    "cpf": "80694012068",
+    "score": 964,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "5311,40",
+    "timestamp": "2026-06-10 22:09:11"
+  },
+  {
+    "nome": "EDILSON EUSTAQUIO RIBEIRO",
+    "cpf": "21996458604",
+    "score": 970,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2051,45",
+    "timestamp": "2026-06-10 22:09:13"
+  },
+  {
+    "nome": "JOSUE SENNA DA ROSA",
+    "cpf": "43291546920",
+    "score": 917,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "4099,92",
+    "timestamp": "2026-06-10 22:09:15"
+  },
+  {
+    "nome": "GILVANY MARIA MENDONCA BRASILEIRO",
+    "cpf": "85692646820",
+    "score": 980,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "SEM INFORMAÇÃO",
+    "timestamp": "2026-06-10 22:09:17"
+  },
+  {
+    "nome": "GILBERTO GONCALVES DUTRA",
+    "cpf": "96856238304",
+    "score": 939,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1672,93",
+    "timestamp": "2026-06-10 22:09:19"
+  },
+  {
+    "nome": "DIEGO JAEGER PEREIRA",
+    "cpf": "02773904001",
+    "score": 968,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "SEM INFORMAÇÃO",
+    "timestamp": "2026-06-10 22:09:21"
+  },
+  {
+    "nome": "ADRIANO PINTO VALLE",
+    "cpf": "05194663730",
+    "score": 901,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1123,44",
+    "timestamp": "2026-06-10 22:09:23"
+  },
+  {
+    "nome": "LUCIANA MARIA DE ORNELAS AMBROSIO",
+    "cpf": "15909963805",
+    "score": 963,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "5559,01",
+    "timestamp": "2026-06-10 22:09:25"
+  },
+  {
+    "nome": "ADEMAR WOTTRICH",
+    "cpf": "18947174068",
+    "score": 932,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "3139,95",
+    "timestamp": "2026-06-10 22:09:27"
+  },
+  {
+    "nome": "VALCIR MARQUESIN",
+    "cpf": "52192911068",
+    "score": 955,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2633,32",
+    "timestamp": "2026-06-10 22:09:29"
+  },
+  {
+    "nome": "RODRIGO BORGES DE ARAUJO GOMES",
+    "cpf": "13553343737",
+    "score": 957,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2534,69",
+    "timestamp": "2026-06-10 22:09:31"
+  },
+  {
+    "nome": "CLOVIS ANTONIO BANDEIRA",
+    "cpf": "33182906020",
+    "score": 982,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "4491,73",
+    "timestamp": "2026-06-10 22:09:33"
+  },
+  {
+    "nome": "ADRIANE DELLA BETTA FOSSA",
+    "cpf": "04151910921",
+    "score": 982,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "3071,31",
+    "timestamp": "2026-06-10 22:09:35"
+  },
+  {
+    "nome": "LEONARDO DA FONTOURA SOUZA",
+    "cpf": "00473023059",
+    "score": 940,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1771,71",
+    "timestamp": "2026-06-10 22:09:37"
+  },
+  {
+    "nome": "CLAUDINO NAZARIO",
+    "cpf": "52080625934",
+    "score": 975,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1292,73",
+    "timestamp": "2026-06-10 22:09:39"
+  },
+  {
+    "nome": "JOELSO BANDEIRA",
+    "cpf": "35239220034",
+    "score": 928,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2706,76",
+    "timestamp": "2026-06-10 22:09:41"
+  },
+  {
+    "nome": "WILLIAN WEISS",
+    "cpf": "26572732894",
+    "score": 935,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "6468,86",
+    "timestamp": "2026-06-10 22:09:43"
+  },
+  {
+    "nome": "MARLI GOLFETO DOS ANJOS",
+    "cpf": "76412490949",
+    "score": 928,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "3272,42",
+    "timestamp": "2026-06-10 22:09:45"
+  },
+  {
+    "nome": "GIOVANNI DE OLIVEIRA RUELA",
+    "cpf": "44202693833",
+    "score": 912,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1341,23",
+    "timestamp": "2026-06-10 22:09:47"
+  },
+  {
+    "nome": "CELIA MARIA PICCOLI TREVISO",
+    "cpf": "32868359000",
+    "score": 916,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2525,69",
+    "timestamp": "2026-06-10 22:09:49"
+  },
+  {
+    "nome": "MAYSA KOCHE RIGUEIRA",
+    "cpf": "43643116934",
+    "score": 901,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "4668,81",
+    "timestamp": "2026-06-10 22:09:51"
+  },
+  {
+    "nome": "CESAIR BARTOLAMEI",
+    "cpf": "16282930987",
+    "score": 955,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "5168,44",
+    "timestamp": "2026-06-10 22:09:53"
+  },
+  {
+    "nome": "EGLECIO ALEXANDRE PEREIRA",
+    "cpf": "00926153927",
+    "score": 946,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "4139,23",
+    "timestamp": "2026-06-10 22:09:55"
+  },
+  {
+    "nome": "SERGIO BORILLE MORTARI",
+    "cpf": "29689341987",
+    "score": 966,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "3519,69",
+    "timestamp": "2026-06-10 22:09:57"
+  },
+  {
+    "nome": "EDELMIRO BARTH",
+    "cpf": "38396467072",
+    "score": 979,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "4056,19",
+    "timestamp": "2026-06-10 22:09:59"
+  },
+  {
+    "nome": "NAIR DE LOURDES TORMEM",
+    "cpf": "73317195991",
+    "score": 929,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "924,93",
+    "timestamp": "2026-06-10 22:10:01"
+  },
+  {
+    "nome": "SIMONE CORRADINI VIEIRA",
+    "cpf": "05905356920",
+    "score": 922,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2495,39",
+    "timestamp": "2026-06-10 22:10:03"
+  },
+  {
+    "nome": "IVONE MARQUES YOKOMIZO",
+    "cpf": "66821886849",
+    "score": 968,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "3641,10",
+    "timestamp": "2026-06-10 22:10:05"
+  },
+  {
+    "nome": "JOAO ROQUE GAZOLA",
+    "cpf": "34338560010",
+    "score": 973,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "3853,03",
+    "timestamp": "2026-06-10 22:10:07"
+  },
+  {
+    "nome": "OSNI CAMPIGOTTO",
+    "cpf": "21630259934",
+    "score": 929,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1474,07",
+    "timestamp": "2026-06-10 22:10:09"
+  },
+  {
+    "nome": "JOSE NOGUEIRA DA COSTA FILHO",
+    "cpf": "02529297568",
+    "score": 958,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1668,20",
+    "timestamp": "2026-06-10 22:10:11"
+  },
+  {
+    "nome": "DANIEL BRITO DE ARAUJO",
+    "cpf": "77119738020",
+    "score": 924,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "SEM INFORMAÇÃO",
+    "timestamp": "2026-06-10 22:10:13"
+  },
+  {
+    "nome": "ADRIANO FERNANDES ZEFERINO",
+    "cpf": "05143872979",
+    "score": 965,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "3217,03",
+    "timestamp": "2026-06-10 22:10:15"
+  },
+  {
+    "nome": "MARIA DE FATIMA NASCIMENTO SILVA",
+    "cpf": "28825225687",
+    "score": 926,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "8059,63",
+    "timestamp": "2026-06-10 22:10:17"
+  },
+  {
+    "nome": "ADAO DONIZETE FERNANDES",
+    "cpf": "12178164889",
+    "score": 959,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1161,86",
+    "timestamp": "2026-06-10 22:10:19"
+  },
+  {
+    "nome": "ADELSON ALVES DE LIMA",
+    "cpf": "10458913472",
+    "score": 928,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "6870,41",
+    "timestamp": "2026-06-10 22:10:21"
+  },
+  {
+    "nome": "ANDRE SOUSA BIZERRIL",
+    "cpf": "99786770382",
+    "score": 902,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1146,91",
+    "timestamp": "2026-06-10 22:10:23"
+  },
+  {
+    "nome": "AFONSO SYCHOCKI",
+    "cpf": "62118439920",
+    "score": 965,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "4740,76",
+    "timestamp": "2026-06-10 22:10:25"
+  },
+  {
+    "nome": "DIVAMAR CARNEIRO GEREMIA",
+    "cpf": "80263143953",
+    "score": 977,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "6260,35",
+    "timestamp": "2026-06-10 22:10:27"
+  },
+  {
+    "nome": "RAILTON THALES AMORIM CALHEIROS",
+    "cpf": "07904825414",
+    "score": 937,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1043,78",
+    "timestamp": "2026-06-10 22:10:29"
+  },
+  {
+    "nome": "SEBASTIAO JARDIM DA PURISSIMA",
+    "cpf": "70025843834",
+    "score": 923,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1254,22",
+    "timestamp": "2026-06-10 22:10:31"
+  },
+  {
+    "nome": "VITOR MARILEU SILVA DE FIGUEREDO",
+    "cpf": "49075632053",
+    "score": 908,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "4802,60",
+    "timestamp": "2026-06-10 22:10:33"
+  },
+  {
+    "nome": "RODRIGO BARBOSA DE SOUZA",
+    "cpf": "01979425124",
+    "score": 968,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "6307,25",
+    "timestamp": "2026-06-10 22:10:35"
+  },
+  {
+    "nome": "RENATO VICENTE DE GOES",
+    "cpf": "31205503889",
+    "score": 965,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2874,11",
+    "timestamp": "2026-06-10 22:10:37"
+  },
+  {
+    "nome": "ANETE MARIA SANTOS COSTA",
+    "cpf": "27525678987",
+    "score": 963,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "4748,09",
+    "timestamp": "2026-06-10 22:10:39"
+  },
+  {
+    "nome": "RIVANA CARLA DE SOUZA MOTA",
+    "cpf": "03497459607",
+    "score": 919,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "6930,62",
+    "timestamp": "2026-06-10 22:10:41"
+  },
+  {
+    "nome": "DAYSI MARIA DE ALCANTARA JONES",
+    "cpf": "06667988500",
+    "score": 954,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "25540,81",
+    "timestamp": "2026-06-10 22:10:43"
+  },
+  {
+    "nome": "REJANE MARIA BESTETTI",
+    "cpf": "77403703987",
+    "score": 919,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "5679,63",
+    "timestamp": "2026-06-10 22:10:45"
+  },
+  {
+    "nome": "BENEDITA APARECIDA BERTIN",
+    "cpf": "11524012890",
+    "score": 955,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "4498,21",
+    "timestamp": "2026-06-10 22:10:47"
+  },
+  {
+    "nome": "LUIZ ARI WESENDONCK",
+    "cpf": "25054406034",
+    "score": 962,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "3986,60",
+    "timestamp": "2026-06-10 22:10:49"
+  },
+  {
+    "nome": "AUREO ALVES VARELA",
+    "cpf": "50952765934",
+    "score": 940,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1391,70",
+    "timestamp": "2026-06-10 22:10:51"
+  },
+  {
+    "nome": "ANDERSON SIDNEI SOUZA CAMPOS",
+    "cpf": "87521113691",
+    "score": 917,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "4989,66",
+    "timestamp": "2026-06-10 22:10:53"
+  },
+  {
+    "nome": "ADELCINA CASSILHAS MAGALHAES",
+    "cpf": "86733230704",
+    "score": 902,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "5725,61",
+    "timestamp": "2026-06-10 22:10:55"
+  },
+  {
+    "nome": "JOAO RIBAS DOS SANTOS",
+    "cpf": "24951897091",
+    "score": 924,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2603,39",
+    "timestamp": "2026-06-10 22:10:57"
+  },
+  {
+    "nome": "MARILIA VARELLA BEZERRA DE FARIA",
+    "cpf": "40604527420",
+    "score": 980,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "22024,41",
+    "timestamp": "2026-06-10 22:10:59"
+  },
+  {
+    "nome": "THIAGO REINHEIMER DE FRANCESCHI",
+    "cpf": "00212165097",
+    "score": 976,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "SEM INFORMAÇÃO",
+    "timestamp": "2026-06-10 22:11:01"
+  },
+  {
+    "nome": "EMERSON FERNANDES PEDROSO",
+    "cpf": "00390105970",
+    "score": 966,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "20431,02",
+    "timestamp": "2026-06-10 22:11:03"
+  },
+  {
+    "nome": "EDUARDO DE OLIVEIRA BATISTA",
+    "cpf": "58410007649",
+    "score": 974,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "16148,80",
+    "timestamp": "2026-06-10 22:11:05"
+  },
+  {
+    "nome": "EDUARDO BARBARINI",
+    "cpf": "93897553015",
+    "score": 968,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "7523,13",
+    "timestamp": "2026-06-10 22:11:07"
+  },
+  {
+    "nome": "NERI CRESPI",
+    "cpf": "47809744020",
+    "score": 969,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2966,14",
+    "timestamp": "2026-06-10 22:11:09"
+  },
+  {
+    "nome": "JORGE IRAJA LOURO SODRE",
+    "cpf": "62021753034",
+    "score": 983,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "22996,53",
+    "timestamp": "2026-06-10 22:11:11"
+  },
+  {
+    "nome": "KATIA MANDELLI BAUER",
+    "cpf": "34845399920",
+    "score": 922,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "10298,49",
+    "timestamp": "2026-06-10 22:11:13"
+  },
+  {
+    "nome": "JACQUES TULIO MARQUES ARRUDA",
+    "cpf": "02654528642",
+    "score": 936,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "6354,56",
+    "timestamp": "2026-06-10 22:11:15"
+  },
+  {
+    "nome": "MARIA ANGELICA MENEZES BRASIL",
+    "cpf": "06611028587",
+    "score": 963,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "3913,89",
+    "timestamp": "2026-06-10 22:11:17"
+  },
+  {
+    "nome": "MYRIAN DE OLIVEIRA RIGO",
+    "cpf": "53234855749",
+    "score": 935,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "5099,45",
+    "timestamp": "2026-06-10 22:11:19"
+  },
+  {
+    "nome": "ALINE DANIELA DUTRA",
+    "cpf": "00381487067",
+    "score": 915,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "6471,21",
+    "timestamp": "2026-06-10 22:11:21"
+  },
+  {
+    "nome": "TICIANO BOAVENTURA FERREIRA",
+    "cpf": "98852574549",
+    "score": 934,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "5065,90",
+    "timestamp": "2026-06-10 22:11:23"
+  },
+  {
+    "nome": "DELI ANTONIO MARINELLO",
+    "cpf": "28533631049",
+    "score": 965,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2056,34",
+    "timestamp": "2026-06-10 22:11:25"
+  },
+  {
+    "nome": "VAGNER RUBENS GABRIEL",
+    "cpf": "76539750706",
+    "score": 971,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "3216,79",
+    "timestamp": "2026-06-10 22:11:27"
+  },
+  {
+    "nome": "MARCELO GALIOTTO",
+    "cpf": "01915854083",
+    "score": 938,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2188,14",
+    "timestamp": "2026-06-10 22:11:29"
+  },
+  {
+    "nome": "VOLNEI DIAS DA SILVA",
+    "cpf": "36702323034",
+    "score": 973,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "11193,11",
+    "timestamp": "2026-06-10 22:11:31"
+  },
+  {
+    "nome": "JOVANA SOTTILI",
+    "cpf": "83848550059",
+    "score": 961,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "3621,34",
+    "timestamp": "2026-06-10 22:11:33"
+  },
+  {
+    "nome": "ANDREA VIEIRA PEDREIRA MAGALHAES",
+    "cpf": "89545559500",
+    "score": 960,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "7353,42",
+    "timestamp": "2026-06-10 22:11:35"
+  },
+  {
+    "nome": "ALBERTO LUIZ NIEDERAUER",
+    "cpf": "17327083049",
+    "score": 972,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2327,62",
+    "timestamp": "2026-06-10 22:11:37"
+  },
+  {
+    "nome": "FELLIPE EMANUEL AMORIM SANTOS BARBOSA",
+    "cpf": "82190500559",
+    "score": 909,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "10996,88",
+    "timestamp": "2026-06-10 22:11:39"
+  },
+  {
+    "nome": "ANTONIO CARLOS CARNEIRO CAROLLO",
+    "cpf": "22119833087",
+    "score": 1000,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "SEM INFORMAÇÃO",
+    "timestamp": "2026-06-10 22:11:41"
+  },
+  {
+    "nome": "VERA LUCIA SILVESTRE FIORI",
+    "cpf": "67017720059",
+    "score": 994,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2253,71",
+    "timestamp": "2026-06-10 22:11:43"
+  },
+  {
+    "nome": "ALI BAZZI",
+    "cpf": "22162921847",
+    "score": 989,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2614,76",
+    "timestamp": "2026-06-10 22:11:45"
+  },
+  {
+    "nome": "ROSANE SOARES NODARI",
+    "cpf": "34826106068",
+    "score": 967,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2287,79",
+    "timestamp": "2026-06-10 22:11:47"
+  },
+  {
+    "nome": "FLAVIO COSTA SANTIAGO",
+    "cpf": "02536236188",
+    "score": 943,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "846,84",
+    "timestamp": "2026-06-10 22:11:49"
+  },
+  {
+    "nome": "ORNELINA BARBOSA SILVA",
+    "cpf": "40267997604",
+    "score": 976,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1393,44",
+    "timestamp": "2026-06-10 22:11:51"
+  },
+  {
+    "nome": "FELIPE DITADI",
+    "cpf": "02238317007",
+    "score": 965,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1604,01",
+    "timestamp": "2026-06-10 22:11:53"
+  },
+  {
+    "nome": "RAISSA IANSEN HOELDTKE",
+    "cpf": "08853038900",
+    "score": 971,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1518,70",
+    "timestamp": "2026-06-10 22:11:55"
+  },
+  {
+    "nome": "SABRINA DE CARLI",
+    "cpf": "02286627029",
+    "score": 919,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2252,26",
+    "timestamp": "2026-06-10 22:11:57"
+  },
+  {
+    "nome": "LINER DE SOUZA SANTOS",
+    "cpf": "21548658871",
+    "score": 960,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "SEM INFORMAÇÃO",
+    "timestamp": "2026-06-10 22:11:59"
+  },
+  {
+    "nome": "FELIPE VIDORETTI MAGRIM",
+    "cpf": "30559104863",
+    "score": 954,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "24742,25",
+    "timestamp": "2026-06-10 22:12:01"
+  },
+  {
+    "nome": "LOURDES BEATRIZ VIDORETTI MAGRIM",
+    "cpf": "37084968849",
+    "score": 987,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "6309,15",
+    "timestamp": "2026-06-10 22:12:03"
+  },
+  {
+    "nome": "JOSE MAGRIN",
+    "cpf": "71711015849",
+    "score": 955,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "6390,03",
+    "timestamp": "2026-06-10 22:12:05"
+  },
+  {
+    "nome": "LORY JOSE MAURINA",
+    "cpf": "03287254049",
+    "score": 987,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "5142,78",
+    "timestamp": "2026-06-10 22:12:07"
+  },
+  {
+    "nome": "MAGALI WEIRICH BRAIDO",
+    "cpf": "64086763087",
+    "score": 973,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2308,36",
+    "timestamp": "2026-06-10 22:12:09"
+  },
+  {
+    "nome": "OSVALDA NASCIMENTO FONSECA",
+    "cpf": "45539022904",
+    "score": 927,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2221,90",
+    "timestamp": "2026-06-10 22:12:11"
+  },
+  {
+    "nome": "SILVIO D ARRIGO BARBOSA",
+    "cpf": "17744415000",
+    "score": 990,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "7966,65",
+    "timestamp": "2026-06-10 22:12:13"
+  },
+  {
+    "nome": "JAQUELINA PAVAN",
+    "cpf": "52666522920",
+    "score": 965,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "7010,94",
+    "timestamp": "2026-06-10 22:12:15"
+  },
+  {
+    "nome": "IVIR LUIS PASSAIA",
+    "cpf": "21932310010",
+    "score": 984,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "3297,43",
+    "timestamp": "2026-06-10 22:12:17"
+  },
+  {
+    "nome": "SHAYANE OLIVEIRA CASONATTO",
+    "cpf": "01603382046",
+    "score": 917,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "3418,03",
+    "timestamp": "2026-06-10 22:12:19"
+  },
+  {
+    "nome": "REYNALDO SILVA SANCHES",
+    "cpf": "15943895272",
+    "score": 919,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2073,33",
+    "timestamp": "2026-06-10 22:12:21"
+  },
+  {
+    "nome": "JEAN CARLOS ZORTEA",
+    "cpf": "01871733030",
+    "score": 940,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2106,64",
+    "timestamp": "2026-06-10 22:12:23"
+  },
+  {
+    "nome": "MARILIA POSTINGHER PASSAIA",
+    "cpf": "57288747034",
+    "score": 999,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "3116,49",
+    "timestamp": "2026-06-10 22:12:25"
+  },
+  {
+    "nome": "MONICA PROVENSI RAVANELLO",
+    "cpf": "02680824059",
+    "score": 976,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1361,48",
+    "timestamp": "2026-06-10 22:12:27"
+  },
+  {
+    "nome": "CARLOS WALTER HENTSCHKE",
+    "cpf": "49664697087",
+    "score": 973,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "17014,99",
+    "timestamp": "2026-06-10 22:12:29"
+  },
+  {
+    "nome": "DANUBIA ARIANA DE ANDRADE",
+    "cpf": "06693847633",
+    "score": 984,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "21681,43",
+    "timestamp": "2026-06-10 22:12:31"
+  },
+  {
+    "nome": "CASSIO MAHUAD",
+    "cpf": "24592091850",
+    "score": 997,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "20930,59",
+    "timestamp": "2026-06-10 22:12:33"
+  },
+  {
+    "nome": "NILSON ALVES DE MOURA",
+    "cpf": "44574860600",
+    "score": 906,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2693,76",
+    "timestamp": "2026-06-10 22:12:35"
+  },
+  {
+    "nome": "MONICA ARNAUD LOPES",
+    "cpf": "01972899406",
+    "score": 915,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2387,31",
+    "timestamp": "2026-06-10 22:12:37"
+  },
+  {
+    "nome": "SIRLEI TERESINHA FONTANA KAUTZMANN",
+    "cpf": "56632657087",
+    "score": 918,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "3088,62",
+    "timestamp": "2026-06-10 22:12:39"
+  },
+  {
+    "nome": "RAFAEL SOBRAL VIEIRA",
+    "cpf": "00790411083",
+    "score": 962,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "8026,58",
+    "timestamp": "2026-06-10 22:12:41"
+  },
+  {
+    "nome": "YARA GOMES PASSARI AZEVEDO",
+    "cpf": "26051341803",
+    "score": 975,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "11111,53",
+    "timestamp": "2026-06-10 22:12:43"
+  },
+  {
+    "nome": "MARIA HELENA DOMINGUES",
+    "cpf": "35581808015",
+    "score": 1000,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2683,44",
+    "timestamp": "2026-06-10 22:12:45"
+  },
+  {
+    "nome": "ROSELI BUENO DO PRADO NEIVA",
+    "cpf": "08567304830",
+    "score": 953,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "5627,78",
+    "timestamp": "2026-06-10 22:12:47"
+  },
+  {
+    "nome": "VANESSA CRISTINA SOARES MACHADO",
+    "cpf": "95530100678",
+    "score": 935,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "SEM INFORMAÇÃO",
+    "timestamp": "2026-06-10 22:12:49"
+  },
+  {
+    "nome": "LUIZ RHENE CUNHA LEGEY",
+    "cpf": "07065969940",
+    "score": 902,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1905,96",
+    "timestamp": "2026-06-10 22:12:51"
+  },
+  {
+    "nome": "FELIPE LOPES VALDIVIEZO",
+    "cpf": "38470414879",
+    "score": 952,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "7587,90",
+    "timestamp": "2026-06-10 22:12:53"
+  },
+  {
+    "nome": "GUILHERME ALVES DOS SANTOS",
+    "cpf": "35779083860",
+    "score": 963,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "3385,00",
+    "timestamp": "2026-06-10 22:12:55"
+  },
+  {
+    "nome": "PAULO ROBERTO ALVES",
+    "cpf": "06414996807",
+    "score": 908,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "5037,21",
+    "timestamp": "2026-06-10 22:12:57"
+  },
+  {
+    "nome": "MARINA SAYURI MAKIYAMA",
+    "cpf": "37546778883",
+    "score": 937,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "6589,15",
+    "timestamp": "2026-06-10 22:12:59"
+  },
+  {
+    "nome": "RENATA DE MORAES DURANTE",
+    "cpf": "01057276790",
+    "score": 914,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "14379,28",
+    "timestamp": "2026-06-10 22:13:01"
+  },
+  {
+    "nome": "ROGERIO CHAVES ANASTACIO",
+    "cpf": "55075355153",
+    "score": 970,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "6098,19",
+    "timestamp": "2026-06-10 22:13:03"
+  },
+  {
+    "nome": "TERESA CRISTINA VIEIRA",
+    "cpf": "74199196749",
+    "score": 1000,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "22094,41",
+    "timestamp": "2026-06-10 22:13:05"
+  },
+  {
+    "nome": "VALERIA GUIMARAES GOMIDES CASTRO",
+    "cpf": "25628909653",
+    "score": 988,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2550,07",
+    "timestamp": "2026-06-10 22:13:07"
+  },
+  {
+    "nome": "ANA LUCIA GOMES MOTA",
+    "cpf": "06092860805",
+    "score": 965,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "20128,95",
+    "timestamp": "2026-06-10 22:13:09"
+  },
+  {
+    "nome": "GUSTAVO QUEIROZ HADDAD",
+    "cpf": "21939994810",
+    "score": 976,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "15818,51",
+    "timestamp": "2026-06-10 22:13:11"
+  },
+  {
+    "nome": "MARIA FERNANDA MANGILE",
+    "cpf": "35146065870",
+    "score": 959,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1513,85",
+    "timestamp": "2026-06-10 22:13:13"
+  },
+  {
+    "nome": "ANDRESSA ARTIGAS FELIPPE",
+    "cpf": "04324602921",
+    "score": 963,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "4347,67",
+    "timestamp": "2026-06-10 22:13:15"
+  },
+  {
+    "nome": "SORAYA EL HADI DE ALMEIDA",
+    "cpf": "04350672818",
+    "score": 977,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "SEM INFORMAÇÃO",
+    "timestamp": "2026-06-10 22:13:17"
+  },
+  {
+    "nome": "MONISE DOS SANTOS MARTINS",
+    "cpf": "43177256810",
+    "score": 986,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2035,33",
+    "timestamp": "2026-06-10 22:13:19"
+  },
+  {
+    "nome": "RODRIGO MARTINELLI FORMENTON",
+    "cpf": "29034886816",
+    "score": 995,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "16025,68",
+    "timestamp": "2026-06-10 22:13:21"
+  },
+  {
+    "nome": "KAMILA BRITO MESQUITA",
+    "cpf": "00867919310",
+    "score": 943,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1412,05",
+    "timestamp": "2026-06-10 22:13:23"
+  },
+  {
+    "nome": "FABIANE JUBETT",
+    "cpf": "54498872053",
+    "score": 933,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "5284,96",
+    "timestamp": "2026-06-10 22:13:25"
+  },
+  {
+    "nome": "CLAUDIO LUIZ SANTOS JUNIOR",
+    "cpf": "92223761020",
+    "score": 967,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "7789,37",
+    "timestamp": "2026-06-10 22:13:27"
+  },
+  {
+    "nome": "CARLOS ROBERTO PANSARD VAN TEFFELEN",
+    "cpf": "16502698034",
+    "score": 963,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "5541,41",
+    "timestamp": "2026-06-10 22:13:29"
+  },
+  {
+    "nome": "IVANI PIRIZ KNORR",
+    "cpf": "48658502015",
+    "score": 931,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "4566,54",
+    "timestamp": "2026-06-10 22:13:31"
+  },
+  {
+    "nome": "EZEQUIEL LOPES DE ARAUJO",
+    "cpf": "25719152822",
+    "score": 991,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1833,02",
+    "timestamp": "2026-06-10 22:13:33"
+  },
+  {
+    "nome": "OTAVIO DE MIRANDA SOUZA NETO",
+    "cpf": "34467085882",
+    "score": 956,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "3696,26",
+    "timestamp": "2026-06-10 22:13:35"
+  },
+  {
+    "nome": "FERNANDO DENARDI",
+    "cpf": "22604278049",
+    "score": 980,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "7355,57",
+    "timestamp": "2026-06-10 22:13:37"
+  },
+  {
+    "nome": "WALTER DE AGUIAR FILHO",
+    "cpf": "57492280700",
+    "score": 953,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "6264,47",
+    "timestamp": "2026-06-10 22:13:39"
+  },
+  {
+    "nome": "CELSO CANISIO MULLER",
+    "cpf": "19532830049",
+    "score": 905,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "26203,15",
+    "timestamp": "2026-06-10 22:13:41"
+  },
+  {
+    "nome": "CASSIANO FUGA CUNHA",
+    "cpf": "76645606087",
+    "score": 981,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "3308,54",
+    "timestamp": "2026-06-10 22:13:43"
+  },
+  {
+    "nome": "JASKOLCA DE LIMA AZEVEDO",
+    "cpf": "06724165652",
+    "score": 990,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2713,21",
+    "timestamp": "2026-06-10 22:13:45"
+  },
+  {
+    "nome": "ALICE DOS SANTOS NUNES",
+    "cpf": "96015500034",
+    "score": 945,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1709,80",
+    "timestamp": "2026-06-10 22:13:47"
+  },
+  {
+    "nome": "JANICE FONTOURA",
+    "cpf": "64231763020",
+    "score": 976,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2223,96",
+    "timestamp": "2026-06-10 22:13:49"
+  },
+  {
+    "nome": "JOAO LUIS MARCOS",
+    "cpf": "32971443000",
+    "score": 961,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "SEM INFORMAÇÃO",
+    "timestamp": "2026-06-10 22:13:51"
+  },
+  {
+    "nome": "TANIA MARA DLUGOKENSKI",
+    "cpf": "31460763068",
+    "score": 920,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "4901,68",
+    "timestamp": "2026-06-10 22:13:53"
+  },
+  {
+    "nome": "VALDIR FOZZA",
+    "cpf": "23619007004",
+    "score": 973,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1849,09",
+    "timestamp": "2026-06-10 22:13:55"
+  },
+  {
+    "nome": "CARLOS ALBERTO OLIVEIRA DE CASTRO",
+    "cpf": "05515343034",
+    "score": 955,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "6392,17",
+    "timestamp": "2026-06-10 22:13:57"
+  },
+  {
+    "nome": "JOAO BATISTA BORGES",
+    "cpf": "26013347620",
+    "score": 934,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1163,05",
+    "timestamp": "2026-06-10 22:13:59"
+  },
+  {
+    "nome": "MITSUYA HARADA",
+    "cpf": "25221299020",
+    "score": 994,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2016,46",
+    "timestamp": "2026-06-10 22:14:01"
+  },
+  {
+    "nome": "ARNO JOSE JUNG",
+    "cpf": "22764259034",
+    "score": 964,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2218,36",
+    "timestamp": "2026-06-10 22:14:03"
+  },
+  {
+    "nome": "SUSANA BEATRIZ QUADRADO",
+    "cpf": "67347150000",
+    "score": 965,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "5182,86",
+    "timestamp": "2026-06-10 22:14:05"
+  },
+  {
+    "nome": "LUANA VIDAL DOS SANTOS",
+    "cpf": "03032870046",
+    "score": 905,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "608,13",
+    "timestamp": "2026-06-10 22:14:07"
+  },
+  {
+    "nome": "DENISE LEMES DA VEIGA",
+    "cpf": "39192733034",
+    "score": 937,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "20284,91",
+    "timestamp": "2026-06-10 22:14:09"
+  },
+  {
+    "nome": "GERALDO SCIPIONI",
+    "cpf": "12600008004",
+    "score": 936,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "4534,00",
+    "timestamp": "2026-06-10 22:14:11"
+  },
+  {
+    "nome": "LIANE MARIA NUNES VILANOVA",
+    "cpf": "70798982004",
+    "score": 901,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "14026,41",
+    "timestamp": "2026-06-10 22:14:13"
+  },
+  {
+    "nome": "SULMIR ZENI",
+    "cpf": "39806596072",
+    "score": 938,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "3387,36",
+    "timestamp": "2026-06-10 22:14:15"
+  },
+  {
+    "nome": "MARIA HELENA ROSSATTO",
+    "cpf": "36311219034",
+    "score": 915,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1672,56",
+    "timestamp": "2026-06-10 22:14:17"
+  },
+  {
+    "nome": "ONDINO NOBRE DA SILVA",
+    "cpf": "25752111072",
+    "score": 907,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "4655,65",
+    "timestamp": "2026-06-10 22:14:19"
+  },
+  {
+    "nome": "LILIA ANCONA LOPEZ",
+    "cpf": "87307090830",
+    "score": 976,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2769,18",
+    "timestamp": "2026-06-10 22:14:21"
+  },
+  {
+    "nome": "ANTONIO GERALDO ORMASTRONI JULIANO FRANCO",
+    "cpf": "22439990809",
+    "score": 947,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "10914,17",
+    "timestamp": "2026-06-10 22:14:23"
+  },
+  {
+    "nome": "LUCIA MARIA CARELLI NETTO",
+    "cpf": "28658280004",
+    "score": 944,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2230,43",
+    "timestamp": "2026-06-10 22:14:25"
+  },
+  {
+    "nome": "ALEXANDRE BUGIN",
+    "cpf": "39094839091",
+    "score": 968,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "7550,64",
+    "timestamp": "2026-06-10 22:14:27"
+  },
+  {
+    "nome": "DANIELLE COSTA CARVALHO BARTOLY",
+    "cpf": "05609552788",
+    "score": 919,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "6604,05",
+    "timestamp": "2026-06-10 22:14:29"
+  },
+  {
+    "nome": "MARCILIO SANTOS SOUZA",
+    "cpf": "25092049472",
+    "score": 966,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "20950,05",
+    "timestamp": "2026-06-10 22:14:31"
+  },
+  {
+    "nome": "IRAN AMARAL DOS SANTOS",
+    "cpf": "22764020082",
+    "score": 966,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "3680,26",
+    "timestamp": "2026-06-10 22:14:33"
+  },
+  {
+    "nome": "GENTIL STRINGHINI LOPES FILHO",
+    "cpf": "33026564087",
+    "score": 949,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "4011,11",
+    "timestamp": "2026-06-10 22:14:35"
+  },
+  {
+    "nome": "RENATO MARCAL FERREIRA",
+    "cpf": "03127072660",
+    "score": 937,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "SEM INFORMAÇÃO",
+    "timestamp": "2026-06-10 22:14:37"
+  },
+  {
+    "nome": "EMANUELA TRESSOLDI SCHNEIDER",
+    "cpf": "89065069020",
+    "score": 963,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "7137,29",
+    "timestamp": "2026-06-10 22:14:39"
+  },
+  {
+    "nome": "VALDECI GOMES",
+    "cpf": "03422318801",
+    "score": 918,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1960,24",
+    "timestamp": "2026-06-10 22:14:41"
+  },
+  {
+    "nome": "WELLINGTON SAMPAIO VIEIRA JUNIOR",
+    "cpf": "00981529399",
+    "score": 910,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "SEM INFORMAÇÃO",
+    "timestamp": "2026-06-10 22:14:43"
+  },
+  {
+    "nome": "MAYARA LUCIA DE SOUZA NASCIMENTO TINOCO",
+    "cpf": "93166192204",
+    "score": 947,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "3063,15",
+    "timestamp": "2026-06-10 22:14:45"
+  },
+  {
+    "nome": "MARCIO GRAPEGGIA",
+    "cpf": "92996787072",
+    "score": 954,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "4620,72",
+    "timestamp": "2026-06-10 22:14:47"
+  },
+  {
+    "nome": "GABRIEL LIMA AGUIAR",
+    "cpf": "08668796763",
+    "score": 960,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2364,31",
+    "timestamp": "2026-06-10 22:14:49"
+  },
+  {
+    "nome": "RAFAEL HENRIQUE ROVERE",
+    "cpf": "37218406823",
+    "score": 922,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1149,55",
+    "timestamp": "2026-06-10 22:14:51"
+  },
+  {
+    "nome": "LEANDRO GUTHLER",
+    "cpf": "46736980020",
+    "score": 964,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "SEM INFORMAÇÃO",
+    "timestamp": "2026-06-10 22:14:53"
+  },
+  {
+    "nome": "MARIA HELENA CAVALCANTI MARTINS",
+    "cpf": "49553860753",
+    "score": 985,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "24602,13",
+    "timestamp": "2026-06-10 22:14:55"
+  },
+  {
+    "nome": "MARIA CRISTINA ROMAO ZANUTTO GRIZZO",
+    "cpf": "82821909853",
+    "score": 949,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "6301,94",
+    "timestamp": "2026-06-10 22:14:57"
+  },
+  {
+    "nome": "LUCAS DE BILLY SILVA SOUSA",
+    "cpf": "48657114810",
+    "score": 932,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1089,36",
+    "timestamp": "2026-06-10 22:14:59"
+  },
+  {
+    "nome": "LUCAS DE AGUIAR GAZOLA",
+    "cpf": "32809472866",
+    "score": 917,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "13534,70",
+    "timestamp": "2026-06-10 22:15:01"
+  },
+  {
+    "nome": "VANIA PAIVA GOLGO",
+    "cpf": "17956889049",
+    "score": 905,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "5862,42",
+    "timestamp": "2026-06-10 22:15:03"
+  },
+  {
+    "nome": "DAIANA FABRICIA BOHS",
+    "cpf": "00078914078",
+    "score": 961,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "5082,16",
+    "timestamp": "2026-06-10 22:15:05"
+  },
+  {
+    "nome": "LUIS CARLOS DO AMARAL NUNES",
+    "cpf": "42273145004",
+    "score": 983,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "4532,57",
+    "timestamp": "2026-06-10 22:15:07"
+  },
+  {
+    "nome": "MARIA TERESA GOMES",
+    "cpf": "40640256791",
+    "score": 929,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "6524,50",
+    "timestamp": "2026-06-10 22:15:09"
+  },
+  {
+    "nome": "SERGIO LUIZ NEUMANN",
+    "cpf": "40831132000",
+    "score": 917,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "5231,01",
+    "timestamp": "2026-06-10 22:15:11"
+  },
+  {
+    "nome": "JOSE ILTON LOPES DA SILVA",
+    "cpf": "09873309187",
+    "score": 954,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "7601,79",
+    "timestamp": "2026-06-10 22:15:13"
+  },
+  {
+    "nome": "DANIELLE PATRICIA STAUT CONTER",
+    "cpf": "02329515944",
+    "score": 975,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "8161,96",
+    "timestamp": "2026-06-10 22:15:15"
+  },
+  {
+    "nome": "CAMILA GOMES DE OLIVEIRA SANTOS",
+    "cpf": "06663485610",
+    "score": 925,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "6645,04",
+    "timestamp": "2026-06-10 22:15:17"
+  },
+  {
+    "nome": "EDINEIA APARECIDA FONTANIVE DOS SANTOS",
+    "cpf": "05483066995",
+    "score": 967,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1796,54",
+    "timestamp": "2026-06-10 22:15:19"
+  },
+  {
+    "nome": "LUIZ FERNANDO DOS SANTOS APOLINARIO",
+    "cpf": "12797263936",
+    "score": 910,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": ",00",
+    "timestamp": "2026-06-10 22:15:21"
+  },
+  {
+    "nome": "DAVI HUGO MARQUES PONTES",
+    "cpf": "02450590323",
+    "score": 953,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "702,94",
+    "timestamp": "2026-06-10 22:15:23"
+  },
+  {
+    "nome": "FABIANA MARIA FARIAS SANTOS BARRETTO",
+    "cpf": "91362725587",
+    "score": 973,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "16316,73",
+    "timestamp": "2026-06-10 22:15:25"
+  },
+  {
+    "nome": "PERLITA HENSSLER DAMACENO",
+    "cpf": "83216537072",
+    "score": 979,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1848,71",
+    "timestamp": "2026-06-10 22:15:27"
+  },
+  {
+    "nome": "LUIS RICARDO LOPES DE FARI A",
+    "cpf": "05260931700",
+    "score": 922,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2553,34",
+    "timestamp": "2026-06-10 22:15:29"
+  },
+  {
+    "nome": "JOAO CARLOS RIBEIRO DIAS",
+    "cpf": "71065270097",
+    "score": 977,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "6020,06",
+    "timestamp": "2026-06-10 22:15:31"
+  },
+  {
+    "nome": "SANDRA RAMOS TANAKA",
+    "cpf": "25872587821",
+    "score": 936,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2872,45",
+    "timestamp": "2026-06-10 22:15:33"
+  },
+  {
+    "nome": "SARA ASENJO DE PAULA",
+    "cpf": "30789079704",
+    "score": 961,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "21820,62",
+    "timestamp": "2026-06-10 22:15:35"
+  },
+  {
+    "nome": "MATHEUS VIRGILIO DE MOURA LIMA E ALMEIDA",
+    "cpf": "10514588624",
+    "score": 955,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "6813,85",
+    "timestamp": "2026-06-10 22:15:37"
+  },
+  {
+    "nome": "ALEXANDRE RIBEIRO MIRANDA",
+    "cpf": "29017314818",
+    "score": 972,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "5986,66",
+    "timestamp": "2026-06-10 22:15:39"
+  },
+  {
+    "nome": "JOSE AUGUSTO DA CRUZ FILHO",
+    "cpf": "65510968400",
+    "score": 933,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "5648,37",
+    "timestamp": "2026-06-10 22:15:41"
+  },
+  {
+    "nome": "DIVINA LUCIO SIMOES",
+    "cpf": "04443420100",
+    "score": 909,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "5107,30",
+    "timestamp": "2026-06-10 22:15:43"
+  },
+  {
+    "nome": "TANIA REGINA DE MORAES E SILVA GONCALVES DE FARIA",
+    "cpf": "51489139753",
+    "score": 975,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "15662,22",
+    "timestamp": "2026-06-10 22:15:45"
+  },
+  {
+    "nome": "GILSIANO CEREZER CORADINI",
+    "cpf": "01496696077",
+    "score": 915,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1711,67",
+    "timestamp": "2026-06-10 22:15:47"
+  },
+  {
+    "nome": "MAURICIO RUIZ DA SILVA",
+    "cpf": "13481490860",
+    "score": 986,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "31083,32",
+    "timestamp": "2026-06-10 22:15:49"
+  },
+  {
+    "nome": "FABIO LUIS IWAKOSHI DA SILVA",
+    "cpf": "36162439801",
+    "score": 968,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "9551,62",
+    "timestamp": "2026-06-10 22:15:51"
+  },
+  {
+    "nome": "LUCIANA DIAS DE JESUS",
+    "cpf": "99791005168",
+    "score": 944,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "9091,83",
+    "timestamp": "2026-06-10 22:15:53"
+  },
+  {
+    "nome": "FERNANDO MARTINS DURSO",
+    "cpf": "76787850620",
+    "score": 978,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "3438,94",
+    "timestamp": "2026-06-10 22:15:55"
+  },
+  {
+    "nome": "MARIA LUIZA BORGES CARDOZO",
+    "cpf": "18354874087",
+    "score": 968,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "5911,72",
+    "timestamp": "2026-06-10 22:15:57"
+  },
+  {
+    "nome": "TATIANE DANTAS CAVALCANTE MELO",
+    "cpf": "72206390159",
+    "score": 977,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "13326,99",
+    "timestamp": "2026-06-10 22:15:59"
+  },
+  {
+    "nome": "DONATO FILIPPO LATTANZIO",
+    "cpf": "00006691641",
+    "score": 962,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "7653,95",
+    "timestamp": "2026-06-10 22:16:01"
+  },
+  {
+    "nome": "ELISABETE DESIDERIO",
+    "cpf": "34863044704",
+    "score": 909,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "5127,57",
+    "timestamp": "2026-06-10 22:16:03"
+  },
+  {
+    "nome": "SIMONE DO CARMO OLIVEIRA",
+    "cpf": "03893739661",
+    "score": 955,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1791,19",
+    "timestamp": "2026-06-10 22:16:05"
+  },
+  {
+    "nome": "OZILIA SEBIM ZANON",
+    "cpf": "11444005707",
+    "score": 900,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1405,40",
+    "timestamp": "2026-06-10 22:16:07"
+  },
+  {
+    "nome": "SABRINA DE DAVID",
+    "cpf": "96253746049",
+    "score": 919,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "SEM INFORMAÇÃO",
+    "timestamp": "2026-06-10 22:16:09"
+  },
+  {
+    "nome": "MARCELO SPIANDON",
+    "cpf": "31332567851",
+    "score": 981,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "8405,72",
+    "timestamp": "2026-06-10 22:16:11"
+  },
+  {
+    "nome": "ANGELINA CATHARINA RIVA",
+    "cpf": "65814045000",
+    "score": 936,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1620,22",
+    "timestamp": "2026-06-10 22:16:13"
+  },
+  {
+    "nome": "MARCOS DA SILVA ROCHA",
+    "cpf": "08344769752",
+    "score": 919,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "7169,73",
+    "timestamp": "2026-06-10 22:16:15"
+  },
+  {
+    "nome": "ALEX PEREIRA DE OLIVEIRA",
+    "cpf": "32373965836",
+    "score": 955,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "15112,89",
+    "timestamp": "2026-06-10 22:16:17"
+  },
+  {
+    "nome": "SELMA ELISA FERES PEREIRA ARANTES",
+    "cpf": "36623687149",
+    "score": 926,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2027,46",
+    "timestamp": "2026-06-10 22:16:19"
+  },
+  {
+    "nome": "LOTARINO LUIZ RIVA",
+    "cpf": "07387032068",
+    "score": 926,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "SEM INFORMAÇÃO",
+    "timestamp": "2026-06-10 22:16:21"
+  },
+  {
+    "nome": "BRUNO DE OLIVEIRA FELIPE",
+    "cpf": "07387843708",
+    "score": 972,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "13084,22",
+    "timestamp": "2026-06-10 22:16:23"
+  },
+  {
+    "nome": "GABRIELA DINIZ DE CARVALHO",
+    "cpf": "12405600790",
+    "score": 943,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "9938,30",
+    "timestamp": "2026-06-10 22:16:25"
+  },
+  {
+    "nome": "PAULO CESAR MOREIRA SANTOS",
+    "cpf": "11121432700",
+    "score": 977,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "4446,06",
+    "timestamp": "2026-06-10 22:16:27"
+  },
+  {
+    "nome": "SANDRA APARECIDA DA SILVA",
+    "cpf": "76266370620",
+    "score": 927,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1108,63",
+    "timestamp": "2026-06-10 22:16:29"
+  },
+  {
+    "nome": "MARIA VIRGINIA ZAIA PINTO COELHO",
+    "cpf": "37403664604",
+    "score": 995,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "7970,87",
+    "timestamp": "2026-06-10 22:16:31"
+  },
+  {
+    "nome": "RUI TEIXEIRA BRUM",
+    "cpf": "15741877087",
+    "score": 978,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "9235,43",
+    "timestamp": "2026-06-10 22:16:33"
+  },
+  {
+    "nome": "FERNANDA GONZAGA",
+    "cpf": "06855698611",
+    "score": 950,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "3178,47",
+    "timestamp": "2026-06-10 22:16:35"
+  },
+  {
+    "nome": "ALEX MOREIRA ALVES",
+    "cpf": "01795611979",
+    "score": 950,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "5062,62",
+    "timestamp": "2026-06-10 22:16:37"
+  },
+  {
+    "nome": "BRUNA POLETI AVAMILANO",
+    "cpf": "35390486854",
+    "score": 949,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1289,35",
+    "timestamp": "2026-06-10 22:16:39"
+  },
+  {
+    "nome": "ROBERTO RODRIGUES DUARTE",
+    "cpf": "07824875725",
+    "score": 941,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "4662,95",
+    "timestamp": "2026-06-10 22:16:41"
+  },
+  {
+    "nome": "NEWTON PEDROSO GOMES MARTINS",
+    "cpf": "25090823880",
+    "score": 969,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2530,61",
+    "timestamp": "2026-06-10 22:16:43"
+  },
+  {
+    "nome": "JADER PEREIRA RESENDE",
+    "cpf": "37419048649",
+    "score": 1000,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "4954,45",
+    "timestamp": "2026-06-10 22:16:45"
+  },
+  {
+    "nome": "MARCELO HENRIQUE MENDES",
+    "cpf": "16964707816",
+    "score": 908,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "4593,63",
+    "timestamp": "2026-06-10 22:16:47"
+  },
+  {
+    "nome": "MARINO DIAS",
+    "cpf": "29188121968",
+    "score": 961,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "6899,83",
+    "timestamp": "2026-06-10 22:16:49"
+  },
+  {
+    "nome": "MARCELA DE LIMA MARTINELLI",
+    "cpf": "11506124798",
+    "score": 972,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "5139,47",
+    "timestamp": "2026-06-10 22:16:51"
+  },
+  {
+    "nome": "ANDRE MARSIGLIA DE OLIVEIRA SANTOS",
+    "cpf": "21891721879",
+    "score": 967,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "6653,59",
+    "timestamp": "2026-06-10 22:16:53"
+  },
+  {
+    "nome": "ADRIANA DE ARAUJO SILVA GARZON",
+    "cpf": "81411901649",
+    "score": 969,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "6582,89",
+    "timestamp": "2026-06-10 22:16:55"
+  },
+  {
+    "nome": "LEONIR RODRIGUES DA LUZ",
+    "cpf": "66061075049",
+    "score": 918,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1765,67",
+    "timestamp": "2026-06-10 22:16:57"
+  },
+  {
+    "nome": "ANGELICA CASTANHA MENDES",
+    "cpf": "40562350829",
+    "score": 953,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2142,71",
+    "timestamp": "2026-06-10 22:16:59"
+  },
+  {
+    "nome": "MARGOT FELIPPI",
+    "cpf": "64144968987",
+    "score": 945,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "7586,21",
+    "timestamp": "2026-06-10 22:17:01"
+  },
+  {
+    "nome": "DANIEL LAURENCE VIEIRA REMOS",
+    "cpf": "89995414015",
+    "score": 943,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "SEM INFORMAÇÃO",
+    "timestamp": "2026-06-10 22:17:03"
+  },
+  {
+    "nome": "JOSE CARLOS BARBOSA DA SILVA",
+    "cpf": "11302623400",
+    "score": 905,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1883,27",
+    "timestamp": "2026-06-10 22:17:05"
+  },
+  {
+    "nome": "CLAUDIO ROBERTO JANUARIO",
+    "cpf": "01798457997",
+    "score": 963,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "22973,89",
+    "timestamp": "2026-06-10 22:17:07"
+  },
+  {
+    "nome": "GERALDO ALONSO FILHO",
+    "cpf": "23262010863",
+    "score": 931,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "7939,01",
+    "timestamp": "2026-06-10 22:17:09"
+  },
+  {
+    "nome": "MERSITA FARDO ARMENIO",
+    "cpf": "76333035904",
+    "score": 962,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "5012,06",
+    "timestamp": "2026-06-10 22:17:11"
+  },
+  {
+    "nome": "GLORIA TRENTIM GOMES",
+    "cpf": "04475541743",
+    "score": 919,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1546,19",
+    "timestamp": "2026-06-10 22:17:13"
+  },
+  {
+    "nome": "MARGARETH ROSE BARRETO DE LIMA PINHEIRO",
+    "cpf": "90459210491",
+    "score": 960,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "6934,84",
+    "timestamp": "2026-06-10 22:17:15"
+  },
+  {
+    "nome": "ANDRE LUIZ BASSORA SILVA",
+    "cpf": "17534406889",
+    "score": 954,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "3886,44",
+    "timestamp": "2026-06-10 22:17:17"
+  },
+  {
+    "nome": "CRISTAL MILANI",
+    "cpf": "39512642840",
+    "score": 906,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2007,55",
+    "timestamp": "2026-06-10 22:17:19"
+  },
+  {
+    "nome": "DAMIAN ARIEL MORANDO",
+    "cpf": "04585983996",
+    "score": 935,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "20029,97",
+    "timestamp": "2026-06-10 22:17:21"
+  },
+  {
+    "nome": "GABRIEL LAZZERIS",
+    "cpf": "11145294944",
+    "score": 934,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "923,09",
+    "timestamp": "2026-06-10 22:17:23"
+  },
+  {
+    "nome": "MARIA APARECIDA DE OLIVEIRA",
+    "cpf": "39887529400",
+    "score": 971,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2235,19",
+    "timestamp": "2026-06-10 22:17:25"
+  },
+  {
+    "nome": "JOHNNY SOUZA BARROS",
+    "cpf": "34722166897",
+    "score": 943,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "3756,53",
+    "timestamp": "2026-06-10 22:17:27"
+  },
+  {
+    "nome": "MATEUS PRETTO CAVALCANTI",
+    "cpf": "84457465020",
+    "score": 953,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2509,36",
+    "timestamp": "2026-06-10 22:17:29"
+  },
+  {
+    "nome": "DIEGO DOS SANTOS HERMINIO",
+    "cpf": "01259052389",
+    "score": 962,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "SEM INFORMAÇÃO",
+    "timestamp": "2026-06-10 22:17:31"
+  },
+  {
+    "nome": "JURACI TERESINHA HORST",
+    "cpf": "72138521915",
+    "score": 982,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2218,69",
+    "timestamp": "2026-06-10 22:17:33"
+  },
+  {
+    "nome": "AMABILE SUELEN BOLDIERI DOS SANTOS",
+    "cpf": "22545606898",
+    "score": 982,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2507,49",
+    "timestamp": "2026-06-10 22:17:35"
+  },
+  {
+    "nome": "CLAUDIO LIMANI FILHO",
+    "cpf": "10346367743",
+    "score": 985,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1278,90",
+    "timestamp": "2026-06-10 22:17:37"
+  },
+  {
+    "nome": "MARCELO PERUZZO",
+    "cpf": "90019652020",
+    "score": 995,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "6947,30",
+    "timestamp": "2026-06-10 22:17:39"
+  },
+  {
+    "nome": "ALECIO FERNANDES",
+    "cpf": "43408672920",
+    "score": 924,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "5212,26",
+    "timestamp": "2026-06-10 22:17:41"
+  },
+  {
+    "nome": "MIDIAN DE SOUSA CONSERVA",
+    "cpf": "23758309468",
+    "score": 910,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "4587,53",
+    "timestamp": "2026-06-11 21:50:51"
+  },
+  {
+    "nome": "GUILHERME LEONEL FERREIRA ROSA",
+    "cpf": "03884302655",
+    "score": 973,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "3267,43",
+    "timestamp": "2026-06-11 21:50:51"
+  },
+  {
+    "nome": "DILMA NIENKOETTER DA SILVA",
+    "cpf": "47961287949",
+    "score": 973,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "6021,46",
+    "timestamp": "2026-06-11 21:50:52"
+  },
+  {
+    "nome": "DANIEL BOGER DA ROSA",
+    "cpf": "06456577942",
+    "score": 955,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "4192,84",
+    "timestamp": "2026-06-11 21:50:52"
+  },
+  {
+    "nome": "DJONATAN ARIEL BACK",
+    "cpf": "09354986994",
+    "score": 954,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "1138,43",
+    "timestamp": "2026-06-11 21:50:52"
+  },
+  {
+    "nome": "DANIEL MARTINS LEITE",
+    "cpf": "36116769934",
+    "score": 1000,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "4577,48",
+    "timestamp": "2026-06-11 21:50:53"
+  },
+  {
+    "nome": "GERMANA MARIA DE OLIVEIRA",
+    "cpf": "97191655100",
+    "score": 956,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "3710,67",
+    "timestamp": "2026-06-11 21:54:36"
+  },
+  {
+    "nome": "ADRIANO RIBEIRO DE MOURA",
+    "cpf": "83586385153",
+    "score": 934,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2771,30",
+    "timestamp": "2026-06-11 21:57:21"
+  },
+  {
+    "nome": "ALGRIDE ANGELO LUNEDO",
+    "cpf": "46168982000",
+    "score": 939,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "5995,79",
+    "timestamp": "2026-06-11 22:01:33"
+  },
+  {
+    "nome": "MARIA ISABEL GUALIATO GIMENES",
+    "cpf": "06549463882",
+    "score": 950,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "7184,08",
+    "timestamp": "2026-06-11 22:03:55"
+  },
+  {
+    "nome": "EMERSON OLIVEIRA ROCHA",
+    "cpf": "17677408591",
+    "score": 956,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "6475,82",
+    "timestamp": "2026-06-11 22:05:37"
+  },
+  {
+    "nome": "NEUSA MARIA BERNARDES",
+    "cpf": "48570257953",
+    "score": 975,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "5342,70",
+    "timestamp": "2026-06-11 22:06:50"
+  },
+  {
+    "nome": "PETERSON FAGUNDES MORENO DA SILVA",
+    "cpf": "36689901823",
+    "score": 900,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2223,64",
+    "timestamp": "2026-06-11 22:08:06"
+  },
+  {
+    "nome": "MARA VIEIRA DE BONA",
+    "cpf": "50727508920",
+    "score": 996,
+    "faixa_de_risco": "BAIXISSIMO RISCO",
+    "renda_presumida": "2265,86",
+    "timestamp": "2026-06-11 22:08:34"
+  }
+]
