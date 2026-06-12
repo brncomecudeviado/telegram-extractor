@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Telegram CPF Extractor Dashboard</title>
+    <title>Telegram Extractor CRM Dashboard</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,16 +13,25 @@
     
     <style>
         :root {
-            --bg-color: #0d1117;
-            --panel-bg: rgba(22, 27, 34, 0.7);
-            --panel-border: rgba(48, 54, 61, 0.6);
-            --accent-primary: #58a6ff;
-            --accent-gradient: linear-gradient(135deg, #1f6feb, #8e2de2);
-            --text-primary: #c9d1d9;
+            --bg-color: #080c10;
+            --sidebar-bg: #0c1017;
+            --panel-bg: rgba(17, 22, 30, 0.75);
+            --panel-border: rgba(45, 55, 72, 0.4);
+            --accent-primary: #6366f1;
+            --accent-gradient: linear-gradient(135deg, #6366f1, #a855f7);
+            --text-primary: #f0f6fc;
             --text-secondary: #8b949e;
-            --success: #2ea043;
-            --card-hover: rgba(56, 139, 253, 0.12);
-            --shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+            
+            /* Score colors */
+            --score-high: #10b981;    /* 980 - 1000 */
+            --score-medium: #a855f7;  /* 950 - 979 */
+            --score-low: #3b82f6;     /* 900 - 949 */
+            
+            --success: #10b981;
+            --card-hover: rgba(99, 102, 241, 0.08);
+            --shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+            --shadow-glow: 0 0 20px rgba(99, 102, 241, 0.15);
+            --transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
         }
 
         * {
@@ -38,261 +47,238 @@
             height: 100vh;
             display: flex;
             overflow: hidden;
-            background-image: radial-gradient(circle at 10% 20%, rgba(90, 40, 190, 0.05) 0%, transparent 40%),
-                              radial-gradient(circle at 90% 80%, rgba(31, 111, 235, 0.05) 0%, transparent 40%);
+            background-image: radial-gradient(circle at 0% 0%, rgba(99, 102, 241, 0.05) 0%, transparent 50%),
+                              radial-gradient(circle at 100% 100%, rgba(168, 85, 247, 0.05) 0%, transparent 50%);
         }
 
-        /* Split-Pane Layout */
+        /* App Container Layout */
+        .app-container {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        /* Left Sidebar Styling */
         .sidebar {
-            width: 380px;
+            width: 260px;
+            background-color: var(--sidebar-bg);
             border-right: 1px solid var(--panel-border);
-            background: rgba(22, 27, 34, 0.85);
             display: flex;
-            flex-direction: flex-col;
+            flex-direction: column;
             flex-shrink: 0;
-            height: 100%;
+            z-index: 10;
+        }
+
+        .sidebar-brand {
+            padding: 2rem 1.5rem;
             display: flex;
-            flex-direction: column;
-            backdrop-filter: blur(10px);
-        }
-
-        .main-content {
-            flex: 1;
-            height: 100%;
-            overflow-y: auto;
-            padding: 2.5rem;
-            display: flex;
-            flex-direction: column;
-        }
-
-        /* Sidebar Header & Controls */
-        .sidebar-header {
-            padding: 1.5rem;
-            border-bottom: 1px solid var(--panel-border);
-        }
-
-        .sidebar-title {
+            align-items: center;
+            gap: 0.75rem;
             font-family: 'Outfit', sans-serif;
             font-weight: 700;
-            font-size: 1.5rem;
-            background: linear-gradient(90deg, #58a6ff, #bc85ff);
+            font-size: 1.25rem;
+            background: linear-gradient(90deg, #6366f1, #bc85ff);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            margin-bottom: 1rem;
+            border-bottom: 1px solid rgba(45, 55, 72, 0.2);
         }
 
-        .sidebar-controls {
+        .sidebar-brand i {
+            -webkit-text-fill-color: initial;
+            color: #6366f1;
+            font-size: 1.5rem;
+        }
+
+        .sidebar-menu {
+            list-style: none;
+            padding: 1.5rem 1rem;
             display: flex;
             flex-direction: column;
-            gap: 0.75rem;
+            gap: 0.5rem;
+            flex: 1;
         }
 
-        .search-box {
-            position: relative;
-            width: 100%;
-        }
-
-        .search-box i {
-            position: absolute;
-            left: 0.75rem;
-            top: 50%;
-            transform: translateY(-50%);
+        .menu-item a {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 0.85rem 1rem;
             color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            border-radius: 8px;
+            transition: var(--transition);
         }
 
-        .search-box input {
-            width: 100%;
-            padding: 0.6rem 1rem 0.6rem 2.25rem;
-            background-color: rgba(13, 17, 23, 0.8);
-            border: 1px solid var(--panel-border);
-            border-radius: 8px;
+        .menu-item.active a, .menu-item a:hover {
             color: var(--text-primary);
-            font-size: 0.9rem;
-            outline: none;
-            transition: border-color 0.2s;
+            background-color: rgba(99, 102, 241, 0.1);
         }
 
-        .search-box input:focus {
-            border-color: var(--accent-primary);
+        .menu-item.active a {
+            border-left: 3px solid var(--accent-primary);
+            border-radius: 0 8px 8px 0;
+            padding-left: calc(1rem - 3px);
         }
 
-        .sidebar-actions {
-            display: flex;
-            gap: 0.5rem;
+        .sidebar-footer {
+            padding: 1.5rem;
+            border-top: 1px solid rgba(45, 55, 72, 0.2);
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            text-align: center;
         }
 
-        .select-filter {
+        /* Main Dashboard Content Area */
+        .main-content {
             flex: 1;
-            padding: 0.6rem;
-            background-color: rgba(13, 17, 23, 0.8);
-            border: 1px solid var(--panel-border);
-            border-radius: 8px;
-            color: var(--text-primary);
-            font-size: 0.85rem;
-            outline: none;
-            cursor: pointer;
-        }
-
-        .btn-refresh {
-            padding: 0.6rem 1rem;
-            background: var(--accent-gradient);
-            color: white;
-            border: none;
-            border-radius: 8px;
-            font-weight: 600;
-            font-size: 0.85rem;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            gap: 0.25rem;
-        }
-
-        /* Sidebar Scrollable List */
-        .sidebar-list {
-            flex: 1;
-            overflow-y: auto;
-            padding: 1rem;
             display: flex;
             flex-direction: column;
-            gap: 0.75rem;
-        }
-
-        .list-card {
-            background: rgba(22, 27, 34, 0.5);
-            border: 1px solid var(--panel-border);
-            border-radius: 10px;
-            padding: 1rem;
-            cursor: pointer;
+            overflow-y: auto;
+            padding: 2rem 2.5rem;
             position: relative;
-            overflow: hidden;
-            transition: transform 0.2s, border-color 0.2s, background-color 0.2s;
         }
 
-        .list-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 3px;
-            height: 100%;
-            background: var(--accent-gradient);
-            opacity: 0.7;
-        }
-
-        .list-card:hover {
-            border-color: rgba(88, 166, 255, 0.4);
-            background-color: var(--card-hover);
-        }
-
-        .list-card.active {
-            border-color: var(--accent-primary);
-            background-color: rgba(56, 139, 253, 0.15);
-            box-shadow: 0 0 12px rgba(56, 139, 253, 0.1);
-        }
-
-        .list-card-name {
-            font-family: 'Outfit', sans-serif;
-            font-weight: 600;
-            font-size: 0.95rem;
-            color: #f0f6fc;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            margin-bottom: 0.25rem;
-        }
-
-        .list-card-row {
+        /* Header Layout */
+        .main-header {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .header-title h1 {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 700;
+            font-size: 1.8rem;
+            color: var(--text-primary);
+            margin-bottom: 0.25rem;
+        }
+
+        .header-title p {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .live-status {
+            background-color: rgba(16, 185, 129, 0.1);
+            color: var(--success);
+            padding: 0.5rem 1rem;
+            border-radius: 30px;
             font-size: 0.8rem;
-            color: var(--text-secondary);
-        }
-
-        .score-badge {
-            background-color: rgba(88, 166, 255, 0.1);
-            color: var(--accent-primary);
-            padding: 0.1rem 0.4rem;
-            border-radius: 4px;
             font-weight: 600;
-            font-size: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            border: 1px solid rgba(16, 185, 129, 0.2);
         }
 
-        .list-no-data {
-            text-align: center;
-            color: var(--text-secondary);
-            padding: 2rem 1rem;
+        .live-status .pulse-dot {
+            width: 8px;
+            height: 8px;
+            background-color: var(--success);
+            border-radius: 50%;
+            box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+            animation: pulse 1.6s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(0.95);
+                box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+            }
+            70% {
+                transform: scale(1);
+                box-shadow: 0 0 0 6px rgba(16, 185, 129, 0);
+            }
+            100% {
+                transform: scale(0.95);
+                box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+            }
+        }
+
+        .btn-refresh {
+            background: rgba(22, 27, 34, 0.8);
+            border: 1px solid var(--panel-border);
+            color: var(--text-primary);
+            padding: 0.6rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            justify-content: center;
             font-size: 0.9rem;
         }
 
-        /* Home View (Default Landing Page) */
-        .home-view {
-            max-width: 900px;
-            margin: 0 auto;
-            width: 100%;
+        .btn-refresh:hover {
+            border-color: var(--accent-primary);
+            background-color: rgba(99, 102, 241, 0.05);
         }
 
-        .home-hero {
-            background: linear-gradient(135deg, rgba(31, 111, 235, 0.1), rgba(142, 45, 226, 0.1));
-            border: 1px solid var(--panel-border);
-            border-radius: 16px;
-            padding: 3rem 2rem;
-            text-align: center;
-            margin-bottom: 2.5rem;
-            position: relative;
-            overflow: hidden;
-            box-shadow: var(--shadow);
-        }
-
-        .home-hero h2 {
-            font-family: 'Outfit', sans-serif;
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-            background: linear-gradient(90deg, #58a6ff, #bc85ff);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .home-hero p {
-            color: var(--text-secondary);
-            font-size: 1.1rem;
-            max-width: 650px;
-            margin: 0 auto;
-            line-height: 1.6;
-        }
-
-        /* Stats in Home View */
-        .stats-grid {
+        /* Top KPI Stats Row */
+        .kpi-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 1.5rem;
-            margin-bottom: 2.5rem;
+            margin-bottom: 2rem;
         }
 
-        .stat-card {
+        .kpi-card {
             background: var(--panel-bg);
             border: 1px solid var(--panel-border);
-            border-radius: 12px;
+            border-radius: 14px;
             padding: 1.5rem;
             display: flex;
             align-items: center;
             gap: 1.25rem;
             backdrop-filter: blur(10px);
             box-shadow: var(--shadow);
+            transition: var(--transition);
         }
 
-        .stat-icon {
+        .kpi-card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(99, 102, 241, 0.3);
+            box-shadow: var(--shadow-glow);
+        }
+
+        .kpi-icon {
             font-size: 1.75rem;
-            background: var(--accent-gradient);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            width: 50px;
+            height: 50px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
-        .stat-info h3 {
+        .kpi-card:nth-child(1) .kpi-icon {
+            background-color: rgba(99, 102, 241, 0.1);
+            color: #6366f1;
+        }
+
+        .kpi-card:nth-child(2) .kpi-icon {
+            background-color: rgba(168, 85, 247, 0.1);
+            color: #a855f7;
+        }
+
+        .kpi-card:nth-child(3) .kpi-icon {
+            background-color: rgba(16, 185, 129, 0.1);
+            color: #10b981;
+        }
+
+        .kpi-info h3 {
             font-size: 0.8rem;
             color: var(--text-secondary);
             text-transform: uppercase;
@@ -300,262 +286,668 @@
             margin-bottom: 0.25rem;
         }
 
-        .stat-info p {
-            font-size: 1.6rem;
+        .kpi-info p {
+            font-size: 1.8rem;
             font-weight: 700;
             font-family: 'Outfit', sans-serif;
+            color: var(--text-primary);
         }
 
-        /* Features Section */
-        .home-features {
+        /* Main Unified Table Card Container */
+        .table-container-card {
             background: var(--panel-bg);
             border: 1px solid var(--panel-border);
-            border-radius: 12px;
-            padding: 2rem;
+            border-radius: 16px;
+            backdrop-filter: blur(10px);
             box-shadow: var(--shadow);
-        }
-
-        .home-features h3 {
-            font-family: 'Outfit', sans-serif;
-            font-size: 1.3rem;
-            margin-bottom: 1.25rem;
-            color: #f0f6fc;
+            flex: 1;
             display: flex;
-            align-items: center;
-            gap: 0.5rem;
+            flex-direction: column;
+            overflow: hidden;
+            margin-bottom: 1rem;
         }
 
-        .feature-item {
-            display: flex;
-            align-items: flex-start;
-            gap: 1rem;
-            margin-bottom: 1.25rem;
-        }
-
-        .feature-item:last-child {
-            margin-bottom: 0;
-        }
-
-        .feature-icon {
-            color: var(--accent-primary);
-            font-size: 1.1rem;
-            margin-top: 0.15rem;
-        }
-
-        .feature-text h4 {
-            color: #f0f6fc;
-            font-size: 1rem;
-            font-weight: 600;
-            margin-bottom: 0.25rem;
-        }
-
-        .feature-text p {
-            color: var(--text-secondary);
-            font-size: 0.9rem;
-            line-height: 1.5;
-        }
-
-        /* Detail View (Selected Profile) */
-        .profile-view {
-            max-width: 1000px;
-            margin: 0 auto;
-            width: 100%;
-            display: none;
-            animation: fadeIn 0.3s ease;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        .profile-header {
-            border-bottom: 1px solid var(--panel-border);
-            padding-bottom: 1.5rem;
-            margin-bottom: 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            flex-wrap: wrap;
-            gap: 1rem;
-        }
-
-        .profile-title-box h2 {
-            font-family: 'Outfit', sans-serif;
-            font-size: 2rem;
-            font-weight: 700;
-            color: #f0f6fc;
-            margin-bottom: 0.25rem;
-        }
-
-        .profile-subtitle {
-            font-size: 0.95rem;
-            color: var(--text-secondary);
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-        }
-
-        .btn-copy-all {
-            padding: 0.6rem 1.2rem;
-            background: var(--accent-gradient);
-            border: none;
-            border-radius: 6px;
-            color: white;
-            font-weight: 600;
-            font-size: 0.85rem;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            transition: opacity 0.2s;
-        }
-
-        .btn-copy-all:hover {
-            opacity: 0.9;
-        }
-
-        /* Profile Grid Layout */
-        .profile-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
-            gap: 1.5rem;
-        }
-
-        .detail-card {
-            background: var(--panel-bg);
-            border: 1px solid var(--panel-border);
-            border-radius: 12px;
+        /* Controls inside Table Header Card */
+        .table-header-controls {
             padding: 1.5rem;
-            box-shadow: var(--shadow);
-            display: flex;
-            flex-direction: column;
-            gap: 1.25rem;
-        }
-
-        .detail-card h3 {
-            font-family: 'Outfit', sans-serif;
-            font-size: 1.15rem;
-            color: #f0f6fc;
-            border-bottom: 1px solid rgba(48, 54, 61, 0.4);
-            padding-bottom: 0.5rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .detail-card h3 i {
-            color: var(--accent-primary);
-        }
-
-        .field-list {
-            display: flex;
-            flex-direction: column;
-            gap: 0.75rem;
-        }
-
-        .field-item {
+            border-bottom: 1px solid rgba(45, 55, 72, 0.4);
             display: flex;
             justify-content: space-between;
             align-items: center;
-            font-size: 0.9rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 1px solid rgba(48, 54, 61, 0.2);
+            flex-wrap: wrap;
+            gap: 1.25rem;
+            background-color: rgba(12, 16, 23, 0.4);
         }
 
-        .field-item:last-child {
-            border-bottom: none;
-            padding-bottom: 0;
+        .search-box {
+            position: relative;
+            width: 320px;
+            min-width: 240px;
         }
 
-        .field-label {
+        .search-box i {
+            position: absolute;
+            left: 0.9rem;
+            top: 50%;
+            transform: translateY(-50%);
             color: var(--text-secondary);
         }
 
-        .field-val-container {
+        .search-box input {
+            width: 100%;
+            padding: 0.65rem 1rem 0.65rem 2.5rem;
+            background-color: rgba(8, 12, 16, 0.8);
+            border: 1px solid var(--panel-border);
+            border-radius: 10px;
+            color: var(--text-primary);
+            font-size: 0.9rem;
+            outline: none;
+            transition: var(--transition);
+        }
+
+        .search-box input:focus {
+            border-color: var(--accent-primary);
+            box-shadow: 0 0 10px rgba(99, 102, 241, 0.2);
+        }
+
+        /* Filter Pills */
+        .filter-pills {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .filter-pill {
+            background: rgba(8, 12, 16, 0.5);
+            border: 1px solid var(--panel-border);
+            color: var(--text-secondary);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .filter-pill:hover {
+            color: var(--text-primary);
+            border-color: rgba(99, 102, 241, 0.5);
+        }
+
+        .filter-pill.active {
+            background: var(--accent-gradient);
+            color: white;
+            border-color: transparent;
+            box-shadow: 0 4px 12px rgba(99, 102, 241, 0.2);
+        }
+
+        /* Datatable View */
+        .table-responsive {
+            overflow-x: auto;
+            flex: 1;
+        }
+
+        .crm-table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            font-size: 0.9rem;
+        }
+
+        .crm-table th {
+            padding: 1.15rem 1.5rem;
+            background-color: rgba(12, 16, 23, 0.6);
+            border-bottom: 1px solid rgba(45, 55, 72, 0.5);
+            color: var(--text-secondary);
+            font-weight: 600;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            user-select: none;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+
+        .crm-table th:hover {
+            color: var(--text-primary);
+        }
+
+        .crm-table th i {
+            margin-left: 0.25rem;
+            font-size: 0.75rem;
+            opacity: 0.7;
+        }
+
+        .crm-table td {
+            padding: 1.15rem 1.5rem;
+            border-bottom: 1px solid rgba(45, 55, 72, 0.3);
+            vertical-align: middle;
+            white-space: nowrap;
+        }
+
+        .crm-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .crm-table tr {
+            transition: var(--transition);
+        }
+
+        .crm-table tr:hover {
+            background-color: var(--card-hover);
+        }
+
+        /* Name / Avatar Column */
+        .client-profile-cell {
             display: flex;
             align-items: center;
-            gap: 0.5rem;
+            gap: 1rem;
         }
 
-        .field-value {
-            font-weight: 500;
-            color: #f0f6fc;
-            text-align: right;
+        .client-avatar {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 600;
+            font-size: 1rem;
+            color: white;
+            flex-shrink: 0;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
         }
 
-        .field-value.monospace {
+        .client-name-details {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .client-name {
+            font-weight: 600;
+            color: var(--text-primary);
+            font-size: 0.95rem;
+            font-family: 'Outfit', sans-serif;
+            margin-bottom: 0.15rem;
+        }
+
+        .client-sub {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+        }
+
+        /* CPF Cell styling */
+        .cpf-cell {
             font-family: monospace;
             font-size: 0.95rem;
-            letter-spacing: 0.05em;
+            letter-spacing: 0.02em;
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
         }
 
-        .btn-copy-field {
+        .copy-icon-btn {
             background: transparent;
             border: none;
             color: var(--text-secondary);
             cursor: pointer;
-            font-size: 0.8rem;
-            padding: 0.15rem;
-            border-radius: 4px;
-            transition: color 0.15s;
+            font-size: 0.75rem;
+            opacity: 0;
+            transition: var(--transition);
         }
 
-        .btn-copy-field:hover {
+        td:hover .copy-icon-btn {
+            opacity: 1;
+        }
+
+        .copy-icon-btn:hover {
             color: var(--accent-primary);
         }
 
-        /* Array lists styling */
-        .array-container {
+        /* Score Gauge display in row */
+        .score-row-display {
             display: flex;
             flex-direction: column;
+            gap: 0.35rem;
+            width: 140px;
+        }
+
+        .score-row-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .score-row-bar-bg {
+            height: 6px;
+            width: 100%;
+            background-color: rgba(45, 55, 72, 0.4);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .score-row-bar-fill {
+            height: 100%;
+            border-radius: 4px;
+        }
+
+        /* Colors for scores classes */
+        .badge-score-high {
+            color: var(--score-high);
+        }
+        .bg-score-high {
+            background-color: var(--score-high);
+        }
+
+        .badge-score-medium {
+            color: var(--score-medium);
+        }
+        .bg-score-medium {
+            background-color: var(--score-medium);
+        }
+
+        .badge-score-low {
+            color: var(--score-low);
+        }
+        .bg-score-low {
+            background-color: var(--score-low);
+        }
+
+        /* Status Badge */
+        .status-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            padding: 0.35rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            background-color: rgba(16, 185, 129, 0.1);
+            color: var(--success);
+            border: 1px solid rgba(16, 185, 129, 0.2);
+        }
+
+        .status-pill::before {
+            content: '';
+            width: 6px;
+            height: 6px;
+            background-color: var(--success);
+            border-radius: 50%;
+        }
+
+        /* Contacts Cell styling */
+        .contact-cell {
+            display: flex;
+            flex-direction: column;
+            gap: 0.2rem;
+            font-size: 0.8rem;
+        }
+
+        .contact-cell span {
+            display: flex;
+            align-items: center;
+            gap: 0.35rem;
+            color: var(--text-secondary);
+        }
+
+        .contact-cell span i {
+            font-size: 0.7rem;
+            width: 12px;
+        }
+
+        /* Actions Column */
+        .btn-view-profile {
+            background-color: rgba(99, 102, 241, 0.1);
+            border: 1px solid rgba(99, 102, 241, 0.2);
+            color: var(--accent-primary);
+            padding: 0.45rem 0.9rem;
+            border-radius: 8px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+        }
+
+        .btn-view-profile:hover {
+            background-color: var(--accent-primary);
+            color: white;
+            box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+        }
+
+        /* No results element */
+        .table-no-data {
+            text-align: center;
+            padding: 4rem 2rem;
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        .table-no-data i {
+            font-size: 2.5rem;
+            color: rgba(45, 55, 72, 0.8);
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        /* Table Pagination Footer Panel */
+        .table-pagination-footer {
+            padding: 1rem 1.5rem;
+            border-top: 1px solid rgba(45, 55, 72, 0.4);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgba(12, 16, 23, 0.2);
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .pagination-controls {
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+        }
+
+        .pagination-btn {
+            background-color: rgba(22, 27, 34, 0.8);
+            border: 1px solid var(--panel-border);
+            color: var(--text-primary);
+            padding: 0.4rem 0.8rem;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: var(--transition);
+            font-size: 0.8rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 32px;
+        }
+
+        .pagination-btn:hover:not(:disabled) {
+            border-color: var(--accent-primary);
+            background-color: rgba(99, 102, 241, 0.05);
+        }
+
+        .pagination-btn:disabled {
+            opacity: 0.4;
+            cursor: not-allowed;
+        }
+
+        .pagination-btn.active {
+            background-color: var(--accent-primary);
+            color: white;
+            border-color: transparent;
+        }
+
+        /* Sliding Side Profile Drawer */
+        .drawer-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(4px);
+            z-index: 999;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .drawer-overlay.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .drawer {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 500px;
+            height: 100vh;
+            background-color: rgba(12, 16, 23, 0.95);
+            border-left: 1px solid var(--panel-border);
+            z-index: 1000;
+            box-shadow: -10px 0 40px rgba(0,0,0,0.6);
+            backdrop-filter: blur(20px);
+            display: flex;
+            flex-direction: column;
+            transform: translateX(100%);
+            transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .drawer.active {
+            transform: translateX(0);
+        }
+
+        .drawer-header {
+            padding: 1.75rem 2rem;
+            border-bottom: 1px solid rgba(45, 55, 72, 0.4);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .drawer-header-left {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+            max-width: 380px;
+        }
+
+        .drawer-title {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 700;
+            font-size: 1.4rem;
+            color: var(--text-primary);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .drawer-subtitle {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            display: flex;
+            align-items: center;
             gap: 0.5rem;
+        }
+
+        .btn-close-drawer {
+            background: transparent;
+            border: none;
+            color: var(--text-secondary);
+            font-size: 1.25rem;
+            cursor: pointer;
+            transition: var(--transition);
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .btn-close-drawer:hover {
+            color: var(--text-primary);
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+
+        /* Drawer Scrollable Body Content */
+        .drawer-body {
+            padding: 2rem;
+            overflow-y: auto;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .drawer-btn-row {
+            margin-bottom: 0.5rem;
+        }
+
+        .drawer-btn-copy-all {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            background: var(--accent-gradient);
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-weight: 600;
+            font-size: 0.9rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            box-shadow: 0 4px 15px rgba(99, 102, 241, 0.2);
+            transition: var(--transition);
+        }
+
+        .drawer-btn-copy-all:hover {
+            box-shadow: 0 6px 20px rgba(99, 102, 241, 0.35);
+            transform: translateY(-1px);
+        }
+
+        /* Drawer Details Card grid container */
+        .drawer-card {
+            background-color: rgba(17, 22, 30, 0.5);
+            border: 1px solid var(--panel-border);
+            border-radius: 12px;
+            padding: 1.25rem;
+            box-shadow: var(--shadow);
+        }
+
+        .drawer-card h4 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1rem;
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+            border-bottom: 1px solid rgba(45, 55, 72, 0.3);
+            padding-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .drawer-card h4 i {
+            color: var(--accent-primary);
+        }
+
+        .drawer-field-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.65rem;
+        }
+
+        .drawer-field-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.85rem;
+            padding-bottom: 0.4rem;
+            border-bottom: 1px solid rgba(45, 55, 72, 0.15);
+        }
+
+        .drawer-field-item:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .drawer-field-label {
+            color: var(--text-secondary);
+        }
+
+        .drawer-field-val-box {
+            display: flex;
+            align-items: center;
+            gap: 0.35rem;
+            max-width: 60%;
+        }
+
+        .drawer-field-value {
+            font-weight: 500;
+            color: var(--text-primary);
+            text-align: right;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .drawer-field-value.monospace {
+            font-family: monospace;
+            font-size: 0.9rem;
+            letter-spacing: 0.02em;
+        }
+
+        .drawer-field-value.score-pill {
+            background-color: rgba(99, 102, 241, 0.1);
+            padding: 0.15rem 0.5rem;
+            border-radius: 4px;
+            font-weight: 700;
+        }
+
+        /* Array dynamic container in drawer */
+        .drawer-array-box {
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
             max-height: 180px;
             overflow-y: auto;
             padding-right: 0.25rem;
         }
 
-        .array-item {
-            background-color: rgba(13, 17, 23, 0.5);
-            border: 1px solid rgba(48, 54, 61, 0.3);
+        .drawer-array-item {
+            background-color: rgba(8, 12, 16, 0.4);
+            border: 1px solid rgba(45, 55, 72, 0.2);
             border-radius: 6px;
-            padding: 0.5rem 0.75rem;
-            font-size: 0.85rem;
-            color: #c9d1d9;
+            padding: 0.45rem 0.6rem;
+            font-size: 0.8rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
             gap: 0.5rem;
+        }
+
+        .drawer-array-text {
+            color: var(--text-primary);
+            line-height: 1.4;
             word-break: break-all;
         }
 
-        .array-item-text {
-            line-height: 1.4;
-        }
-
-        .array-empty {
+        .drawer-array-empty {
             color: var(--text-secondary);
-            font-size: 0.85rem;
+            font-size: 0.8rem;
             font-style: italic;
             text-align: center;
-            padding: 1rem 0;
+            padding: 0.75rem 0;
         }
 
-        /* Toast notification */
+        /* Toast notifications popups */
         .toast {
             position: fixed;
             bottom: 2rem;
             right: 2rem;
-            background-color: #2ea043;
+            background-color: var(--success);
             color: white;
             padding: 0.75rem 1.5rem;
             border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
             font-weight: 600;
             font-size: 0.9rem;
             transform: translateY(100px);
             opacity: 0;
-            transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.3s;
+            transition: transform 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.35s;
             z-index: 2000;
             display: flex;
             align-items: center;
@@ -567,9 +959,10 @@
             opacity: 1;
         }
 
-        /* Scrollbar styling */
+        /* Scrollbars Custom Style */
         ::-webkit-scrollbar {
             width: 6px;
+            height: 6px;
         }
 
         ::-webkit-scrollbar-track {
@@ -577,528 +970,798 @@
         }
 
         ::-webkit-scrollbar-thumb {
-            background: rgba(48, 54, 61, 0.8);
+            background: rgba(45, 55, 72, 0.8);
             border-radius: 10px;
         }
 
         ::-webkit-scrollbar-thumb:hover {
-            background: rgba(88, 166, 255, 0.5);
+            background: var(--accent-primary);
         }
     </style>
 </head>
 <body>
 
-    <!-- LEFT SIDEBAR: CPFs List -->
-    <div class="sidebar">
-        <div class="sidebar-header">
-            <div class="sidebar-title">
-                <i class="fa-brands fa-telegram"></i> Extrator Telegram
+    <div class="app-container">
+        
+        <!-- LEFT SIDEBAR -->
+        <div class="sidebar">
+            <div class="sidebar-brand">
+                <i class="fa-brands fa-telegram"></i> Extrator CRM
             </div>
-            <div class="sidebar-controls">
-                <div class="search-box">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <input type="text" id="search-input" placeholder="Buscar por Nome ou CPF...">
+            <ul class="sidebar-menu">
+                <li class="menu-item active">
+                    <a href="#"><i class="fa-solid fa-table-list"></i> Clientes Extratados</a>
+                </li>
+            </ul>
+            <div class="sidebar-footer">
+                CRM Telegram v2.0
+            </div>
+        </div>
+
+        <!-- MAIN DASHBOARD CONTENT -->
+        <div class="main-content">
+            
+            <!-- HEADER -->
+            <div class="main-header">
+                <div class="header-title">
+                    <h1>Clientes & Consultas</h1>
+                    <p>Monitore consultas com Score ≥ 900 e Faixa de Risco Baixíssimo.</p>
                 </div>
-                <div class="sidebar-actions">
-                    <select class="select-filter" id="sort-select">
-                        <option value="newest">Mais Recentes</option>
-                        <option value="oldest">Mais Antigos</option>
-                        <option value="score-desc">Score: Maior -> Menor</option>
-                        <option value="score-asc">Score: Menor -> Maior</option>
-                        <option value="name-asc">Nome: A - Z</option>
-                    </select>
-                    <button class="btn-refresh" id="btn-refresh" title="Atualizar dados">
+                <div class="header-actions">
+                    <div class="live-status">
+                        <div class="pulse-dot"></div>
+                        Monitorando Real-time
+                    </div>
+                    <button class="btn-refresh" id="btn-refresh" title="Recarregar Dados">
                         <i class="fa-solid fa-rotate"></i>
                     </button>
                 </div>
             </div>
-        </div>
-        <div class="sidebar-list" id="sidebar-list">
-            <!-- Dynamically populated -->
-        </div>
-    </div>
 
-    <!-- MAIN AREA: Home/Landing Page or Detailed Profile View -->
-    <div class="main-content">
-        
-        <!-- HOME / LANDING PAGE VIEW -->
-        <div class="home-view" id="home-view">
-            <div class="home-hero">
-                <h2>Painel do Extrator de CPF</h2>
-                <p>
-                    Ferramenta inteligente de extração de dados públicos do Telegram. Monitore canais, filtre resultados qualificados por score de risco e organize dados consolidados.
-                </p>
-            </div>
-
-            <!-- Stats grid -->
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <div class="stat-icon"><i class="fa-solid fa-address-card"></i></div>
-                    <div class="stat-info">
+            <!-- KPI WIDGETS CARDS -->
+            <div class="kpi-grid">
+                <div class="kpi-card">
+                    <div class="kpi-icon"><i class="fa-solid fa-user-group"></i></div>
+                    <div class="kpi-info">
                         <h3>Total Capturado</h3>
-                        <p id="stat-total">0</p>
+                        <p id="kpi-total">0</p>
                     </div>
                 </div>
-                <div class="stat-card">
-                    <div class="stat-icon"><i class="fa-solid fa-chart-line"></i></div>
-                    <div class="stat-info">
+                <div class="kpi-card">
+                    <div class="kpi-icon"><i class="fa-solid fa-chart-simple"></i></div>
+                    <div class="kpi-info">
                         <h3>Média de Score</h3>
-                        <p id="stat-avg">0</p>
+                        <p id="kpi-avg">0</p>
                     </div>
                 </div>
-                <div class="stat-card">
-                    <div class="stat-icon"><i class="fa-solid fa-trophy"></i></div>
-                    <div class="stat-info">
+                <div class="kpi-card">
+                    <div class="kpi-icon"><i class="fa-solid fa-trophy"></i></div>
+                    <div class="kpi-info">
                         <h3>Maior Score</h3>
-                        <p id="stat-max">0</p>
+                        <p id="kpi-max">0</p>
                     </div>
                 </div>
             </div>
 
-            <!-- App Features Description -->
-            <div class="home-features">
-                <h3><i class="fa-solid fa-gears"></i> Funcionalidades e Regras de Negócio</h3>
+            <!-- MAIN DATA CONTAINER CARD -->
+            <div class="table-container-card">
                 
-                <div class="feature-item">
-                    <div class="feature-icon"><i class="fa-solid fa-filter"></i></div>
-                    <div class="feature-text">
-                        <h4>Filtros Avançados</h4>
-                        <p>O extrator capta exclusivamente registros que possuem <strong>SCORE superior ou igual a 900</strong> e cuja classificação de <strong>Faixa de Risco seja "Baixíssimo Risco"</strong>.</p>
+                <!-- HEADER FILTER AND CONTROLS -->
+                <div class="table-header-controls">
+                    <div class="search-box">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" id="search-input" placeholder="Buscar por Nome ou CPF...">
+                    </div>
+                    
+                    <div class="filter-pills">
+                        <div class="filter-pill active" data-filter="all">Todos</div>
+                        <div class="filter-pill" data-filter="980">Score 980+</div>
+                        <div class="filter-pill" data-filter="950">Score 950+</div>
+                        <div class="filter-pill" data-filter="900">Score 900+</div>
                     </div>
                 </div>
-                <div class="feature-item">
-                    <div class="feature-icon"><i class="fa-solid fa-database"></i></div>
-                    <div class="feature-text">
-                        <h4>Dados Estruturados Completos</h4>
-                        <p>Todas as informações da consulta são salvas (PIS, RG, telefones, endereços, e-mails, parentes e vizinhos) e organizadas para fácil visualização.</p>
+
+                <!-- RESPONSIVE TABLE VIEW -->
+                <div class="table-responsive">
+                    <table class="crm-table">
+                        <thead>
+                            <tr>
+                                <th onclick="handleSort('nome')">Cliente <i class="fa-solid fa-sort" id="sort-icon-nome"></i></th>
+                                <th onclick="handleSort('cpf')">CPF <i class="fa-solid fa-sort" id="sort-icon-cpf"></i></th>
+                                <th onclick="handleSort('score')">Score <i class="fa-solid fa-sort" id="sort-icon-score"></i></th>
+                                <th>Risco</th>
+                                <th>Renda Presumida</th>
+                                <th>Contato Principal</th>
+                                <th style="text-align: center;">Ficha</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table-body">
+                            <!-- Dynamic Row Population -->
+                        </tbody>
+                    </table>
+                    <div id="no-data-element" class="table-no-data" style="display: none;">
+                        <i class="fa-solid fa-face-frown"></i>
+                        Nenhum registro encontrado correspondente aos filtros atuais.
                     </div>
                 </div>
-                <div class="feature-item">
-                    <div class="feature-icon"><i class="fa-solid fa-copy"></i></div>
-                    <div class="feature-text">
-                        <h4>Cópia Fácil e Rápida</h4>
-                        <p>Selecione qualquer CPF na lista lateral para abrir a ficha completa. Você pode copiar campos individuais ou a ficha inteira com apenas um clique.</p>
+
+                <!-- TABLE PAGINATION FOOTER -->
+                <div class="table-pagination-footer">
+                    <div id="pagination-info">Mostrando 0 a 0 de 0 registros</div>
+                    <div class="pagination-controls" id="pagination-controls-box">
+                        <!-- Dynamic page buttons -->
                     </div>
                 </div>
+
             </div>
+
         </div>
 
-        <!-- PROFILE VIEW (Shows when a card is selected) -->
-        <div class="profile-view" id="profile-view">
-            <div class="profile-header">
-                <div class="profile-title-box">
-                    <h2 id="prof-nome">NOME COMPLETO</h2>
-                    <div class="profile-subtitle">
-                        <span><i class="fa-solid fa-id-card"></i> <strong id="prof-cpf">000.000.000-00</strong></span>
+        <!-- DETAILS SLIDING DRAWER -->
+        <div class="drawer-overlay" id="drawer-overlay"></div>
+        <div class="drawer" id="details-drawer">
+            <div class="drawer-header">
+                <div class="drawer-header-left">
+                    <div class="drawer-title" id="dr-nome">NOME COMPLETO</div>
+                    <div class="drawer-subtitle">
+                        <span><i class="fa-solid fa-id-card"></i> <strong id="dr-cpf">000.000.000-00</strong></span>
                         <span>•</span>
-                        <span><i class="fa-solid fa-clock"></i> Capturado em: <span id="prof-data">11/06/2026</span></span>
+                        <span>Capturado: <span id="dr-timestamp">11/06/2026</span></span>
                     </div>
                 </div>
-                <button class="btn-copy-all" id="btn-copy-all">
-                    <i class="fa-solid fa-copy"></i> Copiar Ficha Completa
+                <button class="btn-close-drawer" id="btn-close-drawer">
+                    <i class="fa-solid fa-xmark"></i>
                 </button>
             </div>
+            
+            <div class="drawer-body">
+                <div class="drawer-btn-row">
+                    <button class="drawer-btn-copy-all" id="btn-copy-all">
+                        <i class="fa-solid fa-copy"></i> Copiar Ficha Completa
+                    </button>
+                </div>
 
-            <div class="profile-grid">
-                
-                <!-- CARD 1: SCORE E RISCO -->
-                <div class="detail-card">
-                    <h3><i class="fa-solid fa-gauge-high"></i> Análise de Risco</h3>
-                    <div class="field-list">
-                        <div class="field-item">
-                            <span class="field-label">Score de Crédito</span>
-                            <div class="field-val-container">
-                                <span class="field-value score-badge" id="field-score">-</span>
-                                <button class="btn-copy-field" onclick="copyValue('field-score')"><i class="fa-solid fa-copy"></i></button>
+                <!-- CARD: RISCO -->
+                <div class="drawer-card">
+                    <h4><i class="fa-solid fa-shield-halved"></i> Análise de Risco</h4>
+                    <div class="drawer-field-list">
+                        <div class="drawer-field-item">
+                            <span class="drawer-field-label">Score de Crédito</span>
+                            <div class="drawer-field-val-box">
+                                <span class="drawer-field-value score-pill" id="dr-field-score">-</span>
+                                <button class="copy-icon-btn" onclick="copyTextValue('dr-field-score')"><i class="fa-solid fa-copy"></i></button>
                             </div>
                         </div>
-                        <div class="field-item">
-                            <span class="field-label">Faixa de Risco</span>
-                            <div class="field-val-container">
-                                <span class="field-value" id="field-faixa">-</span>
-                                <button class="btn-copy-field" onclick="copyValue('field-faixa')"><i class="fa-solid fa-copy"></i></button>
+                        <div class="drawer-field-item">
+                            <span class="drawer-field-label">Faixa de Risco</span>
+                            <div class="drawer-field-val-box">
+                                <span class="drawer-field-value" id="dr-field-faixa">-</span>
+                                <button class="copy-icon-btn" onclick="copyTextValue('dr-field-faixa')"><i class="fa-solid fa-copy"></i></button>
                             </div>
                         </div>
-                        <div class="field-item">
-                            <span class="field-label">Renda Presumida</span>
-                            <div class="field-val-container">
-                                <span class="field-value" id="field-renda">-</span>
-                                <button class="btn-copy-field" onclick="copyValue('field-renda')"><i class="fa-solid fa-copy"></i></button>
+                        <div class="drawer-field-item">
+                            <span class="drawer-field-label">Renda Presumida</span>
+                            <div class="drawer-field-val-box">
+                                <span class="drawer-field-value" id="dr-field-renda">-</span>
+                                <button class="copy-icon-btn" onclick="copyTextValue('dr-field-renda')"><i class="fa-solid fa-copy"></i></button>
                             </div>
                         </div>
-                        <div class="field-item">
-                            <span class="field-label">Situação Receita Federal</span>
-                            <div class="field-val-container">
-                                <span class="field-value" id="field-receita">-</span>
-                                <button class="btn-copy-field" onclick="copyValue('field-receita')"><i class="fa-solid fa-copy"></i></button>
+                        <div class="drawer-field-item">
+                            <span class="drawer-field-label">Receita Federal</span>
+                            <div class="drawer-field-val-box">
+                                <span class="drawer-field-value" id="dr-field-receita">-</span>
+                                <button class="copy-icon-btn" onclick="copyTextValue('dr-field-receita')"><i class="fa-solid fa-copy"></i></button>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- CARD 2: DOCUMENTOS -->
-                <div class="detail-card">
-                    <h3><i class="fa-solid fa-file-invoice"></i> Documentos Pessoais</h3>
-                    <div class="field-list">
-                        <div class="field-item">
-                            <span class="field-label">CPF</span>
-                            <div class="field-val-container">
-                                <span class="field-value monospace" id="field-cpf">-</span>
-                                <button class="btn-copy-field" onclick="copyValue('field-cpf')"><i class="fa-solid fa-copy"></i></button>
+                <!-- CARD: DOCUMENTOS -->
+                <div class="drawer-card">
+                    <h4><i class="fa-solid fa-passport"></i> Documentação</h4>
+                    <div class="drawer-field-list">
+                        <div class="drawer-field-item">
+                            <span class="drawer-field-label">CPF</span>
+                            <div class="drawer-field-val-box">
+                                <span class="drawer-field-value monospace" id="dr-field-cpf">-</span>
+                                <button class="copy-icon-btn" onclick="copyTextValue('dr-field-cpf')"><i class="fa-solid fa-copy"></i></button>
                             </div>
                         </div>
-                        <div class="field-item">
-                            <span class="field-label">PIS / NIS</span>
-                            <div class="field-val-container">
-                                <span class="field-value monospace" id="field-pis">-</span>
-                                <button class="btn-copy-field" onclick="copyValue('field-pis')"><i class="fa-solid fa-copy"></i></button>
+                        <div class="drawer-field-item">
+                            <span class="drawer-field-label">PIS / NIS</span>
+                            <div class="drawer-field-val-box">
+                                <span class="drawer-field-value monospace" id="dr-field-pis">-</span>
+                                <button class="copy-icon-btn" onclick="copyTextValue('dr-field-pis')"><i class="fa-solid fa-copy"></i></button>
                             </div>
                         </div>
-                        <div class="field-item">
-                            <span class="field-label">Título Eleitoral</span>
-                            <div class="field-val-container">
-                                <span class="field-value monospace" id="field-titulo">-</span>
-                                <button class="btn-copy-field" onclick="copyValue('field-titulo')"><i class="fa-solid fa-copy"></i></button>
+                        <div class="drawer-field-item">
+                            <span class="drawer-field-label">Título Eleitoral</span>
+                            <div class="drawer-field-val-box">
+                                <span class="drawer-field-value monospace" id="dr-field-titulo">-</span>
+                                <button class="copy-icon-btn" onclick="copyTextValue('dr-field-titulo')"><i class="fa-solid fa-copy"></i></button>
                             </div>
                         </div>
-                        <div class="field-item">
-                            <span class="field-label">RG (Geral)</span>
-                            <div class="field-val-container">
-                                <span class="field-value" id="field-rg">-</span>
-                                <button class="btn-copy-field" onclick="copyValue('field-rg')"><i class="fa-solid fa-copy"></i></button>
+                        <div class="drawer-field-item">
+                            <span class="drawer-field-label">RG</span>
+                            <div class="drawer-field-val-box">
+                                <span class="drawer-field-value monospace" id="dr-field-rg">-</span>
+                                <button class="copy-icon-btn" onclick="copyTextValue('dr-field-rg')"><i class="fa-solid fa-copy"></i></button>
                             </div>
                         </div>
-                        <div class="field-item">
-                            <span class="field-label">RG Orgão Exp. / UF</span>
-                            <div class="field-val-container">
-                                <span class="field-value" id="field-rg-exp">-</span>
-                                <button class="btn-copy-field" onclick="copyValue('field-rg-exp')"><i class="fa-solid fa-copy"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- CARD 3: DADOS DE IDENTIFICAÇÃO -->
-                <div class="detail-card">
-                    <h3><i class="fa-solid fa-user-gear"></i> Dados Pessoais</h3>
-                    <div class="field-list">
-                        <div class="field-item">
-                            <span class="field-label">Data de Nascimento / Idade</span>
-                            <div class="field-val-container">
-                                <span class="field-value" id="field-nascimento">-</span>
-                                <button class="btn-copy-field" onclick="copyValue('field-nascimento')"><i class="fa-solid fa-copy"></i></button>
-                            </div>
-                        </div>
-                        <div class="field-item">
-                            <span class="field-label">Signo</span>
-                            <div class="field-val-container">
-                                <span class="field-value" id="field-signo">-</span>
-                                <button class="btn-copy-field" onclick="copyValue('field-signo')"><i class="fa-solid fa-copy"></i></button>
-                            </div>
-                        </div>
-                        <div class="field-item">
-                            <span class="field-label">Nome da Mãe</span>
-                            <div class="field-val-container">
-                                <span class="field-value" id="field-mae">-</span>
-                                <button class="btn-copy-field" onclick="copyValue('field-mae')"><i class="fa-solid fa-copy"></i></button>
-                            </div>
-                        </div>
-                        <div class="field-item">
-                            <span class="field-label">Nome do Pai</span>
-                            <div class="field-val-container">
-                                <span class="field-value" id="field-pai">-</span>
-                                <button class="btn-copy-field" onclick="copyValue('field-pai')"><i class="fa-solid fa-copy"></i></button>
-                            </div>
-                        </div>
-                        <div class="field-item">
-                            <span class="field-label">Escolaridade / Estado Civil</span>
-                            <div class="field-val-container">
-                                <span class="field-value" id="field-escolaridade">-</span>
-                                <button class="btn-copy-field" onclick="copyValue('field-escolaridade')"><i class="fa-solid fa-copy"></i></button>
+                        <div class="drawer-field-item">
+                            <span class="drawer-field-label">Expedição / UF</span>
+                            <div class="drawer-field-val-box">
+                                <span class="drawer-field-value" id="dr-field-rg-exp">-</span>
+                                <button class="copy-icon-btn" onclick="copyTextValue('dr-field-rg-exp')"><i class="fa-solid fa-copy"></i></button>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- CARD 4: TELEFONES -->
-                <div class="detail-card">
-                    <h3><i class="fa-solid fa-phone"></i> Números de Telefone</h3>
-                    <div class="array-container" id="list-telefones">
-                        <!-- Dynamically populated -->
+                <!-- CARD: DADOS PESSOAIS -->
+                <div class="drawer-card">
+                    <h4><i class="fa-solid fa-user"></i> Dados Pessoais</h4>
+                    <div class="drawer-field-list">
+                        <div class="drawer-field-item">
+                            <span class="drawer-field-label">Nascimento / Idade</span>
+                            <div class="drawer-field-val-box">
+                                <span class="drawer-field-value" id="dr-field-nascimento">-</span>
+                                <button class="copy-icon-btn" onclick="copyTextValue('dr-field-nascimento')"><i class="fa-solid fa-copy"></i></button>
+                            </div>
+                        </div>
+                        <div class="drawer-field-item">
+                            <span class="drawer-field-label">Signo</span>
+                            <div class="drawer-field-val-box">
+                                <span class="drawer-field-value" id="dr-field-signo">-</span>
+                                <button class="copy-icon-btn" onclick="copyTextValue('dr-field-signo')"><i class="fa-solid fa-copy"></i></button>
+                            </div>
+                        </div>
+                        <div class="drawer-field-item">
+                            <span class="drawer-field-label">Nome da Mãe</span>
+                            <div class="drawer-field-val-box">
+                                <span class="drawer-field-value" id="dr-field-mae">-</span>
+                                <button class="copy-icon-btn" onclick="copyTextValue('dr-field-mae')"><i class="fa-solid fa-copy"></i></button>
+                            </div>
+                        </div>
+                        <div class="drawer-field-item">
+                            <span class="drawer-field-label">Nome do Pai</span>
+                            <div class="drawer-field-val-box">
+                                <span class="drawer-field-value" id="dr-field-pai">-</span>
+                                <button class="copy-icon-btn" onclick="copyTextValue('dr-field-pai')"><i class="fa-solid fa-copy"></i></button>
+                            </div>
+                        </div>
+                        <div class="drawer-field-item">
+                            <span class="drawer-field-label">Escolaridade / Civil</span>
+                            <div class="drawer-field-val-box">
+                                <span class="drawer-field-value" id="dr-field-escolaridade">-</span>
+                                <button class="copy-icon-btn" onclick="copyTextValue('dr-field-escolaridade')"><i class="fa-solid fa-copy"></i></button>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <!-- CARD 5: E-MAILS -->
-                <div class="detail-card">
-                    <h3><i class="fa-solid fa-envelope"></i> Endereços de E-mail</h3>
-                    <div class="array-container" id="list-emails">
-                        <!-- Dynamically populated -->
+                <!-- CARD: TELEFONES -->
+                <div class="drawer-card">
+                    <h4><i class="fa-solid fa-phone"></i> Telefones</h4>
+                    <div class="drawer-array-box" id="dr-list-telefones">
+                        <!-- populated dynamically -->
                     </div>
                 </div>
 
-                <!-- CARD 6: ENDEREÇOS -->
-                <div class="detail-card">
-                    <h3><i class="fa-solid fa-location-dot"></i> Localização / Endereços</h3>
-                    <div class="array-container" id="list-enderecos">
-                        <!-- Dynamically populated -->
+                <!-- CARD: EMAILS -->
+                <div class="drawer-card">
+                    <h4><i class="fa-solid fa-envelope"></i> E-mails</h4>
+                    <div class="drawer-array-box" id="dr-list-emails">
+                        <!-- populated dynamically -->
                     </div>
                 </div>
 
-                <!-- CARD 7: POSSÍVEIS PARENTES -->
-                <div class="detail-card">
-                    <h3><i class="fa-solid fa-users"></i> Possíveis Parentes</h3>
-                    <div class="array-container" id="list-parentes">
-                        <!-- Dynamically populated -->
+                <!-- CARD: ENDEREÇOS -->
+                <div class="drawer-card">
+                    <h4><i class="fa-solid fa-location-dot"></i> Endereços</h4>
+                    <div class="drawer-array-box" id="dr-list-enderecos">
+                        <!-- populated dynamically -->
                     </div>
                 </div>
 
-                <!-- CARD 8: PARTICIPAÇÃO E VÍNCULOS -->
-                <div class="detail-card">
-                    <h3><i class="fa-solid fa-briefcase"></i> Vínculos & Participação Societária</h3>
-                    <div class="array-container" id="list-vinculos">
-                        <!-- Dynamically populated -->
+                <!-- CARD: PARENTES -->
+                <div class="drawer-card">
+                    <h4><i class="fa-solid fa-users"></i> Possíveis Parentes & Vizinhos</h4>
+                    <div class="drawer-array-box" id="dr-list-parentes">
+                        <!-- populated dynamically -->
+                    </div>
+                </div>
+
+                <!-- CARD: VINCULOS -->
+                <div class="drawer-card">
+                    <h4><i class="fa-solid fa-briefcase"></i> Vínculos & Empresas</h4>
+                    <div class="drawer-array-box" id="dr-list-vinculos">
+                        <!-- populated dynamically -->
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Toast message -->
-    <div class="toast" id="toast">
-        <i class="fa-solid fa-circle-check"></i> Copiado com sucesso!
+        <!-- TOAST MESSAGE POPUP -->
+        <div class="toast" id="toast-message">
+            <i class="fa-solid fa-circle-check"></i> Copiado com sucesso!
+        </div>
+
     </div>
 
     <script>
-        let fullData = [];
+        let rawData = [];
         let filteredData = [];
-        let selectedRecord = null;
+        let selectedClient = null;
 
-        // Fetch data
+        // Sorting configuration
+        let sortColumn = 'nome';
+        let sortAscending = true;
+
+        // Pagination configuration
+        let currentPage = 1;
+        const rowsPerPage = 15;
+        let activeFilter = 'all';
+
+        // Load Extracted JSON database
         async function loadData() {
             try {
                 const res = await fetch('extracted_data.json');
-                if (!res.ok) throw new Error('Erro ao carregar dados');
-                fullData = await res.json();
+                if (!res.ok) throw new Error('Não foi possível carregar o banco de dados JSON.');
+                rawData = await res.json();
 
-                updateStats();
-                applyFilters();
+                updateKPIs();
+                applyFilterAndSearch();
 
-                // Keep selection if updated
-                if (selectedRecord) {
-                    const updated = fullData.find(d => d.cpf === selectedRecord.cpf);
-                    if (updated) openProfile(updated);
+                // Keep detail panel sync if currently opened client exists in reload
+                if (selectedClient) {
+                    const refreshed = rawData.find(c => c.cpf === selectedClient.cpf);
+                    if (refreshed) {
+                        populateDrawer(refreshed);
+                    }
                 }
             } catch (err) {
-                console.error(err);
+                console.error("Erro ao carregar dados:", err);
             }
         }
 
-        // Stats calculation
-        function updateStats() {
-            document.getElementById('stat-total').innerText = fullData.length;
+        // Stats summary header counters
+        function updateKPIs() {
+            document.getElementById('kpi-total').innerText = rawData.length;
             
-            if (fullData.length === 0) {
-                document.getElementById('stat-avg').innerText = '0';
-                document.getElementById('stat-max').innerText = '0';
+            if (rawData.length === 0) {
+                document.getElementById('kpi-avg').innerText = '0';
+                document.getElementById('kpi-max').innerText = '0';
                 return;
             }
 
-            const scores = fullData.map(d => Number(d.score)).filter(s => !isNaN(s) && s !== null);
+            const scores = rawData.map(d => Number(d.score)).filter(s => !isNaN(s) && s !== null);
             const avg = scores.length > 0 ? Math.round(scores.reduce((a, b) => a + b, 0) / scores.length) : 0;
             const max = scores.length > 0 ? Math.max(...scores) : 0;
 
-            document.getElementById('stat-avg').innerText = avg;
-            document.getElementById('stat-max').innerText = max;
+            document.getElementById('kpi-avg').innerText = avg;
+            document.getElementById('kpi-max').innerText = max;
         }
 
-        // Apply filters
-        function applyFilters() {
-            const query = document.getElementById('search-input').value.toLowerCase().trim();
-            const sortBy = document.getElementById('sort-select').value;
+        // Sort data logically
+        function sortData() {
+            filteredData.sort((a, b) => {
+                let valA = a[sortColumn];
+                let valB = b[sortColumn];
 
-            filteredData = fullData.filter(item => {
+                // Handle missing or null values
+                if (valA === undefined || valA === null) valA = '';
+                if (valB === undefined || valB === null) valB = '';
+
+                // Score is a numeric field
+                if (sortColumn === 'score') {
+                    const scoreA = Number(valA) || 0;
+                    const scoreB = Number(valB) || 0;
+                    return sortAscending ? scoreA - scoreB : scoreB - scoreA;
+                }
+
+                // Default string sorting
+                const strA = String(valA).toLowerCase();
+                const strB = String(valB).toLowerCase();
+                return sortAscending ? strA.localeCompare(strB) : strB.localeCompare(strA);
+            });
+        }
+
+        // Filter and Search trigger
+        function applyFilterAndSearch() {
+            const query = document.getElementById('search-input').value.toLowerCase().trim();
+
+            filteredData = rawData.filter(item => {
+                // Apply score filters
+                const score = Number(item.score) || 0;
+                if (activeFilter === '980' && score < 980) return false;
+                if (activeFilter === '950' && score < 950) return false;
+                if (activeFilter === '900' && score < 900) return false;
+
+                // Apply text search on Name or CPF
                 const nome = (item.nome || '').toLowerCase();
                 const cpf = (item.cpf || '').toLowerCase();
                 return nome.includes(query) || cpf.includes(query);
             });
 
-            // Sort
-            if (sortBy === 'newest') {
-                filteredData.sort((a, b) => new Date(b.timestamp || 0) - new Date(a.timestamp || 0));
-            } else if (sortBy === 'oldest') {
-                filteredData.sort((a, b) => new Date(a.timestamp || 0) - new Date(b.timestamp || 0));
-            } else if (sortBy === 'score-desc') {
-                filteredData.sort((a, b) => (b.score || 0) - (a.score || 0));
-            } else if (sortBy === 'score-asc') {
-                filteredData.sort((a, b) => (a.score || 0) - (b.score || 0));
-            } else if (sortBy === 'name-asc') {
-                filteredData.sort((a, b) => (a.nome || '').localeCompare(b.nome || ''));
-            }
-
-            renderSidebarList();
+            // Re-apply sorting configuration
+            sortData();
+            
+            // Go back to first page upon filter changes
+            currentPage = 1;
+            renderTable();
         }
 
-        // Render left sidebar list
-        function renderSidebarList() {
-            const list = document.getElementById('sidebar-list');
-            list.innerHTML = '';
+        // Table headers sort toggle
+        function handleSort(column) {
+            if (sortColumn === column) {
+                sortAscending = !sortAscending;
+            } else {
+                sortColumn = column;
+                sortAscending = true;
+            }
 
-            if (filteredData.length === 0) {
-                list.innerHTML = '<div class="list-no-data">Nenhum CPF encontrado</div>';
+            // Update UI Icons
+            const cols = ['nome', 'cpf', 'score'];
+            cols.forEach(c => {
+                const icon = document.getElementById(`sort-icon-${c}`);
+                if (c === sortColumn) {
+                    icon.className = sortAscending ? "fa-solid fa-sort-up" : "fa-solid fa-sort-down";
+                } else {
+                    icon.className = "fa-solid fa-sort";
+                }
+            });
+
+            sortData();
+            renderTable();
+        }
+
+        // Render rows dynamically for the table page
+        function renderTable() {
+            const tbody = document.getElementById('table-body');
+            const noData = document.getElementById('no-data-element');
+            tbody.innerHTML = '';
+
+            const totalRecords = filteredData.length;
+            
+            if (totalRecords === 0) {
+                noData.style.display = 'block';
+                document.getElementById('pagination-info').innerText = "Mostrando 0 a 0 de 0 registros";
+                document.getElementById('pagination-controls-box').innerHTML = '';
                 return;
             }
 
-            filteredData.forEach(item => {
-                const card = document.createElement('div');
-                card.className = 'list-card';
-                if (selectedRecord && selectedRecord.cpf === item.cpf) {
-                    card.classList.add('active');
-                }
-                card.onclick = () => {
-                    // Update active classes
-                    document.querySelectorAll('.list-card').forEach(c => c.classList.remove('active'));
-                    card.classList.add('active');
-                    openProfile(item);
-                };
+            noData.style.display = 'none';
 
-                card.innerHTML = `
-                    <div class="list-card-name">${item.nome}</div>
-                    <div class="list-card-row">
-                        <span>CPF: ${item.cpf}</span>
-                        <span class="score-badge">${item.score || 'N/A'}</span>
-                    </div>
+            // Calculate pagination indices
+            const startIndex = (currentPage - 1) * rowsPerPage;
+            const endIndex = Math.min(startIndex + rowsPerPage, totalRecords);
+            const paginatedItems = filteredData.slice(startIndex, endIndex);
+
+            // Populate rows
+            paginatedItems.forEach(item => {
+                const tr = document.createElement('tr');
+                
+                // Get premium random color matching initials
+                const hashColor = getHashColor(item.nome || 'Desconhecido');
+                const initials = getInitials(item.nome || 'Desconhecido');
+
+                // Determine score colors
+                const score = Number(item.score) || 0;
+                let scoreColorClass = 'badge-score-low';
+                let scoreBgClass = 'bg-score-low';
+                if (score >= 980) {
+                    scoreColorClass = 'badge-score-high';
+                    scoreBgClass = 'bg-score-high';
+                } else if (score >= 950) {
+                    scoreColorClass = 'badge-score-medium';
+                    scoreBgClass = 'bg-score-medium';
+                }
+
+                // Format score percent width
+                const scorePercent = Math.min(Math.max((score / 1000) * 100, 0), 100);
+
+                // Get first contact info
+                const primaryPhone = (item.telefones_proprietario && item.telefones_proprietario.length > 0) 
+                    ? item.telefones_proprietario[0] 
+                    : 'N/A';
+                const primaryEmail = (item.emails && item.emails.length > 0)
+                    ? item.emails[0]
+                    : 'N/A';
+
+                tr.innerHTML = `
+                    <td>
+                        <div class="client-profile-cell">
+                            <div class="client-avatar" style="background: ${hashColor};">${initials}</div>
+                            <div class="client-name-details">
+                                <span class="client-name">${item.nome || 'Desconhecido'}</span>
+                                <span class="client-sub">${item.idade ? item.idade + ' anos' : 'Idade N/A'} • Nasc: ${item.nascimento || 'N/A'}</span>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="cpf-cell">
+                            <span>${item.cpf || 'N/A'}</span>
+                            <button class="copy-icon-btn" onclick="event.stopPropagation(); copyValueDirect('${item.cpf}')" title="Copiar CPF">
+                                <i class="fa-solid fa-copy"></i>
+                            </button>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="score-row-display">
+                            <div class="score-row-meta">
+                                <span class="${scoreColorClass}">${score}</span>
+                                <span style="font-size: 0.7rem; color: var(--text-secondary);">/1000</span>
+                            </div>
+                            <div class="score-row-bar-bg">
+                                <div class="score-row-bar-fill ${scoreBgClass}" style="width: ${scorePercent}%"></div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <span class="status-pill">${item.faixa_de_risco || 'Baixíssimo Risco'}</span>
+                    </td>
+                    <td>
+                        <strong style="color: var(--text-primary); font-family: 'Outfit'; font-size: 0.95rem;">${item.renda_presumida || 'N/A'}</strong>
+                    </td>
+                    <td>
+                        <div class="contact-cell">
+                            <span><i class="fa-solid fa-phone"></i> ${primaryPhone}</span>
+                            <span><i class="fa-solid fa-envelope"></i> ${primaryEmail}</span>
+                        </div>
+                    </td>
+                    <td style="text-align: center;">
+                        <button class="btn-view-profile" onclick="openClientProfile('${item.cpf}')">
+                            <i class="fa-solid fa-eye"></i> Ver
+                        </button>
+                    </td>
                 `;
-                list.appendChild(card);
+                tbody.appendChild(tr);
             });
+
+            // Update footer page text
+            document.getElementById('pagination-info').innerText = 
+                `Mostrando ${startIndex + 1} a ${endIndex} de ${totalRecords} registros`;
+
+            renderPaginationControls(totalRecords);
         }
 
-        // Display selected profile details in main pane
-        function openProfile(item) {
-            selectedRecord = item;
-            
-            // Switch views
-            document.getElementById('home-view').style.display = 'none';
-            const profileView = document.getElementById('profile-view');
-            profileView.style.display = 'block';
+        // Render page select pagination buttons
+        function renderPaginationControls(totalRecords) {
+            const paginationBox = document.getElementById('pagination-controls-box');
+            paginationBox.innerHTML = '';
 
-            // Top Header
-            document.getElementById('prof-nome').innerText = item.nome || 'DESCONHECIDO';
-            document.getElementById('prof-cpf').innerText = item.cpf || '-';
-            document.getElementById('prof-data').innerText = item.timestamp || '-';
+            const totalPages = Math.ceil(totalRecords / rowsPerPage);
+            if (totalPages <= 1) return;
 
-            // Document details
-            document.getElementById('field-cpf').innerText = item.cpf || 'SEM INFORMAÇÃO';
-            document.getElementById('field-pis').innerText = item.pis || 'SEM INFORMAÇÃO';
-            document.getElementById('field-titulo').innerText = item.titulo_eleitoral || 'SEM INFORMAÇÃO';
-            document.getElementById('field-rg').innerText = item.rg || 'SEM INFORMAÇÃO';
+            // Prev Button
+            const prevBtn = document.createElement('button');
+            prevBtn.className = 'pagination-btn';
+            prevBtn.innerHTML = '<i class="fa-solid fa-chevron-left"></i>';
+            prevBtn.disabled = currentPage === 1;
+            prevBtn.onclick = () => {
+                if (currentPage > 1) {
+                    currentPage--;
+                    renderTable();
+                }
+            };
+            paginationBox.appendChild(prevBtn);
+
+            // Page Numbers
+            // Simple page navigation logic
+            let startPage = Math.max(1, currentPage - 2);
+            let endPage = Math.min(totalPages, startPage + 4);
+            if (endPage - startPage < 4) {
+                startPage = Math.max(1, endPage - 4);
+            }
+
+            for (let i = startPage; i <= endPage; i++) {
+                const btn = document.createElement('button');
+                btn.className = `pagination-btn ${i === currentPage ? 'active' : ''}`;
+                btn.innerText = i;
+                btn.onclick = () => {
+                    currentPage = i;
+                    renderTable();
+                };
+                paginationBox.appendChild(btn);
+            }
+
+            // Next Button
+            const nextBtn = document.createElement('button');
+            nextBtn.className = 'pagination-btn';
+            nextBtn.innerHTML = '<i class="fa-solid fa-chevron-right"></i>';
+            nextBtn.disabled = currentPage === totalPages;
+            nextBtn.onclick = () => {
+                if (currentPage < totalPages) {
+                    currentPage++;
+                    renderTable();
+                }
+            };
+            paginationBox.appendChild(nextBtn);
+        }
+
+        // Generate dynamic avatar colored background from name hash
+        function getHashColor(name) {
+            const colors = [
+                'linear-gradient(135deg, #f43f5e, #be123c)', // rose
+                'linear-gradient(135deg, #10b981, #047857)', // emerald
+                'linear-gradient(135deg, #3b82f6, #1d4ed8)', // blue
+                'linear-gradient(135deg, #8b5cf6, #5b21b6)', // violet
+                'linear-gradient(135deg, #f59e0b, #b45309)', // amber
+                'linear-gradient(135deg, #ec4899, #be185d)', // pink
+                'linear-gradient(135deg, #14b8a6, #0f766e)'  // teal
+            ];
             
-            const exp = item.data_de_expedicao || 'SEM INFORMAÇÃO';
-            const org = item.orgao_expedidor || 'SEM INFORMAÇÃO';
+            let hash = 0;
+            for (let i = 0; i < name.length; i++) {
+                hash = name.charCodeAt(i) + ((hash << 5) - hash);
+            }
+            const index = Math.abs(hash) % colors.length;
+            return colors[index];
+        }
+
+        // Get initials from full name
+        function getInitials(name) {
+            const parts = name.trim().split(/\s+/);
+            if (parts.length === 1) return parts[0].substring(0, 2).toUpperCase();
+            return (parts[0][0] + parts[parts.length - 1][0]).toUpperCase();
+        }
+
+        // Find customer record by CPF and trigger sliding drawer display
+        function openClientProfile(cpf) {
+            const client = rawData.find(c => c.cpf === cpf);
+            if (!client) return;
+
+            selectedClient = client;
+            populateDrawer(client);
+
+            // Open overlay and drawer elements
+            document.getElementById('drawer-overlay').classList.add('active');
+            document.getElementById('details-drawer').classList.add('active');
+        }
+
+        // Close Drawer Panel handler
+        function closeDrawer() {
+            document.getElementById('drawer-overlay').classList.remove('active');
+            document.getElementById('details-drawer').classList.remove('active');
+            selectedClient = null;
+        }
+
+        // Populate drawer contents dynamically
+        function populateDrawer(item) {
+            // Header Info
+            document.getElementById('dr-nome').innerText = item.nome || 'Desconhecido';
+            document.getElementById('dr-cpf').innerText = item.cpf || 'N/A';
+            document.getElementById('dr-timestamp').innerText = item.timestamp || 'N/A';
+
+            // Risk metrics
+            document.getElementById('dr-field-score').innerText = item.score !== null ? item.score : 'N/A';
+            document.getElementById('dr-field-faixa').innerText = item.faixa_de_risco || 'N/A';
+            document.getElementById('dr-field-renda').innerText = item.renda_presumida || 'N/A';
+            document.getElementById('dr-field-receita').innerText = item.status_receita_federal || 'N/A';
+
+            // Set badge class on Score pill inside drawer
+            const scorePill = document.getElementById('dr-field-score');
+            scorePill.className = 'drawer-field-value score-pill';
+            const score = Number(item.score) || 0;
+            if (score >= 980) scorePill.style.color = 'var(--score-high)';
+            else if (score >= 950) scorePill.style.color = 'var(--score-medium)';
+            else scorePill.style.color = 'var(--score-low)';
+
+            // Document info
+            document.getElementById('dr-field-cpf').innerText = item.cpf || 'N/A';
+            document.getElementById('dr-field-pis').innerText = item.pis || 'N/A';
+            document.getElementById('dr-field-titulo').innerText = item.titulo_eleitoral || 'N/A';
+            document.getElementById('dr-field-rg').innerText = item.rg || 'N/A';
+            
+            const exp = item.data_de_expedicao || 'N/A';
+            const org = item.orgao_expedidor || 'N/A';
             const uf = item.uf_rg || '';
-            document.getElementById('field-rg-exp').innerText = `${exp} / ${org} ${uf}`.trim().replace(/\/ $/, "");
+            document.getElementById('dr-field-rg-exp').innerText = `${exp} / ${org} ${uf}`.trim().replace(/\/ $/, "");
 
-            // Personal details
-            const nascimento = item.nascimento || 'SEM INFORMAÇÃO';
-            const idade = item.idade ? `(${item.idade} anos)` : '';
-            document.getElementById('field-nascimento').innerText = `${nascimento} ${idade}`.trim();
-            document.getElementById('field-signo').innerText = item.signo || 'SEM INFORMAÇÃO';
-            document.getElementById('field-mae').innerText = item.mae || 'SEM INFORMAÇÃO';
-            document.getElementById('field-pai').innerText = item.pai || 'SEM INFORMAÇÃO';
+            // Personal Info
+            const birth = item.nascimento || 'N/A';
+            const age = item.idade ? `(${item.idade} anos)` : '';
+            document.getElementById('dr-field-nascimento').innerText = `${birth} ${age}`.trim();
+            document.getElementById('dr-field-signo').innerText = item.signo || 'N/A';
+            document.getElementById('dr-field-mae').innerText = item.mae || 'N/A';
+            document.getElementById('dr-field-pai').innerText = item.pai || 'N/A';
             
-            const esc = item.escolaridade || 'SEM INFORMAÇÃO';
-            const civ = item.estado_civil || 'SEM INFORMAÇÃO';
-            document.getElementById('field-escolaridade').innerText = `${esc} / ${civ}`;
+            const esc = item.escolaridade || 'N/A';
+            const civ = item.estado_civil || 'N/A';
+            document.getElementById('dr-field-escolaridade').innerText = `${esc} / ${civ}`;
 
-            // Risco details
-            document.getElementById('field-score').innerText = item.score !== null ? item.score : '-';
-            document.getElementById('field-faixa').innerText = item.faixa_de_risco || 'SEM INFORMAÇÃO';
-            document.getElementById('field-renda').innerText = item.renda_presumida || 'SEM INFORMAÇÃO';
-            document.getElementById('field-receita').innerText = item.status_receita_federal || 'SEM INFORMAÇÃO';
-
-            // List arrays mapping
-            populateList('list-telefones', [
+            // Arrays Lists Mapping
+            populateDrawerList('dr-list-telefones', [
                 ...(item.telefones_proprietario || []).map(t => `Proprietário: ${t}`),
                 ...(item.telefones_comerciais || []).map(t => `Comercial: ${t}`),
                 ...(item.telefones_referenciais || []).map(t => `Referencial: ${t}`)
             ]);
 
-            populateList('list-emails', item.emails);
-            populateList('list-enderecos', item.enderecos);
-            populateList('list-parentes', [
-                ...(item.possiveis_parentes || []),
+            populateDrawerList('dr-list-emails', item.emails);
+            populateDrawerList('dr-list-enderecos', item.enderecos);
+            
+            populateDrawerList('dr-list-parentes', [
+                ...(item.possiveis_parentes || []).map(p => `Parente: ${p}`),
                 ...(item.possiveis_vizinhos || []).map(v => `Vizinho: ${v}`)
             ]);
-            populateList('list-vinculos', [
-                ...(item.participacao_societaria || []),
-                ...(item.vinculos_empregaticios || [])
+            
+            populateDrawerList('dr-list-vinculos', [
+                ...(item.participacao_societaria || []).map(s => `Societário: ${s}`),
+                ...(item.vinculos_empregaticios || []).map(e => `Emprego: ${e}`)
             ]);
         }
 
-        // Helper to populate array lists in cards
-        function populateList(elementId, arrayData) {
+        // Helper to construct dynamic lists inside details drawer cards
+        function populateDrawerList(elementId, arrayData) {
             const container = document.getElementById(elementId);
             container.innerHTML = '';
 
-            const data = (arrayData || []).filter(item => item && item.trim() !== '' && item.toUpperCase() !== 'SEM INFORMAÇÃO');
+            const data = (arrayData || []).filter(val => val && val.trim() !== '' && val.toUpperCase() !== 'SEM INFORMAÇÃO');
 
             if (data.length === 0) {
-                container.innerHTML = '<div class="array-empty">Nenhuma informação disponível</div>';
+                container.innerHTML = '<div class="drawer-array-empty">Nenhuma informação disponível</div>';
                 return;
             }
 
             data.forEach((text, index) => {
                 const item = document.createElement('div');
-                item.className = 'array-item';
-                
-                const uniqueId = `${elementId}-${index}`;
-                
+                item.className = 'drawer-array-item';
+                const id = `${elementId}-${index}`;
+
                 item.innerHTML = `
-                    <span class="array-item-text" id="${uniqueId}">${text}</span>
-                    <button class="btn-copy-field" onclick="copyValue('${uniqueId}')"><i class="fa-solid fa-copy"></i></button>
+                    <span class="drawer-array-text" id="${id}">${text}</span>
+                    <button class="copy-icon-btn" onclick="copyTextValue('${id}')"><i class="fa-solid fa-copy"></i></button>
                 `;
                 container.appendChild(item);
             });
         }
 
-        // Toast copy controller
+        // Display copy confirmation toast message
         function showToast() {
-            const toast = document.getElementById('toast');
+            const toast = document.getElementById('toast-message');
             toast.classList.add('show');
             setTimeout(() => {
                 toast.classList.remove('show');
             }, 2000);
         }
 
-        function copyValue(elementId) {
+        // Copy dynamic element text value
+        function copyTextValue(elementId) {
             const text = document.getElementById(elementId).innerText;
             navigator.clipboard.writeText(text).then(showToast);
         }
 
-        // Copy entire profile card
+        // Direct string copy
+        function copyValueDirect(text) {
+            navigator.clipboard.writeText(text).then(showToast);
+        }
+
+        // Copy entire detailed card profile in formatted layout
         document.getElementById('btn-copy-all').onclick = () => {
-            if (!selectedRecord) return;
-            
+            if (!selectedClient) return;
+
             let text = `==================================================\n`;
-            text += `NOME: ${selectedRecord.nome || ''}\n`;
-            text += `CPF: ${selectedRecord.cpf || ''}\n`;
-            text += `PIS: ${selectedRecord.pis || ''}\n`;
-            text += `RG: ${selectedRecord.rg || ''}\n`;
-            text += `MÃE: ${selectedRecord.mae || ''}\n`;
-            text += `SCORE: ${selectedRecord.score || ''}\n`;
-            text += `FAIXA DE RISCO: ${selectedRecord.faixa_de_risco || ''}\n`;
-            text += `RENDA PRESUMIDA: ${selectedRecord.renda_presumida || ''}\n`;
+            text += `NOME: ${selectedClient.nome || ''}\n`;
+            text += `CPF: ${selectedClient.cpf || ''}\n`;
+            text += `PIS: ${selectedClient.pis || ''}\n`;
+            text += `RG: ${selectedClient.rg || ''}\n`;
+            text += `MÃE: ${selectedClient.mae || ''}\n`;
+            text += `SCORE: ${selectedClient.score || ''}\n`;
+            text += `FAIXA DE RISCO: ${selectedClient.faixa_de_risco || ''}\n`;
+            text += `RENDA PRESUMIDA: ${selectedClient.renda_presumida || ''}\n`;
             
-            if (selectedRecord.emails && selectedRecord.emails.length > 0) {
-                text += `E-MAILS:\n` + selectedRecord.emails.join('\n') + `\n`;
+            if (selectedClient.emails && selectedClient.emails.length > 0) {
+                text += `E-MAILS:\n` + selectedClient.emails.join('\n') + `\n`;
             }
-            if (selectedRecord.enderecos && selectedRecord.enderecos.length > 0) {
-                text += `ENDEREÇOS:\n` + selectedRecord.enderecos.join('\n') + `\n`;
+            if (selectedClient.enderecos && selectedClient.enderecos.length > 0) {
+                text += `ENDEREÇOS:\n` + selectedClient.enderecos.join('\n') + `\n`;
             }
             
             const phones = [
-                ...(selectedRecord.telefones_proprietario || []),
-                ...(selectedRecord.telefones_comerciais || []),
-                ...(selectedRecord.telefones_referenciais || [])
+                ...(selectedClient.telefones_proprietario || []),
+                ...(selectedClient.telefones_comerciais || []),
+                ...(selectedClient.telefones_referenciais || [])
             ];
             if (phones.length > 0) {
                 text += `TELEFONES:\n` + phones.join('\n') + `\n`;
@@ -1108,15 +1771,28 @@
             navigator.clipboard.writeText(text).then(showToast);
         };
 
-        // Events listeners
-        document.getElementById('search-input').oninput = applyFilters;
-        document.getElementById('sort-select').onchange = applyFilters;
+        // Event listeners config
+        document.getElementById('search-input').oninput = applyFilterAndSearch;
         document.getElementById('btn-refresh').onclick = loadData;
 
-        // Auto reload
+        // Toggle Filter pills
+        document.querySelectorAll('.filter-pill').forEach(pill => {
+            pill.onclick = () => {
+                document.querySelectorAll('.filter-pill').forEach(p => p.classList.remove('active'));
+                pill.classList.add('active');
+                activeFilter = pill.getAttribute('data-filter');
+                applyFilterAndSearch();
+            };
+        });
+
+        // Close drawer triggers
+        document.getElementById('btn-close-drawer').onclick = closeDrawer;
+        document.getElementById('drawer-overlay').onclick = closeDrawer;
+
+        // Auto reload data every 10 seconds to keep live feed sync
         setInterval(loadData, 10000);
 
-        // Initial load
+        // Run initial load
         window.onload = loadData;
     </script>
 </body>

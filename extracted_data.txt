@@ -22062,3 +22062,19 @@ FAIXA DE RISCO: BAIXISSIMO RISCO
 RENDA PRESUMIDA: 9235,43
 ==================================================
 
+==================================================
+NOME: ADRIANA REGINA ARAUJO ROCHA
+CPF: 60658240978
+SCORE: 905
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 7471,06
+==================================================
+
+==================================================
+NOME: DERMITO VITOR DE OLIVEIRA
+CPF: 10764208691
+SCORE: 984
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 2106,20
+==================================================
+
