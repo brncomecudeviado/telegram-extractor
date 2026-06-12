@@ -22078,3 +22078,1963 @@ FAIXA DE RISCO: BAIXISSIMO RISCO
 RENDA PRESUMIDA: 2106,20
 ==================================================
 
+==================================================
+NOME: SONIA TERESINHA RIES ERTAL
+CPF: 60197870953
+SCORE: 983
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 3413,15
+==================================================
+
+==================================================
+NOME: MARIA SANTIAGO
+CPF: 72246120730
+SCORE: 950
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 4917,57
+==================================================
+
+==================================================
+NOME: DAVI MENEZES MARTINS
+CPF: 01466965142
+SCORE: 958
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 6598,87
+==================================================
+
+==================================================
+NOME: MARLI NOWASKY
+CPF: 47119225987
+SCORE: 883
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 5153,62
+==================================================
+
+==================================================
+NOME: MARA RUBIA DA SILVA CONINCH
+CPF: 89527585953
+SCORE: 873
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 2638,48
+==================================================
+
+==================================================
+NOME: GRAZIELE FORTES DE OLIVEIRA
+CPF: 00139694048
+SCORE: 896
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 4518,25
+==================================================
+
+==================================================
+NOME: MIRIAM DE LIMA MORALES
+CPF: 10422606804
+SCORE: 882
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 11834,84
+==================================================
+
+==================================================
+NOME: NELSO PEDRO DAL BELLO
+CPF: 70804320900
+SCORE: 858
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 3936,16
+==================================================
+
+==================================================
+NOME: JESSICA TAIANA MARIA DA SILVA
+CPF: 09497351402
+SCORE: 876
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 595,97
+==================================================
+
+==================================================
+NOME: KELLY VIVIANE SILVA DE PAULA
+CPF: 00265235073
+SCORE: 889
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 1799,24
+==================================================
+
+==================================================
+NOME: EDWALDO CAMARA ALMEIDA
+CPF: 45440824715
+SCORE: 881
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 1509,42
+==================================================
+
+==================================================
+NOME: AMANDA DOTTO DUFNER
+CPF: 22060767806
+SCORE: 858
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 2783,64
+==================================================
+
+==================================================
+NOME: ALEXANDRE DE OLIVEIRA DAL FORNO
+CPF: 60812028015
+SCORE: 881
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 13782,73
+==================================================
+
+==================================================
+NOME: ANDREA GOMES DE SOUZA
+CPF: 05018732601
+SCORE: 850
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 1180,01
+==================================================
+
+==================================================
+NOME: ADILSON SOUZA NAVEGA
+CPF: 62912054672
+SCORE: 856
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 2962,07
+==================================================
+
+==================================================
+NOME: MAURICIO JUSTINO RENO DA SILVA
+CPF: 54501776900
+SCORE: 856
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 23487,13
+==================================================
+
+==================================================
+NOME: HILDE SCHUUR DAUDT
+CPF: 15117103068
+SCORE: 882
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 2654,62
+==================================================
+
+==================================================
+NOME: MARIA REGINA JULIANELI DE PAIVA
+CPF: 92283063787
+SCORE: 876
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 1561,13
+==================================================
+
+==================================================
+NOME: FRANCISCO MARTINS DIAS DA CONCEICAO
+CPF: 00908434871
+SCORE: 897
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 1163,74
+==================================================
+
+==================================================
+NOME: NICOLAS COENRAAD DE MOL VAN OTTERLOO
+CPF: 39303355814
+SCORE: 873
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 2623,69
+==================================================
+
+==================================================
+NOME: EINAR HONEGGER THOME
+CPF: 07324620884
+SCORE: 852
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 7187,45
+==================================================
+
+==================================================
+NOME: ELIANE RISSIOLI
+CPF: 29445087844
+SCORE: 858
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 2260,47
+==================================================
+
+==================================================
+NOME: FLAVIA FERNANDA FERNANDES
+CPF: 01250366631
+SCORE: 892
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 9088,46
+==================================================
+
+==================================================
+NOME: PATRICK DE ABREU CAMPOS
+CPF: 39677364820
+SCORE: 893
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 991,57
+==================================================
+
+==================================================
+NOME: LUCIANA APARECIDA AMELIO
+CPF: 77793749634
+SCORE: 873
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 4539,20
+==================================================
+
+==================================================
+NOME: DEBORA CONCEICAO GONCALVES NASCIMENTO
+CPF: 01495110605
+SCORE: 896
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 2356,48
+==================================================
+
+==================================================
+NOME: JOSE HILARIO RODRIGUES
+CPF: 45362220900
+SCORE: 877
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 7337,49
+==================================================
+
+==================================================
+NOME: BRUNO SANTANA DA SILVA
+CPF: 31630558850
+SCORE: 873
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 2875,50
+==================================================
+
+==================================================
+NOME: SERGIO ORLOVIC
+CPF: 06265591894
+SCORE: 898
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 1376,85
+==================================================
+
+==================================================
+NOME: MARAISA RODRIGUES PORTO
+CPF: 14450573870
+SCORE: 871
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 6477,93
+==================================================
+
+==================================================
+NOME: KLEBER RODRIGUES DE MORAES
+CPF: 02846868166
+SCORE: 862
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 996,66
+==================================================
+
+==================================================
+NOME: NICOLAS TORRES OMENA DE FREITAS
+CPF: 70898078431
+SCORE: 897
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 628,95
+==================================================
+
+==================================================
+NOME: ARCENIO CACERES
+CPF: 33748870159
+SCORE: 887
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 2191,57
+==================================================
+
+==================================================
+NOME: CLARISSA VIEIRA DE ANDRADE
+CPF: 06208387442
+SCORE: 858
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 1993,62
+==================================================
+
+==================================================
+NOME: NEIDE MARIA DE SOUZA
+CPF: 88609715868
+SCORE: 884
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 5093,51
+==================================================
+
+==================================================
+NOME: CECILIA SILVA DOS SANTOS
+CPF: 31666180823
+SCORE: 886
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: SEM INFORMAÇÃO
+==================================================
+
+==================================================
+NOME: LUCIANA REGINA DE ANDRADE BENTO
+CPF: 33872253859
+SCORE: 892
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 2158,22
+==================================================
+
+==================================================
+NOME: MARIA HELENA APOLINARIO
+CPF: 09060406630
+SCORE: 884
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 1673,31
+==================================================
+
+==================================================
+NOME: ANDRE BECCARIA CANTON
+CPF: 08838845859
+SCORE: 868
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: SEM INFORMAÇÃO
+==================================================
+
+==================================================
+NOME: PEDRO JOSE MONTEIRO SANTANA
+CPF: 21897433700
+SCORE: 891
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 4549,38
+==================================================
+
+==================================================
+NOME: ANDERSON CAETANO DE SOUZA
+CPF: 34680022892
+SCORE: 872
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 1823,35
+==================================================
+
+==================================================
+NOME: RENAN CABRERA
+CPF: 42837793850
+SCORE: 854
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 3118,44
+==================================================
+
+==================================================
+NOME: BRUNO SANCHES RODRIGUES
+CPF: 31275668836
+SCORE: 877
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 2501,23
+==================================================
+
+==================================================
+NOME: FABIO QUINELATO COSIN
+CPF: 30311636802
+SCORE: 871
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 2362,04
+==================================================
+
+==================================================
+NOME: SHIRLEI APARECIDA BRESSANINI BIALAS
+CPF: 90274270978
+SCORE: 878
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 1769,01
+==================================================
+
+==================================================
+NOME: CELIO LOPES DOS SANTOS
+CPF: 46487506168
+SCORE: 882
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 5416,90
+==================================================
+
+==================================================
+NOME: EDSON JOSE REIS
+CPF: 08134927858
+SCORE: 892
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 4399,44
+==================================================
+
+==================================================
+NOME: GILDETE DE FATIMA BORSSA
+CPF: 46978135020
+SCORE: 866
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: SEM INFORMAÇÃO
+==================================================
+
+==================================================
+NOME: MARTA MARIA DE MELO
+CPF: 04126885650
+SCORE: 854
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 2055,90
+==================================================
+
+==================================================
+NOME: MURILLO DE OLIVEIRA ROQUE
+CPF: 02416959026
+SCORE: 866
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 628,95
+==================================================
+
+==================================================
+NOME: SILVIA HELENA APARECIDA DE ARAUJO
+CPF: 05889528858
+SCORE: 878
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 5133,97
+==================================================
+
+==================================================
+NOME: RONILSON BAHIA DE SOUZA SANTOS
+CPF: 23789476587
+SCORE: 853
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: SEM INFORMAÇÃO
+==================================================
+
+==================================================
+NOME: RAIMUNDO NONATO PAIXAO
+CPF: 16539508387
+SCORE: 853
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 1054,74
+==================================================
+
+==================================================
+NOME: VAGNER JOSE PINTO
+CPF: 04545355463
+SCORE: 897
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 669,92
+==================================================
+
+==================================================
+NOME: VENILSE ANA PADILHA
+CPF: 04145850971
+SCORE: 894
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 1520,42
+==================================================
+
+==================================================
+NOME: JALVIR ANTONIO PARECY
+CPF: 85398322915
+SCORE: 877
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 1223,94
+==================================================
+
+==================================================
+NOME: DELONI DO CARMO TOMBINI
+CPF: 54406471049
+SCORE: 869
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 3904,75
+==================================================
+
+==================================================
+NOME: BRUNNER RODRIGUES JOVANOVICHS
+CPF: 03103160062
+SCORE: 878
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 1702,29
+==================================================
+
+==================================================
+NOME: MARLEI JOSE VARGAS
+CPF: 21813477000
+SCORE: 861
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 1700,54
+==================================================
+
+==================================================
+NOME: CRISTIAN RICARDO OLIVEIRA
+CPF: 05182664940
+SCORE: 889
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: SEM INFORMAÇÃO
+==================================================
+
+==================================================
+NOME: ANDRE BECKMANN DE CASTRO MENEZES
+CPF: 59614200278
+SCORE: 898
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 6045,12
+==================================================
+
+==================================================
+NOME: HELIO JOSE POZZATTO
+CPF: 37296817020
+SCORE: 858
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 1956,39
+==================================================
+
+==================================================
+NOME: KENIA MARCIA DE OLIVEIRA
+CPF: 71630457949
+SCORE: 859
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 5210,21
+==================================================
+
+==================================================
+NOME: JOAQUIM JUNEOR MOUREIRA DOS SANTOS
+CPF: 80789196115
+SCORE: 872
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 1210,14
+==================================================
+
+==================================================
+NOME: AVELINO VELHO DE ALMEIDA NETO
+CPF: 02320161007
+SCORE: 858
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 646,71
+==================================================
+
+==================================================
+NOME: MARIA CIRLEI DA SILVEIRA CHINELATTO
+CPF: 00455101051
+SCORE: 868
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 1387,83
+==================================================
+
+==================================================
+NOME: LAERCIO MARCOMINI
+CPF: 16135520920
+SCORE: 861
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 2193,38
+==================================================
+
+==================================================
+NOME: JOSE PESTANA JUNIOR
+CPF: 53170105787
+SCORE: 864
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: SEM INFORMAÇÃO
+==================================================
+
+==================================================
+NOME: MARINO SILVINO DA COSTA
+CPF: 01028385854
+SCORE: 894
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: SEM INFORMAÇÃO
+==================================================
+
+==================================================
+NOME: IRACEMA PERONDI
+CPF: 03210264970
+SCORE: 868
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 1558,91
+==================================================
+
+==================================================
+NOME: APARECIDA RODRIGUES DE NOVAIS
+CPF: 00918728800
+SCORE: 857
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 668,01
+==================================================
+
+==================================================
+NOME: IRTO RECH
+CPF: 14193353915
+SCORE: 868
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 1337,84
+==================================================
+
+==================================================
+NOME: JORGE BERTOLO
+CPF: 98480936053
+SCORE: 871
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 2474,09
+==================================================
+
+==================================================
+NOME: LUISENE INACIO PEREIRA
+CPF: 02969780518
+SCORE: 887
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 1249,51
+==================================================
+
+==================================================
+NOME: JUVITA DA COSTA E SILVA
+CPF: 29099730004
+SCORE: 866
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: SEM INFORMAÇÃO
+==================================================
+
+==================================================
+NOME: LARISSA MORAES REGO OLIVEIRA
+CPF: 02884501592
+SCORE: 864
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 1115,09
+==================================================
+
+==================================================
+NOME: NILSON JOSE DA COSTA
+CPF: 51023547953
+SCORE: 897
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: SEM INFORMAÇÃO
+==================================================
+
+==================================================
+NOME: JOAO NICOLINO DE JESUS
+CPF: 67497098772
+SCORE: 871
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: SEM INFORMAÇÃO
+==================================================
+
+==================================================
+NOME: JACKSON DIAS
+CPF: 10855543922
+SCORE: 897
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 628,95
+==================================================
+
+==================================================
+NOME: DENISE MENEZES QUELHAS
+CPF: 10122465741
+SCORE: 867
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 3943,40
+==================================================
+
+==================================================
+NOME: LIOZETE FERREIRA
+CPF: 64675815634
+SCORE: 877
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: SEM INFORMAÇÃO
+==================================================
+
+==================================================
+NOME: ERIKA CAMARGO SOUZA
+CPF: 15910583840
+SCORE: 864
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 2314,67
+==================================================
+
+==================================================
+NOME: ISABELLY CRISTINA DE LIMA
+CPF: 46873277886
+SCORE: 872
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 628,95
+==================================================
+
+==================================================
+NOME: BIAGIO MENEGOL
+CPF: 03013162015
+SCORE: 874
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 1386,41
+==================================================
+
+==================================================
+NOME: ERIKA CAMARGO SPAGNOLO
+CPF: 25519416877
+SCORE: 863
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 4664,67
+==================================================
+
+==================================================
+NOME: MARILIA SILVA
+CPF: 34507769833
+SCORE: 868
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 2060,39
+==================================================
+
+==================================================
+NOME: ERIKA CAMARGO CORREA
+CPF: 27985435840
+SCORE: 884
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 2313,56
+==================================================
+
+==================================================
+NOME: DULCINETE DA CONCEICAO NUNES
+CPF: 08755239862
+SCORE: 877
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 974,23
+==================================================
+
+==================================================
+NOME: MARIA TERESA DOS SANTOS WUNSCH
+CPF: 33195587068
+SCORE: 853
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 1688,60
+==================================================
+
+==================================================
+NOME: AUGUSTO CESAR GARCIA
+CPF: 25717766220
+SCORE: 858
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 2368,28
+==================================================
+
+==================================================
+NOME: GILMAR DIETRICH
+CPF: 06767763888
+SCORE: 884
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: SEM INFORMAÇÃO
+==================================================
+
+==================================================
+NOME: CLAUDEMIR BERTINOTTI
+CPF: 10484598880
+SCORE: 866
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: SEM INFORMAÇÃO
+==================================================
+
+==================================================
+NOME: DRIELLE CRISTINA CAVALCANTE DE SOUZA E SOUZA
+CPF: 94732132200
+SCORE: 893
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 976,30
+==================================================
+
+==================================================
+NOME: TEREZA DA COSTA PEIXOTO
+CPF: 30511674015
+SCORE: 850
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 2017,73
+==================================================
+
+==================================================
+NOME: VANESSA ZANARDI
+CPF: 32041783826
+SCORE: 871
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 2586,78
+==================================================
+
+==================================================
+NOME: JULIANA DAINEZ FOLTRAN
+CPF: 37930491838
+SCORE: 877
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 3753,60
+==================================================
+
+==================================================
+NOME: CLAUDIO JOSE RAMOS CHAGAS
+CPF: 81797125672
+SCORE: 893
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 2452,73
+==================================================
+
+==================================================
+NOME: ANDREA TEIXEIRA DE ARAUJO
+CPF: 07886089677
+SCORE: 886
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 1779,89
+==================================================
+
+==================================================
+NOME: ANA PAULA PERCHIM DE LIMA
+CPF: 01881642003
+SCORE: 881
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 1715,52
+==================================================
+
+==================================================
+NOME: IARA APARECIDA NOGUEIRA PELEGRINI MOTA
+CPF: 65827163600
+SCORE: 866
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 3747,91
+==================================================
+
+==================================================
+NOME: MARIA APARECIDA DE SOUZA SILVA
+CPF: 17237834800
+SCORE: 898
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: SEM INFORMAÇÃO
+==================================================
+
+==================================================
+NOME: SUELEN MATOS DE PAULA
+CPF: 41603089888
+SCORE: 886
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 2057,61
+==================================================
+
+==================================================
+NOME: SIMONE ANTUNES
+CPF: 07269362785
+SCORE: 894
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 4601,17
+==================================================
+
+==================================================
+NOME: DEBORA CRISTINA SOARES SANTOS
+CPF: 33391634804
+SCORE: 874
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 1715,22
+==================================================
+
+==================================================
+NOME: KATHIA MARA MUELLER PETKOV
+CPF: 59454652915
+SCORE: 873
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 6985,13
+==================================================
+
+==================================================
+NOME: TIAGO ROBERTO DA SILVA
+CPF: 36835375825
+SCORE: 886
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 2788,14
+==================================================
+
+==================================================
+NOME: SHIRLEY ONISZCZUK ECCO
+CPF: 97605948972
+SCORE: 888
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 4631,89
+==================================================
+
+==================================================
+NOME: CELESTINO KUCZKOWSKI
+CPF: 22095322991
+SCORE: 887
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 2030,22
+==================================================
+
+==================================================
+NOME: NADIR JOSE CERVELIN
+CPF: 29523265920
+SCORE: 852
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 5292,24
+==================================================
+
+==================================================
+NOME: RAIMUNDO NAZARENO BANDEIRA
+CPF: 25178717287
+SCORE: 882
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 999,99
+==================================================
+
+==================================================
+NOME: GERALDO GALINA
+CPF: 47211180072
+SCORE: 879
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 5264,28
+==================================================
+
+==================================================
+NOME: LEILA RODRIGUES NUNES
+CPF: 14722934878
+SCORE: 850
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 1748,82
+==================================================
+
+==================================================
+NOME: ARIADMA BERTOLLO
+CPF: 07718923738
+SCORE: 862
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 3409,31
+==================================================
+
+==================================================
+NOME: GUERINO GONCALVES DOS SANTOS
+CPF: 28148053049
+SCORE: 876
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 1616,11
+==================================================
+
+==================================================
+NOME: ROSINHA BASSANI POMMERENING
+CPF: 63641372968
+SCORE: 897
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: SEM INFORMAÇÃO
+==================================================
+
+==================================================
+NOME: TERESINHA SARETO
+CPF: 89140354091
+SCORE: 884
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 1315,30
+==================================================
+
+==================================================
+NOME: ELUIVA PUERARI VANCINI
+CPF: 02036432913
+SCORE: 858
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 1118,45
+==================================================
+
+==================================================
+NOME: IVONE SAIDEL
+CPF: 97310239920
+SCORE: 868
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 1299,77
+==================================================
+
+==================================================
+NOME: SELMA DE FATIMA PINTO DE OLIVEIRA
+CPF: 34863389787
+SCORE: 896
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 2281,74
+==================================================
+
+==================================================
+NOME: RAFAELLA LIMA BICALHO DE CASTRO
+CPF: 08316785692
+SCORE: 867
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 3398,74
+==================================================
+
+==================================================
+NOME: JAIR FAGUNDES CARVALHO
+CPF: 27069052049
+SCORE: 872
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 15272,18
+==================================================
+
+==================================================
+NOME: TIAGO DAMASCENO PAIM DE SANT ANA
+CPF: 86315585590
+SCORE: 878
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 919,09
+==================================================
+
+==================================================
+NOME: LEILA SANTOS RIBEIRO RUSSO
+CPF: 38635284844
+SCORE: 888
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: SEM INFORMAÇÃO
+==================================================
+
+==================================================
+NOME: GABRIEL DE OLIVEIRA BERTE
+CPF: 03014035033
+SCORE: 886
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 6109,41
+==================================================
+
+==================================================
+NOME: TEREZA GODOI DA SILVA
+CPF: 00462015050
+SCORE: 853
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 1365,48
+==================================================
+
+==================================================
+NOME: LAURECI REIS SANTOS
+CPF: 25823655053
+SCORE: 873
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 1304,72
+==================================================
+
+==================================================
+NOME: LETICIA MATIOLI ANDRADE
+CPF: 09234991648
+SCORE: 863
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 1074,86
+==================================================
+
+==================================================
+NOME: EDUARDA SILVA RODRIGUES
+CPF: 00846238292
+SCORE: 853
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 1993,55
+==================================================
+
+==================================================
+NOME: JESSI SCHNORR
+CPF: 22575413087
+SCORE: 868
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: SEM INFORMAÇÃO
+==================================================
+
+==================================================
+NOME: DHIEGO GIOVANINI FERREYRA AVELAR
+CPF: 06680286530
+SCORE: 868
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 665,95
+==================================================
+
+==================================================
+NOME: IRENE BRANSANI
+CPF: 56239629804
+SCORE: 879
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 1979,38
+==================================================
+
+==================================================
+NOME: FRANCISCO TABONI
+CPF: 43790933953
+SCORE: 854
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: SEM INFORMAÇÃO
+==================================================
+
+==================================================
+NOME: LUIZ AFONSO LUCCA
+CPF: 04227900956
+SCORE: 874
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 1072,17
+==================================================
+
+==================================================
+NOME: CLAUDETE RAIMUNDO MARRAFON
+CPF: 25386807862
+SCORE: 868
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 1612,41
+==================================================
+
+==================================================
+NOME: DIEGO FARIA
+CPF: 08234467948
+SCORE: 872
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 1551,68
+==================================================
+
+==================================================
+NOME: BRUNA MORES
+CPF: 07009702900
+SCORE: 884
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 1462,11
+==================================================
+
+==================================================
+NOME: OMIR DE OLIVEIRA FREITAS
+CPF: 04434048015
+SCORE: 853
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 1371,05
+==================================================
+
+==================================================
+NOME: DHENER WILLIAN ZUCCO
+CPF: 10471384925
+SCORE: 856
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 886,96
+==================================================
+
+==================================================
+NOME: MARCOS VISOTO
+CPF: 01101577029
+SCORE: 863
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 2497,95
+==================================================
+
+==================================================
+NOME: NEREIDA VALDELI DE ALMEIDA
+CPF: 55057144987
+SCORE: 897
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 2492,50
+==================================================
+
+==================================================
+NOME: LUCIANA VIDAL DA SILVA
+CPF: 14522645899
+SCORE: 866
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 3111,78
+==================================================
+
+==================================================
+NOME: JULIO CESAR DE PINHO
+CPF: 04931634680
+SCORE: 857
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 1902,28
+==================================================
+
+==================================================
+NOME: ALCEI DOS SANTOS CARDOSO
+CPF: 91675073015
+SCORE: 868
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 1659,86
+==================================================
+
+==================================================
+NOME: PATRICIA POLIANE PRADA DOS SANTOS
+CPF: 07105389958
+SCORE: 862
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 933,32
+==================================================
+
+==================================================
+NOME: BRUNO BARBOSA
+CPF: 05638408703
+SCORE: 852
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 2845,33
+==================================================
+
+==================================================
+NOME: LOURDES DE OLIVEIRA OLEQUES
+CPF: 73978329034
+SCORE: 879
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 1365,50
+==================================================
+
+==================================================
+NOME: MARIA APARECIDA SIMOES
+CPF: 15555064888
+SCORE: 889
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 1936,26
+==================================================
+
+==================================================
+NOME: PAULO ROBERTO SACOMANI
+CPF: 00542878801
+SCORE: 884
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: SEM INFORMAÇÃO
+==================================================
+
+==================================================
+NOME: RICHARD CAIRES SILVA
+CPF: 06480723635
+SCORE: 888
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 2839,18
+==================================================
+
+==================================================
+NOME: MARCELO MORANDI
+CPF: 73783056691
+SCORE: 862
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 3320,94
+==================================================
+
+==================================================
+NOME: ARMIRO CARVALHO TEIXEIRA
+CPF: 34124551053
+SCORE: 897
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 1375,08
+==================================================
+
+==================================================
+NOME: MARLI BARBOSA DE CARVALHO
+CPF: 46787372787
+SCORE: 892
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 6049,65
+==================================================
+
+==================================================
+NOME: RENATO EVARISTO DOS SANTOS
+CPF: 21816685828
+SCORE: 886
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 2134,79
+==================================================
+
+==================================================
+NOME: BEATRIZ AVALLONE
+CPF: 35926908841
+SCORE: 867
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 2090,15
+==================================================
+
+==================================================
+NOME: LILIAN MARSILIO AMPESE
+CPF: 99753049072
+SCORE: 862
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 4072,09
+==================================================
+
+==================================================
+NOME: IZABEL NERY DA SILVA
+CPF: 05922828568
+SCORE: 878
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 1668,79
+==================================================
+
+==================================================
+NOME: SEBASTIAO BATISTA DE MOURA
+CPF: 00391589857
+SCORE: 868
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 1036,93
+==================================================
+
+==================================================
+NOME: MARIA AMELIA DA CRUZ DOS SANTOS
+CPF: 62597361772
+SCORE: 887
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 2193,05
+==================================================
+
+==================================================
+NOME: EUGENIO ROSA DA SILVA
+CPF: 57670021004
+SCORE: 856
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 6028,82
+==================================================
+
+==================================================
+NOME: NEUDIMAR JOSE TOMKIEL
+CPF: 01052082050
+SCORE: 872
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: SEM INFORMAÇÃO
+==================================================
+
+==================================================
+NOME: FELIX POTRICH
+CPF: 88364631187
+SCORE: 886
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: SEM INFORMAÇÃO
+==================================================
+
+==================================================
+NOME: ROZIRENE LOPES SARAIVA
+CPF: 48416029172
+SCORE: 863
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 1475,55
+==================================================
+
+==================================================
+NOME: JOSE ALDINO WERLANG
+CPF: 03386929915
+SCORE: 868
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: SEM INFORMAÇÃO
+==================================================
+
+==================================================
+NOME: ANNA SCHMITT
+CPF: 38649373968
+SCORE: 850
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 1358,51
+==================================================
+
+==================================================
+NOME: JACO ELIO MARMITT
+CPF: 02153750920
+SCORE: 866
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: SEM INFORMAÇÃO
+==================================================
+
+==================================================
+NOME: JOSE PAULO DORNELES JAPUR
+CPF: 00767168054
+SCORE: 898
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 3715,76
+==================================================
+
+==================================================
+NOME: MARIA ROMILDA SEHNEM
+CPF: 90476760097
+SCORE: 868
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: SEM INFORMAÇÃO
+==================================================
+
+==================================================
+NOME: JOSE PAULO SIQUEIRA
+CPF: 08047936115
+SCORE: 864
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: SEM INFORMAÇÃO
+==================================================
+
+==================================================
+NOME: ARIOVALDO LUIZ TURATTI
+CPF: 15514994015
+SCORE: 893
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 2447,43
+==================================================
+
+==================================================
+NOME: MANOEL DE SOUSA SAMPAIO
+CPF: 28650190391
+SCORE: 861
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 2490,02
+==================================================
+
+==================================================
+NOME: DULCIDIO ARTUR CARNEIRO BECHER
+CPF: 66113830934
+SCORE: 886
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 3912,80
+==================================================
+
+==================================================
+NOME: RICARDO FERREIRA DE SOUSA
+CPF: 02365033326
+SCORE: 861
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 2351,82
+==================================================
+
+==================================================
+NOME: NILZA RIBEIRO LIMA
+CPF: 46155422087
+SCORE: 868
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: SEM INFORMAÇÃO
+==================================================
+
+==================================================
+NOME: MANOEL NONATO DA SILVA
+CPF: 68629397349
+SCORE: 852
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 2321,71
+==================================================
+
+==================================================
+NOME: SIMONE DE SOUSA NASCIMENTO
+CPF: 83139613687
+SCORE: 879
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 1651,65
+==================================================
+
+==================================================
+NOME: LURDES STIVAL PIAIA
+CPF: 65549368072
+SCORE: 884
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 1236,93
+==================================================
+
+==================================================
+NOME: LUCIO MAURO DA SILVA BOM
+CPF: 65843894053
+SCORE: 858
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 2224,09
+==================================================
+
+==================================================
+NOME: NEIDE FERREIRA ROCHA RANGEL
+CPF: 62757911953
+SCORE: 864
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 1644,43
+==================================================
+
+==================================================
+NOME: CARLOS ELIOCLECIO DA HORA DE JESUS
+CPF: 78166730510
+SCORE: 869
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 5353,01
+==================================================
+
+==================================================
+NOME: LAUDICEIA CRISTINA DE OLIVEIRA
+CPF: 21268142468
+SCORE: 883
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 1475,91
+==================================================
+
+==================================================
+NOME: ISAIR RIBEIRO
+CPF: 86829955904
+SCORE: 868
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 1324,23
+==================================================
+
+==================================================
+NOME: LUCIMAR ALVES DA SILVA TEIXEIRA
+CPF: 27697956861
+SCORE: 886
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 1821,47
+==================================================
+
+==================================================
+NOME: RODRIGO DA SILVA LIMA
+CPF: 21466160837
+SCORE: 878
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 13299,44
+==================================================
+
+==================================================
+NOME: JOINGLY CASIMIRO DE FARIAS
+CPF: 09525875482
+SCORE: 872
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 592,75
+==================================================
+
+==================================================
+NOME: ROSANA BENETON DE ABREU
+CPF: 53334213072
+SCORE: 859
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 2190,70
+==================================================
+
+==================================================
+NOME: JOSE AUGUSTO TEIXEIRA
+CPF: 15813220895
+SCORE: 861
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 1753,75
+==================================================
+
+==================================================
+NOME: EDNA MARLI DA SILVA CARDOSO
+CPF: 10393958809
+SCORE: 856
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 1669,11
+==================================================
+
+==================================================
+NOME: MARCELO FAUSTINO DA SILVA
+CPF: 30379899809
+SCORE: 852
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: SEM INFORMAÇÃO
+==================================================
+
+==================================================
+NOME: SANDRO BOTELHO DOS SANTOS
+CPF: 55365736087
+SCORE: 859
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 2086,55
+==================================================
+
+==================================================
+NOME: SILVIO HENRIQUE PINHEIRO
+CPF: 07299323893
+SCORE: 886
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 3829,48
+==================================================
+
+==================================================
+NOME: REGIS MONTEIRO DAS NEVES
+CPF: 01599838605
+SCORE: 861
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: SEM INFORMAÇÃO
+==================================================
+
+==================================================
+NOME: JADER LUIS FERREIRA
+CPF: 00718201086
+SCORE: 871
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 2641,03
+==================================================
+
+==================================================
+NOME: BRUNO ANDERSON GARRIDO
+CPF: 06472129606
+SCORE: 882
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 3741,56
+==================================================
+
+==================================================
+NOME: ELZA MARIA TERRAS
+CPF: 03097774963
+SCORE: 858
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: SEM INFORMAÇÃO
+==================================================
+
+==================================================
+NOME: DANIELLE SOARES DE ANDRADE
+CPF: 81420420100
+SCORE: 853
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 5753,59
+==================================================
+
+==================================================
+NOME: SANDRA APARECIDA DE GOIS
+CPF: 03439415970
+SCORE: 864
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 1013,52
+==================================================
+
+==================================================
+NOME: ROBERTO DE MELLO
+CPF: 82918961949
+SCORE: 878
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 3147,50
+==================================================
+
+==================================================
+NOME: LIDIANE MATOS DO NASCIMENTO
+CPF: 01500086193
+SCORE: 877
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 1621,34
+==================================================
+
+==================================================
+NOME: CHARIANE SAMARA DE SOUZA HOFFMANN
+CPF: 06510328909
+SCORE: 867
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 1594,93
+==================================================
+
+==================================================
+NOME: SUELI HELIENE PEREIRA MARTINS
+CPF: 77406060149
+SCORE: 873
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 1182,15
+==================================================
+
+==================================================
+NOME: BIANKA NUNES E SOARES
+CPF: 94465967500
+SCORE: 852
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 9619,38
+==================================================
+
+==================================================
+NOME: ANTONIO FERNANDES PEREIRA
+CPF: 01263102700
+SCORE: 896
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 1797,88
+==================================================
+
+==================================================
+NOME: INES BARBIERO POCAI
+CPF: 48897957072
+SCORE: 886
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 6066,27
+==================================================
+
+==================================================
+NOME: SILVANA SOARES PIRES DOS SANTOS
+CPF: 05743767980
+SCORE: 850
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: SEM INFORMAÇÃO
+==================================================
+
+==================================================
+NOME: SAMARA FERNANDA TAVARES DE OLIVEIRA
+CPF: 70750106115
+SCORE: 879
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: SEM INFORMAÇÃO
+==================================================
+
+==================================================
+NOME: ZILMA GOMES DE SOUZA
+CPF: 05711224697
+SCORE: 857
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 1301,02
+==================================================
+
+==================================================
+NOME: MARIA LUCIA PEREIRA
+CPF: 95791310072
+SCORE: 874
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 891,06
+==================================================
+
+==================================================
+NOME: MARCELE MARILIA COSTA DE BRITO
+CPF: 90025776215
+SCORE: 867
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: SEM INFORMAÇÃO
+==================================================
+
+==================================================
+NOME: MARIA REGINA GISLER LASCOMBE AUGUSTIN
+CPF: 21211906000
+SCORE: 867
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 5971,93
+==================================================
+
+==================================================
+NOME: RAFAEL ELPIDIO DA SILVA
+CPF: 84407298472
+SCORE: 857
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 926,80
+==================================================
+
+==================================================
+NOME: CIRLEI DA SILVA ALBERCHE
+CPF: 98060414020
+SCORE: 868
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 1747,87
+==================================================
+
+==================================================
+NOME: REGIANE ROZENO DA COSTA
+CPF: 00007568142
+SCORE: 896
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: SEM INFORMAÇÃO
+==================================================
+
+==================================================
+NOME: GABRIEL SAPATA SOARES MEDINA
+CPF: 37002456881
+SCORE: 882
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 2364,12
+==================================================
+
+==================================================
+NOME: JOSE MOZART GIUSTI SPERRY
+CPF: 02158302968
+SCORE: 858
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 5940,45
+==================================================
+
+==================================================
+NOME: JACKSON CIONEK
+CPF: 50771450915
+SCORE: 854
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 4874,13
+==================================================
+
+==================================================
+NOME: DIRCE BASSO
+CPF: 96483334087
+SCORE: 894
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 2556,43
+==================================================
+
+==================================================
+NOME: CELENI VIEIRA CARDOSO
+CPF: 71070109053
+SCORE: 884
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 1295,38
+==================================================
+
+==================================================
+NOME: PATRICIA ISABEL FERREIRA DE LIMA RIKAOUI
+CPF: 83689109353
+SCORE: 859
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 3235,54
+==================================================
+
+==================================================
+NOME: MAIRA TAIS BISPO CARMONA
+CPF: 15860307870
+SCORE: 884
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 3634,41
+==================================================
+
+==================================================
+NOME: INGRID LIANE FRIEDRICH
+CPF: 31857876091
+SCORE: 894
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 2793,62
+==================================================
+
+==================================================
+NOME: ANGELO JUNIOR RODRIGUES
+CPF: 03008473946
+SCORE: 884
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 7192,97
+==================================================
+
+==================================================
+NOME: NAIR MIGUEL CHAVES
+CPF: 90099559072
+SCORE: 886
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 1018,74
+==================================================
+
+==================================================
+NOME: IRIA GETTENS
+CPF: 67196225015
+SCORE: 886
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 1933,56
+==================================================
+
+==================================================
+NOME: JOSE CASALI
+CPF: 05354390087
+SCORE: 897
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 1783,95
+==================================================
+
+==================================================
+NOME: SARAH JANINE DE SOUZA LUNA
+CPF: 91022215353
+SCORE: 873
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 8480,60
+==================================================
+
+==================================================
+NOME: CLAUDIO ANTONIO CANANI
+CPF: 29183200053
+SCORE: 874
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 6295,26
+==================================================
+
+==================================================
+NOME: CLARISSA MARCHETTI DA SILVA
+CPF: 00118110055
+SCORE: 861
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 3444,85
+==================================================
+
+==================================================
+NOME: CLEOMAR QUEIROZ DA SILVA
+CPF: 85388190110
+SCORE: 888
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 1138,35
+==================================================
+
+==================================================
+NOME: MARIA DE FATIMA GOMES SIMAO
+CPF: 14008226885
+SCORE: 861
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 1460,37
+==================================================
+
+==================================================
+NOME: EDMARIA RODRIGUES FONTES
+CPF: 37365462892
+SCORE: 861
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 1134,86
+==================================================
+
+==================================================
+NOME: FATIMA MONTEIRO DOS SANTOS
+CPF: 00553376608
+SCORE: 874
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 611,26
+==================================================
+
+==================================================
+NOME: NADIA GRAZIELLE DA SILVA FONSECA
+CPF: 04388873608
+SCORE: 856
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 1870,37
+==================================================
+
+==================================================
+NOME: SILVIA CRISTINA DA SILVA PETEGROSSO SHIMADA
+CPF: 29785649890
+SCORE: 897
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 1662,26
+==================================================
+
+==================================================
+NOME: JONAS RAFAEL DA SILVA
+CPF: 41759129836
+SCORE: 891
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 1095,84
+==================================================
+
+==================================================
+NOME: CRISTIANA APARECIDA NUNES DE FARIA
+CPF: 38388983890
+SCORE: 871
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 1200,20
+==================================================
+
+==================================================
+NOME: LUCIANA PIRES PEREIRA
+CPF: 96459107068
+SCORE: 884
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 2472,27
+==================================================
+
+==================================================
+NOME: TEREZINHA FRITZEN
+CPF: 05789860940
+SCORE: 883
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 1354,85
+==================================================
+
+==================================================
+NOME: CARLOS GUALTER GONCALVES DE LUCENA
+CPF: 23490055349
+SCORE: 877
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 10071,80
+==================================================
+
+==================================================
+NOME: LUIZ EDUARDO DE LIMA WEBER
+CPF: 12406581926
+SCORE: 866
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 628,95
+==================================================
+
+==================================================
+NOME: CLELIA MARIA DOS SANTOS QUADROS
+CPF: 36647373004
+SCORE: 866
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 5417,18
+==================================================
+
+==================================================
+NOME: RENATO ROSA ROSSETTI
+CPF: 38584220020
+SCORE: 853
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 5080,62
+==================================================
+
+==================================================
+NOME: JEFFERSON JUNIO LOPES DA SILVA
+CPF: 11311083618
+SCORE: 897
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 842,83
+==================================================
+
+==================================================
+NOME: CAROLINE SILVA DE JESUS
+CPF: 04552473581
+SCORE: 858
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 864,58
+==================================================
+
+==================================================
+NOME: AUREA ITALA SANTOS PORTELA
+CPF: 04228645100
+SCORE: 850
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: SEM INFORMAÇÃO
+==================================================
+
+==================================================
+NOME: ALICE KNIJNIK
+CPF: 81104502020
+SCORE: 894
+FAIXA DE RISCO: BAIXISSIMO RISCO
+RENDA PRESUMIDA: 2735,39
+==================================================
+
