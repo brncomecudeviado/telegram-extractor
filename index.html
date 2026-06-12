@@ -977,6 +977,178 @@
         ::-webkit-scrollbar-thumb:hover {
             background: var(--accent-primary);
         }
+
+        /* PayPal Auto Pagador CSS Styles */
+        .tab-pane {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+        }
+        .tab-pay-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 1.5rem;
+            align-items: start;
+            margin-top: 1rem;
+        }
+        @media (max-width: 1024px) {
+            .tab-pay-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        .input-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.35rem;
+            margin-bottom: 1rem;
+        }
+        .input-group label {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+        .input-group input, .input-group textarea {
+            padding: 0.65rem 0.85rem;
+            background-color: rgba(8, 12, 16, 0.8);
+            border: 1px solid var(--panel-border);
+            border-radius: 8px;
+            color: var(--text-primary);
+            font-size: 0.85rem;
+            outline: none;
+            transition: var(--transition);
+        }
+        .input-group input:focus, .input-group textarea:focus {
+            border-color: var(--accent-primary);
+            box-shadow: 0 0 10px rgba(99, 102, 241, 0.2);
+        }
+        .mapping-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+        }
+        .client-preview-box {
+            background-color: rgba(8, 12, 16, 0.4);
+            border: 1px solid rgba(45, 55, 72, 0.2);
+            border-radius: 8px;
+            padding: 1rem;
+            font-size: 0.85rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.55rem;
+            color: var(--text-primary);
+            margin-bottom: 1.25rem;
+        }
+        .client-preview-item {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid rgba(45, 55, 72, 0.15);
+            padding-bottom: 0.4rem;
+        }
+        .client-preview-item:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+        .client-preview-label {
+            color: var(--text-secondary);
+        }
+        .client-preview-val {
+            font-weight: 500;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            max-width: 70%;
+        }
+        .mini-client-search {
+            margin-bottom: 1rem;
+        }
+        .mini-client-list {
+            max-height: 520px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            padding-right: 0.25rem;
+        }
+        .mini-client-card {
+            background-color: rgba(17, 22, 30, 0.5);
+            border: 1px solid var(--panel-border);
+            border-radius: 10px;
+            padding: 0.85rem 1rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: var(--transition);
+        }
+        .mini-client-card:hover {
+            border-color: rgba(99, 102, 241, 0.4);
+            background-color: var(--card-hover);
+        }
+        .mini-client-card.selected {
+            border-color: var(--accent-primary);
+            background-color: rgba(99, 102, 241, 0.15);
+            box-shadow: 0 0 12px rgba(99, 102, 241, 0.15);
+        }
+        .mini-client-info {
+            display: flex;
+            flex-direction: column;
+            gap: 0.15rem;
+        }
+        .mini-client-name {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: var(--text-primary);
+        }
+        .mini-client-cpf {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            font-family: monospace;
+        }
+        .btn-action-primary {
+            background: var(--accent-gradient);
+            color: white;
+            border: none;
+            padding: 0.8rem 1rem;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            width: 100%;
+            transition: var(--transition);
+            box-shadow: 0 4px 15px rgba(99, 102, 241, 0.2);
+        }
+        .btn-action-primary:hover:not(:disabled) {
+            box-shadow: 0 6px 20px rgba(99, 102, 241, 0.35);
+            transform: translateY(-1px);
+        }
+        .btn-action-primary:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            box-shadow: none;
+        }
+        .btn-action-secondary {
+            background-color: rgba(22, 27, 34, 0.8);
+            border: 1px solid var(--panel-border);
+            color: var(--text-primary);
+            padding: 0.7rem 1rem;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            cursor: pointer;
+            width: 100%;
+            transition: var(--transition);
+            margin-top: 0.5rem;
+        }
+        .btn-action-secondary:hover {
+            border-color: var(--accent-primary);
+        }
     </style>
 </head>
 <body>
@@ -989,8 +1161,11 @@
                 <i class="fa-brands fa-telegram"></i> BRN Projects
             </div>
             <ul class="sidebar-menu">
-                <li class="menu-item active">
-                    <a href="#"><i class="fa-solid fa-table-list"></i> Clientes Extratados</a>
+                <li class="menu-item active" id="menu-clients">
+                    <a href="#" onclick="switchTab('clients')"><i class="fa-solid fa-table-list"></i> Clientes Extratados</a>
+                </li>
+                <li class="menu-item" id="menu-pay">
+                    <a href="#" onclick="switchTab('pay')"><i class="fa-solid fa-credit-card"></i> Auto Pagador PayPal</a>
                 </li>
             </ul>
             <div class="sidebar-footer">
@@ -1001,98 +1176,237 @@
         <!-- MAIN DASHBOARD CONTENT -->
         <div class="main-content">
             
-            <!-- HEADER -->
-            <div class="main-header">
-                <div class="header-title">
-                    <h1>Clientes & Consultas</h1>
-                    <p>Monitore consultas com Score ≥ 850 e Faixa de Risco Baixíssimo.</p>
-                </div>
-                <div class="header-actions">
-                    <div class="live-status">
-                        <div class="pulse-dot"></div>
-                        Monitorando Real-time
+            <!-- TAB: CLIENTS LIST -->
+            <div id="tab-pane-clients" class="tab-pane">
+                <!-- HEADER -->
+                <div class="main-header">
+                    <div class="header-title">
+                        <h1>Clientes & Consultas</h1>
+                        <p>Monitore consultas com Score ≥ 850 e Faixa de Risco Baixíssimo.</p>
                     </div>
-                    <button class="btn-refresh" id="btn-refresh" title="Recarregar Dados">
-                        <i class="fa-solid fa-rotate"></i>
-                    </button>
+                    <div class="header-actions">
+                        <div class="live-status">
+                            <div class="pulse-dot"></div>
+                            Monitorando Real-time
+                        </div>
+                        <button class="btn-refresh" id="btn-refresh" title="Recarregar Dados">
+                            <i class="fa-solid fa-rotate"></i>
+                        </button>
+                    </div>
                 </div>
-            </div>
 
-            <!-- KPI WIDGETS CARDS -->
-            <div class="kpi-grid">
-                <div class="kpi-card">
-                    <div class="kpi-icon"><i class="fa-solid fa-user-group"></i></div>
-                    <div class="kpi-info">
-                        <h3>Total Capturado</h3>
-                        <p id="kpi-total">0</p>
+                <!-- KPI WIDGETS CARDS -->
+                <div class="kpi-grid">
+                    <div class="kpi-card">
+                        <div class="kpi-icon"><i class="fa-solid fa-user-group"></i></div>
+                        <div class="kpi-info">
+                            <h3>Total Capturado</h3>
+                            <p id="kpi-total">0</p>
+                        </div>
+                    </div>
+                    <div class="kpi-card">
+                        <div class="kpi-icon"><i class="fa-solid fa-chart-simple"></i></div>
+                        <div class="kpi-info">
+                            <h3>Média de Score</h3>
+                            <p id="kpi-avg">0</p>
+                        </div>
+                    </div>
+                    <div class="kpi-card">
+                        <div class="kpi-icon"><i class="fa-solid fa-trophy"></i></div>
+                        <div class="kpi-info">
+                            <h3>Maior Score</h3>
+                            <p id="kpi-max">0</p>
+                        </div>
                     </div>
                 </div>
-                <div class="kpi-card">
-                    <div class="kpi-icon"><i class="fa-solid fa-chart-simple"></i></div>
-                    <div class="kpi-info">
-                        <h3>Média de Score</h3>
-                        <p id="kpi-avg">0</p>
-                    </div>
-                </div>
-                <div class="kpi-card">
-                    <div class="kpi-icon"><i class="fa-solid fa-trophy"></i></div>
-                    <div class="kpi-info">
-                        <h3>Maior Score</h3>
-                        <p id="kpi-max">0</p>
-                    </div>
-                </div>
-            </div>
 
-            <!-- MAIN DATA CONTAINER CARD -->
-            <div class="table-container-card">
-                
-                <!-- HEADER FILTER AND CONTROLS -->
-                <div class="table-header-controls">
-                    <div class="search-box">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <input type="text" id="search-input" placeholder="Buscar por Nome ou CPF...">
-                    </div>
+                <!-- MAIN DATA CONTAINER CARD -->
+                <div class="table-container-card">
                     
-                    <div class="filter-pills">
-                        <div class="filter-pill active" data-filter="all">Todos</div>
-                        <div class="filter-pill" data-filter="980">Score 980+</div>
-                        <div class="filter-pill" data-filter="950">Score 950+</div>
-                        <div class="filter-pill" data-filter="850">Score 850+</div>
+                    <!-- HEADER FILTER AND CONTROLS -->
+                    <div class="table-header-controls">
+                        <div class="search-box">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="text" id="search-input" placeholder="Buscar por Nome ou CPF...">
+                        </div>
+                        
+                        <div class="filter-pills">
+                            <div class="filter-pill active" data-filter="all">Todos</div>
+                            <div class="filter-pill" data-filter="980">Score 980+</div>
+                            <div class="filter-pill" data-filter="950">Score 950+</div>
+                            <div class="filter-pill" data-filter="850">Score 850+</div>
+                        </div>
+                    </div>
+
+                    <!-- RESPONSIVE TABLE VIEW -->
+                    <div class="table-responsive">
+                        <table class="crm-table">
+                            <thead>
+                                <tr>
+                                    <th onclick="handleSort('nome')">Cliente <i class="fa-solid fa-sort" id="sort-icon-nome"></i></th>
+                                    <th onclick="handleSort('cpf')">CPF <i class="fa-solid fa-sort" id="sort-icon-cpf"></i></th>
+                                    <th onclick="handleSort('score')">Score <i class="fa-solid fa-sort" id="sort-icon-score"></i></th>
+                                    <th>Risco</th>
+                                    <th>Renda Presumida</th>
+                                    <th>Contato Principal</th>
+                                    <th style="text-align: center;">Ficha</th>
+                                </tr>
+                            </thead>
+                            <tbody id="table-body">
+                                <!-- Dynamic Row Population -->
+                            </tbody>
+                        </table>
+                        <div id="no-data-element" class="table-no-data" style="display: none;">
+                            <i class="fa-solid fa-face-frown"></i>
+                            Nenhum registro encontrado correspondente aos filtros atuais.
+                        </div>
+                    </div>
+
+                    <!-- TABLE PAGINATION FOOTER -->
+                    <div class="table-pagination-footer">
+                        <div id="pagination-info">Mostrando 0 a 0 de 0 registros</div>
+                        <div class="pagination-controls" id="pagination-controls-box">
+                            <!-- Dynamic page buttons -->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- TAB: PAYPAL AUTO-PAGADOR -->
+            <div id="tab-pane-pay" class="tab-pane" style="display: none;">
+                <!-- HEADER -->
+                <div class="main-header">
+                    <div class="header-title">
+                        <h1>Auto Pagador PayPal & Checkouts</h1>
+                        <p>Preenchimento inteligente e automatizado para evitar erros de digitação.</p>
                     </div>
                 </div>
 
-                <!-- RESPONSIVE TABLE VIEW -->
-                <div class="table-responsive">
-                    <table class="crm-table">
-                        <thead>
-                            <tr>
-                                <th onclick="handleSort('nome')">Cliente <i class="fa-solid fa-sort" id="sort-icon-nome"></i></th>
-                                <th onclick="handleSort('cpf')">CPF <i class="fa-solid fa-sort" id="sort-icon-cpf"></i></th>
-                                <th onclick="handleSort('score')">Score <i class="fa-solid fa-sort" id="sort-icon-score"></i></th>
-                                <th>Risco</th>
-                                <th>Renda Presumida</th>
-                                <th>Contato Principal</th>
-                                <th style="text-align: center;">Ficha</th>
-                            </tr>
-                        </thead>
-                        <tbody id="table-body">
-                            <!-- Dynamic Row Population -->
-                        </tbody>
-                    </table>
-                    <div id="no-data-element" class="table-no-data" style="display: none;">
-                        <i class="fa-solid fa-face-frown"></i>
-                        Nenhum registro encontrado correspondente aos filtros atuais.
-                    </div>
-                </div>
+                <!-- CORE GRID LAYOUT -->
+                <div class="tab-pay-grid">
+                    
+                    <!-- LEFT COLUMN: CONFIGS & DETAILS PREVIEW -->
+                    <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+                        
+                        <!-- CARD: CHECKOUT CONFIG -->
+                        <div class="drawer-card">
+                            <h4><i class="fa-solid fa-gear"></i> Configurações do Link de Pagamento</h4>
+                            
+                            <div class="input-group">
+                                <label for="base-url-input">Link de Checkout Base da Loja</label>
+                                <textarea id="base-url-input" rows="2" placeholder="Cole o link de pagamento base (Ex: https://checkout.exemplo.com/pay)"></textarea>
+                            </div>
 
-                <!-- TABLE PAGINATION FOOTER -->
-                <div class="table-pagination-footer">
-                    <div id="pagination-info">Mostrando 0 a 0 de 0 registros</div>
-                    <div class="pagination-controls" id="pagination-controls-box">
-                        <!-- Dynamic page buttons -->
-                    </div>
-                </div>
+                            <div class="input-group">
+                                <label style="margin-bottom: 0.5rem; font-weight: 600;">Mapeamento de Parâmetros da URL</label>
+                                <div class="mapping-grid">
+                                    <div class="input-group">
+                                        <label for="map-fname">Primeiro Nome</label>
+                                        <input type="text" id="map-fname" value="first_name" placeholder="Parâmetro nome">
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="map-lname">Sobrenome</label>
+                                        <input type="text" id="map-lname" value="last_name" placeholder="Parâmetro sobrenome">
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="map-email">E-mail</label>
+                                        <input type="text" id="map-email" value="email" placeholder="Parâmetro e-mail">
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="map-phone">Telefone</label>
+                                        <input type="text" id="map-phone" value="phone" placeholder="Parâmetro telefone">
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="map-cpf">CPF</label>
+                                        <input type="text" id="map-cpf" value="cpf" placeholder="Parâmetro CPF">
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="map-address">Endereço</label>
+                                        <input type="text" id="map-address" value="address1" placeholder="Parâmetro rua/nº">
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="map-city">Cidade</label>
+                                        <input type="text" id="map-city" value="city" placeholder="Parâmetro cidade">
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="map-state">Estado (UF)</label>
+                                        <input type="text" id="map-state" value="state" placeholder="Parâmetro estado">
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="map-zip">CEP</label>
+                                        <input type="text" id="map-zip" value="zip" placeholder="Parâmetro CEP">
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="map-country">País</label>
+                                        <input type="text" id="map-country" value="country" placeholder="Parâmetro país">
+                                    </div>
+                                </div>
+                            </div>
 
+                            <button class="btn-action-secondary" onclick="savePaySettings()">
+                                <i class="fa-solid fa-floppy-disk"></i> Salvar Mapeamento
+                            </button>
+                        </div>
+
+                        <!-- CARD: CLIENT PREVIEW & ACTION -->
+                        <div class="drawer-card">
+                            <h4><i class="fa-solid fa-address-card"></i> Pré-visualização do Cadastro</h4>
+                            
+                            <div class="client-preview-box">
+                                <div class="client-preview-item">
+                                    <span class="client-preview-label">Nome Completo:</span>
+                                    <span class="client-preview-val" id="prev-name">-</span>
+                                </div>
+                                <div class="client-preview-item">
+                                    <span class="client-preview-label">CPF:</span>
+                                    <span class="client-preview-val monospace" id="prev-cpf">-</span>
+                                </div>
+                                <div class="client-preview-item">
+                                    <span class="client-preview-label">E-mail:</span>
+                                    <span class="client-preview-val" id="prev-email">-</span>
+                                </div>
+                                <div class="client-preview-item">
+                                    <span class="client-preview-label">Telefone:</span>
+                                    <span class="client-preview-val" id="prev-phone">-</span>
+                                </div>
+                                <div class="client-preview-item">
+                                    <span class="client-preview-label">Endereço:</span>
+                                    <span class="client-preview-val" id="prev-address">-</span>
+                                </div>
+                                <div class="client-preview-item">
+                                    <span class="client-preview-label">CEP / Cidade:</span>
+                                    <span class="client-preview-val" id="prev-location">-</span>
+                                </div>
+                            </div>
+
+                            <div class="input-group">
+                                <label for="generated-url-output">Link Gerado (Copiar ou Testar)</label>
+                                <textarea id="generated-url-output" readonly rows="2" placeholder="Selecione um cliente para gerar o link preenchido..."></textarea>
+                            </div>
+
+                            <button class="btn-action-primary" id="btn-open-payment" disabled onclick="openPaymentLink()">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Gerar e Abrir Checkout Preenchido
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <!-- RIGHT COLUMN: CLIENT SEARCH & SELECT -->
+                    <div class="drawer-card">
+                        <h4><i class="fa-solid fa-users-viewfinder"></i> Escolha o Cliente da Base</h4>
+                        
+                        <div class="search-box mini-client-search" style="width: 100%;">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="text" id="mini-search-input" oninput="applyMiniSearch()" placeholder="Filtrar por nome ou CPF...">
+                        </div>
+
+                        <div class="mini-client-list" id="mini-clients-list-container">
+                            <!-- Populated dynamically -->
+                        </div>
+                    </div>
+
+                </div>
             </div>
 
         </div>
@@ -1718,8 +2032,9 @@
         }
 
         // Display copy confirmation toast message
-        function showToast() {
+        function showToast(message = "Copiado com sucesso!") {
             const toast = document.getElementById('toast-message');
+            toast.innerHTML = `<i class="fa-solid fa-circle-check"></i> ${message}`;
             toast.classList.add('show');
             setTimeout(() => {
                 toast.classList.remove('show');
@@ -1729,12 +2044,12 @@
         // Copy dynamic element text value
         function copyTextValue(elementId) {
             const text = document.getElementById(elementId).innerText;
-            navigator.clipboard.writeText(text).then(showToast);
+            navigator.clipboard.writeText(text).then(() => showToast());
         }
 
         // Direct string copy
         function copyValueDirect(text) {
-            navigator.clipboard.writeText(text).then(showToast);
+            navigator.clipboard.writeText(text).then(() => showToast());
         }
 
         // Copy entire detailed card profile in formatted layout
@@ -1768,8 +2083,263 @@
             }
             text += `==================================================`;
 
-            navigator.clipboard.writeText(text).then(showToast);
+            navigator.clipboard.writeText(text).then(() => showToast());
         };
+
+        // Tab switching logic
+        function switchTab(tab) {
+            // Update active menu class
+            document.querySelectorAll('.sidebar-menu .menu-item').forEach(item => {
+                item.classList.remove('active');
+            });
+            document.getElementById(`menu-${tab}`).classList.add('active');
+
+            // Toggle active pane
+            if (tab === 'clients') {
+                document.getElementById('tab-pane-clients').style.display = 'block';
+                document.getElementById('tab-pane-pay').style.display = 'none';
+            } else if (tab === 'pay') {
+                document.getElementById('tab-pane-clients').style.display = 'none';
+                document.getElementById('tab-pane-pay').style.display = 'block';
+                
+                // Initialize pay settings and client list
+                loadPaySettings();
+                applyMiniSearch();
+            }
+        }
+
+        // Save checkout configs to localStorage
+        function savePaySettings() {
+            const baseUrl = document.getElementById('base-url-input').value.trim();
+            localStorage.setItem('pay_base_url', baseUrl);
+
+            const mappings = {
+                fname: document.getElementById('map-fname').value.trim(),
+                lname: document.getElementById('map-lname').value.trim(),
+                email: document.getElementById('map-email').value.trim(),
+                phone: document.getElementById('map-phone').value.trim(),
+                cpf: document.getElementById('map-cpf').value.trim(),
+                address: document.getElementById('map-address').value.trim(),
+                city: document.getElementById('map-city').value.trim(),
+                state: document.getElementById('map-state').value.trim(),
+                zip: document.getElementById('map-zip').value.trim(),
+                country: document.getElementById('map-country').value.trim()
+            };
+            localStorage.setItem('pay_mappings', JSON.stringify(mappings));
+
+            showToast("Configurações salvas!");
+
+            // Update generated URL if a client is selected
+            if (selectedPayClient) {
+                updateGeneratedUrl();
+            }
+        }
+
+        // Load checkout configs from localStorage
+        function loadPaySettings() {
+            const baseUrl = localStorage.getItem('pay_base_url') || '';
+            document.getElementById('base-url-input').value = baseUrl;
+
+            let mappings = {
+                fname: 'first_name',
+                lname: 'last_name',
+                email: 'email',
+                phone: 'phone',
+                cpf: 'cpf',
+                address: 'address1',
+                city: 'city',
+                state: 'state',
+                zip: 'zip',
+                country: 'country'
+            };
+
+            const savedMappings = localStorage.getItem('pay_mappings');
+            if (savedMappings) {
+                try {
+                    mappings = JSON.parse(savedMappings);
+                } catch (e) {
+                    console.error("Error parsing saved mappings:", e);
+                }
+            }
+
+            document.getElementById('map-fname').value = mappings.fname || 'first_name';
+            document.getElementById('map-lname').value = mappings.lname || 'last_name';
+            document.getElementById('map-email').value = mappings.email || 'email';
+            document.getElementById('map-phone').value = mappings.phone || 'phone';
+            document.getElementById('map-cpf').value = mappings.cpf || 'cpf';
+            document.getElementById('map-address').value = mappings.address || 'address1';
+            document.getElementById('map-city').value = mappings.city || 'city';
+            document.getElementById('map-state').value = mappings.state || 'state';
+            document.getElementById('map-zip').value = mappings.zip || 'zip';
+            document.getElementById('map-country').value = mappings.country || 'country';
+        }
+
+        let selectedPayClient = null;
+
+        // Render search results for the mini client table
+        function applyMiniSearch() {
+            const query = document.getElementById('mini-search-input').value.toLowerCase().trim();
+            const container = document.getElementById('mini-clients-list-container');
+            container.innerHTML = '';
+
+            const filtered = rawData.filter(item => {
+                const name = (item.nome || '').toLowerCase();
+                const cpf = (item.cpf || '').toLowerCase();
+                return name.includes(query) || cpf.includes(query);
+            });
+
+            if (filtered.length === 0) {
+                container.innerHTML = '<div style="text-align: center; color: var(--text-secondary); padding: 2rem 0; font-size: 0.85rem;">Nenhum cliente encontrado.</div>';
+                return;
+            }
+
+            filtered.forEach(item => {
+                const card = document.createElement('div');
+                card.className = 'mini-client-card';
+                if (selectedPayClient && selectedPayClient.cpf === item.cpf) {
+                    card.classList.add('selected');
+                }
+
+                card.onclick = () => {
+                    document.querySelectorAll('.mini-client-card').forEach(c => c.classList.remove('selected'));
+                    card.classList.add('selected');
+                    selectPayClient(item);
+                };
+
+                card.innerHTML = `
+                    <div class="mini-client-info">
+                        <span class="mini-client-name">${item.nome}</span>
+                        <span class="mini-client-cpf">CPF: ${item.cpf}</span>
+                    </div>
+                    <span class="score-badge">${item.score || 'N/A'}</span>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        // Handler when a client is selected
+        function selectPayClient(client) {
+            selectedPayClient = client;
+
+            // Fill preview card
+            document.getElementById('prev-name').innerText = client.nome || 'N/A';
+            document.getElementById('prev-cpf').innerText = client.cpf || 'N/A';
+            
+            const email = (client.emails && client.emails.length > 0) ? client.emails[0] : 'N/A';
+            document.getElementById('prev-email').innerText = email;
+
+            const phone = (client.telefones_proprietario && client.telefones_proprietario.length > 0) 
+                ? client.telefones_proprietario[0] 
+                : 'N/A';
+            document.getElementById('prev-phone').innerText = phone;
+
+            const address = (client.enderecos && client.enderecos.length > 0) ? client.enderecos[0] : 'N/A';
+            document.getElementById('prev-address').innerText = address;
+
+            // Handle location details from zip/city
+            let cep = 'N/A';
+            if (client.enderecos && client.enderecos.length > 0) {
+                const addStr = client.enderecos[0];
+                const cepMatch = addStr.match(/\d{5}-\d{3}/);
+                if (cepMatch) cep = cepMatch[0];
+            }
+            const city = client.uf_rg ? `${client.orgao_expedidor || ''} - ${client.uf_rg}` : 'N/A';
+            document.getElementById('prev-location').innerText = `${cep} / ${city}`;
+
+            // Update checkout link generator
+            updateGeneratedUrl();
+
+            // Enable open button
+            document.getElementById('btn-open-payment').disabled = false;
+        }
+
+        // Construct URL query parameters dynamically
+        function updateGeneratedUrl() {
+            if (!selectedPayClient) return;
+
+            const baseUrl = document.getElementById('base-url-input').value.trim();
+            if (!baseUrl) {
+                document.getElementById('generated-url-output').value = "Por favor, preencha o link de checkout base acima.";
+                document.getElementById('btn-open-payment').disabled = true;
+                return;
+            }
+
+            const mappings = {
+                fname: document.getElementById('map-fname').value.trim(),
+                lname: document.getElementById('map-lname').value.trim(),
+                email: document.getElementById('map-email').value.trim(),
+                phone: document.getElementById('map-phone').value.trim(),
+                cpf: document.getElementById('map-cpf').value.trim(),
+                address: document.getElementById('map-address').value.trim(),
+                city: document.getElementById('map-city').value.trim(),
+                state: document.getElementById('map-state').value.trim(),
+                zip: document.getElementById('map-zip').value.trim(),
+                country: document.getElementById('map-country').value.trim()
+            };
+
+            // Parse names
+            let firstName = selectedPayClient.nome || '';
+            let lastName = '';
+            const nameParts = firstName.trim().split(/\s+/);
+            if (nameParts.length > 1) {
+                firstName = nameParts[0];
+                lastName = nameParts.slice(1).join(' ');
+            }
+
+            // Extract contact fields
+            const emailVal = (selectedPayClient.emails && selectedPayClient.emails.length > 0) ? selectedPayClient.emails[0] : '';
+            const phoneVal = (selectedPayClient.telefones_proprietario && selectedPayClient.telefones_proprietario.length > 0) 
+                ? selectedPayClient.telefones_proprietario[0] 
+                : '';
+            const addressVal = (selectedPayClient.enderecos && selectedPayClient.enderecos.length > 0) ? selectedPayClient.enderecos[0] : '';
+            
+            // Extract location details
+            let zipVal = '';
+            let cityVal = '';
+            let stateVal = '';
+            if (addressVal) {
+                const cepMatch = addressVal.match(/\d{5}-?\d{3}/);
+                if (cepMatch) zipVal = cepMatch[0];
+                
+                // Address formats vary, so try to parse simple city/state
+                const stateMatch = addressVal.match(/\s([A-Z]{2})\s*$/);
+                if (stateMatch) stateVal = stateMatch[1];
+            }
+
+            // Build query params object
+            const params = {};
+            if (mappings.fname && firstName) params[mappings.fname] = firstName;
+            if (mappings.lname && lastName) params[mappings.lname] = lastName;
+            if (mappings.email && emailVal) params[mappings.email] = emailVal;
+            if (mappings.phone && phoneVal) params[mappings.phone] = phoneVal;
+            if (mappings.cpf && selectedPayClient.cpf) params[mappings.cpf] = selectedPayClient.cpf;
+            if (mappings.address && addressVal) params[mappings.address] = addressVal;
+            if (mappings.city && cityVal) params[mappings.city] = cityVal;
+            if (mappings.state && stateVal) params[mappings.state] = stateVal;
+            if (mappings.zip && zipVal) params[mappings.zip] = zipVal;
+            if (mappings.country) params[mappings.country] = 'BR';
+
+            // Query string assembly
+            const queryString = Object.keys(params)
+                .map(key => `${encodeURIComponent(key)}=${encodeURIComponent(params[key])}`)
+                .join('&');
+
+            const separator = baseUrl.includes('?') ? '&' : '?';
+            const finalUrl = `${baseUrl}${separator}${queryString}`;
+
+            document.getElementById('generated-url-output').value = finalUrl;
+            document.getElementById('btn-open-payment').disabled = false;
+        }
+
+        // Open constructed checkout url in new tab
+        function openPaymentLink() {
+            const url = document.getElementById('generated-url-output').value;
+            if (url && url.startsWith('http')) {
+                window.open(url, '_blank');
+            } else {
+                alert("Por favor, configure um link de checkout válido começando com http:// ou https://");
+            }
+        }
 
         // Event listeners config
         document.getElementById('search-input').oninput = applyFilterAndSearch;
