@@ -1323,7 +1323,7 @@
                 rawData = await res.json();
 
                 updateKPIs();
-                applyFilterAndSearch();
+                applyFilterAndSearch(false);
 
                 // Keep detail panel sync if currently opened client exists in reload
                 if (selectedClient) {
@@ -1380,7 +1380,7 @@
         }
 
         // Filter and Search trigger
-        function applyFilterAndSearch() {
+        function applyFilterAndSearch(resetPage = true) {
             const query = document.getElementById('search-input').value.toLowerCase().trim();
 
             filteredData = rawData.filter(item => {
@@ -1400,7 +1400,9 @@
             sortData();
             
             // Go back to first page upon filter changes
-            currentPage = 1;
+            if (resetPage !== false) {
+                currentPage = 1;
+            }
             renderTable();
         }
 
