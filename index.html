@@ -1289,6 +1289,26 @@
                     <!-- LEFT COLUMN: CONFIGS & DETAILS PREVIEW -->
                     <div style="display: flex; flex-direction: column; gap: 1.5rem;">
                         
+                        <!-- CARD: TUTORIAL BOOKMARKLET -->
+                        <div class="drawer-card" style="border-color: rgba(99, 102, 241, 0.4); background: rgba(99, 102, 241, 0.03);">
+                            <h4 style="color: var(--accent-primary); border-bottom-color: rgba(99, 102, 241, 0.2);">
+                                <i class="fa-solid fa-wand-magic-sparkles"></i> Preenchimento com 1 Clique (Bookmarklet)
+                            </h4>
+                            <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5; margin-bottom: 0.85rem;">
+                                Como o PayPal impede o preenchimento automático diretamente pela URL nas novas telas de cartão, criamos um **Botão Mágico de Favorito** inteligente que expande e preenche a tela sozinho:
+                            </p>
+                            <ol style="font-size: 0.8rem; color: var(--text-primary); padding-left: 1.25rem; margin-bottom: 1.25rem; display: flex; flex-direction: column; gap: 0.45rem;">
+                                <li><strong>Arraste o botão azul abaixo</strong> para a Barra de Favoritos do seu navegador (só é necessário fazer isso uma vez).</li>
+                                <li>Escolha o cliente na lista ao lado direito e clique no botão verde para abrir o link do PayPal.</li>
+                                <li>Na página do PayPal, clique no favorito **"Preencher PayPal"** que você salvou. O botão escuro de Cartão de Crédito será clicado e os dados preenchidos instantaneamente!</li>
+                            </ol>
+                            <div style="text-align: center; margin-bottom: 0.5rem;">
+                                <a id="bookmarklet-link" href="javascript:(function(){let b=document.getElementById('pp-auto-banner');if(!b){b=document.createElement('div');b.id='pp-auto-banner';b.style.cssText='position:fixed;top:15px;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,#6366f1,#a855f7);color:white;padding:12px 24px;border-radius:10px;font-family:sans-serif;font-size:14px;font-weight:bold;z-index:999999;box-shadow:0 6px 20px rgba(0,0,0,0.4);display:flex;align-items:center;gap:10px;transition:all 0.3s ease;';document.body.appendChild(b);}function up(txt,t='info'){b.textContent=txt;if(t==='success'){b.style.background='linear-gradient(135deg,#10b981,#059669)';setTimeout(()=>{if(b)b.remove();},3000);}if(t==='error'){b.style.background='linear-gradient(135deg,#ef4444,#dc2626)';setTimeout(()=>{if(b)b.remove();},5000);}}up('Auto Pagador: Iniciando...');const p=new URLSearchParams(window.location.search);const d={fn:p.get('first_name')||p.get('fname')||'',ln:p.get('last_name')||p.get('lname')||'',em:p.get('email')||'',ph:p.get('phone')||'',cpf:p.get('cpf')||'',ad:p.get('address')||p.get('address1')||'',nh:p.get('neighborhood')||p.get('bairro')||p.get('address2')||'',ci:p.get('city')||'',st:p.get('state')||'',zip:p.get('zip')||p.get('cep')||''};function norm(s){return (s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');}function setV(el,val){if(!el)return;const lv=el.value;el.value=val;const ev=new Event('input',{bubbles:true});ev.simulated=true;const tr=el._valueTracker;if(tr)tr.setValue(lv);el.dispatchEvent(ev);el.dispatchEvent(new Event('change',{bubbles:true}));el.dispatchEvent(new Event('blur',{bubbles:true}));}function getEls(sel){let els=Array.from(document.querySelectorAll(sel));document.querySelectorAll('iframe').forEach(f=>{try{if(f.contentDocument)els=els.concat(Array.from(f.contentDocument.querySelectorAll(sel)));}catch(e){}});return els;}function find(type){const ins=getEls('input,select,textarea');for(const i of ins){const n=norm(i.getAttribute('name')),id=norm(i.getAttribute('id')),ph=norm(i.getAttribute('placeholder')),ac=norm(i.getAttribute('autocomplete'));if(type==='em'&&(n.includes('email')||id.includes('email')||ph.includes('email')||ph.includes('e-mail')||ac.includes('email')))return i;if(type==='ph'&&(n.includes('phone')||n.includes('tel')||id.includes('phone')||id.includes('tel')||ph.includes('celular')||ph.includes('telefone')||ac.includes('tel')))return i;if(type==='fn'&&((n.includes('firstname')||n.includes('givenname')||id.includes('firstname')||id.includes('givenname')||ph==='nome'||ph.includes('primeiro nome')||ac.includes('given-name'))&&!n.includes('last')&&!id.includes('last')))return i;if(type==='ln'&&(n.includes('lastname')||n.includes('familyname')||id.includes('lastname')||id.includes('familyname')||ph.includes('sobrenome')||ac.includes('family-name')))return i;if(type==='zip'&&(n.includes('zip')||n.includes('postal')||id.includes('zip')||id.includes('postal')||ph.includes('cep')||ac.includes('postal-code')))return i;if(type==='ad'&&(n.includes('address')||n.includes('line1')||n.includes('street')||id.includes('address')||id.includes('line1')||ph.includes('endereco')||ph.includes('rua')||ac.includes('address-line1'))&&!n.includes('line2')&&!id.includes('line2'))return i;if(type==='nh'&&(n.includes('district')||n.includes('neighborhood')||n.includes('bairro')||id.includes('district')||id.includes('neighborhood')||id.includes('bairro')||ph.includes('bairro')||ph.includes('distrito')||ac.includes('address-line2')))return i;if(type==='ci'&&(n.includes('city')||n.includes('adminarea2')||id.includes('city')||ph.includes('cidade')||ac.includes('address-level2')))return i;if(type==='st'&&(n.includes('state')||n.includes('adminarea1')||id.includes('state')||ph.includes('estado')||ph.includes('uf')||ac.includes('address-level1')))return i;if(type==='cpf'&&(n.includes('cpf')||n.includes('cnpj')||n.includes('taxid')||id.includes('cpf')||id.includes('cnpj')||id.includes('taxid')||ph.includes('cpf')||ph.includes('cnpj')||ph.includes('documento')))return i;}const lbs=getEls('label');for(const l of lbs){const t=norm(l.textContent);let ok=false;if(type==='em'&&t.includes('email'))ok=true;else if(type==='ph'&&(t.includes('telefone')||t.includes('celular')||t.includes('phone')))ok=true;else if(type==='fn'&&t.includes('nome')&&!t.includes('sobrenome'))ok=true;else if(type==='ln'&&t.includes('sobrenome'))ok=true;else if(type==='zip'&&t.includes('cep'))ok=true;else if(type==='ad'&&(t.includes('endereco')||t.includes('rua')||t.includes('logradouro')))ok=true;else if(type==='nh'&&(t.includes('bairro')||t.includes('distrito')||t.includes('neighborhood')||t.includes('district')))ok=true;else if(type==='ci'&&t.includes('cidade'))ok=true;else if(type==='st'&&(t.includes('estado')||t.includes('uf')))ok=true;else if(type==='cpf'&&(t.includes('cpf')||t.includes('cnpj')||t.includes('documento')))ok=true;if(ok){if(l.getAttribute('for')){const i=document.getElementById(l.getAttribute('for'))||getEls('#'+l.getAttribute('for'))[0];if(i)return i;}const ni=l.querySelector('input,select,textarea');if(ni)return ni;}}return null;}function clickDarkBtn(){const els=getEls('button,a,[role="button"],div,span');for(const el of els){const txt=norm(el.textContent);if(txt.includes('cartao')&&(txt.includes('debito')||txt.includes('credito'))){up('Expandindo formulário de cartão...');el.click();return true;}}return false;}function doFill(){up('Preenchendo campos...');try{setV(find('em'),d.em);setV(find('ph'),d.ph.replace(/\D/g,'').replace(/^55/,''));setV(find('fn'),d.fn);setV(find('ln'),d.ln);setV(find('zip'),d.zip.replace(/\D/g,''));setV(find('ad'),d.ad);setV(find('nh'),d.nh);setV(find('ci'),d.ci);setV(find('st'),d.st);setV(find('cpf'),d.cpf.replace(/\D/g,''));up('Preenchido com sucesso!', 'success');}catch(err){up('Erro: '+err.message, 'error');}}function fillAll(){let emailEl=find('em');if(!emailEl){const clicked=clickDarkBtn();if(clicked){let attempts=0;const interval=setInterval(()=>{attempts++;emailEl=find('em');if(emailEl){clearInterval(interval);doFill();}else if(attempts>20){clearInterval(interval);up('Campos não encontrados. Clique no botão de cartão manualmente e tente de novo.','error');}},200);}else{up('Botão de cartão não encontrado. Tente abrir os campos e clicar no favorito.','error');}}else{doFill();}}fillAll();})();" class="btn-action-primary" style="background: linear-gradient(135deg, #0070ba, #15467a); text-decoration: none; color: white; display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; width: auto; padding: 0.6rem 1.5rem; font-size: 0.85rem; cursor: move;" title="Arraste este botão para a sua barra de favoritos">
+                                    <i class="fa-solid fa-star"></i> Arraste para a Barra de Favoritos: Preencher PayPal
+                                </a>
+                            </div>
+                        </div>
+
                         <!-- CARD: CHECKOUT CONFIG -->
                         <div class="drawer-card">
                             <h4><i class="fa-solid fa-gear"></i> Configurações do Link de Pagamento</h4>
@@ -1324,6 +1344,10 @@
                                     <div class="input-group">
                                         <label for="map-address">Endereço</label>
                                         <input type="text" id="map-address" value="address1" placeholder="Parâmetro rua/nº">
+                                    </div>
+                                    <div class="input-group">
+                                        <label for="map-neighborhood">Bairro</label>
+                                        <input type="text" id="map-neighborhood" value="neighborhood" placeholder="Parâmetro bairro">
                                     </div>
                                     <div class="input-group">
                                         <label for="map-city">Cidade</label>
@@ -1373,6 +1397,10 @@
                                 <div class="client-preview-item">
                                     <span class="client-preview-label">Endereço:</span>
                                     <span class="client-preview-val" id="prev-address">-</span>
+                                </div>
+                                <div class="client-preview-item">
+                                    <span class="client-preview-label">Bairro:</span>
+                                    <span class="client-preview-val" id="prev-neighborhood">-</span>
                                 </div>
                                 <div class="client-preview-item">
                                     <span class="client-preview-label">CEP / Cidade:</span>
@@ -2120,6 +2148,7 @@
                 phone: document.getElementById('map-phone').value.trim(),
                 cpf: document.getElementById('map-cpf').value.trim(),
                 address: document.getElementById('map-address').value.trim(),
+                neighborhood: document.getElementById('map-neighborhood').value.trim(),
                 city: document.getElementById('map-city').value.trim(),
                 state: document.getElementById('map-state').value.trim(),
                 zip: document.getElementById('map-zip').value.trim(),
@@ -2147,6 +2176,7 @@
                 phone: 'phone',
                 cpf: 'cpf',
                 address: 'address1',
+                neighborhood: 'neighborhood',
                 city: 'city',
                 state: 'state',
                 zip: 'zip',
@@ -2168,6 +2198,7 @@
             document.getElementById('map-phone').value = mappings.phone || 'phone';
             document.getElementById('map-cpf').value = mappings.cpf || 'cpf';
             document.getElementById('map-address').value = mappings.address || 'address1';
+            document.getElementById('map-neighborhood').value = mappings.neighborhood || 'neighborhood';
             document.getElementById('map-city').value = mappings.city || 'city';
             document.getElementById('map-state').value = mappings.state || 'state';
             document.getElementById('map-zip').value = mappings.zip || 'zip';
@@ -2233,18 +2264,55 @@
                 : 'N/A';
             document.getElementById('prev-phone').innerText = phone;
 
-            const address = (client.enderecos && client.enderecos.length > 0) ? client.enderecos[0] : 'N/A';
-            document.getElementById('prev-address').innerText = address;
+            // Address Parsing
+            const rawAddress = (client.enderecos && client.enderecos.length > 0) ? client.enderecos[0] : '';
+            let parsedStreet = rawAddress || 'N/A';
+            let parsedNeighborhood = 'N/A';
+            let parsedCity = 'N/A';
+            let parsedState = 'N/A';
+            let parsedZip = 'N/A';
 
-            // Handle location details from zip/city
-            let cep = 'N/A';
-            if (client.enderecos && client.enderecos.length > 0) {
-                const addStr = client.enderecos[0];
-                const cepMatch = addStr.match(/\d{5}-\d{3}/);
-                if (cepMatch) cep = cepMatch[0];
+            if (rawAddress) {
+                let streetTemp = rawAddress;
+                
+                // Extract ZIP
+                const cepMatch = rawAddress.match(/\b\d{5}-?\d{3}\b/);
+                if (cepMatch) {
+                    parsedZip = cepMatch[0];
+                    streetTemp = streetTemp.replace(parsedZip, "").trim();
+                }
+
+                // Extract City and State
+                const stateMatch = streetTemp.match(/,\s*([^,]+)-([A-Z]{2})\s*$/);
+                if (stateMatch) {
+                    parsedCity = stateMatch[1].trim();
+                    parsedState = stateMatch[2].trim();
+                    streetTemp = streetTemp.substring(0, stateMatch.index).trim();
+                } else {
+                    const stateMatch2 = streetTemp.match(/\s+([^,\s]+)-([A-Z]{2})\s*$/);
+                    if (stateMatch2) {
+                        parsedCity = stateMatch2[1].trim();
+                        parsedState = stateMatch2[2].trim();
+                        streetTemp = streetTemp.substring(0, stateMatch2.index).trim();
+                    }
+                }
+
+                // Clean up trailing commas/hyphens
+                streetTemp = streetTemp.replace(/,\s*$/, "").replace(/-\s*$/, "").trim();
+
+                // Extract Neighborhood (Bairro) from hyphens
+                const parts = streetTemp.split('-').map(p => p.trim()).filter(Boolean);
+                if (parts.length >= 2) {
+                    parsedNeighborhood = parts[parts.length - 1];
+                    parsedStreet = parts.slice(0, parts.length - 1).join(' - ').trim();
+                } else {
+                    parsedStreet = streetTemp || 'N/A';
+                }
             }
-            const city = client.uf_rg ? `${client.orgao_expedidor || ''} - ${client.uf_rg}` : 'N/A';
-            document.getElementById('prev-location').innerText = `${cep} / ${city}`;
+
+            document.getElementById('prev-address').innerText = parsedStreet;
+            document.getElementById('prev-neighborhood').innerText = parsedNeighborhood;
+            document.getElementById('prev-location').innerText = `${parsedZip} / ${parsedCity} - ${parsedState}`;
 
             // Update checkout link generator
             updateGeneratedUrl();
@@ -2271,6 +2339,7 @@
                 phone: document.getElementById('map-phone').value.trim(),
                 cpf: document.getElementById('map-cpf').value.trim(),
                 address: document.getElementById('map-address').value.trim(),
+                neighborhood: document.getElementById('map-neighborhood').value.trim(),
                 city: document.getElementById('map-city').value.trim(),
                 state: document.getElementById('map-state').value.trim(),
                 zip: document.getElementById('map-zip').value.trim(),
@@ -2291,19 +2360,51 @@
             const phoneVal = (selectedPayClient.telefones_proprietario && selectedPayClient.telefones_proprietario.length > 0) 
                 ? selectedPayClient.telefones_proprietario[0] 
                 : '';
-            const addressVal = (selectedPayClient.enderecos && selectedPayClient.enderecos.length > 0) ? selectedPayClient.enderecos[0] : '';
             
-            // Extract location details
-            let zipVal = '';
+            // Address Parsing
+            const rawAddress = (selectedPayClient.enderecos && selectedPayClient.enderecos.length > 0) ? selectedPayClient.enderecos[0] : '';
+            let streetVal = rawAddress || '';
+            let neighborhoodVal = '';
             let cityVal = '';
             let stateVal = '';
-            if (addressVal) {
-                const cepMatch = addressVal.match(/\d{5}-?\d{3}/);
-                if (cepMatch) zipVal = cepMatch[0];
+            let zipVal = '';
+
+            if (rawAddress) {
+                let streetTemp = rawAddress;
                 
-                // Address formats vary, so try to parse simple city/state
-                const stateMatch = addressVal.match(/\s([A-Z]{2})\s*$/);
-                if (stateMatch) stateVal = stateMatch[1];
+                // Extract ZIP
+                const cepMatch = rawAddress.match(/\b\d{5}-?\d{3}\b/);
+                if (cepMatch) {
+                    zipVal = cepMatch[0];
+                    streetTemp = streetTemp.replace(zipVal, "").trim();
+                }
+
+                // Extract City and State
+                const stateMatch = streetTemp.match(/,\s*([^,]+)-([A-Z]{2})\s*$/);
+                if (stateMatch) {
+                    cityVal = stateMatch[1].trim();
+                    stateVal = stateMatch[2].trim();
+                    streetTemp = streetTemp.substring(0, stateMatch.index).trim();
+                } else {
+                    const stateMatch2 = streetTemp.match(/\s+([^,\s]+)-([A-Z]{2})\s*$/);
+                    if (stateMatch2) {
+                        cityVal = stateMatch2[1].trim();
+                        stateVal = stateMatch2[2].trim();
+                        streetTemp = streetTemp.substring(0, stateMatch2.index).trim();
+                    }
+                }
+
+                // Clean up trailing commas/hyphens
+                streetTemp = streetTemp.replace(/,\s*$/, "").replace(/-\s*$/, "").trim();
+
+                // Extract Neighborhood (Bairro) from hyphens
+                const parts = streetTemp.split('-').map(p => p.trim()).filter(Boolean);
+                if (parts.length >= 2) {
+                    neighborhoodVal = parts[parts.length - 1];
+                    streetVal = parts.slice(0, parts.length - 1).join(' - ').trim();
+                } else {
+                    streetVal = streetTemp;
+                }
             }
 
             // Build query params object
@@ -2313,7 +2414,8 @@
             if (mappings.email && emailVal) params[mappings.email] = emailVal;
             if (mappings.phone && phoneVal) params[mappings.phone] = phoneVal;
             if (mappings.cpf && selectedPayClient.cpf) params[mappings.cpf] = selectedPayClient.cpf;
-            if (mappings.address && addressVal) params[mappings.address] = addressVal;
+            if (mappings.address && streetVal) params[mappings.address] = streetVal;
+            if (mappings.neighborhood && neighborhoodVal) params[mappings.neighborhood] = neighborhoodVal;
             if (mappings.city && cityVal) params[mappings.city] = cityVal;
             if (mappings.state && stateVal) params[mappings.state] = stateVal;
             if (mappings.zip && zipVal) params[mappings.zip] = zipVal;
