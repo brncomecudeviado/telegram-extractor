@@ -21,8 +21,7 @@
             --text-primary: #c9d1d9;
             --text-secondary: #8b949e;
             --success: #2ea043;
-            --card-hover: rgba(56, 139, 253, 0.15);
-            --card-active: rgba(56, 139, 253, 0.25);
+            --card-hover: rgba(56, 139, 253, 0.12);
             --shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
         }
 
@@ -36,71 +35,242 @@
             font-family: 'Inter', sans-serif;
             background-color: var(--bg-color);
             color: var(--text-primary);
-            min-height: 100vh;
-            padding: 2rem;
+            height: 100vh;
+            display: flex;
+            overflow: hidden;
             background-image: radial-gradient(circle at 10% 20%, rgba(90, 40, 190, 0.05) 0%, transparent 40%),
                               radial-gradient(circle at 90% 80%, rgba(31, 111, 235, 0.05) 0%, transparent 40%);
-            background-attachment: fixed;
         }
 
-        header {
-            max-width: 1200px;
-            margin: 0 auto 2rem auto;
+        /* Split-Pane Layout */
+        .sidebar {
+            width: 380px;
+            border-right: 1px solid var(--panel-border);
+            background: rgba(22, 27, 34, 0.85);
             display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 1.5rem;
+            flex-direction: flex-col;
+            flex-shrink: 0;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            backdrop-filter: blur(10px);
         }
 
-        h1 {
+        .main-content {
+            flex: 1;
+            height: 100%;
+            overflow-y: auto;
+            padding: 2.5rem;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Sidebar Header & Controls */
+        .sidebar-header {
+            padding: 1.5rem;
+            border-bottom: 1px solid var(--panel-border);
+        }
+
+        .sidebar-title {
             font-family: 'Outfit', sans-serif;
             font-weight: 700;
-            font-size: 2.2rem;
+            font-size: 1.5rem;
             background: linear-gradient(90deg, #58a6ff, #bc85ff);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             display: flex;
             align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .sidebar-controls {
+            display: flex;
+            flex-direction: column;
             gap: 0.75rem;
         }
 
-        .status-badge {
-            background-color: rgba(46, 160, 67, 0.15);
-            border: 1px solid rgba(46, 160, 67, 0.3);
-            color: #56d364;
-            padding: 0.5rem 1rem;
-            border-radius: 50px;
+        .search-box {
+            position: relative;
+            width: 100%;
+        }
+
+        .search-box i {
+            position: absolute;
+            left: 0.75rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-secondary);
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 0.6rem 1rem 0.6rem 2.25rem;
+            background-color: rgba(13, 17, 23, 0.8);
+            border: 1px solid var(--panel-border);
+            border-radius: 8px;
+            color: var(--text-primary);
+            font-size: 0.9rem;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        .search-box input:focus {
+            border-color: var(--accent-primary);
+        }
+
+        .sidebar-actions {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .select-filter {
+            flex: 1;
+            padding: 0.6rem;
+            background-color: rgba(13, 17, 23, 0.8);
+            border: 1px solid var(--panel-border);
+            border-radius: 8px;
+            color: var(--text-primary);
             font-size: 0.85rem;
+            outline: none;
+            cursor: pointer;
+        }
+
+        .btn-refresh {
+            padding: 0.6rem 1rem;
+            background: var(--accent-gradient);
+            color: white;
+            border: none;
+            border-radius: 8px;
             font-weight: 600;
+            font-size: 0.85rem;
+            cursor: pointer;
             display: flex;
             align-items: center;
-            gap: 0.5rem;
-            box-shadow: 0 0 15px rgba(46, 160, 67, 0.1);
+            gap: 0.25rem;
         }
 
-        .status-dot {
-            width: 8px;
-            height: 8px;
-            background-color: #56d364;
-            border-radius: 50%;
-            display: inline-block;
-            animation: pulse 1.5s infinite;
+        /* Sidebar Scrollable List */
+        .sidebar-list {
+            flex: 1;
+            overflow-y: auto;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
         }
 
-        @keyframes pulse {
-            0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(86, 211, 100, 0.7); }
-            70% { transform: scale(1); box-shadow: 0 0 0 6px rgba(86, 211, 100, 0); }
-            100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(86, 211, 100, 0); }
+        .list-card {
+            background: rgba(22, 27, 34, 0.5);
+            border: 1px solid var(--panel-border);
+            border-radius: 10px;
+            padding: 1rem;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.2s, border-color 0.2s, background-color 0.2s;
         }
 
-        /* Stats Grid */
+        .list-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 3px;
+            height: 100%;
+            background: var(--accent-gradient);
+            opacity: 0.7;
+        }
+
+        .list-card:hover {
+            border-color: rgba(88, 166, 255, 0.4);
+            background-color: var(--card-hover);
+        }
+
+        .list-card.active {
+            border-color: var(--accent-primary);
+            background-color: rgba(56, 139, 253, 0.15);
+            box-shadow: 0 0 12px rgba(56, 139, 253, 0.1);
+        }
+
+        .list-card-name {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 600;
+            font-size: 0.95rem;
+            color: #f0f6fc;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin-bottom: 0.25rem;
+        }
+
+        .list-card-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+        }
+
+        .score-badge {
+            background-color: rgba(88, 166, 255, 0.1);
+            color: var(--accent-primary);
+            padding: 0.1rem 0.4rem;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 0.75rem;
+        }
+
+        .list-no-data {
+            text-align: center;
+            color: var(--text-secondary);
+            padding: 2rem 1rem;
+            font-size: 0.9rem;
+        }
+
+        /* Home View (Default Landing Page) */
+        .home-view {
+            max-width: 900px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .home-hero {
+            background: linear-gradient(135deg, rgba(31, 111, 235, 0.1), rgba(142, 45, 226, 0.1));
+            border: 1px solid var(--panel-border);
+            border-radius: 16px;
+            padding: 3rem 2rem;
+            text-align: center;
+            margin-bottom: 2.5rem;
+            position: relative;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        .home-hero h2 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            background: linear-gradient(90deg, #58a6ff, #bc85ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .home-hero p {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            max-width: 650px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        /* Stats in Home View */
         .stats-grid {
-            max-width: 1200px;
-            margin: 0 auto 2rem auto;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
             gap: 1.5rem;
+            margin-bottom: 2.5rem;
         }
 
         .stat-card {
@@ -113,23 +283,17 @@
             gap: 1.25rem;
             backdrop-filter: blur(10px);
             box-shadow: var(--shadow);
-            transition: transform 0.2s, border-color 0.2s;
-        }
-
-        .stat-card:hover {
-            transform: translateY(-2px);
-            border-color: rgba(88, 166, 255, 0.4);
         }
 
         .stat-icon {
-            font-size: 2rem;
+            font-size: 1.75rem;
             background: var(--accent-gradient);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
         .stat-info h3 {
-            font-size: 0.85rem;
+            font-size: 0.8rem;
             color: var(--text-secondary);
             text-transform: uppercase;
             letter-spacing: 0.05em;
@@ -137,305 +301,192 @@
         }
 
         .stat-info p {
-            font-size: 1.75rem;
+            font-size: 1.6rem;
             font-weight: 700;
             font-family: 'Outfit', sans-serif;
         }
 
-        /* Controls Section */
-        .controls {
-            max-width: 1200px;
-            margin: 0 auto 2rem auto;
+        /* Features Section */
+        .home-features {
             background: var(--panel-bg);
             border: 1px solid var(--panel-border);
             border-radius: 12px;
-            padding: 1.25rem;
-            display: flex;
-            gap: 1rem;
-            align-items: center;
-            flex-wrap: wrap;
-            backdrop-filter: blur(10px);
+            padding: 2rem;
             box-shadow: var(--shadow);
         }
 
-        .search-box {
-            position: relative;
-            flex: 1;
-            min-width: 280px;
-        }
-
-        .search-box i {
-            position: absolute;
-            left: 1rem;
-            top: 50%;
-            transform: translateY(-50%);
-            color: var(--text-secondary);
-        }
-
-        .search-box input {
-            width: 100%;
-            padding: 0.75rem 1rem 0.75rem 2.75rem;
-            background-color: rgba(13, 17, 23, 0.8);
-            border: 1px solid var(--panel-border);
-            border-radius: 8px;
-            color: var(--text-primary);
-            font-size: 0.95rem;
-            outline: none;
-            transition: border-color 0.2s, box-shadow 0.2s;
-        }
-
-        .search-box input:focus {
-            border-color: var(--accent-primary);
-            box-shadow: 0 0 0 3px rgba(88, 166, 255, 0.15);
-        }
-
-        .select-filter {
-            padding: 0.75rem 1rem;
-            background-color: rgba(13, 17, 23, 0.8);
-            border: 1px solid var(--panel-border);
-            border-radius: 8px;
-            color: var(--text-primary);
-            font-size: 0.95rem;
-            outline: none;
-            cursor: pointer;
-            min-width: 200px;
-            transition: border-color 0.2s;
-        }
-
-        .select-filter:focus {
-            border-color: var(--accent-primary);
-        }
-
-        .btn-refresh {
-            padding: 0.75rem 1.25rem;
-            background: var(--accent-gradient);
-            color: white;
-            border: none;
-            border-radius: 8px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: opacity 0.2s, transform 0.2s;
+        .home-features h3 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.3rem;
+            margin-bottom: 1.25rem;
+            color: #f0f6fc;
             display: flex;
             align-items: center;
             gap: 0.5rem;
         }
 
-        .btn-refresh:hover {
-            opacity: 0.9;
-            transform: translateY(-1px);
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-bottom: 1.25rem;
         }
 
-        .btn-refresh:active {
-            transform: translateY(1px);
+        .feature-item:last-child {
+            margin-bottom: 0;
         }
 
-        /* Data Container */
-        .data-container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .no-data {
-            text-align: center;
-            padding: 4rem 2rem;
-            background: var(--panel-bg);
-            border: 1px solid var(--panel-border);
-            border-radius: 12px;
-            color: var(--text-secondary);
-        }
-
-        .no-data i {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            color: rgba(240, 246, 252, 0.1);
-        }
-
-        .grid-view {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 1.5rem;
-        }
-
-        .data-card {
-            background: var(--panel-bg);
-            border: 1px solid var(--panel-border);
-            border-radius: 12px;
-            padding: 1.5rem;
-            cursor: pointer;
-            position: relative;
-            overflow: hidden;
-            backdrop-filter: blur(10px);
-            box-shadow: var(--shadow);
-            transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
-        }
-
-        .data-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 4px;
-            height: 100%;
-            background: var(--accent-gradient);
-        }
-
-        .data-card:hover {
-            transform: translateY(-3px);
-            border-color: rgba(88, 166, 255, 0.5);
-            box-shadow: 0 8px 24px rgba(56, 139, 253, 0.1);
-        }
-
-        .card-header {
-            margin-bottom: 1rem;
-        }
-
-        .card-name {
-            font-family: 'Outfit', sans-serif;
-            font-weight: 600;
+        .feature-icon {
+            color: var(--accent-primary);
             font-size: 1.1rem;
+            margin-top: 0.15rem;
+        }
+
+        .feature-text h4 {
             color: #f0f6fc;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
+            font-size: 1rem;
+            font-weight: 600;
             margin-bottom: 0.25rem;
         }
 
-        .card-cpf {
-            font-size: 0.85rem;
+        .feature-text p {
             color: var(--text-secondary);
-            font-family: monospace;
-        }
-
-        .card-row {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 0.5rem;
             font-size: 0.9rem;
+            line-height: 1.5;
         }
 
-        .card-label {
-            color: var(--text-secondary);
-        }
-
-        .card-value {
-            font-weight: 500;
-        }
-
-        .score-badge {
-            background-color: rgba(88, 166, 255, 0.1);
-            color: var(--accent-primary);
-            padding: 0.15rem 0.5rem;
-            border-radius: 4px;
-            font-weight: 600;
-            font-size: 0.85rem;
-        }
-
-        /* Modal styling */
-        .modal-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
+        /* Detail View (Selected Profile) */
+        .profile-view {
+            max-width: 1000px;
+            margin: 0 auto;
             width: 100%;
-            height: 100%;
-            background-color: rgba(13, 17, 23, 0.85);
-            backdrop-filter: blur(8px);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 1000;
-            opacity: 0;
-            pointer-events: none;
-            transition: opacity 0.3s ease;
+            display: none;
+            animation: fadeIn 0.3s ease;
         }
 
-        .modal-overlay.active {
-            opacity: 1;
-            pointer-events: auto;
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
         }
 
-        .modal {
-            background-color: #161b22;
-            border: 1px solid var(--panel-border);
-            border-radius: 16px;
-            width: 90%;
-            max-width: 500px;
-            box-shadow: 0 16px 48px rgba(0, 0, 0, 0.5);
-            transform: scale(0.9);
-            transition: transform 0.3s ease;
-            overflow: hidden;
-        }
-
-        .modal-overlay.active .modal {
-            transform: scale(1);
-        }
-
-        .modal-header {
-            padding: 1.5rem;
+        .profile-header {
             border-bottom: 1px solid var(--panel-border);
+            padding-bottom: 1.5rem;
+            margin-bottom: 2rem;
             display: flex;
             justify-content: space-between;
-            align-items: center;
-            background: linear-gradient(135deg, rgba(31, 111, 235, 0.05), rgba(142, 45, 226, 0.05));
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 1rem;
         }
 
-        .modal-title {
+        .profile-title-box h2 {
             font-family: 'Outfit', sans-serif;
-            font-weight: 600;
-            font-size: 1.25rem;
+            font-size: 2rem;
+            font-weight: 700;
             color: #f0f6fc;
+            margin-bottom: 0.25rem;
         }
 
-        .btn-close {
-            background: transparent;
-            border: none;
+        .profile-subtitle {
+            font-size: 0.95rem;
             color: var(--text-secondary);
-            font-size: 1.25rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .btn-copy-all {
+            padding: 0.6rem 1.2rem;
+            background: var(--accent-gradient);
+            border: none;
+            border-radius: 6px;
+            color: white;
+            font-weight: 600;
+            font-size: 0.85rem;
             cursor: pointer;
-            transition: color 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: opacity 0.2s;
         }
 
-        .btn-close:hover {
-            color: #f0f6fc;
+        .btn-copy-all:hover {
+            opacity: 0.9;
         }
 
-        .modal-body {
+        /* Profile Grid Layout */
+        .profile-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .detail-card {
+            background: var(--panel-bg);
+            border: 1px solid var(--panel-border);
+            border-radius: 12px;
             padding: 1.5rem;
+            box-shadow: var(--shadow);
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
         }
 
-        .detail-item {
+        .detail-card h3 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.15rem;
+            color: #f0f6fc;
+            border-bottom: 1px solid rgba(48, 54, 61, 0.4);
+            padding-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .detail-card h3 i {
+            color: var(--accent-primary);
+        }
+
+        .field-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .field-item {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 0.85rem 0;
-            border-bottom: 1px solid rgba(48, 54, 61, 0.4);
-        }
-
-        .detail-item:last-child {
-            border-bottom: none;
-        }
-
-        .detail-label {
-            color: var(--text-secondary);
             font-size: 0.9rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid rgba(48, 54, 61, 0.2);
+        }
+
+        .field-item:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .field-label {
+            color: var(--text-secondary);
+        }
+
+        .field-val-container {
             display: flex;
             align-items: center;
             gap: 0.5rem;
         }
 
-        .detail-val-container {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .detail-value {
-            font-weight: 600;
+        .field-value {
+            font-weight: 500;
             color: #f0f6fc;
-            font-size: 0.95rem;
+            text-align: right;
         }
 
-        .detail-value.monospace {
+        .field-value.monospace {
             font-family: monospace;
+            font-size: 0.95rem;
             letter-spacing: 0.05em;
         }
 
@@ -444,56 +495,50 @@
             border: none;
             color: var(--text-secondary);
             cursor: pointer;
-            font-size: 0.85rem;
-            padding: 0.25rem;
+            font-size: 0.8rem;
+            padding: 0.15rem;
             border-radius: 4px;
-            transition: color 0.15s, background-color 0.15s;
+            transition: color 0.15s;
         }
 
         .btn-copy-field:hover {
             color: var(--accent-primary);
-            background-color: rgba(88, 166, 255, 0.1);
         }
 
-        .modal-footer {
-            padding: 1.25rem 1.5rem;
-            border-top: 1px solid var(--panel-border);
+        /* Array lists styling */
+        .array-container {
             display: flex;
-            justify-content: flex-end;
-            gap: 1rem;
-            background-color: rgba(22, 27, 34, 0.5);
+            flex-direction: column;
+            gap: 0.5rem;
+            max-height: 180px;
+            overflow-y: auto;
+            padding-right: 0.25rem;
         }
 
-        .btn-action {
-            padding: 0.6rem 1.2rem;
+        .array-item {
+            background-color: rgba(13, 17, 23, 0.5);
+            border: 1px solid rgba(48, 54, 61, 0.3);
             border-radius: 6px;
-            font-weight: 600;
+            padding: 0.5rem 0.75rem;
             font-size: 0.85rem;
-            cursor: pointer;
-            transition: opacity 0.2s;
-        }
-
-        .btn-action.secondary {
-            background-color: #21262d;
-            border: 1px solid var(--panel-border);
-            color: var(--text-primary);
-        }
-
-        .btn-action.secondary:hover {
-            background-color: #30363d;
-        }
-
-        .btn-action.primary {
-            background: var(--accent-gradient);
-            border: none;
-            color: white;
+            color: #c9d1d9;
             display: flex;
+            justify-content: space-between;
             align-items: center;
             gap: 0.5rem;
+            word-break: break-all;
         }
 
-        .btn-action.primary:hover {
-            opacity: 0.9;
+        .array-item-text {
+            line-height: 1.4;
+        }
+
+        .array-empty {
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            font-style: italic;
+            text-align: center;
+            padding: 1rem 0;
         }
 
         /* Toast notification */
@@ -521,127 +566,299 @@
             transform: translateY(0);
             opacity: 1;
         }
+
+        /* Scrollbar styling */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: rgba(48, 54, 61, 0.8);
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(88, 166, 255, 0.5);
+        }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1><i class="fa-brands fa-telegram"></i> Extrator Telegram</h1>
-        <div class="status-badge">
-            <span class="status-dot"></span>
-            Monitorando em tempo real
-        </div>
-    </header>
-
-    <!-- Statistics Panel -->
-    <div class="stats-grid">
-        <div class="stat-card">
-            <div class="stat-icon"><i class="fa-solid fa-address-card"></i></div>
-            <div class="stat-info">
-                <h3>Total Capturado</h3>
-                <p id="stat-total">0</p>
+    <!-- LEFT SIDEBAR: CPFs List -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <div class="sidebar-title">
+                <i class="fa-brands fa-telegram"></i> Extrator Telegram
+            </div>
+            <div class="sidebar-controls">
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="search-input" placeholder="Buscar por Nome ou CPF...">
+                </div>
+                <div class="sidebar-actions">
+                    <select class="select-filter" id="sort-select">
+                        <option value="newest">Mais Recentes</option>
+                        <option value="oldest">Mais Antigos</option>
+                        <option value="score-desc">Score: Maior -> Menor</option>
+                        <option value="score-asc">Score: Menor -> Maior</option>
+                        <option value="name-asc">Nome: A - Z</option>
+                    </select>
+                    <button class="btn-refresh" id="btn-refresh" title="Atualizar dados">
+                        <i class="fa-solid fa-rotate"></i>
+                    </button>
+                </div>
             </div>
         </div>
-        <div class="stat-card">
-            <div class="stat-icon"><i class="fa-solid fa-chart-line"></i></div>
-            <div class="stat-info">
-                <h3>Média de Score</h3>
-                <p id="stat-avg">0</p>
-            </div>
-        </div>
-        <div class="stat-card">
-            <div class="stat-icon"><i class="fa-solid fa-trophy"></i></div>
-            <div class="stat-info">
-                <h3>Maior Score</h3>
-                <p id="stat-max">0</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Filtering & Controls -->
-    <div class="controls">
-        <div class="search-box">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <input type="text" id="search-input" placeholder="Buscar por Nome ou CPF...">
-        </div>
-        <select class="select-filter" id="sort-select">
-            <option value="newest">Mais Recentes</option>
-            <option value="oldest">Mais Antigos</option>
-            <option value="score-desc">Score: Maior -> Menor</option>
-            <option value="score-asc">Score: Menor -> Maior</option>
-            <option value="name-asc">Nome: A - Z</option>
-        </select>
-        <button class="btn-refresh" id="btn-refresh">
-            <i class="fa-solid fa-rotate"></i> Atualizar
-        </button>
-    </div>
-
-    <!-- Data cards list -->
-    <div class="data-container">
-        <div class="no-data" id="no-data-msg">
-            <i class="fa-solid fa-inbox"></i>
-            <p>Nenhum dado capturado ainda.</p>
-        </div>
-        <div class="grid-view" id="grid-view">
+        <div class="sidebar-list" id="sidebar-list">
             <!-- Dynamically populated -->
         </div>
     </div>
 
-    <!-- Detailed Modal -->
-    <div class="modal-overlay" id="modal-overlay">
-        <div class="modal" id="modal">
-            <div class="modal-header">
-                <span class="modal-title">Detalhes da Consulta</span>
-                <button class="btn-close" id="btn-close-modal"><i class="fa-solid fa-xmark"></i></button>
+    <!-- MAIN AREA: Home/Landing Page or Detailed Profile View -->
+    <div class="main-content">
+        
+        <!-- HOME / LANDING PAGE VIEW -->
+        <div class="home-view" id="home-view">
+            <div class="home-hero">
+                <h2>Painel do Extrator de CPF</h2>
+                <p>
+                    Ferramenta inteligente de extração de dados públicos do Telegram. Monitore canais, filtre resultados qualificados por score de risco e organize dados consolidados.
+                </p>
             </div>
-            <div class="modal-body">
-                <div class="detail-item">
-                    <span class="detail-label"><i class="fa-solid fa-user"></i> NOME:</span>
-                    <div class="detail-val-container">
-                        <span class="detail-value" id="det-nome">-</span>
-                        <button class="btn-copy-field" onclick="copyText('det-nome')"><i class="fa-solid fa-copy"></i></button>
+
+            <!-- Stats grid -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fa-solid fa-address-card"></i></div>
+                    <div class="stat-info">
+                        <h3>Total Capturado</h3>
+                        <p id="stat-total">0</p>
                     </div>
                 </div>
-                <div class="detail-item">
-                    <span class="detail-label"><i class="fa-solid fa-id-card"></i> CPF:</span>
-                    <div class="detail-val-container">
-                        <span class="detail-value monospace" id="det-cpf">-</span>
-                        <button class="btn-copy-field" onclick="copyText('det-cpf')"><i class="fa-solid fa-copy"></i></button>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fa-solid fa-chart-line"></i></div>
+                    <div class="stat-info">
+                        <h3>Média de Score</h3>
+                        <p id="stat-avg">0</p>
                     </div>
                 </div>
-                <div class="detail-item">
-                    <span class="detail-label"><i class="fa-solid fa-gauge-high"></i> SCORE:</span>
-                    <div class="detail-val-container">
-                        <span class="detail-value" id="det-score">-</span>
-                        <button class="btn-copy-field" onclick="copyText('det-score')"><i class="fa-solid fa-copy"></i></button>
-                    </div>
-                </div>
-                <div class="detail-item">
-                    <span class="detail-label"><i class="fa-solid fa-triangle-exclamation"></i> FAIXA DE RISCO:</span>
-                    <div class="detail-val-container">
-                        <span class="detail-value" id="det-faixa">-</span>
-                        <button class="btn-copy-field" onclick="copyText('det-faixa')"><i class="fa-solid fa-copy"></i></button>
-                    </div>
-                </div>
-                <div class="detail-item">
-                    <span class="detail-label"><i class="fa-solid fa-sack-dollar"></i> RENDA PRESUMIDA:</span>
-                    <div class="detail-val-container">
-                        <span class="detail-value" id="det-renda">-</span>
-                        <button class="btn-copy-field" onclick="copyText('det-renda')"><i class="fa-solid fa-copy"></i></button>
-                    </div>
-                </div>
-                <div class="detail-item">
-                    <span class="detail-label"><i class="fa-solid fa-clock"></i> DATA CAPTURA:</span>
-                    <div class="detail-val-container">
-                        <span class="detail-value" id="det-data">-</span>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fa-solid fa-trophy"></i></div>
+                    <div class="stat-info">
+                        <h3>Maior Score</h3>
+                        <p id="stat-max">0</p>
                     </div>
                 </div>
             </div>
-            <div class="modal-footer">
-                <button class="btn-action secondary" id="btn-close-footer">Fechar</button>
-                <button class="btn-action primary" id="btn-copy-all">
-                    <i class="fa-solid fa-copy"></i> Copiar Tudo
+
+            <!-- App Features Description -->
+            <div class="home-features">
+                <h3><i class="fa-solid fa-gears"></i> Funcionalidades e Regras de Negócio</h3>
+                
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fa-solid fa-filter"></i></div>
+                    <div class="feature-text">
+                        <h4>Filtros Avançados</h4>
+                        <p>O extrator capta exclusivamente registros que possuem <strong>SCORE superior ou igual a 900</strong> e cuja classificação de <strong>Faixa de Risco seja "Baixíssimo Risco"</strong>.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fa-solid fa-database"></i></div>
+                    <div class="feature-text">
+                        <h4>Dados Estruturados Completos</h4>
+                        <p>Todas as informações da consulta são salvas (PIS, RG, telefones, endereços, e-mails, parentes e vizinhos) e organizadas para fácil visualização.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fa-solid fa-copy"></i></div>
+                    <div class="feature-text">
+                        <h4>Cópia Fácil e Rápida</h4>
+                        <p>Selecione qualquer CPF na lista lateral para abrir a ficha completa. Você pode copiar campos individuais ou a ficha inteira com apenas um clique.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PROFILE VIEW (Shows when a card is selected) -->
+        <div class="profile-view" id="profile-view">
+            <div class="profile-header">
+                <div class="profile-title-box">
+                    <h2 id="prof-nome">NOME COMPLETO</h2>
+                    <div class="profile-subtitle">
+                        <span><i class="fa-solid fa-id-card"></i> <strong id="prof-cpf">000.000.000-00</strong></span>
+                        <span>•</span>
+                        <span><i class="fa-solid fa-clock"></i> Capturado em: <span id="prof-data">11/06/2026</span></span>
+                    </div>
+                </div>
+                <button class="btn-copy-all" id="btn-copy-all">
+                    <i class="fa-solid fa-copy"></i> Copiar Ficha Completa
                 </button>
+            </div>
+
+            <div class="profile-grid">
+                
+                <!-- CARD 1: SCORE E RISCO -->
+                <div class="detail-card">
+                    <h3><i class="fa-solid fa-gauge-high"></i> Análise de Risco</h3>
+                    <div class="field-list">
+                        <div class="field-item">
+                            <span class="field-label">Score de Crédito</span>
+                            <div class="field-val-container">
+                                <span class="field-value score-badge" id="field-score">-</span>
+                                <button class="btn-copy-field" onclick="copyValue('field-score')"><i class="fa-solid fa-copy"></i></button>
+                            </div>
+                        </div>
+                        <div class="field-item">
+                            <span class="field-label">Faixa de Risco</span>
+                            <div class="field-val-container">
+                                <span class="field-value" id="field-faixa">-</span>
+                                <button class="btn-copy-field" onclick="copyValue('field-faixa')"><i class="fa-solid fa-copy"></i></button>
+                            </div>
+                        </div>
+                        <div class="field-item">
+                            <span class="field-label">Renda Presumida</span>
+                            <div class="field-val-container">
+                                <span class="field-value" id="field-renda">-</span>
+                                <button class="btn-copy-field" onclick="copyValue('field-renda')"><i class="fa-solid fa-copy"></i></button>
+                            </div>
+                        </div>
+                        <div class="field-item">
+                            <span class="field-label">Situação Receita Federal</span>
+                            <div class="field-val-container">
+                                <span class="field-value" id="field-receita">-</span>
+                                <button class="btn-copy-field" onclick="copyValue('field-receita')"><i class="fa-solid fa-copy"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 2: DOCUMENTOS -->
+                <div class="detail-card">
+                    <h3><i class="fa-solid fa-file-invoice"></i> Documentos Pessoais</h3>
+                    <div class="field-list">
+                        <div class="field-item">
+                            <span class="field-label">CPF</span>
+                            <div class="field-val-container">
+                                <span class="field-value monospace" id="field-cpf">-</span>
+                                <button class="btn-copy-field" onclick="copyValue('field-cpf')"><i class="fa-solid fa-copy"></i></button>
+                            </div>
+                        </div>
+                        <div class="field-item">
+                            <span class="field-label">PIS / NIS</span>
+                            <div class="field-val-container">
+                                <span class="field-value monospace" id="field-pis">-</span>
+                                <button class="btn-copy-field" onclick="copyValue('field-pis')"><i class="fa-solid fa-copy"></i></button>
+                            </div>
+                        </div>
+                        <div class="field-item">
+                            <span class="field-label">Título Eleitoral</span>
+                            <div class="field-val-container">
+                                <span class="field-value monospace" id="field-titulo">-</span>
+                                <button class="btn-copy-field" onclick="copyValue('field-titulo')"><i class="fa-solid fa-copy"></i></button>
+                            </div>
+                        </div>
+                        <div class="field-item">
+                            <span class="field-label">RG (Geral)</span>
+                            <div class="field-val-container">
+                                <span class="field-value" id="field-rg">-</span>
+                                <button class="btn-copy-field" onclick="copyValue('field-rg')"><i class="fa-solid fa-copy"></i></button>
+                            </div>
+                        </div>
+                        <div class="field-item">
+                            <span class="field-label">RG Orgão Exp. / UF</span>
+                            <div class="field-val-container">
+                                <span class="field-value" id="field-rg-exp">-</span>
+                                <button class="btn-copy-field" onclick="copyValue('field-rg-exp')"><i class="fa-solid fa-copy"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 3: DADOS DE IDENTIFICAÇÃO -->
+                <div class="detail-card">
+                    <h3><i class="fa-solid fa-user-gear"></i> Dados Pessoais</h3>
+                    <div class="field-list">
+                        <div class="field-item">
+                            <span class="field-label">Data de Nascimento / Idade</span>
+                            <div class="field-val-container">
+                                <span class="field-value" id="field-nascimento">-</span>
+                                <button class="btn-copy-field" onclick="copyValue('field-nascimento')"><i class="fa-solid fa-copy"></i></button>
+                            </div>
+                        </div>
+                        <div class="field-item">
+                            <span class="field-label">Signo</span>
+                            <div class="field-val-container">
+                                <span class="field-value" id="field-signo">-</span>
+                                <button class="btn-copy-field" onclick="copyValue('field-signo')"><i class="fa-solid fa-copy"></i></button>
+                            </div>
+                        </div>
+                        <div class="field-item">
+                            <span class="field-label">Nome da Mãe</span>
+                            <div class="field-val-container">
+                                <span class="field-value" id="field-mae">-</span>
+                                <button class="btn-copy-field" onclick="copyValue('field-mae')"><i class="fa-solid fa-copy"></i></button>
+                            </div>
+                        </div>
+                        <div class="field-item">
+                            <span class="field-label">Nome do Pai</span>
+                            <div class="field-val-container">
+                                <span class="field-value" id="field-pai">-</span>
+                                <button class="btn-copy-field" onclick="copyValue('field-pai')"><i class="fa-solid fa-copy"></i></button>
+                            </div>
+                        </div>
+                        <div class="field-item">
+                            <span class="field-label">Escolaridade / Estado Civil</span>
+                            <div class="field-val-container">
+                                <span class="field-value" id="field-escolaridade">-</span>
+                                <button class="btn-copy-field" onclick="copyValue('field-escolaridade')"><i class="fa-solid fa-copy"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 4: TELEFONES -->
+                <div class="detail-card">
+                    <h3><i class="fa-solid fa-phone"></i> Números de Telefone</h3>
+                    <div class="array-container" id="list-telefones">
+                        <!-- Dynamically populated -->
+                    </div>
+                </div>
+
+                <!-- CARD 5: E-MAILS -->
+                <div class="detail-card">
+                    <h3><i class="fa-solid fa-envelope"></i> Endereços de E-mail</h3>
+                    <div class="array-container" id="list-emails">
+                        <!-- Dynamically populated -->
+                    </div>
+                </div>
+
+                <!-- CARD 6: ENDEREÇOS -->
+                <div class="detail-card">
+                    <h3><i class="fa-solid fa-location-dot"></i> Localização / Endereços</h3>
+                    <div class="array-container" id="list-enderecos">
+                        <!-- Dynamically populated -->
+                    </div>
+                </div>
+
+                <!-- CARD 7: POSSÍVEIS PARENTES -->
+                <div class="detail-card">
+                    <h3><i class="fa-solid fa-users"></i> Possíveis Parentes</h3>
+                    <div class="array-container" id="list-parentes">
+                        <!-- Dynamically populated -->
+                    </div>
+                </div>
+
+                <!-- CARD 8: PARTICIPAÇÃO E VÍNCULOS -->
+                <div class="detail-card">
+                    <h3><i class="fa-solid fa-briefcase"></i> Vínculos & Participação Societária</h3>
+                    <div class="array-container" id="list-vinculos">
+                        <!-- Dynamically populated -->
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -656,27 +873,27 @@
         let filteredData = [];
         let selectedRecord = null;
 
-        // Fetch data from API
+        // Fetch data
         async function loadData() {
             try {
                 const res = await fetch('extracted_data.json');
                 if (!res.ok) throw new Error('Erro ao carregar dados');
                 fullData = await res.json();
-                
-                // Add default timestamp if missing
-                fullData = fullData.map((item, idx) => ({
-                    ...item,
-                    timestamp: item.timestamp || new Date(Date.now() - idx * 60000).toLocaleString('pt-BR')
-                }));
 
                 updateStats();
                 applyFilters();
+
+                // Keep selection if updated
+                if (selectedRecord) {
+                    const updated = fullData.find(d => d.cpf === selectedRecord.cpf);
+                    if (updated) openProfile(updated);
+                }
             } catch (err) {
                 console.error(err);
             }
         }
 
-        // Calculate and update dashboard stats
+        // Stats calculation
         function updateStats() {
             document.getElementById('stat-total').innerText = fullData.length;
             
@@ -686,20 +903,19 @@
                 return;
             }
 
-            const scores = fullData.map(d => Number(d.score)).filter(s => !isNaN(s));
-            const avg = Math.round(scores.reduce((a, b) => a + b, 0) / scores.length);
-            const max = Math.max(...scores);
+            const scores = fullData.map(d => Number(d.score)).filter(s => !isNaN(s) && s !== null);
+            const avg = scores.length > 0 ? Math.round(scores.reduce((a, b) => a + b, 0) / scores.length) : 0;
+            const max = scores.length > 0 ? Math.max(...scores) : 0;
 
-            document.getElementById('stat-avg').innerText = isNaN(avg) ? '0' : avg;
-            document.getElementById('stat-max').innerText = max === -Infinity ? '0' : max;
+            document.getElementById('stat-avg').innerText = avg;
+            document.getElementById('stat-max').innerText = max;
         }
 
-        // Apply filters (search and sort)
+        // Apply filters
         function applyFilters() {
             const query = document.getElementById('search-input').value.toLowerCase().trim();
             const sortBy = document.getElementById('sort-select').value;
 
-            // Filter
             filteredData = fullData.filter(item => {
                 const nome = (item.nome || '').toLowerCase();
                 const cpf = (item.cpf || '').toLowerCase();
@@ -708,86 +924,143 @@
 
             // Sort
             if (sortBy === 'newest') {
-                // Assuming newer entries are at the end, or sort by timestamp if available
-                filteredData.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
+                filteredData.sort((a, b) => new Date(b.timestamp || 0) - new Date(a.timestamp || 0));
             } else if (sortBy === 'oldest') {
-                filteredData.sort((a, b) => new Date(a.timestamp) - new Date(b.timestamp));
+                filteredData.sort((a, b) => new Date(a.timestamp || 0) - new Date(b.timestamp || 0));
             } else if (sortBy === 'score-desc') {
-                filteredData.sort((a, b) => b.score - a.score);
+                filteredData.sort((a, b) => (b.score || 0) - (a.score || 0));
             } else if (sortBy === 'score-asc') {
-                filteredData.sort((a, b) => a.score - b.score);
+                filteredData.sort((a, b) => (a.score || 0) - (b.score || 0));
             } else if (sortBy === 'name-asc') {
                 filteredData.sort((a, b) => (a.nome || '').localeCompare(b.nome || ''));
             }
 
-            renderGrid();
+            renderSidebarList();
         }
 
-        // Render cards grid
-        function renderGrid() {
-            const grid = document.getElementById('grid-view');
-            const noData = document.getElementById('no-data-msg');
-
-            grid.innerHTML = '';
+        // Render left sidebar list
+        function renderSidebarList() {
+            const list = document.getElementById('sidebar-list');
+            list.innerHTML = '';
 
             if (filteredData.length === 0) {
-                noData.style.display = 'block';
+                list.innerHTML = '<div class="list-no-data">Nenhum CPF encontrado</div>';
                 return;
             }
 
-            noData.style.display = 'none';
-
             filteredData.forEach(item => {
                 const card = document.createElement('div');
-                card.className = 'data-card';
-                card.onclick = () => openModal(item);
+                card.className = 'list-card';
+                if (selectedRecord && selectedRecord.cpf === item.cpf) {
+                    card.classList.add('active');
+                }
+                card.onclick = () => {
+                    // Update active classes
+                    document.querySelectorAll('.list-card').forEach(c => c.classList.remove('active'));
+                    card.classList.add('active');
+                    openProfile(item);
+                };
 
                 card.innerHTML = `
-                    <div class="card-header">
-                        <div class="card-name" title="${item.nome}">${item.nome}</div>
-                        <div class="card-cpf">${item.cpf}</div>
-                    </div>
-                    <div class="card-row">
-                        <span class="card-label">Score:</span>
-                        <span class="card-value"><span class="score-badge">${item.score}</span></span>
-                    </div>
-                    <div class="card-row">
-                        <span class="card-label">Renda:</span>
-                        <span class="card-value">${item.renda_presumida}</span>
+                    <div class="list-card-name">${item.nome}</div>
+                    <div class="list-card-row">
+                        <span>CPF: ${item.cpf}</span>
+                        <span class="score-badge">${item.score || 'N/A'}</span>
                     </div>
                 `;
-
-                grid.appendChild(card);
+                list.appendChild(card);
             });
         }
 
-        // Modal controllers
-        const modalOverlay = document.getElementById('modal-overlay');
-        
-        function openModal(item) {
+        // Display selected profile details in main pane
+        function openProfile(item) {
             selectedRecord = item;
-            document.getElementById('det-nome').innerText = item.nome;
-            document.getElementById('det-cpf').innerText = item.cpf;
-            document.getElementById('det-score').innerText = item.score;
-            document.getElementById('det-faixa').innerText = item.faixa_de_risco;
-            document.getElementById('det-renda').innerText = item.renda_presumida;
-            document.getElementById('det-data').innerText = item.timestamp;
+            
+            // Switch views
+            document.getElementById('home-view').style.display = 'none';
+            const profileView = document.getElementById('profile-view');
+            profileView.style.display = 'block';
 
-            modalOverlay.classList.add('active');
+            // Top Header
+            document.getElementById('prof-nome').innerText = item.nome || 'DESCONHECIDO';
+            document.getElementById('prof-cpf').innerText = item.cpf || '-';
+            document.getElementById('prof-data').innerText = item.timestamp || '-';
+
+            // Document details
+            document.getElementById('field-cpf').innerText = item.cpf || 'SEM INFORMAÇÃO';
+            document.getElementById('field-pis').innerText = item.pis || 'SEM INFORMAÇÃO';
+            document.getElementById('field-titulo').innerText = item.titulo_eleitoral || 'SEM INFORMAÇÃO';
+            document.getElementById('field-rg').innerText = item.rg || 'SEM INFORMAÇÃO';
+            
+            const exp = item.data_de_expedicao || 'SEM INFORMAÇÃO';
+            const org = item.orgao_expedidor || 'SEM INFORMAÇÃO';
+            const uf = item.uf_rg || '';
+            document.getElementById('field-rg-exp').innerText = `${exp} / ${org} ${uf}`.trim().replace(/\/ $/, "");
+
+            // Personal details
+            const nascimento = item.nascimento || 'SEM INFORMAÇÃO';
+            const idade = item.idade ? `(${item.idade} anos)` : '';
+            document.getElementById('field-nascimento').innerText = `${nascimento} ${idade}`.trim();
+            document.getElementById('field-signo').innerText = item.signo || 'SEM INFORMAÇÃO';
+            document.getElementById('field-mae').innerText = item.mae || 'SEM INFORMAÇÃO';
+            document.getElementById('field-pai').innerText = item.pai || 'SEM INFORMAÇÃO';
+            
+            const esc = item.escolaridade || 'SEM INFORMAÇÃO';
+            const civ = item.estado_civil || 'SEM INFORMAÇÃO';
+            document.getElementById('field-escolaridade').innerText = `${esc} / ${civ}`;
+
+            // Risco details
+            document.getElementById('field-score').innerText = item.score !== null ? item.score : '-';
+            document.getElementById('field-faixa').innerText = item.faixa_de_risco || 'SEM INFORMAÇÃO';
+            document.getElementById('field-renda').innerText = item.renda_presumida || 'SEM INFORMAÇÃO';
+            document.getElementById('field-receita').innerText = item.status_receita_federal || 'SEM INFORMAÇÃO';
+
+            // List arrays mapping
+            populateList('list-telefones', [
+                ...(item.telefones_proprietario || []).map(t => `Proprietário: ${t}`),
+                ...(item.telefones_comerciais || []).map(t => `Comercial: ${t}`),
+                ...(item.telefones_referenciais || []).map(t => `Referencial: ${t}`)
+            ]);
+
+            populateList('list-emails', item.emails);
+            populateList('list-enderecos', item.enderecos);
+            populateList('list-parentes', [
+                ...(item.possiveis_parentes || []),
+                ...(item.possiveis_vizinhos || []).map(v => `Vizinho: ${v}`)
+            ]);
+            populateList('list-vinculos', [
+                ...(item.participacao_societaria || []),
+                ...(item.vinculos_empregaticios || [])
+            ]);
         }
 
-        function closeModal() {
-            modalOverlay.classList.remove('active');
+        // Helper to populate array lists in cards
+        function populateList(elementId, arrayData) {
+            const container = document.getElementById(elementId);
+            container.innerHTML = '';
+
+            const data = (arrayData || []).filter(item => item && item.trim() !== '' && item.toUpperCase() !== 'SEM INFORMAÇÃO');
+
+            if (data.length === 0) {
+                container.innerHTML = '<div class="array-empty">Nenhuma informação disponível</div>';
+                return;
+            }
+
+            data.forEach((text, index) => {
+                const item = document.createElement('div');
+                item.className = 'array-item';
+                
+                const uniqueId = `${elementId}-${index}`;
+                
+                item.innerHTML = `
+                    <span class="array-item-text" id="${uniqueId}">${text}</span>
+                    <button class="btn-copy-field" onclick="copyValue('${uniqueId}')"><i class="fa-solid fa-copy"></i></button>
+                `;
+                container.appendChild(item);
+            });
         }
 
-        // Event listeners for close modal
-        document.getElementById('btn-close-modal').onclick = closeModal;
-        document.getElementById('btn-close-footer').onclick = closeModal;
-        modalOverlay.onclick = (e) => {
-            if (e.target === modalOverlay) closeModal();
-        };
-
-        // Copy functions
+        // Toast copy controller
         function showToast() {
             const toast = document.getElementById('toast');
             toast.classList.add('show');
@@ -796,26 +1069,51 @@
             }, 2000);
         }
 
-        function copyText(elementId) {
+        function copyValue(elementId) {
             const text = document.getElementById(elementId).innerText;
             navigator.clipboard.writeText(text).then(showToast);
         }
 
+        // Copy entire profile card
         document.getElementById('btn-copy-all').onclick = () => {
             if (!selectedRecord) return;
-            const textToCopy = `NOME: ${selectedRecord.nome}\nCPF: ${selectedRecord.cpf}\nSCORE: ${selectedRecord.score}\nFAIXA DE RISCO: ${selectedRecord.faixa_de_risco}\nRENDA PRESUMIDA: ${selectedRecord.renda_presumida}`;
-            navigator.clipboard.writeText(textToCopy).then(() => {
-                showToast();
-                closeModal();
-            });
+            
+            let text = `==================================================\n`;
+            text += `NOME: ${selectedRecord.nome || ''}\n`;
+            text += `CPF: ${selectedRecord.cpf || ''}\n`;
+            text += `PIS: ${selectedRecord.pis || ''}\n`;
+            text += `RG: ${selectedRecord.rg || ''}\n`;
+            text += `MÃE: ${selectedRecord.mae || ''}\n`;
+            text += `SCORE: ${selectedRecord.score || ''}\n`;
+            text += `FAIXA DE RISCO: ${selectedRecord.faixa_de_risco || ''}\n`;
+            text += `RENDA PRESUMIDA: ${selectedRecord.renda_presumida || ''}\n`;
+            
+            if (selectedRecord.emails && selectedRecord.emails.length > 0) {
+                text += `E-MAILS:\n` + selectedRecord.emails.join('\n') + `\n`;
+            }
+            if (selectedRecord.enderecos && selectedRecord.enderecos.length > 0) {
+                text += `ENDEREÇOS:\n` + selectedRecord.enderecos.join('\n') + `\n`;
+            }
+            
+            const phones = [
+                ...(selectedRecord.telefones_proprietario || []),
+                ...(selectedRecord.telefones_comerciais || []),
+                ...(selectedRecord.telefones_referenciais || [])
+            ];
+            if (phones.length > 0) {
+                text += `TELEFONES:\n` + phones.join('\n') + `\n`;
+            }
+            text += `==================================================`;
+
+            navigator.clipboard.writeText(text).then(showToast);
         };
 
-        // Search inputs
+        // Events listeners
         document.getElementById('search-input').oninput = applyFilters;
         document.getElementById('sort-select').onchange = applyFilters;
         document.getElementById('btn-refresh').onclick = loadData;
 
-        // Auto reload every 10 seconds
+        // Auto reload
         setInterval(loadData, 10000);
 
         // Initial load
