@@ -1005,7 +1005,7 @@
             <div class="main-header">
                 <div class="header-title">
                     <h1>Clientes & Consultas</h1>
-                    <p>Monitore consultas com Score ≥ 900 e Faixa de Risco Baixíssimo.</p>
+                    <p>Monitore consultas com Score ≥ 850 e Faixa de Risco Baixíssimo.</p>
                 </div>
                 <div class="header-actions">
                     <div class="live-status">
@@ -1057,7 +1057,7 @@
                         <div class="filter-pill active" data-filter="all">Todos</div>
                         <div class="filter-pill" data-filter="980">Score 980+</div>
                         <div class="filter-pill" data-filter="950">Score 950+</div>
-                        <div class="filter-pill" data-filter="900">Score 900+</div>
+                        <div class="filter-pill" data-filter="850">Score 850+</div>
                     </div>
                 </div>
 
@@ -1376,7 +1376,7 @@
                 const score = Number(item.score) || 0;
                 if (activeFilter === '980' && score < 980) return false;
                 if (activeFilter === '950' && score < 950) return false;
-                if (activeFilter === '900' && score < 900) return false;
+                if (activeFilter === '850' && score < 850) return false;
 
                 // Apply text search on Name or CPF
                 const nome = (item.nome || '').toLowerCase();
